@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Warface App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Настройки</string>
+
+    <item name="adView" type="id"/>
+
+    <string name="interstitial_full_screen">ca-app-pub-4140002463111288/3644037371</string>
+
+    <string name="about_text">
+<![CDATA[Данное приложение не является продуктом компании Crytek.<br><br>
+
+Приложение содержит информацию по игровым достижениям проекта Warface<br><br>
+
+<font color=#e65d20>Правовое уведомление</font><br><br>
+
+Авторские права содержащихся изображений и материалов принадлежат компании Crytek и являются интеллектуальной собственностью Crytek: © 2017 Crytek GmbH. Все права защищены.<br><br>
+
+Crytek, CryEngine, Warface и логотип Warface являются зарегистрированными товарными знаками или товарными знаками Crytek.<br><br>
+
+<font color=#e65d20>Дополнительная информация</font><br><br>
+
+- Текущая версия: 1.5.8<br>
+- Разработчик: Rb Inc.<br>
+- Связаться: ram219219@gmail.com]]>
+</string>
+
+    <string name="start_text">
+<![CDATA[Бойцы!<br><br>
+
+Долгожданная спецоперация Припять стала доступна! Она станет самой масштабной и запоминающейся в истории Warface.<br><br>
+
+Разработчики полностью воссоздали один из самых атмосферных заброшенных городов на планете.<br><br>
+
+Принципиально новые противники, внезапные опасности и непредсказуемые сюжетные повороты не оставят вас равнодушными!
+
+<br><br><font color=#e65d20>Спецоперация припять</font><br><br>
+
+Несмотря на несколько поражений, Blackwood не сворачивает проект по созданию суперсолдат. В Припяти были возведены бункеры и гигантская башня, где, по слухам, ведутся эксперименты над людьми. <br><br>
+
+Каково истинное предназначение этих объектов и какие новые опасности поджидают бойцов отряда Warface во время миссии на недружелюбной территории? 
+
+Одно лишь упоминание чернобыльской катастрофы заставляет воображение рисовать картины запустения и ужаса. <br><br>
+
+Бойцам Warface предстоит высадиться на территории заброшенного города. Сумеете ли вы разгадать мрачные тайны Припяти? <br><br>
+
+Действуйте слаженно — в одиночку победить не удастся! 
+
+<br><br><font color=#e65d20>Достижения</font><br><br>
+
+Наиболее отличившиеся во время спецоперации бойцы получат 20 новых уникальных достижений, 8 из которых — секретные. <br><br>
+
+Чтобы получить все жетоны и нашивки, придется не только сразить тысячи врагов, но и изрядно поломать голову!
+
+<br><br><font color=#e65d20>Оружейная серия радиация</font><br><br>
+
+За прохождение спецоперации Припять вы сможете получить крутое оружие из новой серии Радиация и камуфляжи для обычных пушек в том же стиле: ПКП "Печенег", DP-12, Honey Badger, Remington R11 RSASS, M1911A1 и тактический топор.<br><br>
+
+Оружие выполнено в уникальной переливающейся расцветке, которая никого не оставит равнодушным!<br><br>
+
+Конечно же, за убийство противников с помощью оружия серии "Радиация" вы получите уникальные нашивки!
+]]>
+</string>
+
+
+    <string name="star_dialog">
+        <![CDATA[
+        Добавлено:<br><br>
+        - Desert Tech MDR-C<br>
+        - Локация Мохаве<br>
+        - Локация Припять
+        ]]>
+    </string>
+
+    <!-- Menu string -->
+    <string name="menu_about">О ПРИЛОЖЕНИИ</string>
+    <string name="menu_ranks">ЗВАНИЯ</string>
+    <string name="menu_achievements">ДОСТИЖЕНИЯ</string>
+    <string name="menu_update">ОБНОВЛЕНИЕ</string>
+    <string name="menu_news">НОВОСТИ</string>
+    <string name="menu_vloger">СТРИМЕРЫ</string>
+    <string name="menu_locations">ЛОКАЦИИ</string>
+    <string name="menu_rifleman">ШТУРМОВИК</string>
+    <string name="menu_sniper">СНАЙПЕР</string>
+    <string name="menu_medic">МЕДИК</string>
+    <string name="menu_enginer">ИНЖЕНЕР</string>
+
+    <string name="menu_warbaks">Варбаксовое</string>
+    <string name="menu_credits">Кредитное</string>
+    <string name="menu_box">Коробочное</string>
+
+    <string name="menu_mark">Жетоны</string>
+    <string name="menu_badge">Знаки</string>
+    <string name="menu_string">Нашивки</string>
+
+    <string name="menu_spec">Спецоперация</string>
+    <string name="menu_domin">Доминация</string>
+    <string name="menu_podriv">Подрыв</string>
+    <string name="menu_comand">Командный</string>
+    <string name="menu_mysorubka">Мясорубка</string>
+    <string name="menu_unicht">Уничтожение</string>
+    <string name="menu_zahvat">Захват</string>
+    <string name="menu_shturm">Штурм</string>
+    <string name="menu_viziv">Выживание</string>
+    <string name="menu_bliz">Блиц</string>
+    <string name="menu_king">Королевская</string>
+
+    <!-- Error string -->
+    <string name="error_connection">НЕТ ИНТЕРНЕТА</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_connection">ConnectionActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

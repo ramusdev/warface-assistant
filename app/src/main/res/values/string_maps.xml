@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="spec_name">
+<item>Eclipse</item>
+<item>Icebreaker</item>
+<item>Black Shark</item>
+<item>Anubis</item>
+<item>White Shark</item>
+<item>Spearhead</item>
+<item>Ambush</item>
+<item>Zenit</item>
+<item>Dangerous experiment</item>
+<item>Volcano</item> 
+</string-array>
+<string-array name="spec_type">
+<item>Operation</item>
+<item>Operation</item>
+<item>Operation</item>
+<item>Operation</item>
+<item>Operation</item>
+<item>Operation</item>
+<item>Operation</item>
+<item>Operation</item>
+<item>Operation</item>
+<item>Operation</item> 
+</string-array>
+<string-array name="spec_about">
+<item>Soldiers Warface fall into a sand storm. Communication with headquarters is lost, around midnight, zombie-infested.</item>
+<item>Situation is extremely serious. The game is over. This time the enemy is not just to win a battle</item>
+<item>Now the intelligence reports that in Eastern Europe discovered tower under construction</item>
+<item>Blackwood going to start a massive offensive in North Africa</item>
+<item>Warface Soldiers have to face the forces of Blackwood in their skyscraper</item>
+ <item>Our satellites detected a strange signal distortion in Siberia</item>
+<item>Warface Squad managed to infiltrate the carefully guarded territory in Siberia</item>
+<item>Successfully coped with the second line of defence, we finally found the fortress</item>
+<item>Scientists working on Blackwood, went too far by conducting experiments on people</item>
+<item>Squad Warface will go to the volcano and to personally find out what was going on</item>
+</string-array>
+<array name="spec_link">
+<item>http://belev.org/android/wardocwarface/maps/en/spec_zatmenie.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_ledokol.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_akula2.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_anubis.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_akula.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_bastion1.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_bastion2.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_bastion3.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_exp.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/spec_vulkan.html</item>
+</array>
+<array name="spec_icon">
+<item>@drawable/zatmenie_logo</item>
+<item>@drawable/ledokol_logo</item>
+<item>@drawable/akula2_logo</item>
+<item>@drawable/anubis_logo</item>
+<item>@drawable/akula_logo</item>
+<item>@drawable/bastion_logo1</item>
+<item>@drawable/bastion_logo2</item>
+<item>@drawable/bastion_logo3</item>
+<item>@drawable/exp_logo</item>
+<item>@drawable/vulkan_logo</item>
+</array>
+
+ <string-array name="domin_name">
+<item>Start</item>
+<item>Mine</item>
+<item>Outpost</item> 
+</string-array>
+<string-array name="domin_type">
+<item>Domination, Team Deathmatch</item> 
+<item>Domination</item>
+<item>Domination</item> 
+</string-array>
+<string-array name="domin_about">
+<item>Events are unfolding in the engineering complex forces Blackwood</item>
+<item>Events unfolding in the territory located in Nevada complex</item> 
+<item>Fortress of Blackwood in the heart of Siberia</item>
+</string-array>
+ <array name="domin_link">
+<item>http://belev.org/android/wardocwarface/maps/en/domin_zapusk.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/domin_shaxta.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/domin_forpost.html</item>
+</array>
+<array name="domin_icon">
+<item>@drawable/zapusk_logo</item>
+<item>@drawable/shaxta_logo</item> 
+<item>@drawable/forpost_logo</item>
+</array>
+
+<array name="podriv_name">
+<item>Pyramid</item>
+<item>Palace</item>
+<item>Destination</item>
+ <item>Object Д17</item>
+<item>Lanes</item>
+<item>Factory</item>
+<item>Suburb</item>
+<item>Overpass</item>
+<item>Trailer Park</item>
+</array>
+<string-array name="podriv_type">
+<item>Undermining</item>
+<item>Undermining</item>
+<item>Undermining</item>
+<item>Undermining</item>
+<item>Undermining</item>
+<item>Undermining</item>
+<item>Undermining</item>
+<item>Undermine Grinder</item>
+<item>Undermining</item>
+</string-array> 
+<string-array name="podriv_about">
+ <item>On the territory of the complex there are powerful statues of ancient gods, columned halls</item>
+<item>Palace one of the most influential local sheikhs</item>
+<item>Events unfolded on the roof of a skyscraper</item>
+<item>Small area refinery complex</item>
+<item>Small settlement in the middle East</item>
+<item>Ancient and once-vibrant factory</item>
+<item>Industrial area with factory buildings</item>
+<item>District trueb city under the overpass</item>
+ <item>Represents a place, a battle which takes place near the airport</item>
+</string-array>
+<array name="podriv_link">
+<item>http://belev.org/android/wardocwarface/maps/en/podriv_piramida.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/podriv_dvorec.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/podriv_punkt.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/podriv_d17.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/podriv_pereulki.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/podriv_fabrika.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/podriv_okraina.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/podriv_estakada.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/pidriv_park.html</item>
+</array>
+<array name="podriv_icon">
+<item>@drawable/piramida_logo</item>
+<item>@drawable/dvorec_logo</item>
+<item>@drawable/punkt_logo</item>
+<item>@drawable/d17_logo</item> 
+<item>@drawable/pereulki_logo</item>
+<item>@drawable/fabrika_logo</item>
+<item>@drawable/okraina_logo</item>
+<item>@drawable/estakada_logo</item>
+<item>@drawable/treilerpark_logo</item>
+</array>
+
+    <array name="komanda_name">
+<item>Parking lot</item>
+<item>D18</item>
+<item>Terminal</item>
+<item>Village</item>
+<item>Farm</item>
+<item>Doc</item>
+<item>Hangar </item>
+<item>Ferry</item>
+<item>Square</item>
+<item>Depot</item>
+<item>Market</item>
+<item>Base</item>
+<item>Quarter</item> 
+</array>
+<string-array name="komanda_type">
+<item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+ <item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+<item>Team battle, meat Grinder</item>
+<item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+<item>Team Deathmatch</item>
+</string-array> 
+<string-array name="komanda_about">
+<item>Battle in terms of the typical American suburban sprawl</item>
+<item>Refinery, storage tanks</item>
+ <item>Modern terminal major airport</item>
+<item>Section of the town in the middle East</item>
+<item>Large map in the center of which there is a large field</item>
+<item>Not large and almost open pyatachek among containers</item>
+<item>Not very big, but stacked card with three levels</item>
+<item>Open the map in the jungle which makes it a very interesting place for battles</item>
+<item>War-torn city block</item>
+ <item>Small site aftername complex, technical buildings</item>
+<item>Site with pavilions, warehouses with goods, stores, technical facilities</item>
+<item>Base of the civil aviation hangar and aircraft</item>
+<item>Is a battle in the residential sector, a provincial town of Nevada</item>
+</string-array>
+<array name="komanda_link">
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_stoyanka.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_d18.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_terminal.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_poselok.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_ferma.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_dok.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_angar.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_pereprava.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_ploshad.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_neftebaza.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_rinok.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_aviabaza.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/komanda_kvartal.html</item> 
+</array>
+<array name="komanda_icon">
+<item>@drawable/stoyanka_logo</item>
+<item>@drawable/d18_logo</item>
+<item>@drawable/terminal_logo</item>
+<item>@drawable/poselok_logo</item>
+<item>@drawable/ferma_logo</item>
+<item>@drawable/dok_logo</item>
+<item>@drawable/angar_logo</item>
+<item>@drawable/pereprava_logo</item>
+<item>@drawable/ploshad_logo</item>
+<item>@drawable/neftebaza_logo</item>
+<item>@drawable/rinok_logo</item>
+<item>@drawable/aviabaza_logo</item>
+<item>@drawable/kvartal_logo</item> 
+</array>
+
+<string-array name="mysorubka_name">
+<item>Motel</item>
+<item>Depot</item>
+<item>Suburb</item>
+<item>Forest</item>
+<item>Bunker</item>
+</string-array>
+<string-array name="mysorubka_type">
+<item>Grinder Team battle</item>
+<item>Grinder</item>
+<item>Grinder</item>
+<item>Grinder</item>
+<item>Grinder</item>
+</string-array>
+<string-array name="mysorubka_about">
+<item>Abandoned Motel in one of the deserts of Nevada</item>
+<item>Sets the rusty rail cars and small buildings</item>
+ <item>Once picturesque suburb suddenly becomes a place of cruel fights </item>
+<item>This is an open area with lots of buildings and containers</item> 
+<item>Events to happen on the territory of the missile complex located in Africa</item>
+</string-array>
+<array name="mysorubka_link">
+<item>http://belev.org/android/wardocwarface/maps/en/mysorubka_motel.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/mysorubka_depo.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/mysorubka_prigorod.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/mysorubka_les.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/mysorubka_bunker.html</item>
+</array>
+<array name="mysorubka_icon">
+<item>@drawable/motel_logo</item>
+<item>@drawable/depo_logo</item>
+<item>@drawable/prigorod_logo</item>
+<item>@drawable/les_logo</item>
+<item>@drawable/bunker_logo</item>
+</array>
+
+<string-array name="unicht_name">
+<item>Tower</item>
+<item>Lighthouse</item>
+</string-array>
+<string-array name="unicht_type">
+<item>Destruction</item>
+<item>Destruction</item>
+</string-array>
+<string-array name="unicht_about">
+<item>Small town as a fortress in the middle East</item>
+<item>Lighthouse on the coast among the buildings and a boat jetty </item>
+</string-array>
+<array name="unicht_link">
+<item>http://belev.org/android/wardocwarface/maps/en/unicht_bashni.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/unicht_mayak.html</item>
+</array>
+ <array name="unicht_icon">
+<item>@drawable/bashni_logo</item>
+<item>@drawable/mayak_logo</item>
+</array>
+
+<string-array name="zahvat_name">
+<item>Quarry</item>
+<item>Construction</item>
+<item>Deposit</item>
+<item>Convoy</item>
+<item>Fortress</item>
+<item>Shelter</item>
+<item>Complex</item> 
+</string-array>
+<string-array name="zahvat_type">
+<item>Capture</item>
+<item>Capture</item>
+<item>Capture</item>
+<item>Capture</item>
+<item>Capture</item>
+<item>Capture</item>
+<item>Capture</item>
+</string-array>
+<string-array name="zahvat_about">
+<item>Map Quarry is a quarry mining facility</item>
+<item>Construction of the plant which was never finished</item>
+<item>Complicated multi-level maze of rooms and corridors of the Bank</item>
+<item>Destroyed bridge with a column of cars in the middle East</item>
+<item>Ancient fortress withstood numerous sieges</item>
+<item>Multilevel space among favelas, located on the slope of the coast</item>
+ <item>You have to fight the complex, located in the Siberian mountains</item>
+</string-array>
+<array name="zahvat_link">
+<item>http://belev.org/android/wardocwarface/maps/en/zahvat_karer.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/zahvat_stroyka.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/zahvat_depozit.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/zahvat_konvoy.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/zahvat_krepost.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/zahvat_ubezishe.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/zahvat_komplecs.html</item> 
+</array>
+<array name="zahvat_icon">
+<item>@drawable/karer_logo</item>
+<item>@drawable/stroyka_logo</item>
+<item>@drawable/depozit_logo</item>
+<item>@drawable/konvoy_logo</item>
+<item>@drawable/krepost_logo</item>
+<item>@drawable/ubezishe_logo</item>
+<item>@drawable/komplecs_logo</item> 
+</array>
+
+    <string-array name="shturm_name">
+<item>Invasion</item>
+<item>Black gold</item>
+<item>Shipyard</item>
+<item>Hills</item>
+<item>Black Mamba</item>
+</string-array>
+<string-array name="shturm_type">
+<item>Storm</item>
+<item>Storm</item>
+<item>Storm</item>
+<item>Storm</item>
+<item>Storm</item>
+</string-array>
+<string-array name="shturm_about">
+<item>Map represents the edge of an unremarkable town in the Asian region</item>
+ <item>Rich oil-producing complex in the middle East</item>
+<item>Ancient and once magnificent city shipbuilding</item>
+<item>Card is an old city that is located in the hills</item> 
+<item>Map of the Black Mamba is a rocket complex located in Africa</item> 
+</string-array>
+<array name="shturm_link">
+<item>http://belev.org/android/wardocwarface/maps/en/shturm_vtorzenie.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/shturm_zoloto.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/shturm_verf.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/shturm_holmi.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/shturm_mamba.html</item>
+</array>
+<array name="shturm_icon">
+<item>@drawable/vtorzenie_logo</item>
+<item>@drawable/zoloto_logo</item>
+<item>@drawable/verf_logo</item>
+<item>@drawable/holmi_logo</item>
+<item>@drawable/mamba_logo</item>
+</array>
+
+<string-array name="vizivan_name">
+<item>Siberia</item>
+<item>Desert</item>
+<item>Africa</item>
+</string-array>
+<string-array name="vizivan_type">
+<item>Survival</item>
+<item>Survival</item> 
+<item>Survival</item>
+</string-array>
+<string-array name="vizivan_about">
+<item>Events on the map Siberia to Survival mode is a enemy base which is in Siberia</item>
+<item>Map represents the territory of a military base, built with an abandoned Motel in the Mojave desert</item> 
+ <item>Events on the map of Africa to Survival mode takes place, it is not difficult to guess, in the African region</item>
+</string-array>
+<array name="vizivan_link">
+<item>http://belev.org/android/wardocwarface/maps/en/vizivan_sibir.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/vizivan_pustina.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/vizivan_afrika.html</item>
+</array>
+<array name="vizivan_icon">
+<item>@drawable/sibir_logo</item>
+<item>@drawable/pustina_logo</item> 
+<item>@drawable/afrika_logo</item>
+</array>
+
+<string-array name="blic_name">
+<item>Villa</item>
+<item>Residence</item>
+</string-array>
+<string-array name="blic_type">
+<item>Blitz</item>
+<item>Blitz</item>
+</string-array>
+<string-array name="blic_about">
+<item>Squad Warface found the country Villa of the enemy, which stores a transmitter and drawers with new weapons.</item>
+<item>Map Residence" for the Blitz mode is a Oberon white residence located in the forest.</item>
+</string-array>
+ <array name="blic_link">
+<item>http://belev.org/android/wardocwarface/maps/en/blic_villa.html</item>
+<item>http://belev.org/android/wardocwarface/maps/en/blic_rezidencia.html</item>
+</array>
+<array name="blic_icon">
+<item>@drawable/villa_logo</item>
+<item>@drawable/rezidencia_logo</item>
+</array>
+
+ <string-array name="king_name">
+  <item>Мохаве</item>
+ </string-array>
+ <string-array name="king_type">
+  <item>Королевская битва</item>
+ </string-array>
+ <string-array name="king_about">
+  <item>Карта Мохаве для режима Королевская битва представляет собой военную базу, расположенную в пустыне Мохаве.</item>
+ </string-array>
+ <array name="king_link">
+  <item>http://belev.org/android/wardocwarface/maps/ru/king_mohave.html</item>
+ </array>
+ <array name="king_icon">
+  <item>@drawable/mohave_logo</item>
+ </array>
+</resources>

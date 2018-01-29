@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="strip_name">
+<item>Warface Open Cup: Season</item>
+<item>Bread and circuses</item>
+<item>Right</item>
+<item>Free-swimming</item>
+<item>In the forefront</item>
+<item>Battle cry</item>
+<item>Winner of the Challenge Cup</item>
+<item>Poisonous grip</item>
+<item>Strength in unity</item>
+<item>Lightning reaction</item>
+<item>Heart of the storm</item>
+<item>Warface Open Cup: Season XI</item>
+<item>One</item>
+<item>Two birds with one stone 2</item>
+<item>Peculiarities of the national hunt</item>
+<item>Big game</item>
+<item>Veteran Icebreaker</item>
+<item>Festive queue</item>
+<item>Start lifting</item>
+<item>Half way</item>
+<item>I am not tired</item>
+<item>Icy peak</item>
+<item>Analgesic</item>
+<item>Ice armor</item>
+<item>Master of the ice</item>
+<item>Counter</item>
+<item>Ebenezer Scrooge</item>
+<item>Grinch</item>
+<item>Conqueror</item>
+<item>10</item>
+<item>Krampus</item>
+<item>Intercept the signal</item>
+<item>Signal Suppression</item>
+<item>Destruction of the source</item>
+<item>Real Magic</item>
+<item>Real Magic 2</item>
+<item>Nomad 1</item>
+<item>Nomad 2</item>
+<item>Recycling of metal 1</item>
+<item>Recycling of metal 2</item>
+<item>Recycling metal 3</item>
+<item>Mind Games</item>
+<item>First went to</item>
+<item>Above</item>
+<item>Five times</item>
+<item>Energized</item>
+<item>Dark skies</item>
+<item>Brains!</item>
+<item>Forward</item>
+<item>No cover</item>
+<item>Old friends</item>
+<item>Jerk</item>
+<item>Hell</item>
+<item>Amateur Lanes</item>
+<item>Regular Lanes</item>
+<item>Master of the Lanes</item>
+<item>Amateur Base</item>
+<item>Frequenter Base</item>
+<item>New Base</item>
+<item>Amateur Crossings</item>
+<item>Regular Crossing</item>
+<item>New Terminal</item>
+<item>Amateur Towers</item>
+<item>Haunter Towers</item>
+<item>Wizard Towers</item>
+<item>Amateur Village</item>
+<item>Regular Settlement</item>
+<item>Master Settlement</item>
+<item>Amateur Farm</item>
+<item>Haunter Farm</item>
+<item>New Farm</item>
+<item>Rattlesnake</item>
+<item>Rattlesnake 2</item>
+<item>Badge of the zodiac</item>
+<item>Aspiring archaeologist attack</item>
+<item>Aspiring archaeologist engineer</item>
+<item>Aspiring archaeologist medic</item>
+<item>Aspiring archaeologist sniper</item>
+<item>Air defense</item>
+<item>Sky under the protection of</item>
+<item>Flying in</item>
+<item>Amateur Black gold</item>
+<item>Haunter Black gold</item>
+<item>Master Black gold</item>
+<item>Amateur Angara</item>
+<item>Regular Hangar</item>
+<item>Master of the Hangar</item>
+<item>Amateur Quarter</item>
+<item>Master of the Quarter</item>
+<item>Eleven as one</item>
+<item>Amateur Object Д17</item>
+<item>Regular Object Д17</item>
+<item>Master Object Д17</item>
+<item>Amateur oil Depot</item>
+<item>Frequenter of the Depot</item>
+<item>Master of the oil Depot</item>
+<item>Haunter Quarter</item>
+<item>Hero arcade</item>
+<item>Member of the season of Retribution</item>
+<item>2 pieces</item>
+<item>Coast guard 2</item>
+<item>Suppressive Fire 2</item>
+<item>Schutzenpanzer Puma 2</item>
+<item>Walking tank 2</item>
+<item>Order of courage 2</item>
+<item>Heavy barrel 2</item>
+<item>Sieve 2</item>
+<item>Rheinmetall 2</item>
+<item>Leaden hail 2</item>
+<item>Long line 2</item>
+<item>Jelly 2</item>
+<item>Death of 12-gauge 2</item>
+<item>Hammer and anvil 2</item>
+<item>Key from either door 2</item>
+<item>Ahead 2</item>
+<item>Manage to recharge 2</item>
+<item>Deadly rotor 2</item>
+<item>Mechanism of destruction 2</item>
+<item>Policing 2</item>
+<item>With a clean slate 2</item>
+<item>Because hes Russian 2</item>
+<item>Gun 2</item>
+<item>American legend 2</item>
+<item>Classic 2</item>
+<item>I ll be back 2</item>
+<item>Sweep 2</item>
+<item>Derya Arms 2</item>
+<item>Good, the bad and the ugly 2</item>
+<item>Wild boar 2</item>
+<item>Open Season 2</item>
+<item>Merciless fire 2</item>
+<item>Endless gunfire 2</item>
+<item>Weighty argument 2</item>
+<item>guarding of freedom 2</item>
+<item>Tactic 2</item>
+<item>Hello from the future 2</item>
+<item>Killer argument 2</item>
+<item>Better paper money</item>
+<item>Hard currency</item>
+<item>Test gold</item>
+<item>Gold sparkle</item>
+<item>Above us only the stars</item>
+<item>Trained agent</item>
+<item>Went to the flame</item>
+<item>Glamour</item>
+<item>Hello from the future</item>
+<item>Expert volcano</item>
+<item>Master</item>
+<item>Battle in volcano</item>
+<item>magma Punch</item>
+<item>Merciless fire</item>
+<item>formatting</item>
+<item>Shredder</item>
+<item>Walking meat grinder</item>
+<item>Sea of blood</item>
+<item>Less</item>
+<item>Cleansing fire</item>
+<item>Complete destruction</item>
+<item>Triple extraction</item>
+<item>Your skull as my trophy</item>
+<item>Jelly</item>
+<item>Tactic</item>
+<item>You went to the wrong district</item>
+<item>Amateur Deposit</item>
+<item>Regular Deposit</item>
+<item>Master Deposit</item>
+<item>Amateur Palace</item>
+<item>Frequenter of the Palace</item>
+<item>Master of the Palace</item>
+<item>Amateur Terminal</item>
+<item>Regular Terminal</item>
+<item>New Terminal</item>
+<item>Master of the shotgun, the saiga-12C</item>
+<item>Fast Cup Finalist</item>
+<item>Recognition mastery</item>
+<item>Challenged</item>
+<item>Elite attack</item>
+<item>Elite medic</item>
+<item>Elite engineer</item>
+<item>Elite sniper</item>
+<item>Exemplary attack</item>
+<item>Model medic</item>
+<item>Model engineer</item>
+<item>Model sniper</item>
+<item>Legendary attack</item>
+<item>Legendary medic</item>
+<item>Legendary engineer</item>
+<item>Legendary sniper</item>
+<item>Key from any door</item>
+<item>Master of the Type 97</item>
+<item>New Mossberg 500 Custom</item>
+<item>Dress queue</item>
+<item>Way</item>
+<item>Mission of the Zenit attack</item>
+<item>Mission Zenith medic</item>
+<item>Mission Zenith engineer</item>
+<item>Mission of the Zenit sniper</item>
+<item>No retreat no surrender!</item>
+<item>Good bad evil</item>
+<item>Ice truck killer</item>
+<item>Ice bullet</item>
+<item>Polar bear</item>
+<item>Hard to learn, easy in battle</item>
+<item>Security</item>
+<item>Defender points</item>
+<item>Always on guard</item>
+<item>Trick or treat!</item>
+<item>Guarding of liberty</item>
+<item>Rheinmetall</item>
+<item>Deadly rotor</item>
+<item>Law of the jungle!</item>
+<item>Amateur Factory</item>
+<item>Regular Factory</item>
+<item>New Factory</item>
+<item>Amateur Lighthouse</item>
+<item>Frequenter of the Lighthouse</item>
+<item>Master of the Lighthouse</item>
+<item>Amateur Area</item>
+<item>Regular Square</item>
+<item>Master Square</item>
+<item>Reward for faithfulness-2</item>
+<item>Death of a 12-gauge</item>
+<item>Heavy barrel</item>
+<item>Infection</item>
+<item>Hunt for Red Cross</item>
+<item>Short</item>
+<item>Technological progress</item>
+<item>Disarmament</item>
+<item>Thunderstorm infantry</item>
+<item>Eliminating threats</item>
+<item>Need backup!</item>
+<item>Strong argument</item>
+<item>Right on target</item>
+<item>Head!</item>
+<item>One shot - one kill</item>
+<item>Office plankton</item>
+<item>Winning ways</item>
+<item>al liquidation</item>
+<item>Gleam of metal</item> 
+<item>Snowman raged</item>
+<item>Underground Hero</item>
+<item>True sight</item>
+<item>Fire</item>
+<item>Goal is doomed</item>
+<item>Looking for treasure</item>
+<item>Fortune and glory</item>
+<item>Golden mountains</item>
+<item>Rainy day</item>
+<item>Cash pouch</item>
+<item>First by</item>
+<item>Military doctor</item>
+<item>Field surgeon</item>
+<item>Rescue</item>
+<item>Rescue</item>
+<item>Angel</item>
+<item>Deadly discharge</item>
+<item>It</item>
+<item>Dr. Death</item>
+<item>Gray matter</item>
+<item>Headache</item>
+<item>Skull Crusher</item>
+<item>Go!</item>
+<item>Fans of explosions</item>
+<item>BOOM!</item>
+<item>Nuclear explosion</item>
+<item>Pleasant surprise</item>
+<item>Generous present</item>
+<item>Demonstration</item>
+<item>Near death</item>
+<item>Defeated, but not broken</item>
+<item>Caged animal</item>
+<item>Killer Instinct</item>
+<item>Eagle eye</item>
+<item>Thunderstorm snipers</item>
+<item>Selection</item>
+<item>Shopaholic</item>
+<item>Superior strength</item>
+<item>David and Goliath</item>
+<item>Blade Runner</item>
+<item>Good day</item>
+<item>Into pieces</item>
+<item>Coast guard</item>
+<item>Fire suppression</item>
+<item>Schutzenpanzer Puma</item>
+<item>Walking tank</item>
+<item>Order of courage</item>
+<item>Sieve</item>
+<item>Hail</item>
+<item>Hammer and anvil</item>
+<item>Ahead</item>
+<item>Quick recharge</item>
+<item>Failure Mechanism</item>
+<item>Policing</item>
+<item>Clean slate</item>
+<item>Because he is Russian!</item>
+<item>Revolver</item>
+<item>American legend</item>
+<item>Classic</item>
+<item>Wild boar</item>
+<item>hunting Season</item>
+<item>Endless gunfire</item>
+<item>I will be back</item>
+<item>Cleanup</item>
+<item>Derya Arms</item>
+<item>Master M240B</item>
+<item>Master of the shotgun, the saiga-12C</item>
+<item>Master of the shotgun SPAS-12</item>
+</string-array>
+
+<string-array name="strip_about">
+<item>Place for trophy</item>
+<item>Gather all the men of the detachment Gladiator in the Atlas war</item>
+<item>Gather all the men of the detachment of a Predator in the Atlas war</item>
+<item>Gather all the men of the detachment of the iceberg in the Atlas war</item>
+<item>Gather all the men of detachment alpha in the Atlas war</item>
+<item>Gather all the men of the detachment Banzai in the Atlas war</item>
+<item>Become a Challenge Cup winner Warface</item>
+<item>Gather all the men of the Cobra group in the Atlas war</item>
+<item>Gather all the men of the detachment of Atom in the Atlas war</item>
+<item>Gather all the men of the detachment of the Flash in the Atlas war</item>
+<item>Gather all the men of the detachment Harpy in the Atlas war</item>
+<item>Badge of the eleventh season of Open Cup</item>
+<item>Kill 10 000 enemies from Golden DP-12</item>
+<item>Kill 25 000 enemy of the usual gold or DP-12</item>
+<item>Kill 10 000 enemies of the Saiga H. G. C. Custom</item>
+<item>Kill 25 000 enemy of Saiga H. G. C. Custom</item>
+<item>Collect all the trading cards series Icebreaker</item>
+<item>Perform half of the tasks Christmas marathon, 2016-2017</item>
+<item>Achieve level 25 in the Winter hunt</item>
+<item>Reach level 50 in the Winter hunt</item>
+<item>Reach level 75 in the Winter hunt</item>
+<item>Reach level 100 in the Winter hunt</item>
+<item>Kill 1,000 enemies with melee weapons series Cold</item>
+<item>Pass the mission Icebreaker Pro, never dying</item>
+<item>Pass the mission Icebreaker on hard difficulty</item>
+<item>Destroy 100 turrets in mission Icebreaker</item>
+<item>Kill 2,000 enemies in PvP from a new Cobray Striker</item>
+<item>Kill 2,000 enemies in PvP from a new M240B</item>
+<item>Secret achievement with unknown conditions</item>
+<item>Secret achievement with unknown conditions</item>
+<item>Kill 2000 enemies in PvE from weapon Evil Santa</item>
+<item>Win 10 matches in Blitz mode</item>
+<item>Win 25 matches in Blitz mode</item>
+<item>Win 50 matches in Blitz mode</item>
+<item>Kill 10 000 enemies of the MAG-7</item>
+<item>Kill 25,000 enemies with the MAG-7</item>
+<item>Kill 10 000 enemies from PKP Pecheneg</item>
+<item>Kill 25 000 enemy of the PKP Pecheneg</item>
+<item>Destroy 3,000 turrets in the RAID Black shark</item>
+<item>Destroy 5000 turrets in the RAID Black shark</item>
+<item>Destroy 10,000 turrets in the RAID Black shark</item>
+<item>Perform half of the tasks mini-games Brainstorming</item>
+<item>Pass any floor in the operation Black shark Pro</item>
+<item>Pass 3 floors in a row in the RAID Black shark Pro</item>
+<item>Pass 5 floors in a row in the RAID Black shark Pro</item>
+<item>Pass 7 floors in a row in the RAID Black shark Pro</item>
+<item>Pass the 9 levels in a row in the RAID Black shark Pro</item>
+<item>Kill 1500 enemies with headshots from weapons series is Killer: zombies</item>
+<item>Pass 2 floors in a row in the RAID Black shark Pro</item>
+<item>Pass 4 floors in a row in the RAID Black shark Pro</item>
+<item>Complete 6 floors in a row in the RAID Black shark Pro</item>
+<item>Pass the 8 floors in a row in the RAID Black shark Pro</item>
+<item>Pass all the floors in a row in the RAID Black shark Pro</item>
+<item>Take first place on the map Alleys in the mode of Undermining 25 times</item>
+<item>Take first place on the map Alleys in the mode of Undermining 50 times</item>
+<item>Take first place on the map Alleys in the mode of Undermining 100 times</item>
+<item>Take first place on the map air Base in Team Deathmatch 25 times</item>
+<item>Take first place on the map air Base in Team Deathmatch 50 times</item>
+<item>Take first place on the map air Base in Team Deathmatch 100 times</item>
+<item>Take first place on the map Crossing in Team Deathmatch 25 times</item>
+<item>Take first place on the map terminal Team Deathmatch 50 times</item>
+<item>Take first place on the map Crossing in the Team battle 100 times</item>
+<item>Take first place on the map of the Tower in the Destruction of 25 times</item>
+<item>Take first place on the map of the Tower in the Destruction of 50 times</item>
+<item>Take first place on the map of the Tower in the Destruction of 100 times</item>
+<item>Take first place on the Village map in Team Deathmatch 25 times</item>
+<item>Take first place on the Village map in Team Deathmatch 50 times</item>
+<item>Take first place on the Village map in Team Deathmatch 100 times</item>
+<item>Take first place on the map Farm in Team Deathmatch 25 times</item>
+<item>Take first place on the map Farm in Team Deathmatch 50 times</item>
+<item>Take first place on the map Farm in Team Deathmatch 100 times</item>
+<item>Kill 10 000 enemies of the Sidewinder Venom</item>
+<item>Kill 25,000 enemies of the Sidewinder Venom</item>
+<item>Purchase credits</item>
+<item>Pass the operation Anubis on the complexity Easy for the attack 10 times</item>
+<item>Pass the operation Anubis on the complexity Easy for the engineer 10 times</item>
+<item>Pass the operation Anubis on the complexity Easy for the medic 10 times</item>
+<item>Pass the operation Anubis on the complexity Easy for a sniper 10 times</item>
+<item>Destroy 10 helicopters KA-50</item>
+<item>Destroy 100 helicopters KA-50</item>
+<item>Destroy 250 KA-50</item>
+<item>Take first place on the map Black gold, the mode of the Assault 25 times</item>
+<item>Take first place on the map Black gold Storm mode 50 times</item>
+<item>Take first place on the map Black gold mode Assault 100 times</item>
+<item>Take first place on the map the Hangar Team Deathmatch 25 times</item>
+<item>Take first place on the map the Hangar Team Deathmatch 50 times</item>
+<item>Take first place on the map the Hangar Team Deathmatch 100 times</item>
+<item>Take first place on the map a Quarter of the Team Deathmatch 25 times</item>
+<item>Take first place on the map a Quarter of the Team battle 100 times</item>
+<item>Gain 25 victories on the map of Neftebaza Euro 2016</item>
+<item>Take first place on the map Object Д17 mode Undermining 25 times</item>
+<item>Take first place on the map Object Д17 mode 50 times Undermining</item>
+<item>Take first place on the map Object Д17 mode Undermining 100 times</item>
+<item>Take first place on the map Depot in Team Deathmatch 25 times</item>
+<item>Take first place on the map Depot in Team Deathmatch 50 times</item>
+<item>Take first place on the map Depot in Team Deathmatch 100 times</item>
+<item>Take first place on the map a Quarter in Team Deathmatch 50 times</item>
+<item>Play Volcano: the confrontation</item>
+<item>Collect all the trading cards series Retribution</item>
+<item>Kill 25,000 enemies with mines</item>
+<item>Kill 25 000 enemy of the M16A2 LMG</item>
+<item>Kill 25,000 enemies with the machine gun Daewoo K3</item>
+<item>Kill 25 000 enemy of MG4</item>
+<item>Kill 25 000 enemy of the HK MG36</item>
+<item>Kill 25 000 enemy machine gun RPK</item>
+<item>Kill 10 000 enemies of the XM8 LMG</item>
+<item>Kill 25 000 enemy of the AUG A3 Hbar</item>
+<item>Kill 25,000 enemies with the machine gun MG3</item>
+<item>Kill 25 000 enemy of the M240B</item>
+<item>Kill 25,000 enemies with the M249 Para</item>
+<item>Kill 25 000 enemy of the M60E4</item>
+<item>Kill 25 000 enemy of the UTAS UTS-15</item>
+<item>Kill 25 000 enemy combat shotgun</item>
+<item>Kill 25 000 enemy of the SPAS-15</item>
+<item>Kill 25,000 enemies of the Kel-Tec Shotgun</item>
+<item>Kill 25 000 enemy of the Hawk Pump</item>
+<item>Kill 25,000 enemies with a shotgun SRM 1216</item>
+<item>Kill 25,000 enemies with a shotgun Cobray Striker</item>
+<item>Kill 25 000 enemy of the Benelli M4 Super 90</item>
+<item>Kill 25 000 enemy of the Benelli Nova tactical</item>
+<item>Kill 25,000 enemies with saiga-12S</item>
+<item>Kill 25 000 enemy of the MC 255 12</item>
+<item>Kill 25 000 enemy of the Remington 870 CB</item>
+<item>Kill 25 000 enemy of the Remington Model 870</item>
+<item>Kill 25 000 enemy of the SPAS-12</item>
+<item>Kill 25 000 enemy of the AA-12</item>
+<item>Kill 25 000 enemy of the Anakon</item>
+<item>Kill 25 000 enemy of the Remington 870 RAS</item>
+<item>Kill 25 000 enemy from the rifle Vepr</item>
+<item>Kill 25,000 enemies with a shotgun saiga</item>
+<item>Kill 25 000 enemy of the Derya MK-10 VR 102</item>
+<item>Kill 25 000 enemy of the USAS-12</item>
+<item>Kill 25 000 enemy of the Mossberg 500 Custom</item>
+<item>Kill 25 000 enemy of the SIX12</item>
+<item>Kill 25 000 enemy of the Fabarm S. A. T. 8 Pro</item>
+<item>Kill 25 000 enemy of the Fabarm STF 12 Compact</item>
+<item>Kill 25 000 enemy of the Fabarm XLR5 Prestige</item>
+<item>Make 5 000 double kills with gold weapons</item>
+<item>Make 2 500 triple kills with gold weapons</item>
+<item>Inflict 20,000 points of damage using the Golden weapons</item>
+<item>Kill 5,000 enemies while tackle, using the Golden gun</item>
+<item>Three times to get into the elite League at the end of monthly racing clans</item>
+<item>Perform six tasks Mysterious notebook</item>
+<item>Perform seven tasks of the new year marathon</item>
+<item>Apply the 10,000 points of damage using a pink Micro Desert Eagle</item>
+<item>Kill 10 000 enemies from Fabarm STF 12 Compact</item>
+<item>Complete the Volcano mission on hard difficulty</item>
+<item>Destroy 100 turrets in the mission of the Volcano from additional weapons</item>
+<item>Kill 5000 enemies in the mission Volcano</item>
+<item>Kill 1,000 enemies melee weapon camo Magma</item>
+<item>Kill 10 000 enemies of the Derya MK-10 VR 102</item>
+<item>Kill 250 enemies while giving Remington 870 CB Neon</item>
+<item>Kill 1500 zombies in melee</item>
+<item>Kill 3000 zombies in melee</item>
+<item>7 000 to Kill zombies in melee</item>
+<item>At the same time to kill 5 zombies with a single grenade 11 times</item>
+<item>At the same time to kill 5 zombies with a single grenade 33 times</item>
+<item>At the same time to kill 5 zombies with a single grenade 99 times</item>
+<item>Make 500 triple murder in Survival mode</item>
+<item>Collect 250 tokens in Survival mode</item>
+<item>Kill 10 000 enemies of the M60E4</item>
+<item>Kill 10 000 enemies from Fabarm S. A. T. 8 Pro</item>
+<item>Kill 10 enemies from the Golden Desert Eagle once you are knocked down</item>
+<item>Take first place on the card Deposit mode Capture 25 times</item>
+<item>Take first place on the card Deposit mode, Capturing 50 times</item>
+<item>Take first place on the card Deposit mode Capture 100 times</item>
+<item>Take first place on the map of the Palace in the regime of Undermining 25 times</item>
+<item>Take first place on the map of the Palace in the regime of Undermining 50 times</item>
+<item>Take first place on the map of the Palace in the regime of Undermining 100 times</item>
+<item>Take the top spot on the Terminal map in Team Deathmatch 25 times</item>
+<item>Take the top spot on the Terminal map in Team Deathmatch 50 times</item>
+<item>Take the top spot on the Terminal map in Team Deathmatch 100 times</item>
+<item>Kill 5,000 enemies with a shotgun "saiga-12C" for the crown</item>
+<item>Become a Fast Cup finalist</item>
+<item>Become a member Warface Masters League</item>
+<item>Become a member Warface Challenge Cup</item>
+<item>Become the best attack Warface Open Cup</item>
+<item>Become the best medic Warface Open Cup</item>
+<item>Become a better engineer Warface Open Cup</item>
+<item>Become the best sniper Warface Open Cup</item>
+<item>Double to become the best attack Warface Open Cup</item>
+<item>Double to become the best medic Warface Open Cup</item>
+<item>Twice to become the best engineer of Warface Open Cup</item>
+<item>Twice to become the best sniper Warface Open Cup</item>
+<item>Three to be the best attack Warface Open Cup</item>
+<item>Three times to become the best medic Warface Open Cup</item>
+<item>Three times to become the best engineer Warface Open Cup</item>
+<item>Three times to become the best sniper Warface Open Cup</item>
+<item>Kill 10 000 enemies of the SPAS-15</item>
+<item>Kill 5,000 enemies from a Type 97 for the crown</item>
+<item>Kill 5,000 enemies out of Mossberg 500 Custom for the crown</item>
+<item>Kill 10 000 enemies from M249 Para</item>
+<item>Kill 250 enemies in PvE combat, in the middle of Flappers</item>
+<item>Complete the mission Zenit for the attack</item>
+<item>Complete the Zenith mission for Medica</item>
+<item>Complete the Zenith mission for the engineer</item>
+<item>Complete the mission the Zenit sniper</item>
+<item>Complete the Zenith mission without deaths</item>
+<item>Kill 10 000 enemies of the Remington 870 RAS</item>
+<item>Kill 500 enemies in the mission Siberia</item>
+<item>Kill 2,500 enemies in the mission Siberia</item>
+<item>Kill 5000 enemies in the mission Siberia</item>
+<item>Complete the mission without the Edge of death</item>
+<item>Kill 500 enemies while defending points in Dominate.</item>
+<item>Kill 1,000 enemies while defending a point in Domination</item>
+<item>Kill 5,000 enemies while defending a point in Domination</item>
+<item>Kill 500 enemies from Halloween G36K, G36C, SL8, SPAS-12</item>
+<item>Kill 10 000 enemies from SIX12</item>
+<item>Kill 10,000 enemies with the machine gun MG3</item>
+<item>Kill 10,000 enemies with a shotgun SRM 1216</item>
+<item>Kill 1,000 enemies from weapon camo Jungle</item>
+<item>Take first place in the Factory mode, the Undermining of 25 times</item>
+<item>Take first place at the Factory in Undermining the regime 50 times</item>
+<item>Take first place at the Factory in a mode of Undermining 100 times</item>
+<item>Take first place at the Lighthouse in the Destruction of 25 times</item>
+<item>Take first place at the Lighthouse in the Destruction of 50 times</item>
+<item>Take first place at the Lighthouse in the Destruction of 100 times</item>
+<item>Take first place on the Square in Team battle 25раз.</item>
+<item>Take first place on the Square in Team battle 50 times</item>
+<item>Take first place on the Square in Team battle 100 times</item>
+<item>Kill 1,000 enemies of premium weapons 2014</item>
+<item>Kill 10 000 enemies from UTAS UTS-15</item>
+<item>Kill 10 000 enemies of the XM8 LMG</item>
+<item>Kill 100 physicians in PvP</item>
+<item>Kill 1 000 physicians in PvP</item>
+<item>Kill 100 engineers in PvP</item>
+<item>Kill 1 000 engineers in PvP</item>
+<item>Kill 100 stormtroopers in PvP</item>
+<item>Kill 1 000 stormtroopers in PvP</item>
+<item>Kill 1,000 snipers in PvP or PvE</item>
+<item>10 times to kill a Juggernaut in the mode of Elimination</item>
+<item>Kill 10 000 enemies from a Mossberg 500 Custom</item>
+<item>Kill 250 enemies with headshots in a mode of Elimination</item>
+<item>Kill 1,000 enemies with headshots in a mode of Elimination</item>
+<item>Kill 2,500 enemies with headshots in a mode of Elimination</item>
+<item>Kill 500 enemies in the mode of Elimination</item>
+<item>Kill 2,500 enemies in the mode of Elimination</item>
+<item>Kill 10 000 enemies in the mode of Elimination</item>
+<item>Kill 500 enemies from AK-103 or AK Steel-9 Steel</item> 
+<item>Destroy 500 enemies with deadly icicles</item>
+<item>Kill a 1,000 enemies with a pistol or Luger Pistol</item>
+<item>Kill 100 enemies while aiming</item>
+<item>Kill 1,000 enemies while aiming</item>
+<item>Kill 10,000 enemies enemies in aiming mode</item>
+<item>Earn 100 crowns</item>
+<item>Earn 1 000 crowns</item>
+<item>Earn 10 000 crowns</item>
+<item>Earn 100 000 Warbucks</item>
+<item>Earn 500,000 Warbucks</item>
+<item>Heal teammates for 10 000 OZ</item>
+<item>Heal teammates 100 000 OZ</item>
+<item>Cure teammates of 1 000 000 OZ</item>
+<item>Revive teammates 100 times</item>
+<item>Revive comrades 1 000 times</item>
+<item>Revive teammates 10 000 times</item>
+<item>Kill 10 enemies with the defibrillator</item>
+<item>Kill 100 enemies with a defibrillator</item>
+<item>Kill 500 enemies with a defibrillator</item>
+<item>Earn 50 brainiacs</item>
+<item>Earn 500 brainiacs</item>
+<item>Earn 2 500 brainiacs</item>
+<item>Earn 10 grenadiers</item>
+<item>Earn 100 grenadiers</item>
+<item>Earn 1 000 grenadiers</item>
+<item>Earn 10 000 grenadiers.</item>
+<item>Kill two enemies with one mine 10 times</item>
+<item>Kill two enemies with one mine 100 times</item>
+<item>Kill two enemies with one mine 1 000 times</item>
+<item>Kill 10 enemies shot in the head after being knocked down</item>
+<item>Kill 50 enemies with headshots once you are knocked down</item>
+<item>Kill 500 enemies with shots to the head after being knocked down</item>
+<item>Kill 100 enemies from a snipe rifle without using the aiming mode</item>
+<item>Kill 500 enemies from a snipe rifle without using the aiming mode</item>
+<item>Kill 100 snipers (PvP or PvE)</item>
+<item>Unlock all items in any of the providers</item>
+<item>Remove all items from three suppliers</item>
+<item>10 times to kill a Juggernaut on the easy difficulty level</item>
+<item>10 times to kill a Juggernaut on a high difficulty level</item>
+<item>10 times to kill a Juggernaut on the level of complexity Profi</item>
+<item>Kill 5 enemies with a single grenade</item>
+<item>Kill 10,000 enemies with a min.</item>
+<item>Kill 10 000 enemies of the M16A2 LMG</item>
+<item>Kill 10,000 enemies with the machine gun Daewoo K3</item>
+<item>Kill 10 000 enemies from MG4</item>
+<item>Kill 10 000 enemies of the HK MG36</item>
+<item>Kill 10,000 enemies with the machine gun RPK</item>
+<item>Kill 10 000 enemies of the AUG A3 H bar</item>
+<item>Kill 10 000 enemies of the M240B</item>
+<item>Kill 10,000 enemies with a shotgun Jackhammer</item>
+<item>Kill 10 000 enemies of the Kel-Tec Shotgun</item>
+<item>Kill 10 000 enemies from Hawk Pump</item>
+<item>Kill 10,000 enemies with a shotgun Cobray Striker</item>
+<item>Kill 10 000 enemies of the Benelli M4 Super 90</item>
+<item>Kill 10 000 enemies of the Benelli Nova tactical</item>
+<item>Kill 10 000 enemies of the saiga-12C</item>
+<item>Kill 10 000 enemies from MC 255 12</item>
+<item>Kill 10 000 enemies of the Remington 870 CB</item>
+<item>Kill 10 000 enemies of the Remington Model 870</item>
+<item>Kill 10,000 enemies with a rifle Vepr</item>
+<item>Kill 10,000 enemies with a shotgun saiga</item>
+<item>Kill 10 000 enemies of the USAS-12</item>
+<item>Kill 10 000 enemies of the SPAS-12</item>
+<item>Kill 10 000 enemies of the AA-12</item>
+<item>Kill 10 000 enemies from Anakon</item>
+<item>Kill 5,000 enemies of the M240B for the crown</item>
+<item>Kill 5,000 enemies with a shotgun, the saiga-12C for the crown</item>
+<item>Kill 5,000 enemies with a shotgun SPAS-12 for crowns</item>
+</string-array>
+
+<array name="strip_icon">
+<item>@drawable/strip_296</item>
+<item>@drawable/strip_295</item>
+<item>@drawable/strip_294</item>
+<item>@drawable/strip_293</item>
+<item>@drawable/strip_292</item>
+<item>@drawable/strip_291</item>
+<item>@drawable/strip_290</item>
+<item>@drawable/strip_289</item>
+<item>@drawable/strip_288</item>
+<item>@drawable/strip_287</item>
+<item>@drawable/strip_286</item>
+<item>@drawable/strip_285</item>
+<item>@drawable/strip_284</item>
+<item>@drawable/strip_283</item>
+<item>@drawable/strip_282</item>
+<item>@drawable/strip_281</item>
+<item>@drawable/strip_280</item>
+<item>@drawable/strip_279</item>
+<item>@drawable/strip_278</item>
+<item>@drawable/strip_277</item>
+<item>@drawable/strip_276</item>
+<item>@drawable/strip_275</item>
+<item>@drawable/strip_274</item>
+<item>@drawable/strip_273</item>
+<item>@drawable/strip_272</item>
+<item>@drawable/strip_271</item>    
+<item>@drawable/strip_270</item>
+<item>@drawable/strip_269</item>
+<item>@drawable/strip_268</item>
+<item>@drawable/strip_267</item>
+<item>@drawable/strip_266</item>
+<item>@drawable/strip_265</item>
+<item>@drawable/strip_264</item>
+<item>@drawable/strip_263</item>
+<item>@drawable/strip_262</item>
+<item>@drawable/strip_261</item>
+<item>@drawable/strip_260</item>
+<item>@drawable/strip_259</item>
+<item>@drawable/strip_258</item>
+<item>@drawable/strip_257</item>
+<item>@drawable/strip_256</item>
+<item>@drawable/strip_255</item>
+<item>@drawable/strip_254</item>
+<item>@drawable/strip_253</item>
+<item>@drawable/strip_265</item>
+<item>@drawable/strip_252</item>
+<item>@drawable/strip_251</item>
+<item>@drawable/strip_250</item>
+<item>@drawable/strip_249</item>
+<item>@drawable/strip_261</item>
+<item>@drawable/strip_262</item>
+<item>@drawable/strip_263</item>
+<item>@drawable/strip_264</item>
+<item>@drawable/strip_248</item>
+<item>@drawable/strip_247</item>
+<item>@drawable/strip_246</item>
+<item>@drawable/strip_245</item>
+<item>@drawable/strip_244</item>
+<item>@drawable/strip_243</item>
+<item>@drawable/strip_242</item>
+<item>@drawable/strip_241</item>
+<item>@drawable/strip_240</item>
+<item>@drawable/strip_239</item>
+<item>@drawable/strip_238</item>
+<item>@drawable/strip_237</item>
+<item>@drawable/strip_236</item>
+<item>@drawable/strip_235</item>
+<item>@drawable/strip_234</item>
+<item>@drawable/strip_233</item>
+<item>@drawable/strip_232</item>
+<item>@drawable/strip_231</item>
+<item>@drawable/strip_230</item>
+<item>@drawable/strip_229</item>
+<item>@drawable/strip_228</item>
+<item>@drawable/strip_226</item>
+<item>@drawable/strip_225</item>
+<item>@drawable/strip_224</item>
+<item>@drawable/strip_223</item>
+<item>@drawable/strip_222</item>
+<item>@drawable/strip_221</item>
+<item>@drawable/strip_220</item>
+<item>@drawable/strip_204</item>
+<item>@drawable/strip_205</item>
+<item>@drawable/strip_206</item>
+<item>@drawable/strip_207</item>
+<item>@drawable/strip_208</item>
+<item>@drawable/strip_209</item>
+<item>@drawable/strip_210</item>
+<item>@drawable/strip_211</item>
+<item>@drawable/strip_212</item>
+<item>@drawable/strip_213</item>
+<item>@drawable/strip_214</item>
+<item>@drawable/strip_215</item>
+<item>@drawable/strip_216</item>
+<item>@drawable/strip_217</item>
+<item>@drawable/strip_218</item>
+<item>@drawable/strip_219</item>
+<item>@drawable/strip_203</item>
+<item>@drawable/strip_202</item>
+<item>@drawable/strip_201</item>
+<item>@drawable/strip_198</item>
+<item>@drawable/strip_197</item>
+<item>@drawable/strip_196</item>
+<item>@drawable/strip_195</item>
+<item>@drawable/strip_194</item>
+<item>@drawable/strip_193</item>
+<item>@drawable/strip_192</item>
+<item>@drawable/strip_191</item>
+<item>@drawable/strip_190</item>
+<item>@drawable/strip_189</item>
+<item>@drawable/strip_188</item>
+<item>@drawable/strip_187</item>
+<item>@drawable/strip_186</item>
+<item>@drawable/strip_185</item>
+<item>@drawable/strip_184</item>
+<item>@drawable/strip_183</item>
+<item>@drawable/strip_182</item>
+<item>@drawable/strip_181</item>
+<item>@drawable/strip_180</item>
+<item>@drawable/strip_179</item>
+<item>@drawable/strip_178</item>
+<item>@drawable/strip_177</item>
+<item>@drawable/strip_176</item>
+<item>@drawable/strip_175</item>
+<item>@drawable/strip_174</item>
+<item>@drawable/strip_173</item>
+<item>@drawable/strip_172</item>
+<item>@drawable/strip_171</item>
+<item>@drawable/strip_170</item>
+<item>@drawable/strip_169</item>
+<item>@drawable/strip_168</item>
+<item>@drawable/strip_167</item>
+<item>@drawable/strip_166</item>
+<item>@drawable/strip_165</item>
+<item>@drawable/strip_164</item>
+<item>@drawable/strip_200</item>
+<item>@drawable/strip_163</item>
+<item>@drawable/strip_162</item>
+<item>@drawable/strip_161</item>
+<item>@drawable/strip_160</item>
+<item>@drawable/strip_159</item>
+<item>@drawable/strip_158</item>
+<item>@drawable/strip_157</item>
+<item>@drawable/strip_156</item>
+<item>@drawable/strip_155</item>
+<item>@drawable/strip_154</item>
+<item>@drawable/strip_153</item>
+<item>@drawable/strip_152</item>
+<item>@drawable/strip_151</item>
+<item>@drawable/strip_150</item>
+<item>@drawable/strip_149</item>
+<item>@drawable/strip_148</item>
+<item>@drawable/strip_147</item>
+<item>@drawable/strip_146</item>
+<item>@drawable/strip_145</item>
+<item>@drawable/strip_144</item>
+<item>@drawable/strip_143</item>
+<item>@drawable/strip_142</item>
+<item>@drawable/strip_141</item>
+<item>@drawable/strip_140</item>
+<item>@drawable/strip_139</item>
+<item>@drawable/strip_138</item>
+<item>@drawable/strip_137</item>
+<item>@drawable/strip_136</item>
+<item>@drawable/strip_135</item>
+<item>@drawable/strip_134</item>
+<item>@drawable/strip_133</item>
+<item>@drawable/strip_132</item>
+<item>@drawable/strip_131</item>
+<item>@drawable/strip_130</item>
+<item>@drawable/strip_129</item>
+<item>@drawable/strip_128</item>
+<item>@drawable/strip_127</item>
+<item>@drawable/strip_126</item>
+<item>@drawable/strip_125</item>
+<item>@drawable/strip_124</item>
+<item>@drawable/strip_123</item>
+<item>@drawable/strip_122</item>
+<item>@drawable/strip_121</item>
+<item>@drawable/strip_120</item>
+<item>@drawable/strip_275</item>
+<item>@drawable/strip_276</item>
+<item>@drawable/strip_277</item>
+<item>@drawable/strip_278</item>
+<item>@drawable/strip_279</item>
+<item>@drawable/strip_280</item>
+<item>@drawable/strip_281</item>
+<item>@drawable/strip_282</item>
+<item>@drawable/strip_119</item>
+<item>@drawable/strip_118</item>
+<item>@drawable/strip_117</item>
+<item>@drawable/strip_116</item>
+<item>@drawable/strip_115</item>
+<item>@drawable/strip_114</item>
+<item>@drawable/strip_113</item>
+<item>@drawable/strip_112</item>
+<item>@drawable/strip_111</item>
+<item>@drawable/strip_110</item>
+<item>@drawable/strip_109</item>
+<item>@drawable/strip_108</item>
+<item>@drawable/strip_107</item>
+<item>@drawable/strip_106</item>
+<item>@drawable/strip_105</item>
+<item>@drawable/strip_101</item>
+<item>@drawable/strip_102</item>
+<item>@drawable/strip_103</item>
+<item>@drawable/strip_104</item>
+<item>@drawable/strip_100</item>
+<item>@drawable/strip_99</item>
+<item>@drawable/strip_98</item>
+<item>@drawable/strip_97</item>
+<item>@drawable/strip_96</item>
+<item>@drawable/strip_95</item>
+<item>@drawable/strip_94</item>
+<item>@drawable/strip_93</item>
+<item>@drawable/strip_92</item>
+<item>@drawable/strip_91</item>
+<item>@drawable/strip_90</item>
+<item>@drawable/strip_89</item>
+<item>@drawable/strip_88</item>
+<item>@drawable/strip_87</item>
+<item>@drawable/strip_86</item>
+<item>@drawable/strip_85</item>
+<item>@drawable/strip_83</item>
+<item>@drawable/strip_84</item>
+<item>@drawable/strip_82</item>
+<item>@drawable/strip_81</item>
+<item>@drawable/strip_80</item>
+<item>@drawable/strip_79</item>
+<item>@drawable/strip_78</item>
+<item>@drawable/strip_77</item>
+<item>@drawable/strip_70</item>
+<item>@drawable/strip_71</item>
+<item>@drawable/strip_72</item>
+<item>@drawable/strip_73</item>
+<item>@drawable/strip_74</item>
+<item>@drawable/strip_75</item>
+<item>@drawable/strip_76</item>
+<item>@drawable/strip_01</item>
+<item>@drawable/strip_02</item>
+<item>@drawable/strip_03</item>
+<item>@drawable/strip_04</item>
+<item>@drawable/strip_05</item>
+<item>@drawable/strip_06</item>
+<item>@drawable/strip_07</item>
+<item>@drawable/strip_08</item>
+<item>@drawable/strip_09</item>
+<item>@drawable/strip_10</item>
+<item>@drawable/strip_11</item>
+<item>@drawable/strip_12</item>
+<item>@drawable/strip_13</item>
+<item>@drawable/strip_14</item>
+<item>@drawable/strip_15</item>
+<item>@drawable/strip_16</item>
+<item>@drawable/strip_17</item>
+<item>@drawable/strip_18</item>
+<item>@drawable/strip_19</item>
+<item>@drawable/strip_20</item>
+<item>@drawable/strip_21</item>
+<item>@drawable/strip_22</item>
+<item>@drawable/strip_23</item>
+<item>@drawable/strip_24</item>
+<item>@drawable/strip_25</item>
+<item>@drawable/strip_26</item>
+<item>@drawable/strip_27</item>
+<item>@drawable/strip_28</item>
+<item>@drawable/strip_29</item>
+<item>@drawable/strip_30</item>
+<item>@drawable/strip_31</item>
+<item>@drawable/strip_32</item>
+<item>@drawable/strip_33</item>
+<item>@drawable/strip_34</item>
+<item>@drawable/strip_35</item>
+<item>@drawable/strip_36</item>
+<item>@drawable/strip_37</item>
+<item>@drawable/strip_38</item>
+<item>@drawable/strip_39</item>
+<item>@drawable/strip_40</item>
+<item>@drawable/strip_41</item>
+<item>@drawable/strip_42</item>
+<item>@drawable/strip_43</item>
+<item>@drawable/strip_44</item>
+<item>@drawable/strip_45</item>
+<item>@drawable/strip_46</item>
+<item>@drawable/strip_47</item>
+<item>@drawable/strip_48</item>
+<item>@drawable/strip_49</item>
+<item>@drawable/strip_50</item>
+<item>@drawable/strip_51</item>
+<item>@drawable/strip_52</item>
+<item>@drawable/strip_53</item>
+<item>@drawable/strip_54</item>
+<item>@drawable/strip_55</item>
+<item>@drawable/strip_56</item>
+<item>@drawable/strip_57</item>
+<item>@drawable/strip_58</item>
+<item>@drawable/strip_59</item>
+<item>@drawable/strip_60</item>
+<item>@drawable/strip_61</item>
+<item>@drawable/strip_62</item>
+<item>@drawable/strip_63</item>
+<item>@drawable/strip_64</item>
+<item>@drawable/strip_65</item>
+<item>@drawable/strip_66</item>
+<item>@drawable/strip_67</item>
+<item>@drawable/strip_68</item>
+<item>@drawable/strip_69</item>
+</array>
+
+</resources>

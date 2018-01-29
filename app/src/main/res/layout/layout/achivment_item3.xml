@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/badge_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#d4d5d2"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/badge_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/depo_logo" />
+  
+     <TextView
+           android:id="@+id/badge_about"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/badge_logo"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:paddingBottom="10dp"
+           android:text="Три дня велись жаркие бои, по итогам которых стали известны названия еще двух команд, прошедших в финал!"
+           android:textColor="#4a4a49"
+           android:textSize="14sp" />
+     
+      <ImageView
+           android:id="@+id/badge_shadow"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/badge_logo"
+           android:layout_alignTop="@+id/badge_name"
+           android:layout_marginTop="-8dp"
+           android:adjustViewBounds="true"
+           android:scaleType="centerCrop"
+           android:src="@drawable/shadow_logo" />
+            
+     
+      <TextView
+          android:id="@+id/badge_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/badge_logo"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="10dp"
+          android:text="Стыковые матчи Warface Open Cup: Зима-2016"
+          android:textColor="#cfd1d2"
+          android:textSize="17sp" />
+      
+       <TextView
+        android:id="@+id/badge_type"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/badge_about"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="Спецоперация"
+        android:textColor="#4a4a49"
+        android:textSize="12sp" />
+
+</RelativeLayout>

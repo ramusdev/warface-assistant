@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="enginer_verb_name">
+		<item>H&#38;K MP5A5 Custom</item>
+    	<item>H&#38;K MP5</item>
+    	<item>M4 CQB</item>
+    	<item>B&#38;T MP9</item>
+    	<item>Beretta MX4 Storm</item>
+    	<item>PM-84 Glauberyt Custom</item>
+    	<item>СР-2 Вереск</item>
+    	<item>ПП-2000</item>
+    	<item>H&#38;K G36C</item>
+    	<item>Daewoo K1</item>
+    	<item>АК-9</item>
+    	<item>H&#38;K MP7</item>
+    	<item>AUG A3 9mm XS</item>
+    	<item>Mini Uzi</item>
+    	<item>ПП-19 Бизон</item>
+    	<item>Kriss super V</item>
+    </string-array>
+    <string-array name="enginer_verb_type">
+		<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>На время</item>
+    	<item>На время</item>
+    	<item>На время</item>
+    	<item>На время</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    </string-array>
+    <string-array name="enginer_verb_about">
+		<item>Модификация классической модели пистолета-пулемета MP5 от компании Heckler &#38; Koch GmbH</item>
+    	<item>Немецкий пистолет-пулемет калибра 9 мм, созданный в 1960-х годах группой инженеров компании Heckler &#38; Koch GmbH</item>
+    	<item>Универсальный пистолет-пулемет, модификация M16A2 с укороченным стволом 262 мм</item>
+    	<item>Компактный и легкий пистолет-пулемет, по размерам и весу лишь незначительно превосходящее автоматические пистолеты</item>
+    	<item>Новейший пистолет-пулемет производства итальянской компании Beretta. Оружие использует автоматику со свободным затвором и поставляется с планкой Пикатинни</item>
+    	<item>Компактный польский пистолет-пулемет, отличающийся высокой точностью стрельбы и позволяющий наносить серьезный урон на ближней дистанции.</item>
+    	<item>Компактный пистолет-пулемет, разработанный ЦНИИТОЧМАШ в средине 1990-х годов по заказу ФСБ</item>
+    	<item>Российский пистолет-пулемёт, разработанный тульским КБ приборостроения. Благодаря большой скорострельности и высокой огневой мощи</item>
+    	<item>Универсальный пистолет-пулемет калибра 5.56x45 мм, разработанный в начале 90-х годов немецкой компанией Heckler &#38; Koch</item>
+    	<item>Первое современное огнестрельное оружие, созданное агентством ADD и поставленное на производство компанией S&#38;T Daewoo</item>
+    	<item>Укороченный автомат, созданный на основе автоматов Калашникова сотой серии. Использует дозвуковые патроны калибра 9x39 мм</item>
+    	<item>Немецкий пистолет-пулемет, который производит компания Heckler &#38; Koch (H&#38;K). Использует патроны калибра 4.6x30 мм</item>
+    	<item>Этот пистолет-пулемет калибра 9 мм является модифицированной версией штурмовой винтовки Steyr AUG и предназначен для отрядов особого назначения.</item>
+    	<item>Знаменитые израильские пистолеты-пулеметы из семейства Uzi используются полицией и военными более чем в 90 странах</item>
+    	<item>Пистолет‐пулемёт калибра 9x19 мм, разработанный группой специалистов под руководством Виктора Калашникова, сына знаменитого конструктора</item>
+    	<item>Пистолет-пулемет калибра .45 ACP, разработанный компанией Transformational Defense Industries</item>
+    </string-array>
+    <array name="enginer_verb_link">
+		<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkmp5a5.html</item>
+		<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkmp5.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_m4cqb.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_bandmp9.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_berettamx4storm.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_pm84glauberytcustom.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_cp2veresk.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_pp2000.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkg36c.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_daewook1.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_ak9.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkmp7.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_auga39xs.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_miniuzi.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_pp19bizon.html</item>
+     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_krisssuperv.html</item>
+    </array>
+     <array name="enginer_verb_icon">
+		 <item>@drawable/enginer_handkmp5a5</item>
+     	<item>@drawable/enginer_handkmp5</item>
+     	<item>@drawable/enginer_m4cqb</item>
+     	<item>@drawable/enginer_bandmp9</item>
+     	<item>@drawable/enginer_berettamx4storm</item>
+     	<item>@drawable/enginer_pm84glauberytcustom</item>
+     	<item>@drawable/enginer_cp2veresk</item>
+     	<item>@drawable/enginer_pp2000</item>
+     	<item>@drawable/enginer_handkg36c</item>
+     	<item>@drawable/enginer_daewook1</item>
+     	<item>@drawable/enginer_ak9</item>
+     	<item>@drawable/enginer_handkmp7</item>
+     	<item>@drawable/enginer_auga39xs</item>
+     	<item>@drawable/enginer_miniuzi</item>
+     	<item>@drawable/enginer_pp19bizon</item>
+     	<item>@drawable/enginer_krisssuperv</item>
+    </array>
+
+    <string-array name="enginer_kred_name">
+        <item>Desert Tech MDR-C</item>
+    	<item>MPA10SST-X</item>
+    	<item>SIG 552</item>
+    	<item>Calico M960A</item>
+    	<item>FN P90</item>
+    	<item>JS 9mm</item>
+    </string-array>
+    <string-array name="enginer_kred_type">
+        <item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    </string-array>
+    <string-array name="enginer_kred_about">
+        <item>Пистолет-пулемёт разработанный американской компанией Desert Tech Inc и выполненный в компоновке булл-пап с укороченным стволом.</item>
+    	<item>Компактное оружие с широкими возможностями для модификации. Благодаря высокой скорострельности очень эффективно в ближнем бою.</item>
+    	<item>Компактный автомат, разработанный в 1998 году на основе штурмовой винтовки SG 550. Его ствол и газовая трубка укорочены до 226 мм</item>
+    	<item>Пистолет-пулемет калибра 9x19 мм Парабеллум, который выпускает компания Calico Light Weapons Systems.</item>
+    	<item>Бельгийский пистолет-пулемет, разработанный компанией FN Herstal. Известен своим удобным и эргономичным дизайном.</item>
+    	<item>Экспортный вариант пистолета-пулемета QCW-05, разработанный китайской корпорацией Jianshe Industries. Предназначен для сил специального назначения</item>
+    </string-array>
+    <array name="enginer_kred_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_deserttechmdrc.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_mpa10sstx.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_sig552.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_calicom96a.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_fnp90.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_js9.html</item>
+    </array>
+     <array name="enginer_kred_icon">
+        <item>@drawable/enginer_deserttechmdrc</item>
+        <item>@drawable/enginer_mpa10sstx</item>
+        <item>@drawable/enginer_sig552</item>
+        <item>@drawable/enginer_calicom96a</item>
+        <item>@drawable/enginer_fnp90</item>
+        <item>@drawable/enginer_js9</item>
+    </array>
+
+    <string-array name="enginer_box_name">
+        <item>CZ Scorpion Evo3 A1</item>
+        <item>Skorpion vz 83</item>
+        <item>Daewoo K7</item>
+        <item>Magpul FMG-9</item>
+        <item>Tavor CTAR-21</item>
+        <item>H&#38;K UMP</item>
+        <item>XM8 Compact</item>
+        <item>ACR CQB</item>
+        <item>SCAR-L PDW</item>
+        <item>Honey Badger</item>
+    </string-array>
+    <string-array name="enginer_box_type">
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    </string-array>
+    <string-array name="enginer_box_about">
+        <item>Пистолет-пулемёт чешского производства с футуристическим дизайном и повышенной пробивающей способностью</item>
+        <item>Пистолет-пулемёт калибра 9х17 мм, разработанный в Чехословакии. Оружие построено по схеме со свободным затвором.</item>
+        <item>Южнокорейский пистолет-пулемет с интегрированным глушителем, впервые представленный на выставке вооружения IDEX в 2003 году. Производится компанией S&#38;T Daewoo.</item>
+    	<item>Представитель нового поколения раскладных пистолетов-пулемётов, разработанный компанией Magpul Industries в 2008 году</item>
+    	<item>Компактный пистолет-пулемет, разработанный для отрядов особого назначения. Отличается высокой точностью и надежностью даже в экстремальных условиях</item>
+    	<item>Известный пистолет-пулемет, разработанный компанией Heckler &#38; Koch. Оружие сконструировано по схеме со свободным затвором</item>
+    	<item>Укороченный вариант автомата XM8, предназначенный для боя на ближней дистанции.</item>
+    	<item>Укороченная версия штурмовой винтовки ACR, разработанная в качестве замены M16 для армии США</item>
+    	<item>Укороченный вариант автомата SCAR, предназначенный для экипажей боевых машин, вертолетов и технических специалистов.</item>
+    	<item>Автомат с выдвижным прикладом и интегрированным глушителем, разработанный на базе AR-15 в качестве замены для H&#38;K MP5 и аналогичного оружия.</item>
+    </string-array>
+    <array name="enginer_box_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_czscorpionevo3a1.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_scorpionvz83.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_daewook7.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_magpulfmg9.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_tavorctar21.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkump.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_xm8compact.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_acrcqb.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_scarlpdw.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_honeybadger.html</item>
+    </array>
+     <array name="enginer_box_icon">
+		 <item>@drawable/enginer_czscorpionevo3a1</item>
+		 <item>@drawable/enginer_scorpionvz83</item>
+		 <item>@drawable/enginer_daewook7</item>
+		 <item>@drawable/enginer_magpulfmg9</item>
+		 <item>@drawable/enginer_tavorctar21</item>
+		 <item>@drawable/enginer_handkump</item>
+		 <item>@drawable/enginer_xm8compact</item>
+		 <item>@drawable/enginer_acrcqb</item>
+		 <item>@drawable/enginer_scarlpdw</item>
+		 <item>@drawable/enginer_honeybadger</item>
+    </array>
+
+</resources>

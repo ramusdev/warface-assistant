@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="mark_name">
+		<item>Смерть машинам</item>
+		<item>Золото партии</item>
+		<item>Знаток Steyr Scout Стужа</item>
+		<item>Знаток топора Стужа</item>
+		<item>Знаток Honey Badger Стужа</item>
+		<item>Знаток Fabarm STF 12 Compact Стужа</item>
+		<item>Знаток Sig Sauer Стужа</item>
+		<item>Знаток M16A3 Custom Стужа</item>
+		<item>Знаток Glock 18C Убийца зомби</item>
+		<item>Знаток Glock 18C Убийца зомби</item>
+		<item>Знаток Сайги-12С Убийца зомби</item>
+		<item>Знаток топора Убийца зомби</item>
+		<item>Знаток XM8 Compact Убийца зомби</item>
+		<item>Знаток FN SCAR-H Убийца зомби</item>
+		<item>Знаток Steyr Scout Убийца зомби</item>
+		<item>Побег из ада медик</item>
+		<item>Побег из ада инженер</item>
+		<item>Побег из ада штурмовик</item>
+		<item>Побег из ада снайпер</item>
+		<item>Конец затмения</item>
+		<item>Тяжелая артиллерия</item>
+		<item>Тяжелая артиллерия 2</item>
+		<item>Разящее пламя</item>
+		<item>Побег из тюрьмы</item>
+		<item>Побег из тюрьмы 2</item>
+		<item>Царь скорпионов</item>
+		<item>Африканский рубеж</item>
+		<item>Евразийский рубеж</item>
+		<item>Североамериканский рубеж</item>
+		<item>Южноамериканский рубеж</item>
+		<item>Знаток M1911A1 Атлас</item>
+		<item>Знаток CZ 75-Auto Атлас</item>
+		<item>Знаток PM-84 Glauberyt Атлас</item>
+		<item>Знаток Jagdkommando Атлас</item>
+		<item>Знаток топора Атлас</item>
+		<item>Знаток Magpul FMG-9 Атлас</item>
+		<item>Знаток СВУ-АС Атлас</item>
+		<item>Знаток M40A5 Атлас</item>
+		<item>Знаток M249 Para Атлас</item>
+		<item>Знаток MAG-7 Атлас</item>
+		<item>Знаток MSBS Radon Атлас</item>
+		<item>Знаток Derya MK-10 VR 102 Атлас</item>
+		<item>Мой выбор — adAstra</item>
+		<item>Мой выбор — Sluper</item>
+		<item>Мой выбор — AG</item>
+		<item>Мой выбор — ArenaStars</item>
+		<item>Мой выбор — KillPretty</item>
+		<item>Мой выбор — SinePonte</item>
+		<item>Мой выбор — SuperStars</item>
+		<item>Мой выбор — Без_Понтов</item>
+		<item>Мой выбор — Kovarnie</item>
+		<item>Мой выбор — hOpe</item>
+		<item>Синоним точности</item>
+		<item>Реинкарнация Arctic Warfare</item>
+		<item>Двойная позолота</item>
+		<item>Награда за верность - 5</item>
+		<item>Итальянский стандарт</item>
+		<item>Итальянский стандарт 2</item>
+		<item>Легионер будущего</item>
+		<item>Отпраздновал и выжил</item>
+		<item>Зимняя смерть</item>
+		<item>Штурмовое предупреждение</item>
+		<item>Снежный взрыв</item>
+		<item>Морозное спасение</item>
+		<item>Невыполнимых задач нет</item>
+		<item>Первое место в гонке кланов</item>
+		<item>Второе место в гонке кланов</item>
+		<item>Третье место в гонке кланов</item>
+		<item>Знаток Glock 18C Магма</item>
+		<item>Знаток SIG Sauer P226 C Магма</item>
+		<item>Знаток кукри-мачете Магма</item>
+		<item>Знаток катаны Магма</item>
+		<item>Знаток SIX12 Магма</item>
+		<item>Знаток Mossberg 500 Custom Магма</item>
+		<item>Знаток Type 97 Магма</item>
+		<item>Знаток ACR Магма</item>
+		<item>Знаток ACR CQB Магма</item>
+		<item>Знаток SCAR-L PDW Магма</item>
+		<item>Знаток McMillan CS5 Магма</item>
+		<item>Знаток AX308 Магма</item>
+		<item>Я маленькая лошадка</item>
+		<item>Я маленькая лошадка 2</item>
+		<item>И мне живется несладко</item>
+		<item>В объятиях стужи</item>
+		<item>Капитан ледокола штурмовик</item>
+		<item>Капитан ледокола медик</item>
+		<item>Капитан ледокола инженер</item>
+		<item>Капитан ледокола снайпер</item>
+		<item>Танцы на льду</item>
+		<item>Золото убивает</item>
+		<item>Запрещенный прием</item>
+		<item>Власть амбиций</item>
+		<item>Золотой конструктор</item>
+		<item>Ледяная хватка</item>
+		<item>Ледяная хватка 2</item>
+		<item>Санта или Сатана?</item>
+		<item>Benelli M4 Super 90 от Санты</item>
+		<item>ПП-19 Бизон от Санты</item>
+		<item>AK-103 от Санты</item>
+		<item>AMP DSR-1 от Санты</item>
+		<item>FN Five-Seven от Санты</item>
+		<item>Морозко</item>
+		<item>Беспощадный охотник</item>
+		<item>Хладнокровие убийцы</item>
+		<item>Новогоднее представление</item>
+		<item>Новогоднее веселье</item>
+		<item>Во имя свободы</item>
+		<item>Во имя свободы 2</item>
+		<item>Полная мобилизация</item>
+		<item>Надежда и опора</item>
+		<item>Пиратский флаг</item>
+		<item>Сверхновая</item>
+		<item>Кипящее золото</item>
+		<item>Линия жизни</item>
+		<item>Безупречная техника</item>
+		<item>Убийца зомби</item>
+		<item>Охота на зомби 1</item>
+		<item>Охота на зомби 2</item>
+		<item>Охота на зомби 3</item>
+		<item>Золото племени</item>
+		<item>Безупречная техника 2</item>
+		<item>Техническая поддержка</item>
+		<item>Прикосновение смерти</item>
+		<item>Живой танк</item>
+		<item>Мобильный госпиталь</item>
+		<item>Жнец боли</item>
+		<item>Жнец боли 2</item>
+		<item>Жнец боли 3</item>
+		<item>Уличный снайпер</item>
+		<item>Уличный снайпер 2</item>
+		<item>Городской стрелок</item>
+		<item>Исследователь пирамиды штурмовик</item>
+		<item>Исследователь пирамиды инженер</item>
+		<item>Исследователь пирамиды медик</item>
+		<item>Исследователь пирамиды снайпер</item>
+		<item>Нашивка Зодиака</item>
+		<item>Испепеляющий шторм</item>
+		<item>Поездка в ад</item>
+		<item>В самое пекло</item>
+		<item>Огненная пучина</item>
+		<item>Выстрел в голову</item>
+		<item>Выстрел в голову 2</item>
+		<item>Выстрел в голову 3</item>
+		<item>Специальное подразделение</item>
+		<item>Опытные бойцы</item>
+		<item>Элитный отряд</item>
+		<item>Легендарная команда</item>
+		<item>Элита Warface</item>
+		<item>Рука мастера</item>
+		<item>Не стой между мной и мячом</item>
+		<item>Медоеду плевать</item>
+		<item>Британский булл-пап</item>
+		<item>Чешская армия</item>
+		<item>Золотая серия</item>
+		<item>Палач 2</item>
+		<item>Черный берет 2</item>
+		<item>Могильщик 2</item>
+		<item>На все случаи жизни 2</item>
+		<item>Потрошитель 2</item>
+		<item>Младший брат катаны 2</item>
+		<item>Нож одного удара 2</item>
+		<item>Железный дровосек 2</item>
+		<item>Кукри убивает 2</item>
+		<item>Самурай 2</item>
+		<item>Тотальная вырубка 2</item>
+		<item>Это моя винтовка 2</item>
+		<item>Укус кобры 2</item>
+		<item>Немецкое качество 2</item>
+		<item>Мясорубка 2</item>
+		<item>Внутренняя сила 2</item>
+		<item>Карнавал мертвецов</item>
+		<item>Ядовитое жало 2</item>
+		<item>Из России с любовью 2</item>
+		<item>Живая легенда 2</item>
+		<item>Шквал огня 2</item>
+		<item>Бой в пустыне 2</item>
+		<item>Бельгийская армия 2</item>
+		<item>Военное превосходство 2</item>
+		<item>Fusil d Assaut 2</item>
+		<item>Schweizer Armee 2</item>
+		<item>Мы из будущего 2</item>
+		<item>Спецназ 2</item>
+		<item>Китайский экспорт 2</item>
+		<item>Морской пехотинец 2</item>
+		<item>Королевская армия 2</item>
+		<item>Некуда бежать 2</item>
+		<item>Штурм и натиск 2</item>
+		<item>Американская мечта 2</item>
+		<item>Голубой берет 2</item>
+		<item>Вмешательство 2</item>
+		<item>Горный стрелок 2</item>
+		<item>Снайпер 2</item>
+		<item>Невидимка 2</item>
+		<item>Солдат будущего 2</item>
+		<item>Найти и уничтожить 2</item>
+		<item>Arctic Warfare 2</item>
+		<item>Винтовка мечты 2</item>
+		<item>Крупный калибр 2</item>
+		<item>Несовместимо с жизнью 2</item>
+		<item>Народно-освободительная армия 2</item>
+		<item>Белое перо 2</item>
+		<item>Всевидящее око 2</item>
+		<item>Конец связи 2</item>
+		<item>Карающая длань 2</item>
+		<item>Совершенное оружие 2</item>
+		<item>Быстрее света 2</item>
+		<item>Вот что я люблю 2</item>
+		<item>Невероятная точность 2</item>
+		<item>Заклятый враг 2</item>
+		<item>Австрийский скаут 2</item>
+		<item>Флаг России</item>
+		<item>Флаг Германии</item>
+		<item>Флаг Англии</item>
+		<item>Флаг Италии</item>
+		<item>Флаг Хорватии</item>
+		<item>Флаг Польши</item>
+		<item>Флаг Чехии</item>
+		<item>Флаг Исландии</item>
+		<item>Флаг Ирландии</item>
+		<item>Флаг Швеции</item>
+		<item>Флаг Северной Ирландии</item>
+		<item>Флаг Турции</item>
+		<item>Флаг Франции</item>
+		<item>Флаг Испании</item>
+		<item>Флаг Бельгии</item>
+		<item>Флаг Португалии</item>
+		<item>Флаг Австрии</item>
+		<item>Флаг Швейцарии</item>
+		<item>Флаг Словакии</item>
+		<item>Флаг Румынии</item>
+		<item>Флаг Украины</item>
+		<item>Флаг Албании</item>
+		<item>Флаг Венгрии</item>
+		<item>Флаг Уэльса</item>
+		<item>Вид сквозь прицел</item>
+		<item>Награда за верность - 4</item>
+		<item>Страж</item>
+		<item>Привет из будущего</item>
+		<item>Кровь и золото</item>
+		<item>Австрийский скаут</item>
+		<item>Меткий охотник</item>
+		<item>Немейский лев</item>
+		<item>Герой спецслужбы</item>
+		<item>Заклятый враг</item>
+		<item>Золотые горы</item>
+		<item>Вулканолог штурмовик</item>
+		<item>Вулканолог медик</item>
+		<item>Вулканолог инженер</item>
+		<item>Вулканолог снайпер</item>
+		<item>Серьезный вызов</item>
+		<item>Бойня в вулкане</item>
+		<item>Храброе сердце</item>
+		<item>Встреча с магмой</item>
+		<item>Морской пехотинец</item>
+		<item>Само совершенство</item>
+		<item>Синий иней</item>
+		<item>Тотальная вырубка</item>
+		<item>А вот и Джонни!</item>
+		<item>Лучшее оружие в мире</item>
+		<item>Фрагментация завершена</item>
+		<item>Выстрел за 999 долларов</item>
+		<item>Хитрец</item>
+		<item>Ловкач</item>
+		<item>Мошенник</item>
+		<item>Большой и мертвый</item>
+		<item>Жертва эксперимента</item>
+		<item>Конец света</item>
+		<item>Продвинутый инженер</item>
+		<item>Продвинутый снайпер</item>
+		<item>Продвинутый медик</item>
+		<item>Продвинутый штурмовик</item>
+		<item>Коллекционер костей</item>
+		<item>Смерть вопреки</item>
+		<item>Я иду искать</item>
+		<item>Невероятная точность</item>
+		<item>Золото и власть</item>
+		<item>Достойная награда</item>
+		<item>Золотой вензель</item>
+		<item>Золотые руки</item>
+		<item>Schweizer Armee</item>
+		<item>Мастер AS50</item>
+		<item>Мастер FN SCAR-H</item>
+		<item>Участник Fast Cup</item>
+		<item>Быстрее света</item>
+		<item>Младший брат катаны</item>
+		<item>Военный трофей</item>
+		<item>Я видел финал!</item>
+		<item>Большая игра</item>
+		<item>Внутренняя сила</item>
+		<item>Мастер MK 14 EBR</item>
+		<item>Несовместимо с жизнью</item>
+		<item>Буран</item>
+		<item>Снегопад</item>
+		<item>Прикосновение Холода</item>
+		<item>Ледяное сердце</item>
+		<item>Снежный ангел</item>
+		<item>За окном уже сугробы</item>
+		<item>Лед и пламя</item>
+		<item>Подарки для всех</item>
+		<item>Fusil d Assaut</item>
+		<item>Всевидящее око</item>
+		<item>Одна точка, чтоб править всеми</item>
+		<item>Минное поле</item>
+		<item>Ты что, хочешь жить вечно?</item>
+		<item>Хирургическая точность</item>
+		<item>Веселье на Хэллоуин</item>
+		<item>Народно-освободительная армия</item>
+		<item>Самурай</item>
+		<item>Военное превосходство</item>
+		<item>Вот что я люблю</item>
+		<item>На все случаи жизни </item>
+		<item>Крупный калибр</item>
+		<item>Кукри убивает</item>
+		<item>Угроза Оберону</item>
+		<item>Винтовка мечты</item>
+		<item>Покорение вершины</item>
+		<item>Операция без анестезии</item>
+		<item>Не бойтесь, я инженер!</item>
+		<item>Отсюда видно мой дом!</item>
+		<item>Русский медведь</item>
+		<item>День Победы</item>
+		<item>Каменные джунгли</item>
+		<item>Неудержимая сила</item>
+		<item>Падение фаланги</item>
+		<item>Поехали!</item>
+		<item>Быстрее ветра</item>
+		<item>Голливудский боевик</item>
+		<item>Друг познается в бою</item>
+		<item>Работа в паре</item>
+		<item>Идеальная команда</item>
+		<item>Прицельный огонь</item>
+		<item>Еще парочку!</item>
+		<item>Настоящий профи</item>
+		<item>Плотный огонь</item>
+		<item>Слаженные действия</item>
+		<item>Образец для подражания</item>
+		<item>Зачистка территории</item>
+		<item>План ликвидации</item>
+		<item>Как по нотам</item>
+		<item>Боевая выучка</item>
+		<item>Тактическое превосходство</item>
+		<item>Полный контроль</item>
+		<item>Искренее дружелюбие</item>
+		<item>Уклонение от пуль</item>
+		<item>Трудная мишень</item>
+		<item>Полная неуязвимость</item>
+		<item>Акробат</item>
+		<item>Эквилибрист</item>
+		<item>Виртуоз</item>
+		<item>Надежная защита</item>
+		<item>Выжить любой ценой</item>
+		<item>Скала</item>
+		<item>Смотри под ноги!</item>
+		<item>Внезапная смерть</item>
+		<item>Распылитель</item>
+		<item>Холодное сердце</item>
+		<item>Поразительная меткость</item>
+		<item>Стальные нервы</item>
+		<item>Маньяк с ножом</item>
+		<item>Маньяк с топором</item>
+		<item>Работа для профи</item>
+		<item>Это моя винтовка</item>
+		<item>Укус кобры</item>
+		<item>Немецкое качество</item>
+		<item>Мясорубка</item>
+		<item>Спецназ</item>
+		<item>Мы из будущего</item>
+		<item>Ядовитое жало</item>
+		<item>Из России с любовью</item>
+		<item>Живая легенда</item>
+		<item>Шквал огня</item>
+		<item>Бой в пустыне</item>
+		<item>Бельгийская армия</item>
+		<item>Китайский экспорт</item>
+		<item>Некуда бежать</item>
+		<item>Штурм и натиск</item>
+		<item>Американская мечта</item>
+		<item>Голубой берет</item>
+		<item>Вмешательство</item>
+		<item>Горный стрелок</item>
+		<item>Снайпер</item>
+		<item>Невидимка</item>
+		<item>Конец связи</item>
+		<item>Солдат будущего</item>
+		<item>Карающая длань</item>
+		<item>Найти и уничтожить</item>
+		<item>Совершенное оружие</item>
+		<item>Arctic Warfare</item>
+		<item>Палач</item>
+		<item>Черный берет</item>
+		<item>Потрошитель</item>
+		<item>Могильщик</item>
+		<item>Железный дровосек</item>
+		<item>Мастер AS50</item>
+		<item>Мастер FN SCAR-H</item>
+		<item>Мастер ACR</item>
+	</string-array>
+
+	<string-array name="mark_about">
+		<item>Уничтожить 50 ПБМ Гром из любого оружия на уровне Профи</item>
+		<item>Убить 999 врагов из золотого РПД Custom</item>
+		<item>Убить 15 000 врагов из Steyr Scout Стужа</item>
+		<item>Убить 15 000 врагов тактическим топором Стужа</item>
+		<item>Убить 15 000 врагов из Honey Badger Стужа</item>
+		<item>Убить 15 000 врагов из Fabarm STF 12 Compact Стужа</item>
+		<item>Убить 15 000 врагов из Sig Sauer Стужа</item>
+		<item>Убить 15 000 врагов из M16A3 Custom Стужа</item>
+		<item>Убить 15 000 врагов из Glock 18C Убийца зомби</item>
+		<item>Убить 15 000 врагов из Fabarm STF 12 Compact Убийца зомби</item>
+		<item>Убить 15 000 врагов из Сайги-12С Убийца зомби</item>
+		<item>Убить 15 000 врагов тактическим топором Убийца зомби</item>
+		<item>Убить 15 000 врагов из XM8 Compact Убийца зомби</item>
+		<item>Убить 15 000 врагов из FN SCAR‐H Убийца зомби</item>
+		<item>Убить 15 000 врагов из Steyr Scout Убийца зомби</item>
+		<item>Убить 2 000 врагов Затмение на уровне Профи, играя за медика</item>
+		<item>Убить 2 000 врагов Затмение на уровне Профи, играя за инженера</item>
+		<item>Убить 2 000 врагов Затмение на уровне Профи, играя за штурмовика</item>
+		<item>Убить 2 000 врагов Затмение на уровне Профи, играя за снайпера</item>
+		<item>Пройти спецоперацию Затмение на уровне Профи</item>
+		<item>Убить 10 000 врагов из обычной или золотой Bushmaster BA50</item>
+		<item>Убить 25 000 врагов из обычной или золотой Bushmaster BA50</item>
+		<item>Убить 999 врагов из золотой Bushmaster BA50</item>
+		<item>Убить 10 000 врагов из SAI GRY AR-15</item>
+		<item>Убить 25 000 врагов из SAI GRY AR-15</item>
+		<item>Убить 999 врагов из золотого CZ Scorpion EVO 3 A1</item>
+		<item>Выполнить все задания Атласа войны в Африке</item>
+		<item>Выполнить все задания Атласа войны в Евразии</item>
+		<item>Выполнить все задания Атласа войны в Северной Америке</item>
+		<item>Выполнить все задания Атласа войны в Южной Америке</item>
+		<item>Убить 15 000 врагов из M1911A1 Атлас</item>
+		<item>Убить 15 000 врагов из CZ 75-Auto Атлас</item>
+		<item>Убить 15 000 врагов из PM-84 Glauberyt Атлас</item>
+		<item>Убить 15 000 врагов ножом Jagdkommando Атлас</item>
+		<item>Убить 15 000 врагов тактическим топором Атлас</item>
+		<item>Убить 15 000 врагов из Magpul FMG-9 Атлас</item>
+		<item>Убить 15 000 врагов из СВУ-АС Атлас</item>
+		<item>Убить 15 000 врагов из M40A5 Атлас</item>
+		<item>Убить 15 000 врагов из M249 Para Атлас</item>
+		<item>Убить 15 000 врагов из MAG-7 Атлас</item>
+		<item>Убить 15 000 врагов из MSBS Radon Атлас</item>
+		<item>Убить 15 000 врагов из Derya MK-10 VR 102 Атлас</item>
+		<item>adAstra, вперед!</item>
+		<item>Sluper, вперед!</item>
+		<item>AG, вперед!</item>
+		<item>ArenaStars, вперед!</item>
+		<item>KillPretty, вперед!</item>
+		<item>SinePonte, вперед!</item>
+		<item>SuperStars, вперед!</item>
+		<item>Без_Понтов, вперед!</item>
+		<item>Kovarnie, вперед!</item>
+		<item>hOpe, вперед!</item>
+		<item>Убить 10 000 врагов из AT308</item>
+		<item>Убить 25 000 врагов из AT308</item>
+		<item>Убить 999 врагов из золотого DP-12</item>
+		<item>Отпраздновать пятую годовщину Warface</item>
+		<item>Убить 10 000 врагов из обычной или золотой Beretta ARX160</item>
+		<item>Убить 25 000 врагов из обычной или золотой Beretta ARX160</item>
+		<item>Убить 999 врагов из золотой Beretta ARX160</item>
+		<item>Выполнить все задания новогоднего марафона 2016-2017</item>
+		<item>Завершить цепочку заданий для снайпера в Зимней охоте</item>
+		<item>Завершить цепочку заданий для штурмовика в Зимней охоте</item>
+		<item>Завершить цепочку заданий для инженера в Зимней охоте</item>
+		<item>Завершить цепочку заданий для медика в Зимней охоте</item>
+		<item>Завершить все цепочки заданий в Зимней охоте</item>
+		<item>Занять первое место в гонке кланов шесть раз</item>
+		<item>Занять второе место в гонке кланов шесть раз</item>
+		<item>Занять третье место в гонке кланов шесть раз</item>
+		<item>Убить 15 000 врагов из Glock 18C Магма</item>
+		<item>Убить 15 000 врагов из SIG Sauer P226 C Магма</item>
+		<item>Убить 15 000 врагов кукри-мачете Магма</item>
+		<item>Убить 15 000 врагов катаной Магма</item>
+		<item>Убить 15 000 врагов из SIX12 Магма</item>
+		<item>Убить 15 000 врагов из Mossberg 500 Custom Магма</item>
+		<item>Убить 15 000 врагов из Type 97 Магма</item>
+		<item>Убить 15 000 врагов из ACR Магма</item>
+		<item>Убить 15 000 врагов из ACR CQB Магма</item>
+		<item>Убить 15 000 врагов из SCAR-L PDW Магма</item>
+		<item>Убить 15 000 врагов из McMillan CS5 Магма</item>
+		<item>Убить 15 000 врагов из AX308 Магма</item>
+		<item>Убить 10 000 врагов из обычной или золотой M14 Crazy Horse</item>
+		<item>Убить 25 000 врагов из обычной или золотой M14 Crazy Horse</item>
+		<item>Убить 999 врагов из золотой M14 Crazy Horse</item>
+		<item>Убить 10 000 врагов из оружия серии Стужа</item>
+		<item>Пройти миссию Ледокол за штурмовика на уровне Профи</item>
+		<item>Пройти миссию Ледокол за медика на уровне Профи</item>
+		<item>Пройти миссию Ледокол за инженера на уровне Профи</item>
+		<item>Пройти миссию Ледокол за снайпера на уровне Профи</item>
+		<item>Пройти миссию Ледокол на уровне Профи 10 раз</item>
+		<item>Убить 999 врагов из золотой Сайги-12С</item>
+		<item>Убить 999 врагов из золотой AS50</item>
+		<item>Убить 999 врагов из золотого FN SCAR-H</item>
+		<item>Убить 999 врагов из золотого Magpul FMG 9</item>
+		<item>Убить 10 000 врагов ледорубом</item>
+		<item>Убить 25 000 врагов ледорубом</item>
+		<item>Нанести 1 000 000 единиц урона из оружия Злой Санта</item>
+		<item>Убить 10 000 врагов из Benelli M4 Super 90 Злой Санта</item>
+		<item>Убить 10 000 врагов из ПП-19 Бизон Злой Санта</item>
+		<item>Убить 10 000 врагов из AK-103 Злой Санта</item>
+		<item>Убить 10 000 врагов из AMP DSR-1 Злой Санта</item>
+		<item>Убить 10 000 врагов из FN Five-Seven Злой Санта</item>
+		<item>Занять 1-е место в режиме Выживание карта Сибирь</item>
+		<item>Занять 1-е место в режиме Выживание карта Сибирь 50 раз</item>
+		<item>Занять 1-е место в режиме Выживание карта Сибирь 100 раз</item>
+		<item>Занять 1-е место в новогодней версии режима Выживание карта Сибирь 5 раз</item>
+		<item>Убить 2000 врагов в PvP из новогодней Alpine</item>
+		<item>Убить 10 000 врагов из MSBS Radon</item>
+		<item>Убить 25 000 врагов из MSBS Radon</item>
+		<item>Сделать 25 двойных убийств на карте Вилла в режиме Блиц</item>
+		<item>Занять 1-3 место в выигравшей команде на карте Вилла, ни разу не умерев</item>
+		<item>Флаг пиратов Warface</item>
+		<item>Сделать 10 тройных убийств на карте Вилла в режиме Блиц</item>
+		<item>Убить 999 врагов из золотого MAG-7</item>
+		<item>Выполнить все задания мини-игры Мозговой штурм</item>
+		<item>Убить 10 000 врагов из ОРСИС Т-5000</item>
+		<item>Убить 5 000 врагов из оружия серии Убийца зомби</item>
+		<item>Убить 3 000 зомби в спецоперации Чёрная акула</item>
+		<item>Убить 5 000 зомби в спецоперации Чёрная акула</item>
+		<item>Убить 10 000 зомби в спецоперации Чёрная акула</item>
+		<item>Убить 999 врагов из золотого ПКП Печенег</item>
+		<item>Убить 25 000 врагов из ОРСИС Т-5000</item>
+		<item>Пройти спецоперацию Чёрная акула на сложности Профи за инженера</item>
+		<item>Пройти спецоперацию Чёрная акула на сложности Профи за снайпера</item>
+		<item>Пройти спецоперацию Чёрная акула на сложности Профи за штурмовика</item>
+		<item>Пройти спецоперацию Чёрная акула на сложности Профи за медика</item>
+		<item>Совершить 999 попаданий по врагам из золотого огнестрельного оружия</item>
+		<item>Совершить 15 000 попаданий по врагам из золотого огнестрельного оружия</item>
+		<item>Совершить 50 000 попаданий по врагам из золотого огнестрельного оружия</item>
+		<item>Убить 10 000 врагов из СВУ-АС</item>
+		<item>Убить 25 000 врагов из СВУ-АС</item>
+		<item>Убить 999 врагов из золотой СВУ-АС</item>
+		<item>Пройти Анубис на сложности Профи за штурмовика 3 раза</item>
+		<item>Пройти Анубис на сложности Профи за инженера 3 раза</item>
+		<item>Пройти Анубис на сложности Профи за медика 3 раза</item>
+		<item>Пройти Анубис на сложности Профи за снайпера 3 раза</item>
+		<item>Покупная за кредиты</item>
+		<item>Трижды пройти Вулкан на сложности Хардкор, за штурмовика</item>
+		<item>Трижды пройти Вулкан на сложности Хардкор, за медика</item>
+		<item>Трижды пройти Вулкан на сложности Хардкор, за инженера</item>
+		<item>Трижды пройти Вулкан на сложности Хардкор, за снайпера</item>
+		<item>Сделать 100 двойных попаданий в голову в PvE</item>
+		<item>Сделать 500 двойных попаданий в голову в PvE</item>
+		<item>Сделать 1 000 двойных попаданий в голову в PvE</item>
+		<item>Завершить сезон с 8-10 рангом в рейтинговых матчах</item>
+		<item>Завершить сезон с 5-7 рангом в рейтинговых матчах</item>
+		<item>Завершить сезон с 2-4 рангом в рейтинговых матчах</item>
+		<item>Завершить сезон с 1 рангом в рейтинговых матчах</item>
+		<item>Шесть раз попасть в элитную лигу по итогам ежемесячной</item>
+		<item>Собрать все легендарное оружие в Вулкан: противостояние</item>
+		<item>Убить 1 000 игроков из оружия Евро-2016</item>
+		<item>Убить 999 врагов из золотого Honey Badger</item>
+		<item>Убить 999 врагов из золотой Enfield L85A2 Custom</item>
+		<item>Убить 999 врагов из золотого CZ 75-Auto</item>
+		<item>Убить 999 врагов из золотого Fabarm XLR5 Prestige</item>
+		<item>Убить 25 000 врагов ножом Executor</item>
+		<item>Убить 25 000 врагов ножом Ultramarine</item>
+		<item>Убить 25 000 врагов саперной лопаткой</item>
+		<item>Убить 25 000 врагов ножом KA-BAR</item>
+		<item>Убить 25 000 врагов армейским ножом</item>
+		<item>Убить 25 000 врагов ножом S&amp;W Survival Tanto</item>
+		<item>Убить 25 000 врагов ножом Jagdkommando</item>
+		<item>Убить 25 000 врагов топором Black Hawk</item>
+		<item>Убить 25 000 врагов из Кукри-мачете KA-BAR</item>
+		<item>Убить 25 000 врагов катаной</item>
+		<item>Убить 25 000 врагов тактическим топором</item>
+		<item>Убить 25 000 врагов из M4A1</item>
+		<item>Убить 25 000 врагов из AUG A3</item>
+		<item>Убить 25 000 врагов из H&amp;K G36K</item>
+		<item>Убить 25 000 врагов из Daewoo K2</item>
+		<item>Убить 25 000 врагов из АС Вал</item>
+		<item>Убить 25 000 врагов из IMBEL IA2</item>
+		<item>Убить 25 000 врагов из Calico M955A</item>
+		<item>Убить 25 000 врагов из АК-103</item>
+		<item>Убить 25 000 врагов из АК-47</item>
+		<item>Убить 25 000 врагов из Tavor TAR-21</item>
+		<item>Убить 25 000 врагов из Galil AR</item>
+		<item>Убить 25 000 врагов из FN F2000</item>
+		<item>Убить 25 000 врагов из винтовки XM8</item>
+		<item>Убить 25 000 врагов из Famas F1</item>
+		<item>Убить 25 000 врагов из SIG 551</item>
+		<item>Убить 25 000 врагов из ACR</item>
+		<item>Убить 25 000 врагов из FN SCAR-H</item>
+		<item>Убить 25 000 врагов из Type 97</item>
+		<item>Убить 25 000 врагов из M16A3</item>
+		<item>Убить 25 000 врагов из Enfield L85A2 Custom</item>
+		<item>Убить 25 000 врагов из СВД</item>
+		<item>Убить 25 000 врагов из SIG 550</item>
+		<item>Убить 25 000 врагов из M16 SPR Custom</item>
+		<item>Убить 25 000 врагов из Tavor STAR 21</item>
+		<item>Убить 25 000 врагов из CheyTac M200</item>
+		<item>Убить 25 000 врагов из Alpine</item>
+		<item>Убить 25 000 врагов из XM8 Sharpshooter</item>
+		<item>Убить 25 000 врагов из ВСС Винторез</item>
+		<item>Убить 25 000 врагов из ACR</item>
+		<item>Убить 25 000 врагов из H&amp;K SL8</item>
+		<item>Убить 25 000 врагов из AWM</item>
+		<item>Убить 25 000 врагов из Walther WA 2000</item>
+		<item>Убить 25 000 врагов из Barrett M107</item>
+		<item>Убить 25 000 врагов из Barrett M98B</item>
+		<item>Убить 25 000 врагов из QBU-88</item>
+		<item>Убить 25 000 врагов из M40A5</item>
+		<item>Убить 25 000 врагов из AMP DSR-1</item>
+		<item>Убить 25 000 врагов из AS50</item>
+		<item>Убить 25 000 врагов из Calico M951S</item>
+		<item>Убить 25 000 врагов из Mk 14 EBR</item>
+		<item>Убить 25 000 врагов из DSA SA58 SPR</item>
+		<item>Убить 25 000 врагов из McMillan CS5</item>
+		<item>Убить 25 000 врагов из AX308</item>
+		<item>Убить 25 000 врагов из Remington R11 RSASS</item>
+		<item>Убить 25 000 врагов из Steyr Scout</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Покупная за кредиты</item>
+		<item>Убить 999 врагов из золотой AWM</item>
+		<item>Отпраздновать четвертую годовщину Warface</item>
+		<item>За содействие в борьбе с нарушителями правил игры</item>
+		<item>Убить 1000 врагов из розового Micro Desert Eagle</item>
+		<item>Убить 999 врагов из золотого Tavor CTAR-21</item>
+		<item>Убить 10 000 врагов из Steyr Scout</item>
+		<item>Убить 999 врагов из золотой Steyr Scout</item>
+		<item>Убить 999 врагов из золотого Fabarm STF 12 Compact</item>
+		<item>Выполнить все задания Таинственного ноутбука</item>
+		<item>Убить 10 000 врагов из Remington R11 RSASS</item>
+		<item>Убить 999 врагов из золотого Remington R11 RSASS</item>
+		<item>Пройти миссию Вулкан на уровне сложности Профи за штурмовика</item>
+		<item>Пройти миссию Вулкан на уровне сложности Профи за медика</item>
+		<item>Пройти миссию Вулкан на уровне сложности Профи за инженера</item>
+		<item>Пройти миссию Вулкан на уровне сложности Профи за снайпера</item>
+		<item>Уничтожить 50 турелей в миссии Вулкан с помощью FCG-R3 K1</item>
+		<item>Убить 10 000 врагов в миссии Вулкан</item>
+		<item>Убить 500 врагов в миссии Вулкан холодным оружием</item>
+		<item>Убить 10 000 врагов из оружия с камуфляжем Магма</item>
+		<item>Убить 10 000 врагов из M16A3</item>
+		<item>Убить 999 врагов из золотой M16A3 Custom</item>
+		<item>Выполнить все задания марафона 2016</item>
+		<item>Убить 10 000 врагов тактическим топором</item>
+		<item>Убить 999 врагов золотым тактическим топором</item>
+		<item>Убить 999 врагов из золотого АК-47</item>
+		<item>Убить 200 врагов попаданиями в голову из ALPINE Неон</item>
+		<item>Убить 999 врагов из золотого M249 Para</item>
+		<item>Пройти Опасный эксперимент на легком уровне без смертей 5 раз</item>
+		<item>Пройти Опасный эксперимент на сложном уровне без смертей 5 раз</item>
+		<item>Пройти Опасный эксперимент на уровне сложности Профи без смертей 5 раз</item>
+		<item>Убить босса в операции Опасный эксперимент 10 раз</item>
+		<item>Убить босса в операции Опасный эксперимент 50 раз</item>
+		<item>Убить босса в операции Опасный эксперимент 100 раз</item>
+		<item>Пройти Опасный эксперимент за инженера на уровне сложности Профи 5 раз</item>
+		<item>Пройти Опасный эксперимент за снайпера на уровне сложности Профи 5 раз</item>
+		<item>Пройти Опасный эксперимент за медика на уровне сложности Профи 5 раз</item>
+		<item>Пройти Опасный эксперимент за штурмовика на уровне сложности Профи 5 раз</item>
+		<item>Собрать 2 500 жетонов в режиме Выживание</item>
+		<item>Занять первое место в режиме Выживание ни разу не погибнув</item>
+		<item>Занять первое место в режиме Выживание 10 раз</item>
+		<item>Убить 10 000 врагов из AX308</item>
+		<item>Убить 999 врагов из золотой AX308</item>
+		<item>Убейте 999 врагов из золотого SCAR-L PDW</item>
+		<item>Убейте 999 врагов из золотого Fabarm S.A.T. 8 Pro</item>
+		<item>Убейте 999 врагов из золотого Desert Eagle</item>
+		<item>Убейте 10 000 врагов из SIG 551</item>
+		<item>Убить 5 000 врагов из AS50 за короны</item>
+		<item>Убить 5 000 врагов из FN SCAR-H за короны</item>
+		<item>Принять участие в Fast Cup</item>
+		<item>Убейте 10 000 врагов из DSA SA58 SPR</item>
+		<item>Убейте 10 000 врагов из ножом S&amp;W Survival Tanto</item>
+		<item>Убить 1 000 врагов из Winchester M1897</item>
+		<item>Стать зрителем Warface Open Cup</item>
+		<item>Принять участие в Warface Open Cup</item>
+		<item>Убейте 10 000 врагов из АС Вал</item>
+		<item>Убейте 5 000 врагов из MK 14 EBR за короны</item>
+		<item>Убить 10 000 врагов из Barrett M98B</item>
+		<item>Убить 1 000 врагов из оружия с камуфляжем Зима</item>
+		<item>Убить 1 000 врагов из оружия с камуфляжем Буран</item>
+		<item>Убить 1 000 врагов из оружия с камуфляжем Вьюга</item>
+		<item>Пройдите режим Марафон за штурмовика</item>
+		<item>Пройдите режим Марафон за медика</item>
+		<item>Пройдите режим Марафон за инженера</item>
+		<item>Пройдите режим Марафон за снайпера</item>
+		<item>Убить 250 врагов в голову из Новогодней хлопушки</item>
+		<item>Убить 10 000 врагов из Famas F1</item>
+		<item>Убить 10 000 врагов из AMP DSR-1</item>
+		<item>Захватить 5 000 точек в роли снайпера в Доминации</item>
+		<item>Захватить 5 000 точек в роли инженера в Доминации</item>
+		<item>Захватить 5 000 точек в роли штурмовика в Доминации</item>
+		<item>Захватить 5 000 точек в роли медика в Доминации</item>
+		<item>Выиграть 10 матчей на карте Ферма Хэллоуин</item>
+		<item>Убить 10 000 врагов из QBU-88</item>
+		<item>Убить 10 000 врагов катаной</item>
+		<item>Убить 10 000 врагов из винтовки XM8</item>
+		<item>Убить 10 000 врагов из винтовки McMillan CS5</item>
+		<item>Убить 10 000 врагов универсальным ножом KA-BAR</item>
+		<item>Убить 10 000 врагов из Barrett M107</item>
+		<item>Убить 10 000 врагов из Кукри-мачете KA-BAR</item>
+		<item>25 раз убить Джаггернаута в режиме Ликвидаци</item>
+		<item>Убить 10 000 врагов из Walther WA 2000</item>
+		<item>Пройдите Ликвидацию за штурмовика</item>
+		<item>Пройдите Ликвидацию за медика</item>
+		<item>Пройдите Ликвидацию за инженера</item>
+		<item>Пройдите Ликвидацию за снайпера</item>
+		<item>Убить 500 врагов из АПС Сталь или ножом десантника</item>
+		<item>Убить 1 000 врагов из ППШ или винтовки Мосина</item>
+		<item>Убить 1 000 игроков с камуфляжем Город</item>
+		<item>Убить 50 щитоносцев</item>
+		<item>Убить 500 щитоносцев</item>
+		<item>Убить 50 игроков во время подката</item>
+		<item>Убить 500 игроков во время подката</item>
+		<item>Убить 2 500 игроков во время подката</item>
+		<item>Помочь товарищу по команде 10 раз</item>
+		<item>Помочь товарищу по команде 100 раз</item>
+		<item>Помочь товарищу по команде 1 000 раз</item>
+		<item>20 раз получить модификатор 5X на уровне Легко</item>
+		<item>20 раз получить модификатор 5X на уровне Сложно</item>
+		<item>20 раз получить модификатор 5X на уровне Профи</item>
+		<item>250 раз получить модификатор 5X на уровне Легко</item>
+		<item>250 раз получить модификатор 5X на уровне Сложно</item>
+		<item>250 раз получить модификатор 5X на уровне Профи</item>
+		<item>500 раз получить модификатор 5Х на уровне Легко</item>
+		<item>500 раз получить модификатор 5Х на уровне Сложно</item>
+		<item>500 раз получить модификатор 5Х в на уровне Профи</item>
+		<item>1 000 раз получить модификатор 5Х на уровне Легко</item>
+		<item>1 000 раз получить модификатор 5Х на уровне Сложно</item>
+		<item>1 000 раз получить модификатор 5Х на уровне Профи</item>
+		<item>Завести 20 друзей в игре</item>
+		<item>Пройти миссию на уровне Легко и ни разу не умереть</item>
+		<item>Пройти миссию на уровне Профи и ни разу не умереть</item>
+		<item>Пройти миссию на уровне Сложно и ни разу не умереть</item>
+		<item>Пройти 10 раз миссию Легко ни разу не умерев</item>
+		<item>Пройти 10 раз миссию Сложно ни разу не умерев</item>
+		<item>Пройти 10 раз миссию Профи ни разу не умерев</item>
+		<item>Пройти 100 раз миссию Легко ни разу не умерев</item>
+		<item>Пройти 100 раз миссию Сложно ни разу не умерев</item>
+		<item>Пройти 100 раз на уровне Профи ни разу не умерев</item>
+		<item>Убить 50 врагов противопехотными минами</item>
+		<item>Убить 200 врагов противопехотными минами</item>
+		<item>Убить 1 000 врагов противопехотными минами</item>
+		<item>10 раз убить джаггернаута из снайперской винтовки</item>
+		<item>100 раз убить джаггернаута из снайперской винтовки</item>
+		<item>500 раз убить джаггернаута из снайперской винтовки</item>
+		<item>5 раз убить джаггернаута ножом на уровне Легко</item>
+		<item>5 раз убить джаггернаута топором на уровне Сложно</item>
+		<item>5 раз убить джаггернаута саперной лопаткой на уровне Профи</item>
+		<item>Убить 10 000 врагов из M4A1</item>
+		<item>Убить 10 000 врагов из AUG A3</item>
+		<item>Убить 10 000 врагов из H&amp;K G36K</item>
+		<item>Убить 10 000 врагов из Daewoo K2</item>
+		<item>Убить 10 000 врагов из FN SCAR-H</item>
+		<item>Убить 10 000 врагов из ACR</item>
+		<item>Убить 10 000 врагов из Calico M955A</item>
+		<item>Убить 10 000 врагов из АК-103</item>
+		<item>Убить 10 000 врагов из АК-47</item>
+		<item>Убить 10 000 врагов из Tavor TAR-21</item>
+		<item>Убить 10 000 врагов из Galil AR</item>
+		<item>Убить 10 000 врагов из FN F2000</item>
+		<item>Убить 10 000 врагов из Type 97</item>
+		<item>Убить 10 000 врагов из СВД</item>
+		<item>Убить 10 000 врагов из SIG 550</item>
+		<item>Убить 10 000 врагов из M16 SPR Custom</item>
+		<item>Убить 10 000 врагов из Tavor STAR-21</item>
+		<item>Убить 10 000 врагов из CheyTac M200</item>
+		<item>Убить 10 000 врагов из Alpine</item>
+		<item>Убить 10 000 врагов из XM8 Sharpshooter</item>
+		<item>Убить 10 000 врагов из ВСС Винторез</item>
+		<item>Убить 10 000 врагов из AS50</item>
+		<item>Убить 10 000 врагов из снайперской винтовки ACR</item>
+		<item>Убить 10 000 врагов из Calico M951S</item>
+		<item>Убить 10 000 врагов из снайперской винтовки H&amp;K SL8</item>
+		<item>Убить 10 000 врагов из винтовки Mk 14 EBR</item>
+		<item>Убить 10 000 врагов из винтовки AWM</item>
+		<item>Убить 10 000 врагов ножом Executor</item>
+		<item>Убить 10 000 врагов ножом Ultramarine</item>
+		<item>Убить 10 000 врагов армейским ножом</item>
+		<item>Убить 10 000 врагов саперной лопаткой</item>
+		<item>Убить 10 000 врагов топором Black Hawk</item>
+		<item>Убить 50 00 врагов из AS50 за короны</item>
+		<item>Убить 50 00 врагов из FN SCAR-H за короны</item>
+		<item>Убить 50 00 врагов из ACR за короны</item>
+	</string-array>
+
+	<array name="mark_icon">
+		<item>@drawable/mark_403</item>
+		<item>@drawable/mark_402</item>
+		<item>@drawable/mark_401</item>
+		<item>@drawable/mark_400</item>
+		<item>@drawable/mark_399</item>
+		<item>@drawable/mark_398</item>
+		<item>@drawable/mark_397</item>
+		<item>@drawable/mark_396</item>
+		<item>@drawable/mark_395</item>
+		<item>@drawable/mark_394</item>
+		<item>@drawable/mark_393</item>
+		<item>@drawable/mark_392</item>
+		<item>@drawable/mark_391</item>
+		<item>@drawable/mark_390</item>
+		<item>@drawable/mark_389</item>
+		<item>@drawable/mark_388</item>
+		<item>@drawable/mark_387</item>
+		<item>@drawable/mark_386</item>
+		<item>@drawable/mark_385</item>
+		<item>@drawable/mark_384</item>
+		<item>@drawable/mark_383</item>
+		<item>@drawable/mark_382</item>
+		<item>@drawable/mark_381</item>
+		<item>@drawable/mark_380</item>
+		<item>@drawable/mark_379</item>
+		<item>@drawable/mark_378</item>
+		<item>@drawable/mark_377</item>
+		<item>@drawable/mark_376</item>
+		<item>@drawable/mark_375</item>
+		<item>@drawable/mark_374</item>
+		<item>@drawable/mark_373</item>
+		<item>@drawable/mark_372</item>
+		<item>@drawable/mark_371</item>
+		<item>@drawable/mark_370</item>
+		<item>@drawable/mark_369</item>
+		<item>@drawable/mark_368</item>
+		<item>@drawable/mark_367</item>
+		<item>@drawable/mark_366</item>
+		<item>@drawable/mark_365</item>
+		<item>@drawable/mark_364</item>
+		<item>@drawable/mark_363</item>
+		<item>@drawable/mark_362</item>
+		<item>@drawable/mark_361</item>
+		<item>@drawable/mark_360</item>
+		<item>@drawable/mark_359</item>
+		<item>@drawable/mark_358</item>
+		<item>@drawable/mark_357</item>
+		<item>@drawable/mark_356</item>
+		<item>@drawable/mark_355</item>
+		<item>@drawable/mark_354</item>
+		<item>@drawable/mark_353</item>
+		<item>@drawable/mark_352</item>
+		<item>@drawable/mark_351</item>
+		<item>@drawable/mark_350</item>
+		<item>@drawable/mark_349</item>
+		<item>@drawable/mark_348</item>
+		<item>@drawable/mark_347</item>
+		<item>@drawable/mark_346</item>
+		<item>@drawable/mark_345</item>
+		<item>@drawable/mark_344</item>
+		<item>@drawable/mark_343</item>
+		<item>@drawable/mark_342</item>
+		<item>@drawable/mark_341</item>
+		<item>@drawable/mark_340</item>
+		<item>@drawable/mark_339</item>
+		<item>@drawable/mark_338</item>
+		<item>@drawable/mark_337</item>
+		<item>@drawable/mark_336</item>
+		<item>@drawable/mark_335</item>
+		<item>@drawable/mark_334</item>
+		<item>@drawable/mark_333</item>
+		<item>@drawable/mark_332</item>
+		<item>@drawable/mark_331</item>
+		<item>@drawable/mark_330</item>
+		<item>@drawable/mark_329</item>
+		<item>@drawable/mark_328</item>
+		<item>@drawable/mark_327</item>
+		<item>@drawable/mark_326</item>
+		<item>@drawable/mark_325</item>
+		<item>@drawable/mark_324</item>
+		<item>@drawable/mark_323</item>
+		<item>@drawable/mark_322</item>
+		<item>@drawable/mark_321</item>
+		<item>@drawable/mark_320</item>
+		<item>@drawable/mark_319</item>
+		<item>@drawable/mark_318</item>
+		<item>@drawable/mark_317</item>
+		<item>@drawable/mark_316</item>
+		<item>@drawable/mark_315</item>
+		<item>@drawable/mark_314</item>
+		<item>@drawable/mark_313</item>
+		<item>@drawable/mark_312</item>
+		<item>@drawable/mark_311</item>
+		<item>@drawable/mark_310</item>
+		<item>@drawable/mark_309</item>
+		<item>@drawable/mark_308</item>
+		<item>@drawable/mark_307</item>
+		<item>@drawable/mark_306</item>
+		<item>@drawable/mark_305</item>
+		<item>@drawable/mark_304</item>
+		<item>@drawable/mark_303</item>
+		<item>@drawable/mark_302</item>
+		<item>@drawable/mark_301</item>
+		<item>@drawable/mark_300</item>
+		<item>@drawable/mark_299</item>
+		<item>@drawable/mark_298</item>
+		<item>@drawable/mark_297</item>
+		<item>@drawable/mark_296</item>
+		<item>@drawable/mark_295</item>
+		<item>@drawable/mark_294</item>
+		<item>@drawable/mark_293</item>
+		<item>@drawable/mark_292</item>
+		<item>@drawable/mark_291</item>
+		<item>@drawable/mark_290</item>
+		<item>@drawable/mark_289</item>
+		<item>@drawable/mark_288</item>
+		<item>@drawable/mark_287</item>
+		<item>@drawable/mark_286</item>
+		<item>@drawable/mark_285</item>
+		<item>@drawable/mark_284</item>
+		<item>@drawable/mark_283</item>
+		<item>@drawable/mark_282</item>
+		<item>@drawable/mark_281</item>
+		<item>@drawable/mark_280</item>
+		<item>@drawable/mark_279</item>
+		<item>@drawable/mark_278</item>
+		<item>@drawable/mark_277</item>
+		<item>@drawable/mark_276</item>
+		<item>@drawable/mark_275</item>
+		<item>@drawable/mark_274</item>
+		<item>@drawable/mark_273</item>
+		<item>@drawable/mark_272</item>
+		<item>@drawable/mark_271</item>
+		<item>@drawable/mark_270</item>
+		<item>@drawable/mark_269</item>
+		<item>@drawable/mark_268</item>
+		<item>@drawable/mark_267</item>
+		<item>@drawable/mark_266</item>
+		<item>@drawable/mark_265</item>
+		<item>@drawable/mark_264</item>
+		<item>@drawable/mark_263</item>
+		<item>@drawable/mark_262</item>
+		<item>@drawable/mark_261</item>
+		<item>@drawable/mark_260</item>
+		<item>@drawable/mark_259</item>
+		<item>@drawable/mark_258</item>
+		<item>@drawable/mark_257</item>
+		<item>@drawable/mark_256</item>
+		<item>@drawable/mark_255</item>
+		<item>@drawable/mark_254</item>
+		<item>@drawable/mark_253</item>
+		<item>@drawable/mark_252</item>
+		<item>@drawable/mark_251</item>
+		<item>@drawable/mark_250</item>
+		<item>@drawable/mark_249</item>
+		<item>@drawable/mark_248</item>
+		<item>@drawable/mark_247</item>
+		<item>@drawable/mark_246</item>
+		<item>@drawable/mark_245</item>
+		<item>@drawable/mark_244</item>
+		<item>@drawable/mark_243</item>
+		<item>@drawable/mark_242</item>
+		<item>@drawable/mark_241</item>
+		<item>@drawable/mark_240</item>
+		<item>@drawable/mark_239</item>
+		<item>@drawable/mark_238</item>
+		<item>@drawable/mark_237</item>
+		<item>@drawable/mark_236</item>
+		<item>@drawable/mark_234</item>
+		<item>@drawable/mark_233</item>
+		<item>@drawable/mark_232</item>
+		<item>@drawable/mark_231</item>
+		<item>@drawable/mark_230</item>
+		<item>@drawable/mark_229</item>
+		<item>@drawable/mark_228</item>
+		<item>@drawable/mark_227</item>
+		<item>@drawable/mark_226</item>
+		<item>@drawable/mark_225</item>
+		<item>@drawable/mark_224</item>
+		<item>@drawable/mark_223</item>
+		<item>@drawable/mark_222</item>
+		<item>@drawable/mark_221</item>
+		<item>@drawable/mark_220</item>
+		<item>@drawable/mark_219</item>
+		<item>@drawable/mark_218</item>
+		<item>@drawable/mark_217</item>
+		<item>@drawable/mark_216</item>
+		<item>@drawable/mark_215</item>
+		<item>@drawable/mark_214</item>
+		<item>@drawable/mark_213</item>
+		<item>@drawable/mark_212</item>
+		<item>@drawable/mark_211</item>
+		<item>@drawable/mark_210</item>
+		<item>@drawable/mark_209</item>
+		<item>@drawable/mark_208</item>
+		<item>@drawable/mark_207</item>
+		<item>@drawable/mark_206</item>
+		<item>@drawable/mark_205</item>
+		<item>@drawable/mark_204</item>
+		<item>@drawable/mark_203</item>
+		<item>@drawable/mark_202</item>
+		<item>@drawable/mark_201</item>
+		<item>@drawable/mark_200</item>
+		<item>@drawable/mark_199</item>
+		<item>@drawable/mark_198</item>
+		<item>@drawable/mark_197</item>
+		<item>@drawable/mark_196</item>
+		<item>@drawable/mark_195</item>
+		<item>@drawable/mark_194</item>
+		<item>@drawable/mark_193</item>
+		<item>@drawable/mark_192</item>
+		<item>@drawable/mark_191</item>
+		<item>@drawable/mark_190</item>
+		<item>@drawable/mark_189</item>
+		<item>@drawable/mark_188</item>
+		<item>@drawable/mark_187</item>
+		<item>@drawable/mark_186</item>
+		<item>@drawable/mark_185</item>
+		<item>@drawable/mark_184</item>
+		<item>@drawable/mark_183</item>
+		<item>@drawable/mark_182</item>
+		<item>@drawable/mark_181</item>
+		<item>@drawable/mark_180</item>
+		<item>@drawable/mark_179</item>
+		<item>@drawable/mark_178</item>
+		<item>@drawable/mark_177</item>
+		<item>@drawable/mark_176</item>
+		<item>@drawable/mark_175</item>
+		<item>@drawable/mark_174</item>
+		<item>@drawable/mark_173</item>
+		<item>@drawable/mark_172</item>
+		<item>@drawable/mark_171</item>
+		<item>@drawable/mark_170</item>
+		<item>@drawable/mark_169</item>
+		<item>@drawable/mark_168</item>
+		<item>@drawable/mark_167</item>
+		<item>@drawable/mark_166</item>
+		<item>@drawable/mark_165</item>
+		<item>@drawable/mark_164</item>
+		<item>@drawable/mark_163</item>
+		<item>@drawable/mark_162</item>
+		<item>@drawable/mark_161</item>
+		<item>@drawable/mark_160</item>
+		<item>@drawable/mark_159</item>
+		<item>@drawable/mark_158</item>
+		<item>@drawable/mark_157</item>
+		<item>@drawable/mark_156</item>
+		<item>@drawable/mark_155</item>
+		<item>@drawable/mark_154</item>
+		<item>@drawable/mark_153</item>
+		<item>@drawable/mark_152</item>
+		<item>@drawable/mark_151</item>
+		<item>@drawable/mark_150</item>
+		<item>@drawable/mark_149</item>
+		<item>@drawable/mark_148</item>
+		<item>@drawable/mark_147</item>
+		<item>@drawable/mark_146</item>
+		<item>@drawable/mark_145</item>
+		<item>@drawable/mark_144</item>
+		<item>@drawable/mark_143</item>
+		<item>@drawable/mark_142</item>
+		<item>@drawable/mark_141</item>
+		<item>@drawable/mark_140</item>
+		<item>@drawable/mark_139</item>
+		<item>@drawable/mark_138</item>
+		<item>@drawable/mark_137</item>
+		<item>@drawable/mark_136</item>
+		<item>@drawable/mark_135</item>
+		<item>@drawable/mark_134</item>
+		<item>@drawable/mark_133</item>
+		<item>@drawable/mark_132</item>
+		<item>@drawable/mark_131</item>
+		<item>@drawable/mark_130</item>
+		<item>@drawable/mark_129</item>
+		<item>@drawable/mark_128</item>
+		<item>@drawable/mark_127</item>
+		<item>@drawable/mark_126</item>
+		<item>@drawable/mark_125</item>
+		<item>@drawable/mark_124</item>
+		<item>@drawable/mark_123</item>
+		<item>@drawable/mark_122</item>
+		<item>@drawable/mark_121</item>
+		<item>@drawable/mark_120</item>
+		<item>@drawable/mark_119</item>
+		<item>@drawable/mark_118</item>
+		<item>@drawable/mark_117</item>
+		<item>@drawable/mark_116</item>
+		<item>@drawable/mark_115</item>
+		<item>@drawable/mark_114</item>
+		<item>@drawable/mark_113</item>
+		<item>@drawable/mark_112</item>
+		<item>@drawable/mark_111</item>
+		<item>@drawable/mark_110</item>
+		<item>@drawable/mark_109</item>
+		<item>@drawable/mark_108</item>
+		<item>@drawable/mark_107</item>
+		<item>@drawable/mark_106</item>
+		<item>@drawable/mark_105</item>
+		<item>@drawable/mark_104</item>
+		<item>@drawable/mark_94</item>
+		<item>@drawable/mark_95</item>
+		<item>@drawable/mark_96</item>
+		<item>@drawable/mark_97</item>
+		<item>@drawable/mark_98</item>
+		<item>@drawable/mark_99</item>
+		<item>@drawable/mark_100</item>
+		<item>@drawable/mark_93</item>
+		<item>@drawable/mark_92</item>
+		<item>@drawable/mark_91</item>
+		<item>@drawable/mark_90</item>
+		<item>@drawable/mark_89</item>
+		<item>@drawable/mark_88</item>
+		<item>@drawable/mark_86</item>
+		<item>@drawable/mark_87</item>
+		<item>@drawable/mark_81</item>
+		<item>@drawable/mark_82</item>
+		<item>@drawable/mark_83</item>
+		<item>@drawable/mark_84</item>
+		<item>@drawable/mark_85</item>
+		<item>@drawable/mark_01</item>
+		<item>@drawable/mark_03</item>
+		<item>@drawable/mark_04</item>
+		<item>@drawable/mark_05</item>
+		<item>@drawable/mark_06</item>
+		<item>@drawable/mark_07</item>
+		<item>@drawable/mark_08</item>
+		<item>@drawable/mark_09</item>
+		<item>@drawable/mark_11</item>
+		<item>@drawable/mark_12</item>
+		<item>@drawable/mark_13</item>
+		<item>@drawable/mark_14</item>
+		<item>@drawable/mark_15</item>
+		<item>@drawable/mark_16</item>
+		<item>@drawable/mark_17</item>
+		<item>@drawable/mark_18</item>
+		<item>@drawable/mark_19</item>
+		<item>@drawable/mark_21</item>
+		<item>@drawable/mark_22</item>
+		<item>@drawable/mark_23</item>
+		<item>@drawable/mark_24</item>
+		<item>@drawable/mark_25</item>
+		<item>@drawable/mark_26</item>
+		<item>@drawable/mark_27</item>
+		<item>@drawable/mark_28</item>
+		<item>@drawable/mark_29</item>
+		<item>@drawable/mark_30</item>
+		<item>@drawable/mark_31</item>
+		<item>@drawable/mark_32</item>
+		<item>@drawable/mark_33</item>
+		<item>@drawable/mark_34</item>
+		<item>@drawable/mark_35</item>
+		<item>@drawable/mark_36</item>
+		<item>@drawable/mark_37</item>
+		<item>@drawable/mark_38</item>
+		<item>@drawable/mark_39</item>
+		<item>@drawable/mark_40</item>
+		<item>@drawable/mark_41</item>
+		<item>@drawable/mark_41_1</item>
+		<item>@drawable/mark_42</item>
+		<item>@drawable/mark_43</item>
+		<item>@drawable/mark_44</item>
+		<item>@drawable/mark_45</item>
+		<item>@drawable/mark_46</item>
+		<item>@drawable/mark_47</item>
+		<item>@drawable/mark_48</item>
+		<item>@drawable/mark_49</item>
+		<item>@drawable/mark_50</item>
+		<item>@drawable/mark_51</item>
+		<item>@drawable/mark_52</item>
+		<item>@drawable/mark_53</item>
+		<item>@drawable/mark_54</item>
+		<item>@drawable/mark_55</item>
+		<item>@drawable/mark_56</item>
+		<item>@drawable/mark_57</item>
+		<item>@drawable/mark_58</item>
+		<item>@drawable/mark_59</item>
+		<item>@drawable/mark_60</item>
+		<item>@drawable/mark_61</item>
+		<item>@drawable/mark_62</item>
+		<item>@drawable/mark_63</item>
+		<item>@drawable/mark_64</item>
+		<item>@drawable/mark_65</item>
+		<item>@drawable/mark_66</item>
+		<item>@drawable/mark_67</item>
+		<item>@drawable/mark_68</item>
+		<item>@drawable/mark_69</item>
+		<item>@drawable/mark_70</item>
+		<item>@drawable/mark_71</item>
+		<item>@drawable/mark_73</item>
+		<item>@drawable/mark_74</item>
+		<item>@drawable/mark_75</item>
+		<item>@drawable/mark_76</item>
+		<item>@drawable/mark_77</item>
+		<item>@drawable/mark_78</item>
+		<item>@drawable/mark_79</item>
+		<item>@drawable/mark_79_1</item>
+	</array>
+
+</resources>

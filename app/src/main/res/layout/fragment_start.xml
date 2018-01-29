@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/start_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="none"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:text="Новая карта, оымовые гранаты, исправление ошибок и многое другое уже ждет вас в игре"
+            android:textColor="@color/grey"
+            android:layout_below="@+id/start_imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:id="@+id/start_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:background="@drawable/start_image"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

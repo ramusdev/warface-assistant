@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="rifleman_verb_name">
+        <item>M4A1</item>
+        <item>Daewoo K2</item>
+        <item>Daewoo K3</item>
+        <item>M16A2 LMG</item>
+        <item>АС Вал</item>
+        <item>IMBEL IA2</item>
+        <item>MSBS Radon</item>
+        <item>XM8</item>
+        <item>M60E4</item>
+        <item>HK G36K</item>
+        <item>HK MG36</item>
+        <item>Calico M955A</item>
+        <item>Galil AR</item>
+        <item>Tavor TAR-21</item>
+        <item>АК‐103</item>
+        <item>РПК</item>
+        <item>XM8 LMG</item>
+        <item>SAI GRY AR-15</item>
+    </string-array>
+    <string-array name="rifleman_verb_type">
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>На время</item>
+        <item>На время</item>
+        <item>На время</item>
+        <item>На время</item>
+        <item>На время</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+    </string-array>
+    <string-array name="rifleman_verb_about">
+        <item>Модифицированная версия M16 с укороченным стволом и выдвижным прикладом</item>
+        <item>Штурмовая винтовка вооруженных сил Южной Кореи, разработанная компанией ST Daewoo</item>
+        <item>Легкий пулемет калибра 5.56 мм. напоминающий по конструкции пулемет FN Minimi</item>
+        <item>Стандартный средний пулемет, который ранее находился на вооружении армии США, а ныне используется американской морской пехотой</item>
+        <item>АС Вал (Автомат Специальный) — советский автомат со встроенным глушителем. Разработан ЦНИИ Точмаш во второй половине 1980-х годов</item>
+        <item>Штурмовая винтовка IMBEL IA2 была официально принята на вооружение бразильской армии как замена устаревшим FN-FAL и M16A2</item>
+        <item>Польский стрелковый комплекс (Modułowy Systema Broni Strzeleckiej — модульная система стрелкового оружия), выполненный в компоновке булл-пап</item>
+        <item>Легкая штурмовая винтовка, разработанная для армии США в начале 2000-х годов</item>
+        <item>Модификация пулемета М60Е3 с возможностью смены ствола и крепления оптических прицелов</item>
+        <item>Штурмовая винтовка калибра 5.56х45 мм, разработанная в начале 90-х годов немецкой компанией Heckler Koch</item>
+        <item>Немецкий легкий пулемет, разработанный компанией Heckler Koch</item>
+        <item>Универсальная автоматическая винтовка со свободным затвором, использующая патроны калибра .22 LR или 9х19 мм Парабеллум</item>
+        <item>Израильский автомат, разработанный на основе финского автомата RK 62. Главным образом предназначен для ведения боя в пустыне</item>
+        <item>Израильская штурмовая винтовка калибра 5.56х45 мм, выполненная по схеме булл-пап. Корпус оружия изготовлен из легких сплавов и высокопрочных полимеров</item>
+        <item>Российская штурмовая винтовка калибра 7,62 мм</item>
+        <item>Легкий советский пулемет калибра 7.62х39 мм, созданный Михайлом Калашниковым в конце 1950-х параллельно со штурмовой винтовкой АКМ</item>
+        <item>Ручной пулемет на основе комплекса XM8 с утяжеленным стволом и барабанным магазином на 100 патронов</item>
+        <item>Штурмовая винтовка для тактических операций и спортивных соревнований. Оружие поставляется с уникальным пламегасителем Jailbrake и увеличенным магазином</item>
+    </string-array>
+    <array name="rifleman_verb_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_m4a1.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_daewook2.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_daewook3.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_m16a2lmg.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_acval.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_imbelia2.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_msbsradon.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_xm8.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_m60e4.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_hkg36k.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_hkmg36.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_calicom955a.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_galilar.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_tavortar21.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_ak103.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_rpk.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_xm8lmg.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_saigryar15.html</item>
+    </array>
+    <array name="rifleman_verb_icon">
+        <item>@drawable/rifleman_m4a1</item>
+        <item>@drawable/rifleman_daewook2</item>
+        <item>@drawable/rifleman_daewook3</item>
+        <item>@drawable/rifleman_m16a2lmg</item>
+        <item>@drawable/rifleman_acval</item>
+        <item>@drawable/rifleman_imbelia2</item>
+        <item>@drawable/rifleman_msbsradon</item>
+        <item>@drawable/rifleman_xm8</item>
+        <item>@drawable/rifleman_m60e4</item>
+        <item>@drawable/rifleman_hkg36k</item>
+        <item>@drawable/rifleman_hkmg36</item>
+        <item>@drawable/rifleman_calicom955a</item>
+        <item>@drawable/rifleman_galilar</item>
+        <item>@drawable/rifleman_tavortar21</item>
+        <item>@drawable/rifleman_ak103</item>
+        <item>@drawable/rifleman_rpk</item>
+        <item>@drawable/rifleman_xm8lmg</item>
+        <item>@drawable/rifleman_saigryar15</item>
+    </array>
+
+    <string-array name="rifleman_kred_name">
+        <item>РПД Custom</item>
+        <item>AUG A3</item>
+        <item>HK MG4</item>
+        <item>Famas F1</item>
+        <item>FN F2000</item>
+        <item>SIG 551</item>
+        <item>AUG A3 Hbar</item>
+    </string-array>
+    <string-array name="rifleman_kred_type">
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+    </string-array>
+    <string-array name="rifleman_kred_about">
+        <item>Ручной пулемет Дегтярева (РПД) появившийся в далеком 1944 году и до середины шестидесятых годов выполнял роль оружия поддержки пехоты. </item>
+        <item>Австрийская штурмовая винтовка калибра 5.56мм, выполненная по схеме булл-пап</item>
+        <item>Легкий пулемет калибра 5.56мм с ленточным питанием, который производит немецкая компания Heckler Koch</item>
+        <item>Штурмовая винтовка в компоновке булл-пап, созданная компанией MAS</item>
+        <item>Бельгийская штурмовая винтовка калибра 5.56х45 мм НАТО, разработанная компанией FN Herstal</item>
+        <item>Укороченная версия SIG 550, оснащённая изменённой прицельной системой</item>
+        <item>Модифицированный вариант винтовки AUG A3 с утяжеленным стволом, применяемый в качестве ручного пулемета</item>
+    </string-array>
+    <array name="rifleman_kred_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_rpdcustom.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_auga3.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_hkmg4.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_famasf1.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_fnf2000.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_sig551.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_auga3hbar.html</item>
+    </array>
+    <array name="rifleman_kred_icon">
+        <item>@drawable/rifleman_rpdcustom</item>
+        <item>@drawable/rifleman_auga3</item>
+        <item>@drawable/rifleman_hkmg4</item>
+        <item>@drawable/rifleman_famasf1</item>
+        <item>@drawable/rifleman_fnf2000</item>
+        <item>@drawable/rifleman_sig551</item>
+        <item>@drawable/rifleman_auga3hbar</item>
+    </array>
+
+    <string-array name="rifleman_box_name">
+        <item>Beretta ARX160</item>
+        <item>АК-47</item>
+        <item>MG3</item>
+        <item>ПКП Печенег</item>
+        <item>M16A3</item>
+        <item>M249 Para</item>
+        <item>Enfield L85A2 Custom</item>
+        <item>ACR</item>
+        <item>FN SCAR‐H</item>
+        <item>Type 97</item>
+    </string-array>
+    <string-array name="rifleman_box_type">
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+    </string-array>
+    <string-array name="rifleman_box_about">
+        <item>Штурмовая винтовка разработанная компанией Beretta в 2008 году. Отличается удобной отдачей, высокой скорострельностью и большой пробивной способностью</item>
+        <item>Знаменитый автомат, разработанный Михаилом Калашниковым и принятый на вооружение в СССР в 1949 году</item>
+        <item>Немецкий единый пулемёт калибра 7.62х51 мм НАТО</item>
+        <item>Российский единый пулемёт калибра 7,62×54 мм с высокой огневой мощью и большой дальностью стрельбы</item>
+        <item>Вариант винтовки M16A2 с направляющей Пикатинни, установленной над ствольной коробкой, что позволяет использовать большинство военных и гражданских прицельных приспособлений</item>
+        <item>Вариант пулемёта М249 с укороченным стволом и раздвижным прикладом, в первую очередь предназначенный для десантных войск</item>
+        <item>Британская штурмовая винтовка, позволяющая вести огонь короткими очередями с отсечкой по три патрона</item>
+        <item>ACR — сокращение от Adaptive Combat Rifle (адаптивная штурмовая винтовка), Разработана в США в качестве замены для штурмовой винтовки М16</item>
+        <item>SCAR — штурмовая винтовка, разработанная компанией FN Herstal для командования специальных операций США (SOCOM)</item>
+        <item>Экспортный вариант китайской винтовки Type 97, разработанный под патрон 5,56х45 мм НАТО, так чтобы приёмник магазина соответствовал стандарту STANAG.</item>
+    </string-array>
+    <array name="rifleman_box_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_berettaarx160.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_ak47.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_mg3.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_pkppecheneg.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_m16a3.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_m249para.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_enfieldl85a2.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_acr.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_fnscarh.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_type97.html</item>
+    </array>
+    <array name="rifleman_box_icon">
+        <item>@drawable/rifleman_berettaarx160</item>
+        <item>@drawable/rifleman_ak47</item>
+        <item>@drawable/rifleman_mg3</item>
+        <item>@drawable/rifleman_pkppecheneg</item>
+        <item>@drawable/rifleman_m16a3</item>
+        <item>@drawable/rifleman_m249para</item>
+        <item>@drawable/rifleman_enfieldl85a2</item>
+        <item>@drawable/rifleman_acr</item>
+        <item>@drawable/rifleman_fnscarh</item>
+        <item>@drawable/rifleman_type97</item>
+    </array>
+</resources>

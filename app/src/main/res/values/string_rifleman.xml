@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="rifleman_verb_name">
+        <item>M4A1</item>
+        <item>Daewoo K2</item>
+        <item>Daewoo K3</item>
+        <item>M16A2 LMG</item>
+        <item>AS Val</item>
+        <item>IMBEL IA2</item>
+        <item>MSBS Radon</item>
+        <item>XM8</item>
+        <item>M60E4</item>
+        <item>HK G36K</item>
+        <item>HK MG36</item>
+        <item>Calico M955A</item>
+        <item>Galil AR</item>
+        <item>Tavor TAR-21</item>
+        <item>AK‐103</item>
+        <item>RPK</item>
+        <item>XM8 LMG</item>
+        <item>SAI GRY AR-15</item>
+    </string-array>
+    <string-array name="rifleman_verb_type">
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Time</item>
+        <item>Time</item>
+        <item>Time</item>
+        <item>Time</item>
+        <item>Time</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+    </string-array>
+    <string-array name="rifleman_verb_about">
+        <item>A Modified version of M16 with a shortened barrel and a retractable butt</item>
+        <item>Assault rifle of the armed forces of South Korea, was developed by company ST Daewoo</item>
+        <item>Light machine gun caliber 5.56 mm. resembling the FN Minimi machine gun</item>
+        <item>The Standard medium machine gun that was previously on the US army and now used by the U.S. marine corps</item>
+        <item>As Val (the automatic Machine Special) — the Soviet machine with built-in silencer. Developed by TSNII Tochmash in the second half of 1980-ies</item>
+         <item>Assault rifle IMBEL IA2 was officially adopted by the Brazilian army as the replacement of obsolete FN-FAL and M16A2</item>
+        <item>Polish small complex (Modułowy Systema Broni Strzeleckiej — modular system of small arms), made in the layout of bullpup</item>
+        <item>Light assault rifle developed for the US army in the early 2000-ies</item>
+        <item>Modification of the gun М60Е3 with the possibility of changing the barrel and mounting of optical sights</item>
+         <item>Assault rifle calibre 5.56х45 mm, developed in the early 90-ies the German company Heckler Koch</item>
+        <item>German light machine gun developed by Heckler Koch</item>
+        <item>Universal automatic rifle blowback that uses cartridges of .22 LR or 9x19 mm Parabellum</item>
+        <item>Israeli machine developed on the basis of the Finnish RK 62 machine. Primarily intended for combat in the desert</item>
+         <item>Israeli assault rifle calibre 5.56х45 mm, made by the scheme bullpup. The body of weapons made of light alloys and high strength polymers</item>
+        <item>Russian assault rifle 7.62 mm</item>
+        <item>Soviet Light machine gun caliber 7.62x39 mm, created by Mikhailov Kalashnikov in the late 1950s, in parallel with an assault rifle AKM</item>
+        <item>Light machine gun based on the XM8 with a heavier barrel and a drum magazine for 100 rounds</item>
+         <item>Assault rifle for tactical operations and sporting events. The weapon comes with a unique flash Hider Jailbrake and increased store</item>
+    </string-array>
+    <array name="rifleman_verb_link">
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m4a1.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_daewook2.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_daewook3.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m16a2lmg.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_acval.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_imbelia2.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_msbsradon.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_xm8.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m60e4.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_hkg36k.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_hkmg36.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_calicom955a.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_galilar.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_tavortar21.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_ak103.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_rpk.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_xm8lmg.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_saigryar15.html</item>
+    </array>
+    <array name="rifleman_verb_icon">
+        <item>@drawable/rifleman_m4a1</item>
+        <item>@drawable/rifleman_daewook2</item>
+        <item>@drawable/rifleman_daewook3</item>
+        <item>@drawable/rifleman_m16a2lmg</item>
+        <item>@drawable/rifleman_acval</item>
+        <item>@drawable/rifleman_imbelia2</item>
+        <item>@drawable/rifleman_msbsradon</item>
+        <item>@drawable/rifleman_xm8</item>
+        <item>@drawable/rifleman_m60e4</item>
+        <item>@drawable/rifleman_hkg36k</item>
+        <item>@drawable/rifleman_hkmg36</item>
+        <item>@drawable/rifleman_calicom955a</item>
+        <item>@drawable/rifleman_galilar</item>
+        <item>@drawable/rifleman_tavortar21</item>
+        <item>@drawable/rifleman_ak103</item>
+        <item>@drawable/rifleman_rpk</item>
+        <item>@drawable/rifleman_xm8lmg</item>
+        <item>@drawable/rifleman_saigryar15</item>
+    </array>
+
+    <string-array name="rifleman_kred_name">
+        <item>AUG A3</item>
+        <item>HK MG4</item>
+        <item>Famas F1</item>
+        <item>FN F2000</item>
+        <item>SIG 551</item>
+        <item>AUG A3 Hbar</item>
+    </string-array>
+    <string-array name="rifleman_kred_type">
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+    </string-array>
+    <string-array name="rifleman_kred_about">
+        <item>Austrian assault rifle caliber 5.56 mm, made by the scheme bullpup</item>
+        <item>Light machine gun caliber 5.56 mm belt feed, which produces the German company Heckler Koch</item>
+        <item>Assault rifle in the layout of the bullpup, developed by MAS</item>
+        <item>Belgian assault rifle calibre 5.56х45 mm NATO was developed by company FN Herstal</item>
+        <item>Shortened version of the SIG 550, is equipped with a modified sighting system</item>
+        <item>Modified variant of the AUG A3 rifle with a heavier barrel that is used as a light machine gun</item>
+    </string-array>
+    <array name="rifleman_kred_link">
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_auga3.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_hkmg4.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_famasf1.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_fnf2000.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_sig551.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_auga3hbar.html</item>
+    </array>
+    <array name="rifleman_kred_icon">
+        <item>@drawable/rifleman_auga3</item>
+        <item>@drawable/rifleman_hkmg4</item>
+        <item>@drawable/rifleman_famasf1</item>
+        <item>@drawable/rifleman_fnf2000</item>
+        <item>@drawable/rifleman_sig551</item>
+        <item>@drawable/rifleman_auga3hbar</item>
+    </array>
+
+    <string-array name="rifleman_box_name">
+        <item>Beretta ARX160</item>
+        <item>АК-47</item>
+        <item>MG3</item>
+        <item>PKP Pecheneg</item>
+        <item>M16A3</item>
+        <item>M249 Para</item>
+        <item>Enfield L85A2 Custom</item>
+        <item>ACR</item>
+        <item>FN SCAR‐H</item>
+        <item>Type 97</item>
+    </string-array>
+    <string-array name="rifleman_box_type">
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+        <item>For a while or forever</item>
+    </string-array>
+    <string-array name="rifleman_box_about">
+        <item>Assault rifle developed by Beretta in 2008. Convenient to recoil, high rate of fire and great penetration</item>
+        <item>Famous slot machine developed by Mikhail Kalashnikov and adopted in the USSR in 1949</item>
+        <item>A single German machine gun caliber 7.62x51 mm NATO</item>
+        <item>Single Russian 7.62×54 mm with high firepower and long range shooting</item>
+         <item>Version of the M16A2 rifle with Picatinny rail installed above the receiver, which allows the use of most military and civilian sighting devices</item>
+        <item>Variant of the M249 machine gun with a short barrel and a sliding butt in the first place intended for airborne troops</item>
+        <item>British assault rifle allowing you to fire in short bursts with a cutoff of three rounds</item>
+         <item>ACR — abbreviation for Adaptive Combat Rifle (adaptive assault rifle), Developed in the USA as a replacement for the M16 assault rifle</item>
+        <item>SCAR — assault rifle developed by FN Herstal for the command of the U.S. special operations (SOCOM)</item>
+        <item>Export version of the Chinese Type 97 rifle, developed under the cartridge 5 56х45 mm NATO, so that the receiver of the store complies with STANAG.</item>
+    </string-array>
+    <array name="rifleman_box_link">
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_berettaarx160.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_ak47.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_mg3.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_pkppecheneg.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m16a3.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m249para.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_enfieldl85a2.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_acr.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_fnscarh.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_type97.html</item>
+    </array>
+    <array name="rifleman_box_icon">
+        <item>@drawable/rifleman_berettaarx160</item>
+        <item>@drawable/rifleman_ak47</item>
+        <item>@drawable/rifleman_mg3</item>
+        <item>@drawable/rifleman_pkppecheneg</item>
+        <item>@drawable/rifleman_m16a3</item>
+        <item>@drawable/rifleman_m249para</item>
+        <item>@drawable/rifleman_enfieldl85a2</item>
+        <item>@drawable/rifleman_acr</item>
+        <item>@drawable/rifleman_fnscarh</item>
+        <item>@drawable/rifleman_type97</item>
+    </array>
+    
+</resources>

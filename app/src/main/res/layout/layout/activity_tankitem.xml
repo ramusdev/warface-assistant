@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:background="#ffffff"
+    android:paddingTop="1dp" >
+
+    <ImageView
+        android:id="@+id/wartech_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="175dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ussr2_is21944" />
+
+    <TextView
+        android:id="@+id/wartech_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Т-34Э"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/wartech_rang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/wartech_reitingw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="nasd"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/wartech_reiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="3.2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/wartech_classw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="wqewe"
+        android:textColor="#ff0000"
+        android:textSize="12sp" />
+
+</LinearLayout>

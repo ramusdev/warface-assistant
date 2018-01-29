@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sniper_verb_name">
+    	<item>СВД</item>
+    	<item>M16 SPR Custom</item>
+    	<item>QBU-88</item>
+        <item>M40A5</item>
+        <item>ОРСИС Т-5000</item>
+        <item>H&#38;K SL8</item>
+    	<item>XM8 Sharpshooter</item>
+        <item>ACR SPR</item>  
+        <item>Walther WA 2000</item>
+        <item>SIG 550</item>
+        <item>Alpine</item>
+        <item>AMP DSR-1</item>
+        <item>Tavor STAR-21 Navy Blue</item>
+        <item>AT308</item>
+        <item>FCG-R3 K1</item>
+    </string-array>
+    <string-array name="sniper_verb_type">
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>На время</item>
+        <item>На время</item>
+        <item>На время</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>Навсегда</item>
+        <item>На время</item>
+    </string-array>
+    <string-array name="sniper_verb_about">
+        <item>Пулуавтоматическая снайперская винтовка калибра 7,62х54 мм, разработанная в Советском Союзе</item>
+        <item>Снайперская винтовка, которую используют отряды особого назначения</item>
+        <item>Китайская снайперская винтовка из нового поколения оружия под патрон калибра 5.8x42 мм</item>
+        <item>Крупнокалиберная снайперская винтовка с продольно-скользящим затвором</item>
+        <item>Высокоточная российская снайперская винтовка с продольно-скользящим затвором</item>
+        <item>Снайперская винтовка, созданная на основе штурмовой пинтовки G36</item>
+        <item>Снайперская модификация автомата XM8 с удлинённым стволом, позволяющая эффективно вести бой на большой дистанции</item>
+        <item>Боевая винтовка ACR в снайперской конфигурации. Длина ствола — 18.5 дюймов. Производится компанией Magpul</item>
+        <item>Полуавтоматическая снайперская винтовка в компоновке Булл-пап, разработанная компанией Carl Walther GmbH Sportwaffen</item>
+        <item>Снайперский вариант SG 550, разработанный специально для швейцарских спецслужб</item>
+        <item>Оружие, производимое в Австрии компанией Uniqeu Alpine AG. TPG-1 — модульная снайперская винтовка с продольно-скользящим поворотным затвором</item>
+        <item>Компактная немецкая винтовка с продольно-скользящим затвором, изначально разработанная для снайперов из полицейских подразделений</item>
+        <item>Полуавтоматическая модификация снайперской винтовки STAR-21. Отличается высокой эффективностью в бою на больших дистанциях</item>
+        <item>Британская снайперская винтовка, продолжающая традиции AW308 и выводящая их на качественно новый уровень</item>
+        <item>Cекретное, экспериментальное энергетическое оружие Blackwood, обладающее огромной мощью и долгой перезарядкой</item>
+    </string-array>
+    <array name="sniper_verb_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_svd.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_m16sprcustom.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_qbu88.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_m40a5.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_orsist5000.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_handksl8.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_xm8sharpshooter.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_acrspr.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_waltherwa2000.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_sig550.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_alpine.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_ampdsr1.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_tavorstar21nb.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_at308.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_fcgr3k1.html</item>
+    </array>
+    <array name="sniper_verb_icon">
+        <item>@drawable/sniper_svd</item>
+        <item>@drawable/sniper_m16sprcustom</item>
+        <item>@drawable/sniper_qbu88</item>
+        <item>@drawable/sniper_m40a5</item>
+        <item>@drawable/sniper_orsist5000</item>
+        <item>@drawable/sniper_handksl8</item>
+        <item>@drawable/sniper_xm8sharpshooter</item>
+        <item>@drawable/sniper_acrspr</item>
+        <item>@drawable/sniper_waltherwa2000</item>
+        <item>@drawable/sniper_sig550</item>
+        <item>@drawable/sniper_alpine</item>
+        <item>@drawable/sniper_ampdsr1</item>
+        <item>@drawable/sniper_tavorstar21nb</item>
+        <item>@drawable/sniper_at308</item>
+        <item>@drawable/sniper_fcgr3k1</item>
+    </array>
+
+    <string-array name="sniper_kred_name">
+    	<item>ВСС Винторез</item>
+    	<item>Barrett M107</item>
+    	<item>Barrett M98B</item>
+    	<item>CheyTac M200</item>
+    </string-array>
+    <string-array name="sniper_kred_type">
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    </string-array>
+    <string-array name="sniper_kred_about">
+    	<item>Бесшумная снайперская винтовка, разработанная в начале 1980-х готов в ЦНИИ Точмаш. Используется подразделениями специального назначения</item>
+    	<item>Крупнокалиберная снайперская винтовка компании Barrett Firearms, состоящая на вооружении многих армий мира</item>
+    	<item>Высокоточная снайперская винтовка с продольно-скользящим поворотным затвором под патрон .338 Lapua Magnum</item>
+    	<item>Американская снайперская винтовка с продольно-скользящим поворотным затвором, предназначенная для поражения живой силы противника</item>
+    </string-array>
+    <array name="sniper_kred_link">
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_vssvintorez.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_barrettm107.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_barrettm98b.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_cheytacm200.html</item>
+    </array>
+    <array name="sniper_kred_icon">
+    	<item>@drawable/sniper_vssvintorez</item>
+    	<item>@drawable/sniper_barrettm107</item>
+    	<item>@drawable/sniper_barrettm98b</item>
+    	<item>@drawable/sniper_cheytacm200</item>
+    </array>
+
+    <string-array name="sniper_box_name">
+    	<item>Bushmaster BA50</item>
+        <item>AWM</item>
+        <item>M14 Crazy Horse</item>
+        <item>СВУ-АС</item>
+        <item>Calico M951S</item>
+        <item>AS50</item>
+        <item>MK 14 EBR</item>
+        <item>DSA SA58 SPR</item>
+        <item>McMillan CS5</item>
+        <item>AX308</item>
+        <item>Remington R11 RSASS</item>
+        <item>Steyr Scout</item>
+    </string-array>
+    <string-array name="sniper_box_type">
+    	<item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+    </string-array>
+    <string-array name="sniper_box_about">
+    	<item>Полуавтоматическая снайперская винтовка калибра 7.62×51 мм, разработанная компанией Smith Enterprise Inc.</item>
+        <item>Cнайперская винтовка производства International. Оружие использует отъёмные коробочные магазины на 5 патронов</item>
+        <item>Полуавтоматическая снайперская винтовка калибра 7.62 мм, разработанная компанией Smith Enterprise Inc</item>
+        <item>Укороченная модель снайперской винтовки Драгунова, оборудованная складными сошками и специальным дульным устройством</item>
+        <item>Единственное отличие от модели 951 заключается в наличии специального компенсатора, который превышает размерами компенсатор M900</item>
+        <item>Английская снайперская винтовка калибра .50 BMG, созданная компанией Accuracy International для британской армии</item>
+        <item>Винтовка, которая используется различными спецподразделениями США отрядом дельта, морскими котиками и рядом других</item>
+        <item>Винтовка специального назначения SA58 SPR. Разработана компанией DS Arms (DSA) на базе винтовки FN FAL</item>
+        <item>Компактная снайперская винтовка с продольно-скользящим затвором, предназначенная для ведения боя в городских условиях</item>
+        <item>Первая винтовка из новейшего поколения оружия серии Arctic Warfare. Сочетает в себя лучшие качества предшественников-надёжность, износостойности</item>
+        <item>Полуавтоматическая снайперская винтовка-высокоточная скорострельная снайперская винтовка нового поколения</item>
+        <item>Лёгкая снайперская винтовка с продольно-скользящим затвором, разработанная в 1997 году в Австрии совместно с экспертом по огнестрельному оружию Джеффом Купером</item>
+    </string-array>
+    <array name="sniper_box_link">
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_bushmasterba50.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_awm.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_m14crazyhorse.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_svuas.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_calicom951s.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_as50.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_mk14ebr.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_dsasa58spr.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_mcmillancs5.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_ax308.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_remingtonr11rsass.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_steyrscout.html</item>
+    </array>
+    <array name="sniper_box_icon">
+    	<item>@drawable/sniper_bushmasterbas50</item>
+        <item>@drawable/sniper_awm</item>
+        <item>@drawable/sniper_m14crazyhorse</item>
+        <item>@drawable/sniper_svuas</item>
+        <item>@drawable/sniper_calicom951s</item>
+        <item>@drawable/sniper_as50</item>
+        <item>@drawable/sniper_mk14ebr</item>
+        <item>@drawable/sniper_dsasa58spr</item>
+        <item>@drawable/sniper_mcmillancs5</item>
+        <item>@drawable/sniper_ax308</item>
+        <item>@drawable/sniper_remingtonr11rsass</item>
+        <item>@drawable/sniper_steyrscout</item>
+    </array>
+
+</resources>

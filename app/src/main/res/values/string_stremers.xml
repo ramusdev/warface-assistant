@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="stremers_name">
+<item>Elez</item>
+<item>Warface</item>
+<item>MS-</item>
+<item>RazorTV</item>
+<item>Monter</item>
+<item>Donic</item>
+<item>Dmitry Crimean</item>
+</string-array>
+
+<string-array name="stremers_type">
+<item>Subscribers: 1 019 892</item>
+<item>Subscribers: 524 540</item>
+<item>Subscribers: 436 128</item>
+<item>Subscribers: 306 672</item>
+<item>Subscribers: 334 563</item>
+ <item>Subscribers: 301 870</item>
+<item>Subscribers: 378 231</item>
+</string-array>
+
+<string-array name="stremers_about">
+<item>Welcome! My name is Serge, and this channel is dedicated to the game Warface, but you can also meet other interesting games. Here you will find hot Letsplay, Reviews, Tricks and Guides.</item>
+<item>On our channel you can find news about the game, gameplay video, reports from events, live broadcasts and more. </item>
+ <item>Hello world! My Name is Serge, Im known as MS-Serge I do videos Warface.</item>
+<item>Welcome! My name is Razor and on my channel I post videos on the game Warface and not only. Here you will find a lot of commercials analytical content, as well as show Varfeys</item>
+<item>Monter Arts releases video for popular online games, like CS:GO, GTA 5, Warface. On the channel you will find funny videos and cutting, reviews and guides, frag movie and nice moments. </item>
+ <item>Hello ardent fan of varfeys! My name is Donika and I rented an interesting video for our beloved game! Top 5 best clips of the week, music warface, top 5 funny videos from the game!</item>
+<item>Welcome to StarGameWF, videos come out every day at 9:00 GMT and wish you a pleasant viewing and spending time on the channel.</item>
+</string-array>
+
+<array name="stremers_icon">
+<item>@drawable/elez_logo</item>
+<item>@drawable/warface_logo</item>
+<item>@drawable/mcserega_logo</item>
+<item>@drawable/razortv_logo</item>
+<item>@drawable/monter_logo</item>
+<item>@drawable/donic_logo</item>
+<item>@drawable/dmitriykr_logo</item>
+</array>
+
+</resources>

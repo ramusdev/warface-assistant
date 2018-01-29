@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="rang_name">
+		<item>Rank 1</item>
+		<item>Rank 2</item>
+		<item>Rank 3</item>
+		<item>Rank 4</item>
+		<item>Rank 5</item>
+		<item>Rank 6</item>
+		<item>Rank 7</item>
+		<item>Rank 8</item>
+		<item>Rank 9</item>
+		<item>Rank 10</item>
+		<item>Rank 11</item>
+		<item>Rank 12</item>
+		<item>Rank 13</item>
+		<item>Rank 14</item>
+		<item>Rank 15</item>
+		<item>Rank 16</item>
+		<item>Rank 17</item>
+		<item>Rank 18</item>
+		<item>Rank 19</item>
+		<item>Rank 20</item>
+		<item>Rank 21</item>
+		<item>Rank 22</item>
+		<item>Rank 23</item>
+		<item>Rank 24</item>
+		<item>Rank 25</item>
+		<item>Rank 26</item>
+		<item>Rank 27</item>
+		<item>Rank 28</item>
+		<item>Rank 29</item>
+		<item>Rank 30</item>
+		<item>Rank 31</item>
+		<item>Rank 32</item>
+		<item>Rank 33</item>
+		<item>Rank 34</item>
+		<item>Rank 35</item>
+		<item>Rank 36</item>
+		<item>Rank 37</item>
+		<item>Rank 38</item>
+		<item>Rank 39</item>
+		<item>Rank 40</item>
+		<item>Rank 41</item>
+		<item>Rank 42</item>
+		<item>Rank 43</item>
+		<item>Rank 44</item>
+		<item>Rank 45</item>
+		<item>Rank 46</item>
+		<item>Rank 47</item>
+		<item>Rank 48</item>
+		<item>Rank 49</item>
+		<item>Rank 50</item>
+		<item>Rank 51</item>
+		<item>Rank 52</item>
+		<item>Rank 53</item>
+		<item>Rank 54</item>
+		<item>Rank 55</item>
+		<item>Rank 56</item>
+		<item>Rank 57</item>
+		<item>Rank 58</item>
+		<item>Rank 59</item>
+		<item>Rank 60</item>
+		<item>Rank 61</item>
+		<item>Rank 62</item>
+		<item>Rank 63</item>
+		<item>Rank 64</item>
+		<item>Rank 65</item>
+		<item>Rank 66</item>
+		<item>Rank 67</item>
+		<item>Rank 68</item>
+		<item>Rank 69</item>
+		<item>Rank 70</item>
+		<item>Rank 71</item>
+		<item>Rank 72</item>
+		<item>Rank 73</item>
+		<item>Rank 74</item>
+		<item>Rank 75</item>
+		<item>Rank 76</item>
+		<item>Rank 77</item>
+		<item>Rank 78</item>
+		<item>Rank 79</item>
+		<item>Rank 80</item>
+		<item>Rank 81</item>
+		<item>Rank 82</item>
+		<item>Rank 83</item>
+		<item>Rank 84</item>
+    </string-array>
+        
+    <string-array name="rang_about"> 
+<item><![CDATA[Rookie<br>0 XP]]></item>
+<item><![CDATA[Junior recruit.<br>700 XP]]></item>
+<item><![CDATA[Recruit<br>1400 XP]]></item>
+<item><![CDATA[Senior recruit.<br>2 400 XP]]></item>
+<item><![CDATA[Recruit class 1<br>3 900 XP]]></item>
+<item><![CDATA[Soldiers<br>5800 XP]]></item>
+<item><![CDATA[Private recruit<br>8 100 XP]]></item>
+<item><![CDATA[Private class 2<br>11 000 XP]]></item>
+<item><![CDATA[Private<br>14 600 XP]]></item>
+<item><![CDATA[Private 1st class<br>18 800 XP]]></item>
+ <item><![CDATA[Specialist<br>23 800 XP]]></item>
+<item><![CDATA[Senior specialist<br>29 600 XP]]></item>
+<item><![CDATA[Technician<br>36 300 XP]]></item>
+<item><![CDATA[Specialist 1st class<br>44 100 XP]]></item>
+<item><![CDATA[Scout<br>53 000 XP]]></item>
+<item><![CDATA[Lance corporal<br>63 000 XP]]></item>
+<item><![CDATA[Corporal<br>74 500 XP]]></item>
+<item><![CDATA[Commander<br>87 400 XP]]></item>
+<item><![CDATA[Sergeant 3rd class<br>102 000 XP]]></item>
+<item><![CDATA[Sergeant 2nd class<br>118 400 XP]]></item>
+<item><![CDATA[Sergeant<br>136 700 XP]]></item>
+ <item><![CDATA[Staff Sergeant<br>157 200 XP]]></item>
+<item><![CDATA[Sergeant 1st class<br>180 000 XP]]></item>
+<item><![CDATA[Gunnery Sergeant<br>205 200 XP]]></item>
+<item><![CDATA[Master-Sergeant<br>233 300 XP]]></item>
+<item><![CDATA[First Sergeant<br>264 400 XP]]></item>
+<item><![CDATA[Team-Sergeant<br>298 700 XP]]></item>
+<item><![CDATA[Master gunnery Sergeant<br>336 500 XP]]></item>
+<item><![CDATA[Sergeant major<br>378 000 XP]]></item>
+<item><![CDATA[Command-Sergeant major<br>423 700 XP]]></item>
+<item><![CDATA[Junior warrant officer<br>473 700 XP]]></item>
+ <item><![CDATA[Warrant officer<br>528 400 XP]]></item>
+<item><![CDATA[Chief warrant officer<br>588 100 XP]]></item>
+<item><![CDATA[Chief warrant officer 1st class<br>653 400 XP]]></item>
+<item><![CDATA[Master warrant officer<br>724 400 XP]]></item>
+<item><![CDATA[Quartermaster<br>801 600 XP]]></item>
+<item><![CDATA[Junior officer<br>885 500 XP]]></item>
+<item><![CDATA[Senior officer<br>976 400 XP]]></item>
+<item><![CDATA[Junior Lieutenant<br>1 074 800 XP]]></item>
+<item><![CDATA[Second Lieutenant<br>1 181 100 XP]]></item>
+ <item><![CDATA[First Lieutenant<br>1 296 000 XP]]></item>
+<item><![CDATA[Lieutenant<br>1 419 700 XP]]></item>
+<item><![CDATA[Senior Lieutenant<br>1 552 900 XP]]></item>
+<item><![CDATA[Captain-Lieutenant<br>1 696 200 XP]]></item>
+<item><![CDATA[Captain<br>1 849 900 XP]]></item>
+<item><![CDATA[Captain of the intelligence<br>2 014 800 XP]]></item>
+<item><![CDATA[Special forces Captain<br>2 191 200 XP]]></item>
+<item><![CDATA[Major<br>2 380 000 XP]]></item>
+<item><![CDATA[Lieutenant Colonel<br>2 581 500 XP]]></item>
+<item><![CDATA[Colonel<br>2 796 400 XP]]></item>
+ <item><![CDATA[Brigadier General<br>3 025 300 XP]]></item>
+<item><![CDATA[Major General<br>3 268 800 XP]]></item>
+<item><![CDATA[Lieutenant-General<br>3 527 500 XP]]></item>
+<item><![CDATA[Colonel-General<br>3 801 900 XP]]></item>
+<item><![CDATA[General<br>092 4 800 XP]]></item>
+<item><![CDATA[General of the army<br>4 400 600 XP]]></item>
+<item><![CDATA[Commander<br>4 726 000 XP]]></item>
+<item><![CDATA[Marshall<br>5 069 500 XP]]></item>
+<item><![CDATA[Supreme commander<br>5 431 800 XP]]></item>
+<item><![CDATA[Warface<br>6 000 000 XP]]></item>
+ <item><![CDATA[Lieutenant of a detachment of the Immortal<br>6 568 200 XP]]></item>
+<item><![CDATA[Senior Lieutenant of a detachment of the Immortal<br>7 136 400 XP]]></item>
+<item><![CDATA[Captain of the detachment of the Immortal<br>7 704 600 XP]]></item>
+<item><![CDATA[Major detachment of the Immortal<br>8 800 272 XP]]></item>
+<item><![CDATA[Colonel of the detachment of the Immortal<br>8 841 000 XP]]></item>
+<item><![CDATA[Colonel of the detachment of the Immortal<br>9 409 200 XP]]></item>
+<item><![CDATA[Major-General of the detachment of the Immortal<br>9 977 400 XP]]></item>
+<item><![CDATA[General-the Lieutenant of a detachment of the Immortal<br>10 545 600 XP]]></item>
+ <item><![CDATA[Colonel-General of the detachment of the Immortal<br>11 113 800 XP]]></item>
+<item><![CDATA[Marshal of the detachment of the Immortal<br>11 682 000 XP]]></item>
+<item><![CDATA[Lieutenant of squad Gods of War<br>12 250 200 XP]]></item>
+<item><![CDATA[Senior Lieutenant of squad Gods of War<br>12 818 400 XP]]></item>
+<item><![CDATA[The Captain of squad Gods of War<br>13 386 600 XP]]></item>
+<item><![CDATA[Major squad Gods of War<br>13 954 800 XP]]></item>
+<item><![CDATA[Colonel squad Gods of War<br>14 523 000 XP]]></item>
+<item><![CDATA[Colonel squad Gods of War<br>15 091 200 XP]]></item>
+<item><![CDATA[Major-General of the squad Gods of War<br>15 659 400 XP]]></item>
+<item><![CDATA[General-the Lieutenant of squad Gods of War<br>16 227 600 XP]]></item>
+<item><![CDATA[Colonel-General of the squad Gods of War<br>16 795 800 XP]]></item>
+<item><![CDATA[Marshall squad Gods of War<br>17 364 000 XP]]></item>
+<item><![CDATA[Lieutenant of squad the Messengers of death<br>17 932 200 XP]]></item>
+<item><![CDATA[Senior Lieutenant of squad the Messengers of death<br>18 500 400 XP]]></item>
+<item><![CDATA[The Captain of squad the Messengers of death<br>19 068 600 XP]]></item>
+ <item><![CDATA[Major detachment of the Messengers of death<br>19 636 800 XP]]></item>
+</string-array>
+	
+    <array name="rang_icon">
+        <item>@drawable/rang_01</item>
+		<item>@drawable/rang_02</item>
+		<item>@drawable/rang_03</item>
+		<item>@drawable/rang_04</item>
+		<item>@drawable/rang_05</item>
+		<item>@drawable/rang_06</item>
+		<item>@drawable/rang_07</item>
+		<item>@drawable/rang_08</item>
+		<item>@drawable/rang_09</item>
+		<item>@drawable/rang_10</item>
+		<item>@drawable/rang_11</item>
+		<item>@drawable/rang_12</item>
+		<item>@drawable/rang_13</item>
+		<item>@drawable/rang_14</item>
+		<item>@drawable/rang_15</item>
+		<item>@drawable/rang_16</item>
+		<item>@drawable/rang_17</item>
+		<item>@drawable/rang_18</item>
+		<item>@drawable/rang_19</item>
+		<item>@drawable/rang_20</item>
+		<item>@drawable/rang_21</item>
+		<item>@drawable/rang_22</item>
+		<item>@drawable/rang_23</item>
+		<item>@drawable/rang_24</item>
+		<item>@drawable/rang_25</item>
+		<item>@drawable/rang_26</item>
+		<item>@drawable/rang_27</item>
+		<item>@drawable/rang_28</item>
+		<item>@drawable/rang_29</item>
+		<item>@drawable/rang_30</item>
+		<item>@drawable/rang_31</item>
+		<item>@drawable/rang_32</item>
+		<item>@drawable/rang_33</item>
+		<item>@drawable/rang_34</item>
+		<item>@drawable/rang_35</item>
+		<item>@drawable/rang_36</item>
+		<item>@drawable/rang_37</item>
+		<item>@drawable/rang_38</item>
+		<item>@drawable/rang_39</item>
+		<item>@drawable/rang_40</item>
+		<item>@drawable/rang_41</item>
+		<item>@drawable/rang_42</item>
+		<item>@drawable/rang_43</item>
+		<item>@drawable/rang_44</item>
+		<item>@drawable/rang_45</item>
+		<item>@drawable/rang_46</item>
+		<item>@drawable/rang_47</item>
+		<item>@drawable/rang_48</item>
+		<item>@drawable/rang_49</item>
+		<item>@drawable/rang_50</item>
+		<item>@drawable/rang_51</item>
+		<item>@drawable/rang_52</item>
+		<item>@drawable/rang_53</item>
+		<item>@drawable/rang_54</item>
+		<item>@drawable/rang_55</item>
+		<item>@drawable/rang_56</item>
+		<item>@drawable/rang_57</item>
+		<item>@drawable/rang_58</item>
+		<item>@drawable/rang_59</item>
+		<item>@drawable/rang_60</item>
+		<item>@drawable/rang_61</item>
+		<item>@drawable/rang_62</item>
+		<item>@drawable/rang_63</item>
+		<item>@drawable/rang_64</item>
+		<item>@drawable/rang_65</item>
+		<item>@drawable/rang_66</item>
+		<item>@drawable/rang_67</item>
+		<item>@drawable/rang_68</item>
+		<item>@drawable/rang_69</item>
+		<item>@drawable/rang_70</item>
+		<item>@drawable/rang_71</item>
+		<item>@drawable/rang_72</item>
+		<item>@drawable/rang_73</item>
+		<item>@drawable/rang_74</item>
+		<item>@drawable/rang_75</item>
+		<item>@drawable/rang_76</item>
+		<item>@drawable/rang_77</item>
+		<item>@drawable/rang_78</item>
+		<item>@drawable/rang_79</item>
+		<item>@drawable/rang_80</item>
+		<item>@drawable/rang_81</item>
+		<item>@drawable/rang_82</item>
+		<item>@drawable/rang_83</item>
+		<item>@drawable/rang_84</item>
+    </array>
+     
+</resources>

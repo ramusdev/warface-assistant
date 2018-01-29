@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="medic_verb_name">
+    	<item>Remington Model 870</item>
+    	<item>SPAS-12</item>
+    	<item>Sidewinder Venom</item>
+    	<item>UTAS UTS-15</item>
+    	<item>Derya MK-10 VR 102</item>
+    	<item>Remington 870 CB</item>
+    	<item>MC 255 12</item>
+    	<item>Сайга</item>
+    	<item>Hawk Pump</item>
+    	<item>Benelli Nova tactical</item>
+    	<item>Benelli M4 Super 90</item>
+    	<item>SRM 1216</item>
+    	<item>Вепрь</item>
+    	<item>Сайга H.G.C. Custom</item>
+    </string-array>
+    <string-array name="medic_verb_type">
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>На время</item>
+    	<item>На время</item>
+    	<item>На время</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    </string-array>
+    <string-array name="medic_verb_about">
+    	<item>Американское помповое ружье, производимое Remington Arms Company, Inc. Широко применяется для спортивной стрельбы, охоты и самообороны</item>
+    	<item>Боевой дробовик, который производила итальянская оружейная компания Franchi S.p.A. в 1979-2000 гг</item>
+    	<item>Тактическое помповое ружьё, являющееся улучшенной версией Mossberg 590</item>
+    	<item>Гладкоствольное ружье 12-го калибра, выполненное по схеме булл-пап</item>
+    	<item>Турецкое ружье с вертикальным магазином, разработанное по передовым стандартам и с использованием современных материалов</item>
+    	<item>Специальная боевая модель американского помпового ружья Remington 870, которое производит Remington Arms Company, Inc.</item>
+    	<item>Барабанное ружье, разработанное в 1990 году Центральным конструкторско-исследовательским бюро спортивного и охотничьего оружия (ЦКИБ СОО) в Туле</item>
+    	<item>Боевой дробовик 12 калибра на базе автомата Калашникова, доступный в различных модификациях</item>
+    	<item>Главное преимущество Hawk Pump перед конкурентами - его сбалансированность</item>
+    	<item>Ружье Nova - одна из последних разработок знаменитой итальянской компании Benelli Arms</item>
+    	<item>Полуавтоматическое ружье 12-го калибра, произведенное итальянской компанией Benelli Armi SpA. Автоматика работает по принципу отвода пороховых газов</item>
+    	<item>Гладкоствольное ружье, разработанное американской компанией SRM Arms Inc. Боепитание осуществляется с помощью отъемного роторного магазина на 16 патронов</item>
+    	<item>Самозарядный карабин, который производится на машиностроительном заводе Молот</item>
+    	<item>Охотничий карабин 12-го калибра на базе автомата Калашникова, доступный в различных модификациях</item>
+    </string-array>
+    <array name="medic_verb_link">
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_remingtonmodel870.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_spas12.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_sidewindervenom.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_utasuts15.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_deryamk10vr102.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_remington870cb.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_mc25512.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_sayga.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_hawkpump.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_benellinovatactical.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_benellim4super90.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_srm1216.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_vepr.html</item>
+    	 <item>http://belev.org/android/wardocwarface/weapons/ru/medic_saygahgccustom.html</item>
+    </array>
+    <array name="medic_verb_icon">
+        <item>@drawable/medic_remingtonmodel870</item>
+        <item>@drawable/medic_spas12</item>
+        <item>@drawable/medic_sidewindervenom</item>
+        <item>@drawable/medic_utasuts15</item>
+        <item>@drawable/medic_deryamk10vr102</item>
+        <item>@drawable/medic_remington870cb</item>
+        <item>@drawable/medic_mc25512</item>
+        <item>@drawable/medic_sayga</item>
+        <item>@drawable/medic_hawkpump</item>
+        <item>@drawable/medic_benellinovatactical</item>
+        <item>@drawable/medic_benellim4super90</item>
+        <item>@drawable/medic_srm1216</item>
+        <item>@drawable/medic_vepr</item>
+        <item>@drawable/medic_saygahgccustom</item>
+    </array>
+
+    <string-array name="medic_kred_name">
+        <item>Winchester 1887</item>
+    	<item>Kel-Tec Shotgun</item>
+    	<item>SPAS-15</item>
+    	<item>Jackhammer</item>
+    	<item>Anakon</item>
+    	<item>Cobray Striker</item>
+    </string-array>
+    <string-array name="medic_kred_type">
+        <item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    </string-array>
+    <string-array name="medic_kred_about">
+        <item>Знаменитый американский конструктор оружия Джон Мозес Браунинг изначально предлагал использовать схему с перезарядкой продольно-скользящим цевьем.</item>
+    	<item>Помповый дробовик 12-го калибра, выполненный по схеме булл-пап</item>
+    	<item>Итальянское ружье производства компании Franchi S.p.A., созданное на основе SPAS-12</item>
+    	<item>Автоматическое ружье 12-го калибра, разработанное корпорацией Pancor. Автоматика ружья работает за счет движения ствола вперед под давлением газов</item>
+    	<item>Турецкий полуавтоматический дробовик 12-го калибра, разработанный компанией Derya Arms</item>
+    	<item>Боевое ружье 12-го калибра револьверного типа, разработанное в ЮАР Хилтоном Уокером в начале 80-х годов</item>
+    </string-array>
+    <array name="medic_kred_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/medic_winchester1887.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_keltecshotgun.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_spas15.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_jackhammer.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_anakom.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_cobraystriker.html</item>
+    </array>
+    <array name="medic_kred_icon">
+        <item>@drawable/medic_winchester1887</item>
+    	<item>@drawable/medic_keltecshotgun</item>
+    	<item>@drawable/medic_spas15</item>
+    	<item>@drawable/medic_jackhammer</item>
+    	<item>@drawable/medic_anakom</item>
+    	<item>@drawable/medic_cobraystriker</item>
+    </array>
+
+    <string-array name="medic_box_name">
+    	<item>Fabarm P.S.S.10</item>
+    	<item>AA-12</item>
+    	<item>Remington 870 RAS</item>
+    	<item>Сайга‐12С</item>
+    	<item>USAS-12</item>
+    	<item>Mossberg 500 Custom</item>
+    	<item>SIX12</item>
+    	<item>Fabarm S.A.T. 8 Pro</item>
+    	<item>Fabarm STF 12 Compact</item>
+    	<item>Fabarm XLR5 Prestige</item>
+    	<item>MAG-7</item>
+    	<item>DP-12</item>
+    </string-array>
+    <string-array name="medic_box_type">
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    </string-array>
+    <string-array name="medic_box_about">
+    	<item>Самозарядное ружье, разработанное компанией Fabarm. Отличается высокой скорострельностью и небольшой отдачей.</item>
+    	<item>Автоматическое ружье, разработанное Максвеллом Атчиссоном в 1972 году с учетом опыта войны во Вьетнаме</item>
+    	<item>Военная модель помпового ружья Remington 870 с направляющей Knight Armament, которая позволяет установить прицел и удобный приклад</item>
+    	<item>Сайга-12С — модифицированная версия обычной Сайги с удлиненным стволом. Оружие этой серии славится своей надежностью и эффективностью</item>
+    	<item>Автоматический дробовик, разработанный в Южной Корее компанией Daewoo Precision Industries в конце 1980-х годов. </item>
+    	<item>Модифицированная версия ружья Mossberg 500 с системой направляющих, прицелом MagPul MBUS, пластиковым цевьем Forend и прикладом SGA Stock</item>
+    	<item>Современное ружье 12-го калибра, выполненное по схеме булл-пап. Для боепитания оружия используются вращающиеся цилиндры на шесть патронов</item>
+    	<item>Современное полуавтоматическое ружье, разработанное итальянской компанией Fabarm. Отличается продуманной эргономикой и прекрасным балансом</item>
+    	<item>Тактическое помповое ружье, созданное по инновационным технологиям. Выгодно отличается от другого подобного оружия компактностью и надежностью в бою.</item>
+    	<item>Гладкоствольные ружья итальянской компании Fabarm S.p.A разработаны для служб охраны порядка, безопасности</item>
+    	<item>Компактное помповое ружьё, разработанное на базе пистолета-пулемёта UZI и предназначенное для ведения боя в условиях короткой дистанции стрельбы</item>
+    	<item>Помповое гладкоствольное ружье DP-12 разработано и выпускается американской оружейной компанией Standard Manufacturing</item>
+    </string-array>
+    <array name="medic_box_link">
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_fabarmpss10.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_aa12.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_remington870ras.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_sayga12c.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_usas12.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_mossberg500custom.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_six12.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_fabarmsat8pro.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_fabarmst12compact.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_fabarmxlr5prestige.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_mag7.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_dp12.html</item>
+    </array>
+    <array name="medic_box_icon">
+    	<item>@drawable/medic_fabarmpss10</item>
+    	<item>@drawable/medic_aa12</item>
+    	<item>@drawable/medic_remington870ras</item>
+    	<item>@drawable/medic_sayga12c</item>
+    	<item>@drawable/medic_usas12</item>
+    	<item>@drawable/medic_mossberg500custom</item>
+    	<item>@drawable/medic_six12</item>
+    	<item>@drawable/medic_fabarmsat8pro</item>
+    	<item>@drawable/medic_fabarmst12compact</item>
+    	<item>@drawable/medic_fabarmxlr5prestige</item>
+    	<item>@drawable/medic_mag7</item>
+    	<item>@drawable/medic_dp12</item>
+    </array>
+
+</resources>

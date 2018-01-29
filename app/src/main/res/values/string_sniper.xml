@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="sniper_verb_name">
+<item>SVD</item>
+<item>M16 SPR Custom</item>
+<item>QBU-88</item>
+<item>M40A5</item>
+<item>ORSIS T-5000</item>
+<item>H&#38;K SL8</item>
+<item>XM8 Sharpshooter</item>
+<item>ACR SPR</item> 
+<item>Walther WA 2000</item>
+<item>SIG 550</item>
+<item>Alpine</item>
+<item>AMP DSR-1</item>
+<item>Tavor STAR-21 Navy Blue</item>
+<item>AT308</item>
+<item>FCG-R3 K1</item>
+</string-array>
+ <string-array name="sniper_verb_type">
+<item>Forever</item>
+<item>Forever</item>
+<item>Time</item>
+<item>Time</item>
+<item>Time</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Time</item>
+</string-array>
+<string-array name="sniper_verb_about">
+ <item>Paloaltomedical sniper rifle caliber 7,62x54r mm, developed in the Soviet Union</item>
+<item>Sniper rifle, used by special groups</item>
+<item>Chinese sniper rifle from the new generation of weapons chambered caliber 5.8x42 mm</item>
+<item>Large-Caliber sniper rifle with a longitudinally sliding gate</item>
+<item>Precision Russian sniper rifle with a longitudinally sliding gate</item>
+<item>Sniper rifle, created on the basis of the assault vintovki G36</item>
+ <item>Sniper modification of the automatic XM8 with a longer barrel, allowing effectively to fight at long range</item>
+<item>ACR Battle rifle in the sniper configuration. Barrel length is 18.5 inches. Manufactured by Magpul</item>
+<item>Semi-automatic sniper rifle in the layout of bullpup was developed by company Carl Walther GmbH Sportwaffen</item>
+<item>Sniper variant of the SG 550 designed specifically for Swiss security services</item>
+ <item>Weapons manufactured in Austria, the company Uniqeu Alpine AG. TPG-1 modular sniper rifle with a longitudinally-sliding rotating bolt</item>
+<item>Compact German rifle with a longitudinally sliding gate, originally developed for snipers from police units</item>
+<item>Modification of a Semi-automatic sniper rifle STAR-21. Is highly efficient in the battle at long range</item>
+<item>British sniper rifle, continuing the tradition of AW308 and bringing them to a qualitatively new level</item>
+ <item>Secret, experimental energy weapon Blackwood, possessing great power and long reload</item>
+</string-array>
+<array name="sniper_verb_link">
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_svd.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_m16sprcustom.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_qbu88.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_m40a5.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_orsist5000.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_handksl8.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_xm8sharpshooter.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_acrspr.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_waltherwa2000.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_sig550.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_alpine.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_ampdsr1.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_tavorstar21nb.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_at308.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_fcgr3k1.html</item>
+</array>
+<array name="sniper_verb_icon">
+<item>@drawable/sniper_svd</item>
+<item>@drawable/sniper_m16sprcustom</item>
+<item>@drawable/sniper_qbu88</item>
+<item>@drawable/sniper_m40a5</item>
+<item>@drawable/sniper_orsist5000</item>
+<item>@drawable/sniper_handksl8</item>
+<item>@drawable/sniper_xm8sharpshooter</item>
+<item>@drawable/sniper_acrspr</item>
+<item>@drawable/sniper_waltherwa2000</item>
+<item>@drawable/sniper_sig550</item>
+<item>@drawable/sniper_alpine</item>
+<item>@drawable/sniper_ampdsr1</item>
+<item>@drawable/sniper_tavorstar21nb</item>
+<item>@drawable/sniper_at308</item>
+<item>@drawable/sniper_fcgr3k1</item>
+</array>
+
+<string-array name="sniper_kred_name">
+<item>VSS Vintorez</item>
+<item>Barrett M107</item>
+<item>Barrett M98B</item>
+<item>CheyTac M200</item>
+</string-array>
+<string-array name="sniper_kred_type">
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+</string-array>
+<string-array name="sniper_kred_about">
+ <item>Silent sniper rifle developed in the early 1980s, ready to TSNII Tochmash. Used by special forces</item>
+<item>Large-Caliber sniper rifle the Barrett Firearms company, the armament of many armies in the world</item>
+<item>Precision sniper rifle with a longitudinally-sliding rotating bolt chambered in .338 Lapua Magnum</item>
+<item>American sniper rifle with a longitudinally-sliding rotating bolt intended for destruction of manpower of the opponent</item>
+</string-array>
+ <array name="sniper_kred_link">
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_vssvintorez.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_barrettm107.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_barrettm98b.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_cheytacm200.html</item>
+</array>
+<array name="sniper_kred_icon">
+<item>@drawable/sniper_vssvintorez</item>
+<item>@drawable/sniper_barrettm107</item>
+<item>@drawable/sniper_barrettm98b</item>
+<item>@drawable/sniper_cheytacm200</item>
+</array>
+
+<string-array name="sniper_box_name">
+<item>Bushmaster BA50</item>
+<item>AWM</item>
+<item>M14 Crazy Horse</item>
+<item>Svu-as</item>
+<item>Calico M951S</item>
+<item>AS50</item>
+<item>MK 14 EBR</item>
+<item>DSA SA58 SPR</item>
+<item>McMillan CS5</item>
+<item>AX308</item>
+<item>Remington R11 RSASS</item>
+<item>Steyr Scout</item>
+</string-array>
+<string-array name="sniper_box_type">
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+ <item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+<item>For a while or forever</item>
+</string-array>
+<string-array name="sniper_box_about">
+ <item>Semi-automatic sniper rifle caliber 7.62×51 mm, was developed by company Smith Enterprise Inc.</item>
+<item>Sniper rifle production International. The weapon uses a detachable box stores of 5 rounds</item>
+<item>Semi-automatic sniper rifle 7.62 mm developed by Smith Enterprise Inc</item>
+<item>Shortened model Dragunov sniper rifle equipped with folding bipod and a special muzzle device</item>
+ <item>Only difference from the model 951 is to have a special compensator that exceed the size of the compensator M900</item>
+<item>English sniper rifle caliber .50 BMG, developed by Accuracy International for the British army</item>
+<item>Rifle that is used by various special forces, US Delta force, Navy seals, and several other</item>
+<item>Special purpose Rifle SA58 SPR. Developed by DS Arms (DSA) based on the FN FAL rifle</item>
+ <item>Compact sniper rifle with a longitudinally sliding gate, designed for combat in urban environments</item>
+<item>First rifle from the latest generation of weapons Arctic Warfare series. Combines the best qualities of its predecessors-reliability, iznosostoikost</item>
+<item>Semi-automatic sniper rifle-precision sniper rifle quick-firing of a new generation</item>
+ <item>Light sniper rifle with a longitudinally sliding gate, developed in 1997 in Austria together with an expert on firearms Jeff Cooper</item>
+</string-array>
+<array name="sniper_box_link">
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_bushmasterba50.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_awm.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_m14crazyhorse.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_svuas.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_calicom951s.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_as50.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_mk14ebr.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_dsasa58spr.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_mcmillancs5.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_ax308.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_remingtonr11rsass.html</item>
+<item>http://belev.org/android/wardocwarface/weapons/en/sniper_steyrscout.html</item>
+</array>
+<array name="sniper_box_icon">
+<item>@drawable/sniper_bushmasterbas50</item>
+<item>@drawable/sniper_awm</item>
+<item>@drawable/sniper_m14crazyhorse</item>
+<item>@drawable/sniper_svuas</item>
+<item>@drawable/sniper_calicom951s</item>
+<item>@drawable/sniper_as50</item>
+<item>@drawable/sniper_mk14ebr</item>
+<item>@drawable/sniper_dsasa58spr</item>
+<item>@drawable/sniper_mcmillancs5</item>
+<item>@drawable/sniper_ax308</item>
+<item>@drawable/sniper_remingtonr11rsass</item>
+<item>@drawable/sniper_steyrscout</item>
+</array>
+
+</resources>

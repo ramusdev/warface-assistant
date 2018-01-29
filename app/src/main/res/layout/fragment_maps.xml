@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/raw_background"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/maps_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/neftebaza_logo" />
+
+    <TextView
+        android:id="@+id/maps_descript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maps_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Три дня велись жаркие бои, по итогам которых стали известны названия еще двух команд, прошедших в финал!"
+        android:textColor="#4a4a49"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/maps_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maps_logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Warface like!"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/maps_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maps_descript"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="12.03.2017"
+        android:textColor="#4a4a49"
+        android:textSize="12sp" />
+
+</RelativeLayout>
