@@ -32,6 +32,7 @@ public class StartFragment extends Fragment {
         String text = getResources().getString(R.string.start_text);
         textView.setText(Html.fromHtml(text));
 
+        /*
         ImageView imageView = (ImageView) view.findViewById(R.id.start_imageView);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,16 +47,9 @@ public class StartFragment extends Fragment {
                 }
             }
         });
+        */
 
         return view;
     }
 
-    public boolean isOnline() {
-        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-            return true;
-        }
-        return false;
-    }
 }

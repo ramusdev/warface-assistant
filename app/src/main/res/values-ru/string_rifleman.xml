@@ -20,6 +20,7 @@
         <item>РПК</item>
         <item>XM8 LMG</item>
         <item>SAI GRY AR-15</item>
+        <item>ДП-27</item>
     </string-array>
     <string-array name="rifleman_verb_type">
         <item>Навсегда</item>
@@ -40,6 +41,7 @@
         <item>Навсегда</item>
         <item>Навсегда</item>
         <item>Навсегда</item>
+        <item>На время</item>
     </string-array>
     <string-array name="rifleman_verb_about">
         <item>Модифицированная версия M16 с укороченным стволом и выдвижным прикладом</item>
@@ -60,6 +62,7 @@
         <item>Легкий советский пулемет калибра 7.62х39 мм, созданный Михайлом Калашниковым в конце 1950-х параллельно со штурмовой винтовкой АКМ</item>
         <item>Ручной пулемет на основе комплекса XM8 с утяжеленным стволом и барабанным магазином на 100 патронов</item>
         <item>Штурмовая винтовка для тактических операций и спортивных соревнований. Оружие поставляется с уникальным пламегасителем Jailbrake и увеличенным магазином</item>
+        <item>Легендарный пулемет Дегтярева, главное оружие огневой поддержки пехоты Красной Армии.</item>
     </string-array>
     <array name="rifleman_verb_link">
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_m4a1.html</item>
@@ -80,6 +83,7 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_rpk.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_xm8lmg.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_saigryar15.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_dp27.html</item>
     </array>
     <array name="rifleman_verb_icon">
         <item>@drawable/rifleman_m4a1</item>
@@ -100,6 +104,7 @@
         <item>@drawable/rifleman_rpk</item>
         <item>@drawable/rifleman_xm8lmg</item>
         <item>@drawable/rifleman_saigryar15</item>
+        <item>@drawable/rifleman_dp27</item>
     </array>
 
     <string-array name="rifleman_kred_name">
@@ -149,6 +154,8 @@
     </array>
 
     <string-array name="rifleman_box_name">
+        <item>FN FAL DSA 58</item>
+        <item>AK Альфа</item>
         <item>Beretta ARX160</item>
         <item>АК-47</item>
         <item>MG3</item>
@@ -171,8 +178,12 @@
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
     </string-array>
     <string-array name="rifleman_box_about">
+        <item>Бельгийская штурмовая винтовка FN FAL, наряду с автоматом Калашникова и М16, является одним из самых распространённых в мире</item>
+        <item>Уникальная штурмовая винтовка АК Альфа, разработанная на базе автомата Калашникова,</item>
         <item>Штурмовая винтовка разработанная компанией Beretta в 2008 году. Отличается удобной отдачей, высокой скорострельностью и большой пробивной способностью</item>
         <item>Знаменитый автомат, разработанный Михаилом Калашниковым и принятый на вооружение в СССР в 1949 году</item>
         <item>Немецкий единый пулемёт калибра 7.62х51 мм НАТО</item>
@@ -185,6 +196,8 @@
         <item>Экспортный вариант китайской винтовки Type 97, разработанный под патрон 5,56х45 мм НАТО, так чтобы приёмник магазина соответствовал стандарту STANAG.</item>
     </string-array>
     <array name="rifleman_box_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_fnfaldsa58.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_akalfa.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_berettaarx160.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_ak47.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_mg3.html</item>
@@ -197,6 +210,8 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_type97.html</item>
     </array>
     <array name="rifleman_box_icon">
+        <item>@drawable/rifleman_fnfaldsa58</item>
+        <item>@drawable/rifleman_akalfa</item>
         <item>@drawable/rifleman_berettaarx160</item>
         <item>@drawable/rifleman_ak47</item>
         <item>@drawable/rifleman_mg3</item>

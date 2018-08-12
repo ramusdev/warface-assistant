@@ -5,14 +5,18 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.ColorInt;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
@@ -20,6 +24,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -39,6 +46,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
+            Window window = this.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(this.getResources().getColor(R.color.bar));
+            window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
+            //getWindow().setStatusBarColor(Color.TRANSPARENT);
+            //getWindow().setNavigationBarColor(Color.TRANSPARENT);
+            //getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+            //getWindow().setNavigationBarColor(this.getResources().getColor(R.color.greylite));
+            //getWindow().setNavigationBarColor(Color.TRANSPARENT);
+        }
 
         String text = getResources().getString(R.string.star_dialog);
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -62,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert = builder.create();
 
         if (isFirstRun()) {
-            alert.show();
+            //alert.show();
         }
 
 
@@ -122,14 +141,10 @@ public class MainActivity extends AppCompatActivity {
                      new Handler().postDelayed(new Runnable() {
                          @Override
                          public void run() {
-                             //android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_about));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new AboutFragment());
-                             //transaction.addToBackStack(null);
                              transaction.commit();
                          }
                      }, 300);
@@ -143,13 +158,9 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_ranks));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new RangFragment());
-                             //transaction.addToBackStack(null);
                              transaction.commit();
-                             //transaction.commitAllowingStateLoss();
                          }
                      }, 300);
 
@@ -162,11 +173,8 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_achievements));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new TabFragment());
-                             //transaction.addToBackStack(null);
                              transaction.commit();
 
                          }
@@ -181,11 +189,8 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_update));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new StartFragment());
-                             //transaction.addToBackStack(null);
                              transaction.commit();
 
                          }
@@ -201,8 +206,6 @@ public class MainActivity extends AppCompatActivity {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              if (isOnline()) {
                                  toolbar.setTitle(getResources().getString(R.string.menu_news));
-                                 //ShowInterstitial();
-
                                  FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                                  transaction.replace(R.id.containerView, new NewsFragment());
                                  transaction.commit();
@@ -224,8 +227,6 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                                  toolbar.setTitle(getResources().getString(R.string.menu_vloger));
-                                 //ShowInterstitial();
-
                                  FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                                  transaction.replace(R.id.containerView, new StremersFragment());
                                  transaction.commit();
@@ -241,8 +242,6 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_locations));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new MapsTab());
                              transaction.commit();
@@ -258,8 +257,6 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_rifleman));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new RiflemanTab());
                              transaction.commit();
@@ -275,8 +272,6 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_sniper));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new SniperTab());
                              transaction.commit();
@@ -292,8 +287,6 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_medic));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new MedicTab());
                              transaction.commit();
@@ -309,8 +302,6 @@ public class MainActivity extends AppCompatActivity {
                          public void run() {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_enginer));
-                             //ShowInterstitial();
-
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                              transaction.replace(R.id.containerView, new EnginerTab());
                              transaction.commit();

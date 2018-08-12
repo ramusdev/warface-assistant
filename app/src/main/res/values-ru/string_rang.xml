@@ -88,6 +88,10 @@
 		<item>Ранг 84</item>
 		<item>Ранг 85</item>
 		<item>Ранг 86</item>
+		<item>Ранг 87</item>
+		<item>Ранг 88</item>
+		<item>Ранг 89</item>
+		<item>Ранг 90</item>
     </string-array>
         
     <string-array name="rang_about">        
@@ -177,6 +181,10 @@
 		<item><![CDATA[Майор отряда Вестники смерти<br>19 636 800 XP]]></item>
 		<item><![CDATA[Подполковник отряда Вестники смерти<br>20 123 250 XP]]></item>
 		<item><![CDATA[Полковник отряда Вестники смерти<br>20 773 200 XP]]></item>
+		<item><![CDATA[Генерал-майор отряда Вестники смерти<br>21 341 400 XP]]></item>
+		<item><![CDATA[Генерал-лейтенант отряда Вестники смерти<br>21 909 600 XP]]></item>
+		<item><![CDATA[Генерал-полковник отряда Вестники смерти<br>22 477 800 XP]]></item>
+		<item><![CDATA[Маршал отряда Вестники смерти<br>23 046 000 XP]]></item>
     </string-array>
 	
     <array name="rang_icon">
@@ -266,6 +274,10 @@
 		<item>@drawable/rang_84</item>
 		<item>@drawable/rang_85</item>
 		<item>@drawable/rang_86</item>
+		<item>@drawable/rang_87</item>
+		<item>@drawable/rang_88</item>
+		<item>@drawable/rang_89</item>
+		<item>@drawable/rang_90</item>
     </array>
      
 </resources>

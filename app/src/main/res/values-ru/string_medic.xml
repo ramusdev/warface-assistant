@@ -83,6 +83,7 @@
     </array>
 
     <string-array name="medic_kred_name">
+        <item>Fostech Origin-12</item>
         <item>Winchester 1887</item>
     	<item>Kel-Tec Shotgun</item>
     	<item>SPAS-15</item>
@@ -92,6 +93,7 @@
     </string-array>
     <string-array name="medic_kred_type">
         <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
@@ -99,6 +101,7 @@
     	<item>На время или навсегда</item>
     </string-array>
     <string-array name="medic_kred_about">
+        <item>Самозарядное гладкоствольное ружье Origin-12 разработано и выпускается небольшой американской оружейной компанией Fostech Outdoors.</item>
         <item>Знаменитый американский конструктор оружия Джон Мозес Браунинг изначально предлагал использовать схему с перезарядкой продольно-скользящим цевьем.</item>
     	<item>Помповый дробовик 12-го калибра, выполненный по схеме булл-пап</item>
     	<item>Итальянское ружье производства компании Franchi S.p.A., созданное на основе SPAS-12</item>
@@ -107,6 +110,7 @@
     	<item>Боевое ружье 12-го калибра револьверного типа, разработанное в ЮАР Хилтоном Уокером в начале 80-х годов</item>
     </string-array>
     <array name="medic_kred_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/medic_fostechorigin12.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/medic_winchester1887.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_keltecshotgun.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_spas15.html</item>
@@ -115,6 +119,7 @@
     	<item>http://belev.org/android/wardocwarface/weapons/ru/medic_cobraystriker.html</item>
     </array>
     <array name="medic_kred_icon">
+        <item>@drawable/medic_fostechorigin12</item>
         <item>@drawable/medic_winchester1887</item>
     	<item>@drawable/medic_keltecshotgun</item>
     	<item>@drawable/medic_spas15</item>

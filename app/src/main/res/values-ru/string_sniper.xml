@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="sniper_verb_name">
+        <item>Gepard GM6 Lynx</item>
     	<item>СВД</item>
     	<item>M16 SPR Custom</item>
     	<item>QBU-88</item>
@@ -21,6 +22,7 @@
     <string-array name="sniper_verb_type">
         <item>Навсегда</item>
         <item>Навсегда</item>
+        <item>Навсегда</item>
         <item>На время</item>
         <item>На время</item>
         <item>На время</item>
@@ -36,6 +38,7 @@
         <item>На время</item>
     </string-array>
     <string-array name="sniper_verb_about">
+        <item>Венгерская снайперская винтовка, выполненная в конфигурации булл-пап. Для своего калибра отличается компактными габаритами.</item>
         <item>Пулуавтоматическая снайперская винтовка калибра 7,62х54 мм, разработанная в Советском Союзе</item>
         <item>Снайперская винтовка, которую используют отряды особого назначения</item>
         <item>Китайская снайперская винтовка из нового поколения оружия под патрон калибра 5.8x42 мм</item>
@@ -53,6 +56,7 @@
         <item>Cекретное, экспериментальное энергетическое оружие Blackwood, обладающее огромной мощью и долгой перезарядкой</item>
     </string-array>
     <array name="sniper_verb_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_gepardgm6lynx.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_svd.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_m16sprcustom.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_qbu88.html</item>
@@ -70,6 +74,7 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_fcgr3k1.html</item>
     </array>
     <array name="sniper_verb_icon">
+        <item>@drawable/sniper_gepardgm6lynx</item>
         <item>@drawable/sniper_svd</item>
         <item>@drawable/sniper_m16sprcustom</item>
         <item>@drawable/sniper_qbu88</item>
@@ -88,30 +93,35 @@
     </array>
 
     <string-array name="sniper_kred_name">
+        <item>Remington MSR</item>
     	<item>ВСС Винторез</item>
     	<item>Barrett M107</item>
     	<item>Barrett M98B</item>
     	<item>CheyTac M200</item>
     </string-array>
     <string-array name="sniper_kred_type">
+        <item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     </string-array>
     <string-array name="sniper_kred_about">
+        <item>Снайперская винтовка MSR была разработана холдингом Remington Arms по заказу U.S Special Operations Command.</item>
     	<item>Бесшумная снайперская винтовка, разработанная в начале 1980-х готов в ЦНИИ Точмаш. Используется подразделениями специального назначения</item>
     	<item>Крупнокалиберная снайперская винтовка компании Barrett Firearms, состоящая на вооружении многих армий мира</item>
     	<item>Высокоточная снайперская винтовка с продольно-скользящим поворотным затвором под патрон .338 Lapua Magnum</item>
     	<item>Американская снайперская винтовка с продольно-скользящим поворотным затвором, предназначенная для поражения живой силы противника</item>
     </string-array>
     <array name="sniper_kred_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_remingtonmsr.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_vssvintorez.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_barrettm107.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_barrettm98b.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_cheytacm200.html</item>
     </array>
     <array name="sniper_kred_icon">
+        <item>@drawable/sniper_remingtonmsr</item>
     	<item>@drawable/sniper_vssvintorez</item>
     	<item>@drawable/sniper_barrettm107</item>
     	<item>@drawable/sniper_barrettm98b</item>

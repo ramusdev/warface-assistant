@@ -2,6 +2,16 @@
 <resources>
         
     <string-array name="strip_name">
+    	<item>Справедливое возмездие</item>
+    	<item>Судьбы мира</item>
+    	<item>Нулевая отметка</item>
+    	<item>В центре зоны</item>
+    	<item>Исполнитель желаний</item>
+    	<item>Отвага и честь</item>
+    	<item>Абсолютная власть: лидер</item>
+    	<item>Падение Богомола</item>
+    	<item>Счастье для всех</item>
+    	<item>Наставник</item>
         <item>Быстрый выстрел</item>
         <item>Быстрый выстрел 2</item>
         <item>Старая школа</item>
@@ -338,6 +348,16 @@
     </string-array>
     
     <string-array name="strip_about">
+    	<item>Собрать всех бойцов отряда Элемент в Абсолютной власти</item>
+    	<item>Собрать всех бойцов отряда Пантеон в Абсолютной власти</item>
+    	<item>Сделать 333 тройных убийства попаданиями в голову в миссии Припять</item>
+    	<item>Секретное достижение с неизвестными условиями</item>
+    	<item>Секретное достижение с неизвестными условиями</item>
+    	<item>Собрать всех бойцов отряда Рыцари в Абсолютной власти</item>
+    	<item>Принять участие в турнире Абсолютная власть</item>
+    	<item>Уничтожить Богомола в миссии Припять на уровне сложности Профи</item>
+    	<item>Секретное достижение с неизвестными условиями</item>
+    	<item>За 5 рефералов, выполнивших задание 50 совместных побед в быстрых PvP-матчах</item>
         <item>Убить 10 000 врагов из Fabarm P.S.S.10</item>
         <item>Убить 25 000 врагов из Fabarm P.S.S.10</item>
         <item>Убить 10 000 врагов из обычного или золотого РПД Custom</item>
@@ -674,6 +694,16 @@
     </string-array>
     
     <array name="strip_icon">
+    	<item>@drawable/strip_345</item>
+    	<item>@drawable/strip_344</item>
+    	<item>@drawable/strip_343</item>
+    	<item>@drawable/strip_342</item>
+    	<item>@drawable/strip_341</item>
+    	<item>@drawable/strip_340</item>
+    	<item>@drawable/strip_339</item>
+    	<item>@drawable/strip_338</item>
+    	<item>@drawable/strip_327</item>
+    	<item>@drawable/strip_326</item>
         <item>@drawable/strip_322</item>
         <item>@drawable/strip_321</item>
         <item>@drawable/strip_320</item>

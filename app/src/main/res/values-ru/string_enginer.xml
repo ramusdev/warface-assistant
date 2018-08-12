@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="enginer_verb_name">
+        <item>UZI Pro</item>
 		<item>H&#38;K MP5A5 Custom</item>
     	<item>H&#38;K MP5</item>
     	<item>M4 CQB</item>
@@ -20,6 +21,7 @@
     	<item>Kriss super V</item>
     </string-array>
     <string-array name="enginer_verb_type">
+        <item>Навсегда</item>
 		<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
@@ -38,6 +40,7 @@
     	<item>Навсегда</item>
     </string-array>
     <string-array name="enginer_verb_about">
+        <item>UZI Pro это комфортная, высокоэффективная и прекрасно сбалансированная пушка, которую по достоинству оценят игроки, предпочитающие агрессивный стиль игры за инженера.</item>
 		<item>Модификация классической модели пистолета-пулемета MP5 от компании Heckler &#38; Koch GmbH</item>
     	<item>Немецкий пистолет-пулемет калибра 9 мм, созданный в 1960-х годах группой инженеров компании Heckler &#38; Koch GmbH</item>
     	<item>Универсальный пистолет-пулемет, модификация M16A2 с укороченным стволом 262 мм</item>
@@ -56,6 +59,7 @@
     	<item>Пистолет-пулемет калибра .45 ACP, разработанный компанией Transformational Defense Industries</item>
     </string-array>
     <array name="enginer_verb_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_uzipro.html</item>
 		<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkmp5a5.html</item>
 		<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkmp5.html</item>
      	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_m4cqb.html</item>
@@ -74,7 +78,8 @@
      	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_krisssuperv.html</item>
     </array>
      <array name="enginer_verb_icon">
-		 <item>@drawable/enginer_handkmp5a5</item>
+        <item>@drawable/enginer_uzipro</item>
+		<item>@drawable/enginer_handkmp5a5</item>
      	<item>@drawable/enginer_handkmp5</item>
      	<item>@drawable/enginer_m4cqb</item>
      	<item>@drawable/enginer_bandmp9</item>

@@ -2,6 +2,93 @@
 <resources>
 
 	<string-array name="mark_name">
+		<item>Только AG!</item>
+		<item>Только SinePonte!</item>
+		<item>Только Squezzers!</item>
+		<item>Только adAstra!</item>
+		<item>Только YoungStars!</item>
+		<item>Только Sluper!</item>
+		<item>Только Airborne!</item>
+		<item>Только ArenaStars!</item>
+		<item>Только Без_Понтов!</item>
+		<item>Только F4F4!</item>
+		<item>Просто бомба</item>
+		<item>Терминатор</item>
+		<item>Второго шанса не будет</item>
+		<item>Зыбкий мираж</item>
+		<item>Золотая лихорадка</item>
+		<item>Опасное золото</item>
+		<item>Знаток Вепря Каратель</item>
+		<item>Знаток Tavor STAR-21 Каратель</item>
+		<item>Знаток XM8 LMG Каратель</item>
+		<item>Знаток ПП-19 Бизон Каратель</item>
+		<item>Знаток FN Five-seven Каратель</item>
+		<item>Знаток саперной лопатки Каратель</item>
+		<item>Дикая охота</item>
+		<item>Пиу! Пиу! Пиу!</item>
+		<item>Знаток COLT Python Анубис</item>
+		<item>Знаток ПП-19 Бизон Анубис</item>
+		<item>Знаток Вепря Анубис</item>
+		<item>Знаток АК-103 Анубис</item>
+		<item>Знаток Alpine Анубис</item>
+		<item>Знаток Walther P99 Анубис</item>
+		<item>Знаток ПП-2000 Анубис</item>
+		<item>Знаток Sidewinder Venom Анубис</item>
+		<item>Знаток MSBS Radon Анубис</item>
+		<item>Знаток ОРСИС Т-5000 Анубис</item>
+		<item>Мастер киберспорта</item>
+		<item>Идеальный убийца</item>
+		<item>Не подходи близко</item>
+		<item>Клуб полярных медведей</item>
+		<item>Большая кошка</item>
+		<item>Клык гепарда</item>
+		<item>Возвращение FAL</item>
+		<item>Возвращение FAL 2</item>
+		<item>Золотая классика</item>
+		<item>Знаток ПП-2000 Сияние</item>
+		<item>Знаток Rhino 60DS Сияние</item>
+		<item>Альфа-самец</item>
+		<item>Знаток M40A5 Сияние</item>
+		<item>Сверххищник</item>
+		<item>Альфа-самец 2</item>
+		<item>Знаток Remington R11 RSASS Радиация</item>
+		<item>Знаток DP-12 Радиация</item>
+		<item>Знаток Honey Badger Радиация</item>
+		<item>Знаток M1911A1 Радиация</item>
+		<item>Знаток катаны Радиация</item>
+		<item>Знаток CZ Scorpion Evo3 A1 Радиация</item>
+		<item>Знаток IMBEL IA2 Сияние</item>
+		<item>Знаток Beretta ARX160 Радиация</item>
+		<item>Знаток ПКП Печенег Радиация</item>
+		<item>Знаток S&amp;W M&amp;P R8 Радиация</item>
+		<item>Знаток MAG-7 Радиация</item>
+		<item>Знаток топора Радиация</item>
+		<item>Знаток AX308 Радиация</item>
+		<item>Знаток Fabarm P.S.S.10 Сияние</item>
+		<item>Агент со стажем</item>
+		<item>Абсолютная власть: мастер</item>
+		<item>Исследователь зоны (штурмовик)</item>
+		<item>Исследователь зоны (снайпер)</item>
+		<item>Гамма-лучи</item>
+		<item>Сталкер-ветеран</item>
+		<item>Переполняющая сила</item>
+		<item>Вдохновитель</item>
+		<item>Исследователь зоны (медик)</item>
+		<item>Исследователь зоны (инженер)</item>
+		<item>Грязное золото</item>
+		<item>Гроза СЭД</item>
+		<item>Знаток Desert Eagle Абсолют</item>
+		<item>Знаток топора Black Hawk Абсолют</item>
+		<item>Знаток H&amp;K MP5A5 Custom Абсолют</item>
+		<item>Знаток Beretta ARX160 Абсолют</item>
+		<item>Знаток Glock 18C Абсолют</item>
+		<item>Знаток AT308 Абсолют</item>
+		<item>Знаток M14 Crazy Horse Абсолют</item>
+		<item>Знаток H&amp;K UMP Абсолют</item>
+		<item>Знаток DP-12 Абсолют</item>
+		<item>Знаток SAI GRY AR-15 Абсолют</item>
+		<item>Знаток Сайги H.G.C. Custom Абсолют</item>
+		<item>Знаток MPA 930 DMG Абсолют</item>
 		<item>Смерть машинам</item>
 		<item>Золото партии</item>
 		<item>Знаток Steyr Scout Стужа</item>
@@ -401,6 +488,93 @@
 	</string-array>
 
 	<string-array name="mark_about">
+		<item>Нашивка болельщика команды AG, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды SinePonte, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды Squezzers, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды adAstra, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды YoungStars, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды Sluper, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды Airborne, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды ArenaStars, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды Без_Понтов, участника Open Cup Season XII</item>
+		<item>Нашивка болельщика команды F4F4, участника Open Cup Season XII</item>
+		<item>Красота спасет мир</item>
+		<item>Убить 999 врагов из золотого Winchester 1887</item>
+		<item>Убить 999 врагов из золотого SIG Sauer P226 C</item>
+		<item>Убить 999 врагов из золотого Desert Tech MDR-C</item>
+		<item>Убить 999 врагов из золотого S&amp;W M&amp;P R8</item>
+		<item>Убить 999 врагов из золотой ACR</item>
+		<item>Убить 15 000 врагов из Вепря Каратель</item>
+		<item>Убить 15 000 врагов из Tavor STAR-21 Каратель</item>
+		<item>Убить 15 000 врагов из XM8 LMG Каратель</item>
+		<item>Убить 15 000 врагов из ПП-19 Бизон Каратель</item>
+		<item>Убить 15 000 врагов из FN Five-seven Каратель</item>
+		<item>Убить 15 000 врагов саперной лопаткой Каратель</item>
+		<item>Убить 15 000 врагов из MSBS Radon Охотник</item>
+		<item>Убить 30 врагов в PvP из пальцестрела</item>
+		<item>Убить 15 000 врагов из COLT Python Анубис</item>
+		<item>Убить 15 000 врагов из ПП-19 Бизон Анубис</item>
+		<item>Убить 15 000 врагов из Вепря Анубис</item>
+		<item>Убить 15 000 врагов из АК-103 Анубис</item>
+		<item>Убить 15 000 врагов из Alpine Анубис</item>
+		<item>Убить 15 000 врагов из Walther P99 Анубис</item>
+		<item>Убить 15 000 врагов из ПП-2000 Анубис</item>
+		<item>Убить 15 000 врагов из Sidewinder Venom Анубис</item>
+		<item>Убить 15 000 врагов из MSBS Radon Анубис</item>
+		<item>Убить 15 000 врагов из ОРСИС Т-5000 Анубис</item>
+		<item>Внести значительный вклад в развитие киберспорта Warface</item>
+		<item>Убить 1000 врагов в режиме Королевская битва</item>
+		<item>Убить 100 врагов в режиме Королевская битва</item>
+		<item>Пройдите спецоперацию Марафон без смертей</item>
+		<item>Убить 10 000 врагов из Gepard GM6 Lynx</item>
+		<item>Убить 25 000 врагов из Gepard GM6 Lynx</item>
+		<item>Убить 10 000 врагов из обычной или золотой FN FAL DSA-58</item>
+		<item>Убить 25 000 врагов из обычной или золотой FN FAL DSA-58</item>
+		<item>Убить 999 врагов из золотой FN FAL DSA-58</item>
+		<item>Убить 10 000 врагов из ПП-2000 Сияние</item>
+		<item>Убить 10 000 врагов из Rhino 60DS Сияние</item>
+		<item>Убить 10 000 врагов из АК Альфа</item>
+		<item>Убить 10 000 врагов из M40A5 Сияние</item>
+		<item>Убить 999 врагов из золотого ACR CQB</item>
+		<item>Убить 25 000 врагов из АК Альфа</item>
+		<item>Убить 15 000 врагов из Remington R11 RSASS Радиация</item>
+		<item>Убить 15 000 врагов из DP-12 Радиация</item>
+		<item>Убить 15 000 врагов из Honey Badger Радиация</item>
+		<item>Убить 15 000 врагов из M1911A1 Радиация</item>
+		<item>Убить 15 000 врагов катаной Радиация</item>
+		<item>Убить 15 000 врагов из CZ Scorpion Evo3 A1 Радиация</item>
+		<item>Убить 10 000 врагов из IMBEL IA2 Сияние</item>
+		<item>Убить 15 000 врагов из Beretta ARX160 Радиация</item>
+		<item>Убить 15 000 врагов из ПКП Печенег Радиация</item>
+		<item>Убить 15 000 врагов из H&amp;K R8 Радиация</item>
+		<item>Убить 15 000 врагов из MAG-7 Радиация</item>
+		<item>Убить 15 000 врагов тактическим топором Радиация</item>
+		<item>Убить 15 000 врагов из AX308 Радиация</item>
+		<item>Убить 10 000 врагов из Fabarm P.S.S.10 Сияние</item>
+		<item>Выполнить 100 заданий уровня Хардкор в Абсолютной власти</item>
+		<item>Войти в топ-100 игроков рейтинга PvP отрядов в Абсолютной власти</item>
+		<item>Пройти миссию Припять на уровне сложности Профи за штурмовика</item>
+		<item>Пройти миссию Припять на уровне сложности Профи за снайпера</item>
+		<item>Сделать 222 двойных убийства в миссии Припять</item>
+		<item>Пройти миссию Припять на уровне сложности Профи, ни разу не погибнув</item>
+		<item>Занять 1-е место в рейтинге PvP отрядов в Абсолютной власти</item>
+		<item>За 5 рефералов, выполнивших все задания реферальной программы</item>
+		<item>Пройти миссию Припять на уровне сложности Профи за медика</item>
+		<item>Пройти миссию Припять на уровне сложности Профи за инженера</item>
+		<item>Убить 5000 врагов из золотого оружия в миссии Припять</item>
+		<item>Уничтожить 20 СЭД в миссии Припять на уровне сложности Профи</item>
+		<item>Убить 15 000 врагов из Desert Eagle Абсолют</item>
+		<item>Убить 15 000 врагов топором Black Hawk Абсолют</item>
+		<item>Убить 15 000 врагов из H&amp;K MP5A5 Custom Абсолют</item>
+		<item>Убить 15 000 врагов из Beretta ARX160 Абсолют</item>
+		<item>Убить 15 000 врагов из Glock 18C Абсолют</item>
+		<item>Убить 15 000 врагов из AT308 Абсолют</item>
+		<item>Убить 15 000 врагов из M14 Crazy Horse Абсолют</item>
+		<item>Убить 15 000 врагов из H&amp;K UMP Абсолют</item>
+		<item>Убить 15 000 врагов из DP-12 Абсолют</item>
+		<item>Убить 15 000 врагов из SAI GRY AR-15 Абсолют</item>
+		<item>Убить 15 000 врагов из Сайги H.G.C. Custom Абсолют</item>
+		<item>Убить 15 000 врагов из MPA 930 DMG Абсолют</item>
 		<item>Уничтожить 50 ПБМ Гром из любого оружия на уровне Профи</item>
 		<item>Убить 999 врагов из золотого РПД Custom</item>
 		<item>Убить 15 000 врагов из Steyr Scout Стужа</item>
@@ -800,6 +974,93 @@
 	</string-array>
 
 	<array name="mark_icon">
+		<item>@drawable/mark_490</item>
+		<item>@drawable/mark_489</item>
+		<item>@drawable/mark_488</item>
+		<item>@drawable/mark_487</item>
+		<item>@drawable/mark_486</item>
+		<item>@drawable/mark_485</item>
+		<item>@drawable/mark_484</item>
+		<item>@drawable/mark_483</item>
+		<item>@drawable/mark_482</item>
+		<item>@drawable/mark_481</item>
+		<item>@drawable/mark_480</item>
+		<item>@drawable/mark_479</item>
+		<item>@drawable/mark_478</item>
+		<item>@drawable/mark_477</item>
+		<item>@drawable/mark_476</item>
+		<item>@drawable/mark_475</item>
+		<item>@drawable/mark_474</item>
+		<item>@drawable/mark_473</item>
+		<item>@drawable/mark_472</item>
+		<item>@drawable/mark_471</item>
+		<item>@drawable/mark_470</item>
+		<item>@drawable/mark_469</item>
+		<item>@drawable/mark_468</item>
+		<item>@drawable/mark_467</item>
+		<item>@drawable/mark_466</item>
+		<item>@drawable/mark_465</item>
+		<item>@drawable/mark_464</item>
+		<item>@drawable/mark_463</item>
+		<item>@drawable/mark_462</item>
+		<item>@drawable/mark_461</item>
+		<item>@drawable/mark_460</item>
+		<item>@drawable/mark_459</item>
+		<item>@drawable/mark_458</item>
+		<item>@drawable/mark_457</item>
+		<item>@drawable/mark_456</item>
+		<item>@drawable/mark_455</item>
+		<item>@drawable/mark_454</item>
+		<item>@drawable/mark_453</item>
+		<item>@drawable/mark_452</item>
+		<item>@drawable/mark_451</item>
+		<item>@drawable/mark_450</item>
+		<item>@drawable/mark_449</item>
+		<item>@drawable/mark_448</item>
+		<item>@drawable/mark_447</item>
+		<item>@drawable/mark_446</item>
+		<item>@drawable/mark_445</item>
+		<item>@drawable/mark_444</item>
+		<item>@drawable/mark_443</item>
+		<item>@drawable/mark_442</item>
+		<item>@drawable/mark_441</item>
+		<item>@drawable/mark_440</item>
+		<item>@drawable/mark_439</item>
+		<item>@drawable/mark_438</item>
+		<item>@drawable/mark_437</item>
+		<item>@drawable/mark_436</item>
+		<item>@drawable/mark_435</item>
+		<item>@drawable/mark_434</item>
+		<item>@drawable/mark_433</item>
+		<item>@drawable/mark_432</item>
+		<item>@drawable/mark_431</item>
+		<item>@drawable/mark_430</item>
+		<item>@drawable/mark_429</item>
+		<item>@drawable/mark_428</item>
+		<item>@drawable/mark_427</item>
+		<item>@drawable/mark_426</item>
+		<item>@drawable/mark_425</item>
+		<item>@drawable/mark_424</item>
+		<item>@drawable/mark_423</item>
+		<item>@drawable/mark_422</item>
+		<item>@drawable/mark_421</item>
+		<item>@drawable/mark_420</item>
+		<item>@drawable/mark_419</item>
+		<item>@drawable/mark_418</item>
+		<item>@drawable/mark_417</item>
+		<item>@drawable/mark_416</item>
+		<item>@drawable/mark_415</item>
+		<item>@drawable/mark_414</item>
+		<item>@drawable/mark_413</item>
+		<item>@drawable/mark_412</item>
+		<item>@drawable/mark_411</item>
+		<item>@drawable/mark_410</item>
+		<item>@drawable/mark_409</item>
+		<item>@drawable/mark_408</item>
+		<item>@drawable/mark_407</item>
+		<item>@drawable/mark_406</item>
+		<item>@drawable/mark_405</item>
+		<item>@drawable/mark_404</item>
 		<item>@drawable/mark_403</item>
 		<item>@drawable/mark_402</item>
 		<item>@drawable/mark_401</item>

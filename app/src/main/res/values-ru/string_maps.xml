@@ -94,6 +94,7 @@
     </array>
 
     <array name="podriv_name">
+    	<item>Мосты</item>
     	<item>Пирамида</item>
     	<item>Дворец</item>
         <item>Пункт назначения</item>
@@ -106,6 +107,7 @@
     </array>
     <string-array name="podriv_type">
     	<item>Подрыв</item>
+    	<item>Подрыв</item>
         <item>Подрыв</item>
         <item>Подрыв</item>
         <item>Подрыв</item>
@@ -116,6 +118,7 @@
         <item>Подрыв</item>
     </string-array>  
     <string-array name="podriv_about">
+    	<item>В игре появилась обновленная карта Мосты, переработанная благодаря усилиям игроков Атласа войны</item>
     	<item>На территории комплекса находятся могущественные статуи древних богов, колонные залы</item>
 		<item>Дворец одного из влиятельных местных шейхов</item>
         <item>События разворачиваются на крыше небоскреба</item>
@@ -127,6 +130,7 @@
         <item>Представляет собой место, сражение на котором разворачивается неподалеку от аэропорта</item>
     </string-array>
     <array name="podriv_link">
+    	<item>http://belev.org/android/wardocwarface/maps/ru/podriv_mosti.html</item>
     	<item>http://belev.org/android/wardocwarface/maps/ru/podriv_piramida.html</item>
 		<item>http://belev.org/android/wardocwarface/maps/ru/podriv_dvorec.html</item>
         <item>http://belev.org/android/wardocwarface/maps/ru/podriv_punkt.html</item>
@@ -135,9 +139,10 @@
         <item>http://belev.org/android/wardocwarface/maps/ru/podriv_fabrika.html</item>
         <item>http://belev.org/android/wardocwarface/maps/ru/podriv_okraina.html</item>
         <item>http://belev.org/android/wardocwarface/maps/ru/podriv_estakada.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/pidriv_park.html</item>
+        <item>http://belev.org/android/wardocwarface/maps/ru/podriv_park.html</item>
     </array>
      <array name="podriv_icon">
+     	<item>@drawable/mosti_logo</item>
      	<item>@drawable/piramida_logo</item>
 		<item>@drawable/dvorec_logo</item>
         <item>@drawable/punkt_logo</item>
@@ -150,6 +155,7 @@
     </array>
 
     <array name="komanda_name">
+    	<item>Район №4</item>
    		<item>Стоянка</item>
         <item>Объект Д18</item>
         <item>Терминал</item>
@@ -165,6 +171,7 @@
         <item>Квартал</item> 
     </array>
     <string-array name="komanda_type">
+    	<item>Командный бой</item>
  		<item>Командный бой</item>
         <item>Командный бой</item>
         <item>Командный бой</item>
@@ -180,6 +187,7 @@
         <item>Командный бой</item>
     </string-array>  
     <string-array name="komanda_about">
+    	<item>Карта «Район №4» для режима «Командный бой», действие которой разворачивается в одном из самых атмосферных заброшенных городов на планете. </item>
 		<item>Cражение в условиях типичной американской пригородной застройки</item>
         <item>Нефтеперерабатывающий комплекс, с резервуарами для нефти</item>
         <item>Cовременный терминал крупного аэропорта</item>
@@ -195,6 +203,7 @@
         <item>Представляет собой сражение на территории жилого сектора одного провинциального городка Невады</item>
     </string-array>
     <array name="komanda_link">
+    	<item>http://belev.org/android/wardocwarface/maps/ru/komanda_rayen.html</item>
  		<item>http://belev.org/android/wardocwarface/maps/ru/komanda_stoyanka.html</item>
         <item>http://belev.org/android/wardocwarface/maps/ru/komanda_d18.html</item>
         <item>http://belev.org/android/wardocwarface/maps/ru/komanda_terminal.html</item>
@@ -210,6 +219,7 @@
         <item>http://belev.org/android/wardocwarface/maps/ru/komanda_kvartal.html</item>   
     </array>
      <array name="komanda_icon">
+     	<item>@drawable/rayen_logo</item>
 		<item>@drawable/stoyanka_logo</item>
         <item>@drawable/d18_logo</item>
         <item>@drawable/terminal_logo</item>
