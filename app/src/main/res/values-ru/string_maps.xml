@@ -423,17 +423,22 @@
 
     <string-array name="king_name">
         <item>Мохаве</item>
+        <item>Зона отчуждения</item>
     </string-array>
     <string-array name="king_type">
+        <item>Королевская битва</item>
         <item>Королевская битва</item>
     </string-array>
     <string-array name="king_about">
         <item>Карта Мохаве для режима Королевская битва представляет собой военную базу, расположенную в пустыне Мохаве.</item>
+        <item>Остатки сил Warface и Blackwood оказались под смертельной угрозой радиации.</item>
     </string-array>
     <array name="king_link">
         <item>http://belev.org/android/wardocwarface/maps/ru/king_mohave.html</item>
+        <item>http://belev.org/android/wardocwarface/maps/ru/king_zonaotchushdeniya.html</item>
     </array>
     <array name="king_icon">
         <item>@drawable/mohave_logo</item>
+        <item>@drawable/zonaotchushdeniya_logo</item>
     </array>
 </resources>
