@@ -139,6 +139,7 @@
     </array>
 
     <string-array name="enginer_box_name">
+    	<item>Micro-Roni CAA</item>
         <item>CZ Scorpion Evo3 A1</item>
         <item>Skorpion vz 83</item>
         <item>Daewoo K7</item>
@@ -151,6 +152,7 @@
         <item>Honey Badger</item>
     </string-array>
     <string-array name="enginer_box_type">
+    	<item>На время или навсегда</item>
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
@@ -163,6 +165,7 @@
     	<item>На время или навсегда</item>
     </string-array>
     <string-array name="enginer_box_about">
+    	<item>Пистолет-пулемет Micro-Roni от израильской компании CAA Tactical обладает прекрасным футуристическим дизайном</item>
         <item>Пистолет-пулемёт чешского производства с футуристическим дизайном и повышенной пробивающей способностью</item>
         <item>Пистолет-пулемёт калибра 9х17 мм, разработанный в Чехословакии. Оружие построено по схеме со свободным затвором.</item>
         <item>Южнокорейский пистолет-пулемет с интегрированным глушителем, впервые представленный на выставке вооружения IDEX в 2003 году. Производится компанией S&#38;T Daewoo.</item>
@@ -175,6 +178,7 @@
     	<item>Автомат с выдвижным прикладом и интегрированным глушителем, разработанный на базе AR-15 в качестве замены для H&#38;K MP5 и аналогичного оружия.</item>
     </string-array>
     <array name="enginer_box_link">
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_microronicaa.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_czscorpionevo3a1.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_scorpionvz83.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_daewook7.html</item>
@@ -187,6 +191,7 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_honeybadger.html</item>
     </array>
      <array name="enginer_box_icon">
+     	 <item>@drawable/enginer_microronicaa</item>
 		 <item>@drawable/enginer_czscorpionevo3a1</item>
 		 <item>@drawable/enginer_scorpionvz83</item>
 		 <item>@drawable/enginer_daewook7</item>
