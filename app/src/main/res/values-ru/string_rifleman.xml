@@ -108,6 +108,7 @@
     </array>
 
     <string-array name="rifleman_kred_name">
+        <item>HCAR</item>
         <item>РПД Custom</item>
         <item>AUG A3</item>
         <item>HK MG4</item>
@@ -124,8 +125,10 @@
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
     </string-array>
     <string-array name="rifleman_kred_about">
+        <item>HCAR интересен как снайперам, желающим выйти за рамки привычного геймплея, так и штурмовикам, которые хотят попробовать что-то непохожее на привычные им автоматы.</item>
         <item>Ручной пулемет Дегтярева (РПД) появившийся в далеком 1944 году и до середины шестидесятых годов выполнял роль оружия поддержки пехоты. </item>
         <item>Австрийская штурмовая винтовка калибра 5.56мм, выполненная по схеме булл-пап</item>
         <item>Легкий пулемет калибра 5.56мм с ленточным питанием, который производит немецкая компания Heckler Koch</item>
@@ -135,6 +138,7 @@
         <item>Модифицированный вариант винтовки AUG A3 с утяжеленным стволом, применяемый в качестве ручного пулемета</item>
     </string-array>
     <array name="rifleman_kred_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_hcar.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_rpdcustom.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_auga3.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_hkmg4.html</item>
@@ -144,6 +148,7 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_auga3hbar.html</item>
     </array>
     <array name="rifleman_kred_icon">
+        <item>@drawable/rifleman_hcar</item>
         <item>@drawable/rifleman_rpdcustom</item>
         <item>@drawable/rifleman_auga3</item>
         <item>@drawable/rifleman_hkmg4</item>
