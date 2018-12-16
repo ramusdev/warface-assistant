@@ -93,6 +93,7 @@
     </array>
 
     <string-array name="sniper_kred_name">
+        <item>CDX-MC Kraken</item>
         <item>Remington MSR</item>
     	<item>ВСС Винторез</item>
     	<item>Barrett M107</item>
@@ -101,19 +102,22 @@
     </string-array>
     <string-array name="sniper_kred_type">
         <item>На время или навсегда</item>
+        <item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     </string-array>
     <string-array name="sniper_kred_about">
-        <item>Снайперская винтовка MSR была разработана холдингом Remington Arms по заказу U.S Special Operations Command.</item>
+        <item>Мультикалиберный карабин с продольно-скользящим затвором, который производится компанией Cadex Defence</item>
+        <item>Снайперская винтовка MSR была разработана холдингом Remington Arms по заказу U.S Special Operations Command</item>
     	<item>Бесшумная снайперская винтовка, разработанная в начале 1980-х готов в ЦНИИ Точмаш. Используется подразделениями специального назначения</item>
     	<item>Крупнокалиберная снайперская винтовка компании Barrett Firearms, состоящая на вооружении многих армий мира</item>
     	<item>Высокоточная снайперская винтовка с продольно-скользящим поворотным затвором под патрон .338 Lapua Magnum</item>
     	<item>Американская снайперская винтовка с продольно-скользящим поворотным затвором, предназначенная для поражения живой силы противника</item>
     </string-array>
     <array name="sniper_kred_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_cdxmckraken.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_remingtonmsr.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_vssvintorez.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_barrettm107.html</item>
@@ -121,6 +125,7 @@
     	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_cheytacm200.html</item>
     </array>
     <array name="sniper_kred_icon">
+        <item>@drawable/sniper_cdxmckraken</item>
         <item>@drawable/sniper_remingtonmsr</item>
     	<item>@drawable/sniper_vssvintorez</item>
     	<item>@drawable/sniper_barrettm107</item>

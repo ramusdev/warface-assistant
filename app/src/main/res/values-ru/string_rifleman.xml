@@ -2,6 +2,8 @@
 <resources>
 
     <string-array name="rifleman_verb_name">
+        <item>Type 97B</item>
+        <item>VHS-2</item>
         <item>M4A1</item>
         <item>Daewoo K2</item>
         <item>Daewoo K3</item>
@@ -23,6 +25,8 @@
         <item>ДП-27</item>
     </string-array>
     <string-array name="rifleman_verb_type">
+        <item>На время</item>
+        <item>На время</item>
         <item>Навсегда</item>
         <item>Навсегда</item>
         <item>Навсегда</item>
@@ -44,6 +48,8 @@
         <item>На время</item>
     </string-array>
     <string-array name="rifleman_verb_about">
+        <item>Уникальная штурмовая винтовка Type 97B, разработанная на базе автомата Type 97</item>
+        <item>Хорватский автомат, выполненный в компоновке булл-пап</item>
         <item>Модифицированная версия M16 с укороченным стволом и выдвижным прикладом</item>
         <item>Штурмовая винтовка вооруженных сил Южной Кореи, разработанная компанией ST Daewoo</item>
         <item>Легкий пулемет калибра 5.56 мм. напоминающий по конструкции пулемет FN Minimi</item>
@@ -65,6 +71,8 @@
         <item>Легендарный пулемет Дегтярева, главное оружие огневой поддержки пехоты Красной Армии.</item>
     </string-array>
     <array name="rifleman_verb_link">
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_type97b.html</item>
+        <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_vhs2.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_m4a1.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_daewook2.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_daewook3.html</item>
@@ -86,6 +94,8 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_dp27.html</item>
     </array>
     <array name="rifleman_verb_icon">
+        <item>@drawable/rifleman_type97b</item>
+        <item>@drawable/rifleman_vhs2</item>
         <item>@drawable/rifleman_m4a1</item>
         <item>@drawable/rifleman_daewook2</item>
         <item>@drawable/rifleman_daewook3</item>
