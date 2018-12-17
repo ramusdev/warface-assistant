@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Warface App</string>
+    <string name="app_name">Warface Wardoc</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Options</string>
 
@@ -21,7 +21,7 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
 <font color=#e65d20>Additional information</font><br><br>
 
 - Current version: 2.5.0<br>
-- Developer: RB<br>
+- Developer: RB dev<br>
 - Contact: ram219219@gmail.com]]>
 </string>
 
