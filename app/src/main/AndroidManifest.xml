@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="rb.dev.warfaceapp">
+    package="belev.org.warface_app">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -19,22 +19,22 @@
         <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4140002463111288/3644037371"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
 
-        <activity android:name="rb.dev.warfaceapp.MainActivity">
+        <activity android:name="belev.org.warface_app.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="rb.dev.warfaceapp.RiflemanWebActivity" />
-        <activity android:name="rb.dev.warfaceapp.SniperWebActivity" />
-        <activity android:name="rb.dev.warfaceapp.MedicWebActivity" />
-        <activity android:name="rb.dev.warfaceapp.EnginerWebActivity" />
-        <activity android:name="rb.dev.warfaceapp.MapsWebActivity" />
-        <activity android:name="rb.dev.warfaceapp.NewsWebActivity" />
-        <activity android:name="rb.dev.warfaceapp.StremersActivity" />
+        <activity android:name="belev.org.warface_app.RiflemanWebActivity" />
+        <activity android:name="belev.org.warface_app.SniperWebActivity" />
+        <activity android:name="belev.org.warface_app.MedicWebActivity" />
+        <activity android:name="belev.org.warface_app.EnginerWebActivity" />
+        <activity android:name="belev.org.warface_app.MapsWebActivity" />
+        <activity android:name="belev.org.warface_app.NewsWebActivity" />
+        <activity android:name="belev.org.warface_app.StremersActivity" />
         <activity
-            android:name="rb.dev.warfaceapp.ConnectionActivity"
+            android:name="belev.org.warface_app.ConnectionActivity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme"></activity>
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Warface Wardoc</string>
+    <string name="app_name">Warface App</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Настройки</string>
 
@@ -29,7 +29,7 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <![CDATA[
         <font color=#e65d20>Обновление приложения</font><br><br>
         - Обновлены локации<br>
-        - Обновлено оружие<br>
+        - Обновлены оружия<br>
     ]]>
     </string>
 

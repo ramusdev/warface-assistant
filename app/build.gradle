@@ -5,11 +5,11 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId "rb.dev.warfaceapp"
+        applicationId "belev.org.warface_app"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 122
-        versionName "2.5.2"
+        versionCode 127
+        versionName "2.5.7"
     }
     buildTypes {
         release {
