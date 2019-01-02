@@ -134,6 +134,7 @@
     </array>
 
     <string-array name="sniper_box_name">
+    	<item>H&#38;K G28</item>
     	<item>Bushmaster BA50</item>
         <item>AWM</item>
         <item>M14 Crazy Horse</item>
@@ -149,6 +150,7 @@
     </string-array>
     <string-array name="sniper_box_type">
     	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
@@ -161,8 +163,9 @@
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
     </string-array>
-    <string-array name="sniper_box_about">
-    	<item>Полуавтоматическая снайперская винтовка калибра 7.62×51 мм, разработанная компанией Smith Enterprise Inc.</item>
+    <string-array name="sniper_box_about">\
+    	<item>Полуавтоматическая снайперская винтовка снайперская винтовка HK G28 разработана и производится известной немецкой компанией</item>
+    	<item>Полуавтоматическая снайперская винтовка калибра 7.62×51 мм, разработанная компанией Smith Enterprise Inc</item>
         <item>Cнайперская винтовка производства International. Оружие использует отъёмные коробочные магазины на 5 патронов</item>
         <item>Полуавтоматическая снайперская винтовка калибра 7.62 мм, разработанная компанией Smith Enterprise Inc</item>
         <item>Укороченная модель снайперской винтовки Драгунова, оборудованная складными сошками и специальным дульным устройством</item>
@@ -176,6 +179,7 @@
         <item>Лёгкая снайперская винтовка с продольно-скользящим затвором, разработанная в 1997 году в Австрии совместно с экспертом по огнестрельному оружию Джеффом Купером</item>
     </string-array>
     <array name="sniper_box_link">
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_handkg28.html</item>
     	<item>http://belev.org/android/wardocwarface/weapons/ru/sniper_bushmasterba50.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_awm.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_m14crazyhorse.html</item>
@@ -190,6 +194,7 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/sniper_steyrscout.html</item>
     </array>
     <array name="sniper_box_icon">
+    	<item>@drawable/sniper_handkg28</item>
     	<item>@drawable/sniper_bushmasterbas50</item>
         <item>@drawable/sniper_awm</item>
         <item>@drawable/sniper_m14crazyhorse</item>

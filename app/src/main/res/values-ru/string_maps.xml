@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="spec_name">
+    	<item>Восход</item>
         <item>Припять</item>
         <item>Затмение</item>
         <item>Ледокол</item>
@@ -15,6 +16,7 @@
         <item>Вулкан</item>  
     </string-array>
     <string-array name="spec_type">
+    	<item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
@@ -28,8 +30,9 @@
         <item>Спецоперация</item> 
     </string-array>
     <string-array name="spec_about">
-        <item>В Припяти были возведены бункеры и гигантская башня, где, по слухам, ведутся эксперименты над людьми.</item>
-        <item>Бойцы Warface попадают в песчаную бурю. Связь со штабом потеряна, вокруг непроглядная тьма, кишащая зомби.</item>
+    	<item>По информации от внедренного оперативника с позывным "Нода", корпорацией Blackwood на одном из островов в Тихом Океане</item>
+        <item>В Припяти были возведены бункеры и гигантская башня, где, по слухам, ведутся эксперименты над людьми</item>
+        <item>Бойцы Warface попадают в песчаную бурю. Связь со штабом потеряна, вокруг непроглядная тьма, кишащая зомби</item>
         <item>Ситуация крайне серьёзная. Игры закончились. На этот раз враг настроен не просто выиграть сражение</item>
         <item>Cейчас разведка докладывает, что в Восточной Европе обнаружена строящаяся башня</item>
         <item>Blackwood собираются начать массированное наступление в Северной Африке</item>
@@ -41,6 +44,7 @@
         <item>Отряду Warface предстоит отправиться к вулкану и лично разузнать, что же там происходит</item>
     </string-array>
     <array name="spec_link">
+    	<item>http://belev.org/android/wardocwarface/maps/ru/spec_voshod.html</item>
         <item>http://belev.org/android/wardocwarface/maps/ru/spec_pripyat.html</item>
         <item>http://belev.org/android/wardocwarface/maps/ru/spec_zatmenie.html</item>
         <item>http://belev.org/android/wardocwarface/maps/ru/spec_ledokol.html</item>
@@ -54,6 +58,7 @@
         <item>http://belev.org/android/wardocwarface/maps/ru/spec_vulkan.html</item>
     </array>
     <array name="spec_icon">
+    	<item>@drawable/voshod_logo</item>
         <item>@drawable/pripyat_logo</item>
         <item>@drawable/zatmenie_logo</item>
         <item>@drawable/ledokol_logo</item>
