@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="medic_verb_name">
+      <item>SAP6</item>
     	<item>Remington Model 870</item>
     	<item>SPAS-12</item>
     	<item>Sidewinder Venom</item>
@@ -18,6 +19,7 @@
     	<item>Сайга H.G.C. Custom</item>
     </string-array>
     <string-array name="medic_verb_type">
+      <item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>На время</item>
@@ -34,6 +36,7 @@
     	<item>Навсегда</item>
     </string-array>
     <string-array name="medic_verb_about">
+      <item>Помповый дробовик, использующий магазины, что позволяет ускорить перезарядку.</item>
     	<item>Американское помповое ружье, производимое Remington Arms Company, Inc. Широко применяется для спортивной стрельбы, охоты и самообороны</item>
     	<item>Боевой дробовик, который производила итальянская оружейная компания Franchi S.p.A. в 1979-2000 гг</item>
     	<item>Тактическое помповое ружьё, являющееся улучшенной версией Mossberg 590</item>
@@ -50,6 +53,7 @@
     	<item>Охотничий карабин 12-го калибра на базе автомата Калашникова, доступный в различных модификациях</item>
     </string-array>
     <array name="medic_verb_link">
+      <item>http://belev.org/android/wardocwarface/weapons/ru/medic_sap6.html</item>
       <item>http://belev.org/android/wardocwarface/weapons/ru/medic_remingtonmodel870.html</item>
       <item>http://belev.org/android/wardocwarface/weapons/ru/medic_spas12.html</item>
       <item>http://belev.org/android/wardocwarface/weapons/ru/medic_sidewindervenom.html</item>
@@ -66,6 +70,7 @@
       <item>http://belev.org/android/wardocwarface/weapons/ru/medic_saygahgccustom.html</item>
   </array>
   <array name="medic_verb_icon">
+    <item>@drawable/medic_sap6</item>
     <item>@drawable/medic_remingtonmodel870</item>
     <item>@drawable/medic_spas12</item>
     <item>@drawable/medic_sidewindervenom</item>

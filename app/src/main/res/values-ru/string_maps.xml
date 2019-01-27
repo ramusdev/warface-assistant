@@ -241,6 +241,7 @@
 </array>
 
 <string-array name="mysorubka_name">
+  <item>Пагода</item>
   <item>Мотель</item>
   <item>Депо</item>
   <item>Пригород</item>
@@ -248,6 +249,7 @@
   <item>Бункер</item>
 </string-array>
 <string-array name="mysorubka_type">
+ <item>Мясорубка</item>
  <item>Мясорубка, Командный бой</item>
  <item>Мясорубка</item>
  <item>Мясорубка</item>
@@ -255,6 +257,7 @@
  <item>Мясорубка</item>
 </string-array>
 <string-array name="mysorubka_about">
+	<item>События происходят на одном из островов в Тихом Океане</item>
     <item>Заброшенный мотель в одной из пустыни штата Невада</item>
     <item>Множества ржавых железнодорожных вагонов и маленьких построек</item>
     <item>Некогда живописный пригород в одночасье превращается в место жестокой схватки </item>
@@ -262,6 +265,7 @@
     <item>События происходят на территории ракетного комплекса, расположенного в Африке</item>
 </string-array>
 <array name="mysorubka_link">
+  <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_pagoda.html</item>	
   <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_motel.html</item>
   <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_depo.html</item>
   <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_prigorod.html</item>
@@ -269,6 +273,7 @@
   <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_bunker.html</item>
 </array>
 <array name="mysorubka_icon">
+   <item>@drawable/pagoda_logo</item>
    <item>@drawable/motel_logo</item>
    <item>@drawable/depo_logo</item>
    <item>@drawable/prigorod_logo</item>
