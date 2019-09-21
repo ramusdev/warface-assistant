@@ -2,7 +2,7 @@
 <resources>
 
     <string-array name="medic_verb_name">
-      <item>SAP6</item>
+      	<item>SAP6</item>
     	<item>Remington Model 870</item>
     	<item>SPAS-12</item>
     	<item>Sidewinder Venom</item>
@@ -19,7 +19,7 @@
     	<item>Сайга H.G.C. Custom</item>
     </string-array>
     <string-array name="medic_verb_type">
-      <item>Навсегда</item>
+      	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>На время</item>
@@ -36,7 +36,7 @@
     	<item>Навсегда</item>
     </string-array>
     <string-array name="medic_verb_about">
-      <item>Помповый дробовик, использующий магазины, что позволяет ускорить перезарядку.</item>
+      	<item>Помповый дробовик, использующий магазины, что позволяет ускорить перезарядку.</item>
     	<item>Американское помповое ружье, производимое Remington Arms Company, Inc. Широко применяется для спортивной стрельбы, охоты и самообороны</item>
     	<item>Боевой дробовик, который производила итальянская оружейная компания Franchi S.p.A. в 1979-2000 гг</item>
     	<item>Тактическое помповое ружьё, являющееся улучшенной версией Mossberg 590</item>
@@ -88,6 +88,8 @@
 </array>
 
 <string-array name="medic_kred_name">
+    <item>Typhoon F12</item>
+    <item>Marlin 1894 Custom</item>
     <item>Uzkon UNG-12</item>
     <item>Fostech Origin-12</item>
     <item>Winchester 1887</item>
@@ -106,18 +108,24 @@
     <item>На время или навсегда</item>
     <item>На время или навсегда</item>
     <item>На время или навсегда</item>
+    <item>На время или навсегда</item>
+    <item>На время или навсегда</item>
 </string-array>
 <string-array name="medic_kred_about">
+    <item>Турецкое полуавтоматическое ружьё 12-го калибра, разработанное на базе платформы AR-15 и практически повторяющее её по форме.</item>
+    <item>Marlin 1894 Custom — новое оружие медика, при знакомстве с которым сразу вспоминаются две уникальные пушки.</item>
     <item>Uzkon UNG-12 полностью автоматический дробовик отличается высокой скорострельностью, создавая серьезную угрозу для целой группы противников на ближней дистанции.</item>
     <item>Самозарядное гладкоствольное ружье Origin-12 разработано и выпускается небольшой американской оружейной компанией Fostech Outdoors.</item>
     <item>Знаменитый американский конструктор оружия Джон Мозес Браунинг изначально предлагал использовать схему с перезарядкой продольно-скользящим цевьем.</item>
-    <item>Помповый дробовик 12-го калибра, выполненный по схеме булл-пап</item>
-    <item>Итальянское ружье производства компании Franchi S.p.A., созданное на основе SPAS-12</item>
-    <item>Автоматическое ружье 12-го калибра, разработанное корпорацией Pancor. Автоматика ружья работает за счет движения ствола вперед под давлением газов</item>
-    <item>Турецкий полуавтоматический дробовик 12-го калибра, разработанный компанией Derya Arms</item>
-    <item>Боевое ружье 12-го калибра револьверного типа, разработанное в ЮАР Хилтоном Уокером в начале 80-х годов</item>
+    <item>Помповый дробовик 12-го калибра, выполненный по схеме булл-пап.</item>
+    <item>Итальянское ружье производства компании Franchi S.p.A., созданное на основе SPAS-12.</item>
+    <item>Автоматическое ружье 12-го калибра, разработанное корпорацией Pancor. Автоматика ружья работает за счет движения ствола вперед под давлением газов.</item>
+    <item>Турецкий полуавтоматический дробовик 12-го калибра, разработанный компанией Derya Arms.</item>
+    <item>Боевое ружье 12-го калибра револьверного типа, разработанное в ЮАР Хилтоном Уокером в начале 80-х годов.</item>
 </string-array>
 <array name="medic_kred_link">
+    <item>http://belev.org/android/wardocwarface/weapons/ru/medic_typhoonf12.html</item>
+    <item>http://belev.org/android/wardocwarface/weapons/ru/medic_merlin1894custom.html</item>
     <item>http://belev.org/android/wardocwarface/weapons/ru/medic_uzkonung12.html</item>
     <item>http://belev.org/android/wardocwarface/weapons/ru/medic_fostechorigin12.html</item>
     <item>http://belev.org/android/wardocwarface/weapons/ru/medic_winchester1887.html</item>
@@ -128,6 +136,8 @@
     <item>http://belev.org/android/wardocwarface/weapons/ru/medic_cobraystriker.html</item>
 </array>
 <array name="medic_kred_icon">
+    <item>@drawable/medic_typhoonf12</item>
+    <item>@drawable/medic_merlin1894custom</item>
     <item>@drawable/medic_uzkonung12</item>
     <item>@drawable/medic_fostechorigin12</item>
     <item>@drawable/medic_winchester1887</item>

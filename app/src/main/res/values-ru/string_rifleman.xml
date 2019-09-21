@@ -118,6 +118,10 @@
     </array>
 
     <string-array name="rifleman_kred_name">
+    	<item>HArms CQR</item>
+    	<item>M240B</item>
+    	<item>Stoner LMG A1</item>
+    	<item>Sturmgewehr 44</item>
         <item>HCAR</item>
         <item>РПД Custom</item>
         <item>AUG A3</item>
@@ -128,6 +132,10 @@
         <item>AUG A3 Hbar</item>
     </string-array>
     <string-array name="rifleman_kred_type">
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
+    	<item>На время или навсегда</item>
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
         <item>На время или навсегда</item>
@@ -138,6 +146,10 @@
         <item>На время или навсегда</item>
     </string-array>
     <string-array name="rifleman_kred_about">
+    	<item>Лёгкая винтовка с отличной эргономикой, разработанная в Германии на основе платформы AR-15.</item>
+    	<item>Стандартный средний пулемет, который ранее находился на вооружении армии США, а ныне используется американской морской пехотой.</item>
+    	<item>Лёгкий штурмовой пулемёт компании Knights Armament - это система лёгких пулеметов, разработанная Юджином Стоунером и произведённая компанией Knights Armament Company.</item>
+    	<item>Немецкий автомат, разработанный во время Второй мировой войны.</item>
         <item>HCAR интересен как снайперам, желающим выйти за рамки привычного геймплея, так и штурмовикам, которые хотят попробовать что-то непохожее на привычные им автоматы.</item>
         <item>Ручной пулемет Дегтярева (РПД) появившийся в далеком 1944 году и до середины шестидесятых годов выполнял роль оружия поддержки пехоты. </item>
         <item>Австрийская штурмовая винтовка калибра 5.56мм, выполненная по схеме булл-пап</item>
@@ -148,6 +160,10 @@
         <item>Модифицированный вариант винтовки AUG A3 с утяжеленным стволом, применяемый в качестве ручного пулемета</item>
     </string-array>
     <array name="rifleman_kred_link">
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_harmscqr.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_m240b.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_stonerlmga1.html</item>
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_sturmgewehr44.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_hcar.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_rpdcustom.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_auga3.html</item>
@@ -158,6 +174,10 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/rifleman_auga3hbar.html</item>
     </array>
     <array name="rifleman_kred_icon">
+    	<item>@drawable/rifleman_harmscqr</item>
+    	<item>@drawable/rifleman_m240b</item>
+    	<item>@drawable/rifleman_stonerlmga1</item>
+    	<item>@drawable/rifleman_sturmgewehr44</item>
         <item>@drawable/rifleman_hcar</item>
         <item>@drawable/rifleman_rpdcustom</item>
         <item>@drawable/rifleman_auga3</item>

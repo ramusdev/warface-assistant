@@ -98,6 +98,7 @@
     </array>
 
     <string-array name="enginer_kred_name">
+    	<item>SIG MPX SBR Custom</item>
         <item>Desert Tech MDR-C</item>
     	<item>MPA10SST-X</item>
     	<item>SIG 552</item>
@@ -106,6 +107,7 @@
     	<item>JS 9mm</item>
     </string-array>
     <string-array name="enginer_kred_type">
+    	<item>На время или навсегда</item>
         <item>На время или навсегда</item>
     	<item>На время или навсегда</item>
     	<item>На время или навсегда</item>
@@ -114,14 +116,16 @@
     	<item>На время или навсегда</item>
     </string-array>
     <string-array name="enginer_kred_about">
+    	<item>Модульный пистолет-пулемет от компании SIG Sauer, позволяющий вести огонь очередями с отсечкой по четыре патрона.</item>
         <item>Пистолет-пулемёт разработанный американской компанией Desert Tech Inc и выполненный в компоновке булл-пап с укороченным стволом.</item>
     	<item>Компактное оружие с широкими возможностями для модификации. Благодаря высокой скорострельности очень эффективно в ближнем бою.</item>
-    	<item>Компактный автомат, разработанный в 1998 году на основе штурмовой винтовки SG 550. Его ствол и газовая трубка укорочены до 226 мм</item>
+    	<item>Компактный автомат, разработанный в 1998 году на основе штурмовой винтовки SG 550. Его ствол и газовая трубка укорочены до 226 мм.</item>
     	<item>Пистолет-пулемет калибра 9x19 мм Парабеллум, который выпускает компания Calico Light Weapons Systems.</item>
     	<item>Бельгийский пистолет-пулемет, разработанный компанией FN Herstal. Известен своим удобным и эргономичным дизайном.</item>
-    	<item>Экспортный вариант пистолета-пулемета QCW-05, разработанный китайской корпорацией Jianshe Industries. Предназначен для сил специального назначения</item>
+    	<item>Экспортный вариант пистолета-пулемета QCW-05, разработанный китайской корпорацией Jianshe Industries. Предназначен для сил специального назначения.</item>
     </string-array>
     <array name="enginer_kred_link">
+    	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_sigmpxsbrcustom.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_deserttechmdrc.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_mpa10sstx.html</item>
         <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_sig552.html</item>
@@ -130,6 +134,7 @@
         <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_js9.html</item>
     </array>
      <array name="enginer_kred_icon">
+     	<item>@drawable/enginer_sigmpxsbrcustom</item>
         <item>@drawable/enginer_deserttechmdrc</item>
         <item>@drawable/enginer_mpa10sstx</item>
         <item>@drawable/enginer_sig552</item>

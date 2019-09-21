@@ -16,6 +16,7 @@ public class AboutFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
         TextView textView = (TextView) view.findViewById(R.id.about_textView);
         String text = getResources().getString(R.string.about_text);
+        textView.setMovementMethod(android.text.method.LinkMovementMethod.getInstance());
         textView.setText(Html.fromHtml(text));
 
         return view;

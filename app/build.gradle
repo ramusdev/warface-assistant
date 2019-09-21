@@ -8,8 +8,8 @@ android {
         applicationId "belev.org.warface_app"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 132
-        versionName "2.6.2"
+        versionCode 135
+        versionName "2.6.4"
     }
     buildTypes {
         release {
