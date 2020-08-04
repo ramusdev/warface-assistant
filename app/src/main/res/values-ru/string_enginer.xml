@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="enginer_verb_name">
+		<item>Arcus Scout</item>
         <item>UZI Pro</item>
 		<item>H&#38;K MP5A5 Custom</item>
     	<item>H&#38;K MP5</item>
@@ -21,15 +22,16 @@
     	<item>Kriss super V</item>
     </string-array>
     <string-array name="enginer_verb_type">
+		<item>На время</item>
         <item>Навсегда</item>
 		<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
-    	<item>На время</item>
-    	<item>На время</item>
-    	<item>На время</item>
-    	<item>На время</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
@@ -40,6 +42,8 @@
     	<item>Навсегда</item>
     </string-array>
     <string-array name="enginer_verb_about">
+		<item>Данная модель обладает повышенной скорострельностью, но отличается относительно небольшой дальностью стрельбы.
+</item>
         <item>UZI Pro это комфортная, высокоэффективная и прекрасно сбалансированная пушка, которую по достоинству оценят игроки, предпочитающие агрессивный стиль игры за инженера.</item>
 		<item>Модификация классической модели пистолета-пулемета MP5 от компании Heckler &#38; Koch GmbH</item>
     	<item>Немецкий пистолет-пулемет калибра 9 мм, созданный в 1960-х годах группой инженеров компании Heckler &#38; Koch GmbH</item>
@@ -59,42 +63,44 @@
     	<item>Пистолет-пулемет калибра .45 ACP, разработанный компанией Transformational Defense Industries</item>
     </string-array>
     <array name="enginer_verb_link">
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_uzipro.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkmp5a5.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkmp5.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_m4cqb.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_bandmp9.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_berettamx4storm.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_pm84glauberytcustom.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_cp2veresk.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_pp2000.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkg36c.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_daewook1.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_ak9.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkmp7.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_auga39xs.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_miniuzi.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_pp19bizon.html</item>
-     	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_krisssuperv.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_arcusscout.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_uzipro.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_handkmp5a5.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_handkmp5.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_m4cqb.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_bandmp9.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_berettamx4storm.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_pm84glauberytcustom.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_cp2veresk.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_pp2000.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_handkg36c.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_daewook1.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_ak9.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_handkmp7.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_auga39xs.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_miniuzi.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_pp19bizon.html</item>
+     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_krisssuperv.html</item>
     </array>
      <array name="enginer_verb_icon">
-        <item>@drawable/enginer_uzipro</item>
+		<item>@drawable/enginer_arcusscout</item>
+		<item>@drawable/enginer_uzipro</item>
 		<item>@drawable/enginer_handkmp5a5</item>
-     	<item>@drawable/enginer_handkmp5</item>
-     	<item>@drawable/enginer_m4cqb</item>
-     	<item>@drawable/enginer_bandmp9</item>
-     	<item>@drawable/enginer_berettamx4storm</item>
-     	<item>@drawable/enginer_pm84glauberytcustom</item>
-     	<item>@drawable/enginer_cp2veresk</item>
-     	<item>@drawable/enginer_pp2000</item>
-     	<item>@drawable/enginer_handkg36c</item>
-     	<item>@drawable/enginer_daewook1</item>
-     	<item>@drawable/enginer_ak9</item>
-     	<item>@drawable/enginer_handkmp7</item>
-     	<item>@drawable/enginer_auga39xs</item>
-     	<item>@drawable/enginer_miniuzi</item>
-     	<item>@drawable/enginer_pp19bizon</item>
-     	<item>@drawable/enginer_krisssuperv</item>
+		<item>@drawable/enginer_handkmp5</item>
+		<item>@drawable/enginer_m4cqb</item>
+		<item>@drawable/enginer_bandmp9</item>
+		<item>@drawable/enginer_berettamx4storm</item>
+		<item>@drawable/enginer_pm84glauberytcustom</item>
+		<item>@drawable/enginer_cp2veresk</item>
+		<item>@drawable/enginer_pp2000</item>
+		<item>@drawable/enginer_handkg36c</item>
+		<item>@drawable/enginer_daewook1</item>
+		<item>@drawable/enginer_ak9</item>
+		<item>@drawable/enginer_handkmp7</item>
+		<item>@drawable/enginer_auga39xs</item>
+		<item>@drawable/enginer_miniuzi</item>
+		<item>@drawable/enginer_pp19bizon</item>
+		<item>@drawable/enginer_krisssuperv</item>
     </array>
 
     <string-array name="enginer_kred_name">
@@ -107,13 +113,13 @@
     	<item>JS 9mm</item>
     </string-array>
     <string-array name="enginer_kred_type">
-    	<item>На время или навсегда</item>
-        <item>На время или навсегда</item>
-    	<item>На время или навсегда</item>
-    	<item>На время или навсегда</item>
-    	<item>На время или навсегда</item>
-    	<item>На время или навсегда</item>
-    	<item>На время или навсегда</item>
+    	<item>Навсегда</item>
+        <item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
     </string-array>
     <string-array name="enginer_kred_about">
     	<item>Модульный пистолет-пулемет от компании SIG Sauer, позволяющий вести огонь очередями с отсечкой по четыре патрона.</item>
@@ -125,13 +131,13 @@
     	<item>Экспортный вариант пистолета-пулемета QCW-05, разработанный китайской корпорацией Jianshe Industries. Предназначен для сил специального назначения.</item>
     </string-array>
     <array name="enginer_kred_link">
-    	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_sigmpxsbrcustom.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_deserttechmdrc.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_mpa10sstx.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_sig552.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_calicom96a.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_fnp90.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_js9.html</item>
+    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_sigmpxsbrcustom.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_deserttechmdrc.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_mpa10sstx.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_sig552.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_calicom96a.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_fnp90.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_js9.html</item>
     </array>
      <array name="enginer_kred_icon">
      	<item>@drawable/enginer_sigmpxsbrcustom</item>
@@ -144,6 +150,13 @@
     </array>
 
     <string-array name="enginer_box_name">
+		<item>Thompson M1928</item>
+		<item>M4 Custom</item>
+		<item>Gilboa Snake DBR</item>
+		<item>FN SCAR-L PDW</item>
+		<item>Cobalt Kinetics Stealth Pistol</item>
+		<item>АМ-17</item>
+		<item>ACR CQB Custom</item>
         <item>LWRC SMG-45</item>
     	<item>Micro-Roni CAA</item>
         <item>CZ Scorpion Evo3 A1</item>
@@ -158,6 +171,13 @@
         <item>Honey Badger</item>
     </string-array>
     <string-array name="enginer_box_type">
+		<item>На время или навсегда</item>
+		<item>На время или навсегда</item>
+		<item>На время или навсегда</item>
+		<item>На время или навсегда</item>
+		<item>На время или навсегда</item>
+		<item>На время или навсегда</item>
+		<item>На время или навсегда</item>
         <item>На время или навсегда</item>
     	<item>На время или навсегда</item>
         <item>На время или навсегда</item>
@@ -172,6 +192,13 @@
     	<item>На время или навсегда</item>
     </string-array>
     <string-array name="enginer_box_about">
+		<item>Это оружие широко использовалось не только военными и полицейскими, но и членами мафии.</item>
+		<item>M4 Custom – легко модифицируемый карабин M4A1, основанный на винтовке M16.</item>
+		<item>Израильская автоматическая винтовка. Создана на базе платформы AR15, однако включает в себя несколько модификаций.</item>
+		<item>Укороченный вариант автомата SCAR, предназначенный для экипажей боевых машин, вертолетов и технических специалистов.</item>
+		<item>Последняя новинка в линейке оружия от компании Cobalt Kinetics, сочетающая в себе инновации и проверенные решения.</item>
+		<item>Малогабаритный автомат, разработанный концерном «Калашников» в качестве компактного оружия для сил специального назначения и армейского подразделения.</item>
+		<item>Модификация Адаптивной Боевой Винтовки («Adaptive Combat Rifle» или «ACR») разработанная в Соединенных Штатах на замену M16.</item>
         <item>LWRC SMG-45 - это современное оружие калибра .45 АСР, рассчитанное на американские правоохранительные органы. Среди оружия инженера SMG-45 выделяется самым высоким в игре уроном</item>
     	<item>Пистолет-пулемет Micro-Roni от израильской компании CAA Tactical обладает прекрасным футуристическим дизайном</item>
         <item>Пистолет-пулемёт чешского производства с футуристическим дизайном и повышенной пробивающей способностью</item>
@@ -186,20 +213,33 @@
     	<item>Автомат с выдвижным прикладом и интегрированным глушителем, разработанный на базе AR-15 в качестве замены для H&#38;K MP5 и аналогичного оружия.</item>
     </string-array>
     <array name="enginer_box_link">
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_lwrcsmg45.html</item>
-    	<item>http://belev.org/android/wardocwarface/weapons/ru/enginer_microronicaa.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_czscorpionevo3a1.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_scorpionvz83.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_daewook7.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_magpulfmg9.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_tavorctar21.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_handkump.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_xm8compact.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_acrcqb.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_scarlpdw.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/ru/enginer_honeybadger.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_thompsonm1928.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_m4custom.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_gilboasnakedbr.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_fnscarlpdw.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_cobaltkenticsstealthpistol.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_am17.html</item>
+		<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_acrcqbcustom.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_lwrcsmg45.html</item>
+    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_microronicaa.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_czscorpionevo3a1.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_scorpionvz83.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_daewook7.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_magpulfmg9.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_tavorctar21.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_handkump.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_xm8compact.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_acrcqb.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_scarlpdw.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/enginer_honeybadger.html</item>
     </array>
      <array name="enginer_box_icon">
+		 <item>@drawable/enginer_thompsonm1928</item>
+		 <item>@drawable/enginer_m4custom</item>
+		 <item>@drawable/enginer_fnscarlpdw</item>
+		 <item>@drawable/enginer_cobaltkeneticsstealthpistol</item>
+		 <item>@drawable/enginer_am17</item>
+		 <item>@drawable/enginer_acrcqbcustom</item>
          <item>@drawable/enginer_lwrcsmg45</item>
      	 <item>@drawable/enginer_microronicaa</item>
 		 <item>@drawable/enginer_czscorpionevo3a1</item>

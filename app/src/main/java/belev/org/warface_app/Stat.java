@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Stat extends ListFragment {
-    private final String URL_TO_HIT = "http://belev.org/android/wardocwarface/news/news.json";
+    private final String URL_TO_HIT = "https://edgenews.ru/android/wardocwarface/news/news.json";
     android.widget.Adapter adapter;
     private static final String BUNDLE_TEXT = "bundle_text";
     public List<NewsModel> newsModelList = new ArrayList<>();

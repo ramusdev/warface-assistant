@@ -35,17 +35,17 @@ import java.util.List;
 
 public class StremersActivity extends AppCompatActivity {
 
-    public static String[] stremers_arr = { "http://belev.org/android/wardocwarface/stremers/elez.json",
-                                            "http://belev.org/android/wardocwarface/stremers/warface.json",
-                                            "http://belev.org/android/wardocwarface/stremers/mcserega.json",
-                                            "http://belev.org/android/wardocwarface/stremers/razortv.json",
-                                            "http://belev.org/android/wardocwarface/stremers/monter.json",
-                                            "http://belev.org/android/wardocwarface/stremers/donic.json",
-                                            "http://belev.org/android/wardocwarface/stremers/dmitriykr.json" };
+    public static String[] stremers_arr = { "https://edgenews.ru/android/wardocwarface/stremers/elez.json",
+                                            "https://edgenews.ru/android/wardocwarface/stremers/warface.json",
+                                            "https://edgenews.ru/android/wardocwarface/stremers/mcserega.json",
+                                            "https://edgenews.ru/android/wardocwarface/stremers/razortv.json",
+                                            "https://edgenews.ru/android/wardocwarface/stremers/monter.json",
+                                            "https://edgenews.ru/android/wardocwarface/stremers/donic.json",
+                                            "https://edgenews.ru/android/wardocwarface/stremers/dmitriykr.json" };
 
     private static final String BUNDLE_STREMERS = "bundle_stremers";
     private Integer stremersID;
-    //private final String URL_TO_HIT = "http://belev.org/android/wardocwarface/stremers/elez.json";
+    //private final String URL_TO_HIT = "https://edgenews.ru/android/wardocwarface/stremers/elez.json";
     android.widget.Adapter adapter;
     //private static final String BUNDLE_TEXT = "bundle_text";
     public List<NewsModel> newsModelList = new ArrayList<>();

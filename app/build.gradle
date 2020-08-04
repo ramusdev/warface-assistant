@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 29
     buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "belev.org.warface_app"
         minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 135
-        versionName "2.6.4"
+        targetSdkVersion 29
+        versionCode 142
+        versionName "3.0.5"
     }
     buildTypes {
         release {

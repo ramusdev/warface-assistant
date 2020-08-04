@@ -45,7 +45,7 @@ public class NewsWebActivity extends AppCompatActivity {
         WebView webView = (WebView) findViewById(R.id.webView);
         webView.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         webView.setBackgroundColor(0);
-        //webView.loadUrl("http://belev.org/android/wardocwarface/maps/spec_vulkan.html");
+        //webView.loadUrl("https://edgenews.ru/android/wardocwarface/maps/spec_vulkan.html");
         //webView.loadUrl(link);
         webView.loadDataWithBaseURL(null, text, "text/html", "utf-8", "");
     }

@@ -2,6 +2,9 @@
 <resources>
 
     <string-array name="spec_name">
+        <item>Blackwood</item>
+        <item>Гидра</item>
+        <item>Марс</item>
     	<item>Восход</item>
         <item>Припять</item>
         <item>Затмение</item>
@@ -16,6 +19,9 @@
         <item>Вулкан</item>  
     </string-array>
     <string-array name="spec_type">
+        <item>Спецоперация</item>
+        <item>Спецоперация</item>
+        <item>Спецоперация</item>
     	<item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
@@ -30,7 +36,10 @@
         <item>Спецоперация</item> 
     </string-array>
     <string-array name="spec_about">
-    	<item>По информации от внедренного оперативника с позывным "Нода", корпорацией Blackwood на одном из островов в Тихом Океане</item>
+        <item>Вы оказались в руках Blackwood. Оберон Уайт предлагает новый взгляд. Что, если всё это время вы сражались не на той стороне?</item>
+        <item>Солдаты Blaсkwood захватили в плен диверсионный отряд Вега-5 и агента Ноду, которым удалось предотвратить истребление колонистов на Марсе.</item>
+        <item>Марсианская колония в опасности! Остановите Blackwood и спасите колонистов.</item>
+    	<item>По информации от внедренного оперативника с позывным Нода, корпорацией Blackwood на одном из островов в Тихом Океане</item>
         <item>В Припяти были возведены бункеры и гигантская башня, где, по слухам, ведутся эксперименты над людьми</item>
         <item>Бойцы Warface попадают в песчаную бурю. Связь со штабом потеряна, вокруг непроглядная тьма, кишащая зомби</item>
         <item>Ситуация крайне серьёзная. Игры закончились. На этот раз враг настроен не просто выиграть сражение</item>
@@ -44,20 +53,26 @@
         <item>Отряду Warface предстоит отправиться к вулкану и лично разузнать, что же там происходит</item>
     </string-array>
     <array name="spec_link">
-    	<item>http://belev.org/android/wardocwarface/maps/ru/spec_voshod.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_pripyat.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_zatmenie.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_ledokol.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_akula2.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_anubis.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_akula.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_bastion1.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_bastion2.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_bastion3.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_exp.html</item>
-        <item>http://belev.org/android/wardocwarface/maps/ru/spec_vulkan.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_blackwood.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_gidra.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_mars.html</item>
+    	<item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_voshod.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_pripyat.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_zatmenie.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_ledokol.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_akula2.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_anubis.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_akula.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_bastion1.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_bastion2.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_bastion3.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_exp.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_vulkan.html</item>
     </array>
     <array name="spec_icon">
+        <item>@drawable/spec_blackwood_logo</item>
+        <item>@drawable/spec_gidra_logo</item>
+        <item>@drawable/mars_logo</item>
     	<item>@drawable/voshod_logo</item>
         <item>@drawable/pripyat_logo</item>
         <item>@drawable/zatmenie_logo</item>
@@ -88,9 +103,9 @@
     <item>Крепость Blackwood в районе сибири</item>
 </string-array>
 <array name="domin_link">
-    <item>http://belev.org/android/wardocwarface/maps/ru/domin_zapusk.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/domin_shaxta.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/domin_forpost.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/domin_zapusk.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/domin_shaxta.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/domin_forpost.html</item>
 </array>
 <array name="domin_icon">
     <item>@drawable/zapusk_logo</item>
@@ -135,16 +150,16 @@
    <item>Представляет собой место, сражение на котором разворачивается неподалеку от аэропорта</item>
 </string-array>
 <array name="podriv_link">
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_mosti.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_piramida.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_dvorec.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_punkt.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_d17.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_pereulki.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_fabrika.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_okraina.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_estakada.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/podriv_park.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_mosti.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_piramida.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_dvorec.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_punkt.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_d17.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_pereulki.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_fabrika.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_okraina.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_estakada.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_park.html</item>
 </array>
 <array name="podriv_icon">
   <item>@drawable/mosti_logo</item>
@@ -160,144 +175,159 @@
 </array>
 
 <array name="komanda_name">
-   <item>Район №4</item>
-   <item>Стоянка</item>
-   <item>Объект Д18</item>
-   <item>Терминал</item>
-   <item>Поселок</item>
-   <item>Ферма</item>
-   <item>Док</item>
-   <item>Ангар </item>
-   <item>Переправа</item>
-   <item>Площадь</item>
-   <item>Нефтебаза</item>
-   <item>Рынок</item>
-   <item>Авиабаза</item>
-   <item>Квартал</item> 
+    <item>Шапито</item>
+    <item>Район №4</item>
+    <item>Стоянка</item>
+    <item>Объект Д18</item>
+    <item>Терминал</item>
+    <item>Поселок</item>
+    <item>Ферма</item>
+    <item>Док</item>
+    <item>Ангар </item>
+    <item>Переправа</item>
+    <item>Площадь</item>
+    <item>Нефтебаза</item>
+    <item>Рынок</item>
+    <item>Авиабаза</item>
+    <item>Квартал</item>
 </array>
 <string-array name="komanda_type">
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой, Мясорубка</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
-   <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой, Мясорубка</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
+    <item>Командный бой</item>
 </string-array>  
 <string-array name="komanda_about">
-   <item>Карта «Район №4» для режима «Командный бой», действие которой разворачивается в одном из самых атмосферных заброшенных городов на планете. </item>
-   <item>Cражение в условиях типичной американской пригородной застройки</item>
-   <item>Нефтеперерабатывающий комплекс, с резервуарами для нефти</item>
-   <item>Cовременный терминал крупного аэропорта</item>
-   <item>Участок городка в ближневосточном регионе</item>
-   <item>Просторная карту, в центре которой расположено большое поле</item>
-   <item>Не большой и практически открытый пятачек среди контейнеров</item>
-   <item>Не очень большая, но многоярусная карта с тремя уровнями</item>
-   <item>Открытая карта в джунглях что делает её очень интересным местом для сражений</item>
-   <item>Разрушенный войной городской квартал</item>
-   <item>Маленькая площадку нефтехранящего комплекса, с техническими постройками</item>
-   <item>Территории с павильонами, склады с вещами, магазины, технические сооружения</item>
-   <item>Территории базы гражданской авиации с ангаром и самолетом</item>
-   <item>Представляет собой сражение на территории жилого сектора одного провинциального городка Невады</item>
+    <item>Привычная «Нефтебаза» на время праздника превратится в разбитый лагерь цирковой труппы.</item>
+    <item>Карта «Район №4» для режима «Командный бой», действие которой разворачивается в одном из самых атмосферных заброшенных городов на планете. </item>
+    <item>Cражение в условиях типичной американской пригородной застройки</item>
+    <item>Нефтеперерабатывающий комплекс, с резервуарами для нефти</item>
+    <item>Cовременный терминал крупного аэропорта</item>
+    <item>Участок городка в ближневосточном регионе</item>
+    <item>Просторная карту, в центре которой расположено большое поле</item>
+    <item>Не большой и практически открытый пятачек среди контейнеров</item>
+    <item>Не очень большая, но многоярусная карта с тремя уровнями</item>
+    <item>Открытая карта в джунглях что делает её очень интересным местом для сражений</item>
+    <item>Разрушенный войной городской квартал</item>
+    <item>Маленькая площадку нефтехранящего комплекса, с техническими постройками</item>
+    <item>Территории с павильонами, склады с вещами, магазины, технические сооружения</item>
+    <item>Территории базы гражданской авиации с ангаром и самолетом</item>
+    <item>Представляет собой сражение на территории жилого сектора одного провинциального городка Невады</item>
 </string-array>
 <array name="komanda_link">
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_rayen.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_stoyanka.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_d18.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_terminal.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_poselok.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_ferma.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_dok.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_angar.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_pereprava.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_ploshad.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_neftebaza.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_rinok.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_aviabaza.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/komanda_kvartal.html</item>   
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_shapito.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_rayen.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_stoyanka.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_d18.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_terminal.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_poselok.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_ferma.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_dok.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_angar.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_pereprava.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_ploshad.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_neftebaza.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_rinok.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_aviabaza.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_kvartal.html</item>
 </array>
 <array name="komanda_icon">
-  <item>@drawable/rayen_logo</item>
-  <item>@drawable/stoyanka_logo</item>
-  <item>@drawable/d18_logo</item>
-  <item>@drawable/terminal_logo</item>
-  <item>@drawable/poselok_logo</item>
-  <item>@drawable/ferma_logo</item>
-  <item>@drawable/dok_logo</item>
-  <item>@drawable/angar_logo</item>
-  <item>@drawable/pereprava_logo</item>
-  <item>@drawable/ploshad_logo</item>
-  <item>@drawable/neftebaza_logo</item>
-  <item>@drawable/rinok_logo</item>
-  <item>@drawable/aviabaza_logo</item>
-  <item>@drawable/kvartal_logo</item>  
+    <item>@drawable/komanda_shapito_logo</item>
+    <item>@drawable/rayen_logo</item>
+    <item>@drawable/stoyanka_logo</item>
+    <item>@drawable/d18_logo</item>
+    <item>@drawable/terminal_logo</item>
+    <item>@drawable/poselok_logo</item>
+    <item>@drawable/ferma_logo</item>
+    <item>@drawable/dok_logo</item>
+    <item>@drawable/angar_logo</item>
+    <item>@drawable/pereprava_logo</item>
+    <item>@drawable/ploshad_logo</item>
+    <item>@drawable/neftebaza_logo</item>
+    <item>@drawable/rinok_logo</item>
+    <item>@drawable/aviabaza_logo</item>
+    <item>@drawable/kvartal_logo</item>
 </array>
 
 <string-array name="mysorubka_name">
-  <item>Пагода</item>
-  <item>Мотель</item>
-  <item>Депо</item>
-  <item>Пригород</item>
-  <item>Лес</item>
-  <item>Бункер</item>
+    <item>Марсорубка</item>
+    <item>Пагода</item>
+    <item>Мотель</item>
+    <item>Депо</item>
+    <item>Пригород</item>
+    <item>Лес</item>
+    <item>Бункер</item>
 </string-array>
 <string-array name="mysorubka_type">
- <item>Мясорубка</item>
- <item>Мясорубка, Командный бой</item>
- <item>Мясорубка</item>
- <item>Мясорубка</item>
- <item>Мясорубка</item>
- <item>Мясорубка</item>
+    <item>Мясорубка</item>
+    <item>Мясорубка</item>
+    <item>Мясорубка, Командный бой</item>
+    <item>Мясорубка</item>
+    <item>Мясорубка</item>
+    <item>Мясорубка</item>
+    <item>Мясорубка</item>
 </string-array>
 <string-array name="mysorubka_about">
-	<item>События происходят на одном из островов в Тихом Океане</item>
+    <item>Марсорубка, как видно из названия, в этот раз действие развернется на Красной планете, среди построек марсианских колонистов</item>
+    <item>События происходят на одном из островов в Тихом Океане</item>
     <item>Заброшенный мотель в одной из пустыни штата Невада</item>
     <item>Множества ржавых железнодорожных вагонов и маленьких построек</item>
     <item>Некогда живописный пригород в одночасье превращается в место жестокой схватки </item>
-    <item>Это открытая местность со множеством объектов построек и контейнеров</item>  
+    <item>Это открытая местность со множеством объектов построек и контейнеров</item>
     <item>События происходят на территории ракетного комплекса, расположенного в Африке</item>
 </string-array>
 <array name="mysorubka_link">
-  <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_pagoda.html</item>	
-  <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_motel.html</item>
-  <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_depo.html</item>
-  <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_prigorod.html</item>
-  <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_les.html</item>
-  <item>http://belev.org/android/wardocwarface/maps/ru/mysorubka_bunker.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_mars.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_pagoda.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_motel.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_depo.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_prigorod.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_les.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_bunker.html</item>
 </array>
 <array name="mysorubka_icon">
-   <item>@drawable/pagoda_logo</item>
-   <item>@drawable/motel_logo</item>
-   <item>@drawable/depo_logo</item>
-   <item>@drawable/prigorod_logo</item>
-   <item>@drawable/les_logo</item>
-   <item>@drawable/bunker_logo</item>
+    <item>@drawable/mysorubka_mars_logo</item>
+    <item>@drawable/pagoda_logo</item>
+    <item>@drawable/motel_logo</item>
+    <item>@drawable/depo_logo</item>
+    <item>@drawable/mysorubka_prigorod_logo</item>
+    <item>@drawable/les_logo</item>
+    <item>@drawable/bunker_logo</item>
 </array>
 
 <string-array name="unicht_name">
+    <item>Студия</item>
     <item>Башни</item>
     <item>Маяк</item>
 </string-array>
 <string-array name="unicht_type">
     <item>Уничтожение</item>
     <item>Уничтожение</item>
+    <item>Уничтожение</item>
 </string-array>
 <string-array name="unicht_about">
+    <item>Студия — игровая карта PvP-режима Уничтожение. В этот раз действие развернется на съемочной площадке в декорациях спецоперации Марс.</item>
    <item>Маленький городок в виде крепости в ближневосточном регионе</item>
    <item>Маяк на побережье среди построек и лодочного причала </item>
 </string-array>
 <array name="unicht_link">
-    <item>http://belev.org/android/wardocwarface/maps/ru/unicht_bashni.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/unicht_mayak.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/unicht_studia.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/unicht_bashni.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/unicht_mayak.html</item>
 </array>
 <array name="unicht_icon">
+    <item>@drawable/studia_logo</item>
     <item>@drawable/bashni_logo</item>
     <item>@drawable/mayak_logo</item>
 </array>
@@ -330,13 +360,13 @@
    <item>Вам придется сражаться на территории комплекса, расположенного в сибирских горах</item>
 </string-array>
 <array name="zahvat_link">
-   <item>http://belev.org/android/wardocwarface/maps/ru/zahvat_karer.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/zahvat_stroyka.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/zahvat_depozit.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/zahvat_konvoy.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/zahvat_krepost.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/zahvat_ubezishe.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/zahvat_komplecs.html</item> 
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_karer.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_stroyka.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_depozit.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_konvoy.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_krepost.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_ubezishe.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_komplecs.html</item>
 </array>
 <array name="zahvat_icon">
   <item>@drawable/karer_logo</item>
@@ -349,11 +379,12 @@
 </array>
 
 <string-array name="shturm_name">
- <item>Вторжение</item>
- <item>Черное золото</item>
- <item>Верфь</item>
- <item>Холмы</item>
- <item>Чёрная мамба</item>
+    <item>База Blackwood</item>
+    <item>Вторжение</item>
+    <item>Черное золото</item>
+    <item>Верфь</item>
+    <item>Холмы</item>
+    <item>Чёрная мамба</item>
 </string-array>
 <string-array name="shturm_type">
     <item>Штурм</item>
@@ -361,27 +392,31 @@
     <item>Штурм</item>
     <item>Штурм</item>
     <item>Штурм</item>
+    <item>Штурм</item>
 </string-array>
 <string-array name="shturm_about">
- <item>Карта представляет собой окраину ничем не примечательного городка в азиатском регионе</item>
- <item>Богатый нефтедобывающий комплекс в ближневосточном регионе</item>
- <item>Cтаринный и некогда величественный город судостроения</item>
- <item>Карта представляет собой старинный город, который расположен в холмах</item>  
- <item>Карта Чёрная мамба представляет собой ракетный комплекс, расположенный в Африке</item>   
+    <item>База Blackwood обладает неповторимым шармом и колоритом, которые отлично сочетаются с классическим геймплеем режима.</item>
+    <item>Карта представляет собой окраину ничем не примечательного городка в азиатском регионе</item>
+    <item>Обновленная карта для режима Штурм представляет собой богатый нефтедобывающий комплекс в ближневосточном регионе. </item>
+    <item>Cтаринный и некогда величественный город судостроения</item>
+    <item>Карта представляет собой старинный город, который расположен в холмах</item>
+    <item>Карта Чёрная мамба представляет собой ракетный комплекс, расположенный в Африке</item>
 </string-array>
 <array name="shturm_link">
-    <item>http://belev.org/android/wardocwarface/maps/ru/shturm_vtorzenie.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/shturm_zoloto.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/shturm_verf.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/shturm_holmi.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/shturm_mamba.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_blackwood.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_vtorzenie.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_zoloto.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_verf.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_holmi.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_mamba.html</item>
 </array>
 <array name="shturm_icon">
- <item>@drawable/vtorzenie_logo</item>
- <item>@drawable/zoloto_logo</item>
- <item>@drawable/verf_logo</item>
- <item>@drawable/holmi_logo</item>
- <item>@drawable/mamba_logo</item>
+    <item>@drawable/blackwood_logo</item>
+    <item>@drawable/vtorzenie_logo</item>
+    <item>@drawable/zoloto_logo</item>
+    <item>@drawable/verf_logo</item>
+    <item>@drawable/holmi_logo</item>
+    <item>@drawable/mamba_logo</item>
 </array>
 
 <string-array name="vizivan_name">
@@ -400,9 +435,9 @@
    <item>События на карте Африка для режима Выживание разворачиваются, как не трудно догадаться, в африканском регионе</item>
 </string-array>
 <array name="vizivan_link">
-   <item>http://belev.org/android/wardocwarface/maps/ru/vizivan_sibir.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/vizivan_pustina.html</item>
-   <item>http://belev.org/android/wardocwarface/maps/ru/vizivan_afrika.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_sibir.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_pustina.html</item>
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_afrika.html</item>
 </array>
 <array name="vizivan_icon">
   <item>@drawable/sibir_logo</item>
@@ -426,9 +461,9 @@
     <item>Карта Резиденция для режима Блиц представляет собой резиденцию Оберона Уайта, расположенную в лесу.</item>
 </string-array>
 <array name="blic_link">
-    <item>http://belev.org/android/wardocwarface/maps/ru/blic_platform.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/blic_villa.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/blic_rezidencia.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/blic_platform.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/blic_villa.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/blic_rezidencia.html</item>
 </array>
 <array name="blic_icon">
     <item>@drawable/blic_platform</item>
@@ -449,8 +484,8 @@
     <item>Остатки сил Warface и Blackwood оказались под смертельной угрозой радиации.</item>
 </string-array>
 <array name="king_link">
-    <item>http://belev.org/android/wardocwarface/maps/ru/king_mohave.html</item>
-    <item>http://belev.org/android/wardocwarface/maps/ru/king_zonaotchushdeniya.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/king_mohave.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/king_zonaotchushdeniya.html</item>
 </array>
 <array name="king_icon">
     <item>@drawable/mohave_logo</item>
