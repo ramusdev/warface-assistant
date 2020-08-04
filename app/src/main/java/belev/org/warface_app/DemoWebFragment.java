@@ -29,7 +29,7 @@ public class DemoWebFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_web, container, false);
         WebView webView = (WebView) view.findViewById(R.id.webView);
         webView.setBackgroundColor(0);
-        webView.loadUrl("http://belev.org/android/wardocwarface/maps/spec_vulkan.html");
+        webView.loadUrl("https://edgenews.ru/android/wardocwarface/maps/spec_vulkan.html");
         //webView.loadUrl(link);
         return view;
 

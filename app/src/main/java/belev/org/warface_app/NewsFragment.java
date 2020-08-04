@@ -31,17 +31,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NewsFragment extends ListFragment {
-    private final String URL_TO_HIT = "http://belev.org/android/wardocwarface/news/news.json";
+    public static final String URL_TO_HIT = "https://edgenews.ru/android/wardocwarface/news/news.json";
     android.widget.Adapter adapter;
-    private static final String BUNDLE_TEXT = "bundle_text";
+    public static final String BUNDLE_TEXT = "bundle_text";
     InterstitialAd mInterstitialAd;
     public List<NewsModel> newsModelList = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        //return super.onCreateView(inflater, container, savedInstanceState);
-        //return inflater.inflate(R.layout.fragment_news, container, false);
-
         // Admod Interstitial
         mInterstitialAd = new InterstitialAd(getContext());
         mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
@@ -51,44 +48,8 @@ public class NewsFragment extends ListFragment {
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
 
-        //NativeExpressAdView adView = (NativeExpressAdView) findViewById(R.id.adView);
-        //adView.loadAd(new AdRequest.Builder().build());
-
-        // Inflate header view
-        //getActivity().getLayoutInflater()
-        //ViewGroup headerView = (ViewGroup)view(R.layout.header, listView,false);
-        //listView.addHeaderView(headerView);
-
-        //View headerView = getActivity().getLayoutInflater().inflate(R.layout.header, null);
-        //getListView().addHeaderView(headerView);
-
-        //AdSize.FULL_WIDTH
-
-        //NativeExpressAdView mAdmobNativeExpressAdview = new NativeExpressAdView(getActivity());;
-        //mAdmobNativeExpressAdview.setAdUnitId(getString(R.string.ad_unit_id));
-        //mAdmobNativeExpressAdview.setId(R.id.adView);
-        //mAdmobNativeExpressAdview.setAdSize(AdSize.FLUID);
-        //mAdmobNativeExpressAdview.setAdSize(new AdSize(320, 150));
-        //listView.addHeaderView(mAdmobNativeExpressAdview);
-
-        //TextView tv = new TextView(getActivity());
-        //tv.setText("Hello");
-        //listView.addHeaderView(tv);
-
-        //NativeExpressAdView adView = (NativeExpressAdView) view.findViewById(R.id.adView);
-        //adView.loadAd(new AdRequest.Builder().build());
-        //listView.addHeaderView(adView);
-
         listView.addHeaderView(new View(getContext()));
         listView.addFooterView(new View(getContext()));
-
-        //View header = LayoutInflater.from(getContext()).inflate(R.layout.header, null, false);
-        //listView.addHeaderView(header);
-
-        //listView.addFooterView(new View(getContext()));
-
-        //NativeExpressAdView adView = (NativeExpressAdView) view.findViewById(R.id.adView);
-        //adView.loadAd(new AdRequest.Builder().build());
 
         return view;
     }
@@ -102,7 +63,7 @@ public class NewsFragment extends ListFragment {
         myIntent.putExtra("BUNDLE_TEXT", currentNews.getText());
         getActivity().startActivity(myIntent);
 
-        ShowInterstitial();
+        showInterstitial();
     }
 
     @Override
@@ -170,19 +131,15 @@ public class NewsFragment extends ListFragment {
         protected void onPostExecute(final List<NewsModel> result) {
             super.onPostExecute(result);
             if(result != null) {
-                //NewsAdapter adapter = new NewsAdapter(getApplicationContext(), R.layout.row, result);
-                //listView.setAdapter(adapter);
-
                 adapter = new NewsAdapter(getActivity(), result);
                 setListAdapter((ListAdapter) adapter);
-
             } else {
-                Toast.makeText(getActivity(), "Ошибка разбора json", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Error Json Reader", Toast.LENGTH_SHORT).show();
             }
         }
     }
 
-    private void ShowInterstitial() {
+    private void showInterstitial() {
         if(mInterstitialAd != null && mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         } else {
