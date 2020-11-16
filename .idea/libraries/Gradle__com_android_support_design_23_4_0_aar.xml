@@ -4,9 +4,15 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed669a367e834cf44c177ebc9db4ea52/design-23.4.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed669a367e834cf44c177ebc9db4ea52/design-23.4.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed669a367e834cf44c177ebc9db4ea52/design-23.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed669a367e834cf44c177ebc9db4ea52/design-23.4.0/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/5cc8731830b4b2aa2f0a44bc87a8c15e/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/5cc8731830b4b2aa2f0a44bc87a8c15e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/5cc8731830b4b2aa2f0a44bc87a8c15e/res" />
+>>>>>>> master
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design/23.4.0/b2009c6d5d1dce16a9ed881ad7c672d103dea955/design-23.4.0-javadoc.jar!/" />

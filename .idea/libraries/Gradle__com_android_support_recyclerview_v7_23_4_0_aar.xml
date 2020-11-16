@@ -4,9 +4,15 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/01d2b716d9b572725cf456ee5b987df8/recyclerview-v7-23.4.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/01d2b716d9b572725cf456ee5b987df8/recyclerview-v7-23.4.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/01d2b716d9b572725cf456ee5b987df8/recyclerview-v7-23.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/01d2b716d9b572725cf456ee5b987df8/recyclerview-v7-23.4.0/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.4.0.aar/e9a028cabd580be845529f0d5416d07d/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.4.0.aar/e9a028cabd580be845529f0d5416d07d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.4.0.aar/e9a028cabd580be845529f0d5416d07d/res" />
+>>>>>>> master
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/23.4.0/7aa3b8f3a52e5eaeebdd2c9c699370ae1d912cce/recyclerview-v7-23.4.0-javadoc.jar!/" />
