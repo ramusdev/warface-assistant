@@ -2,12 +2,12 @@ package belev.org.warface_app;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class RiflemanWebActivity extends AppCompatActivity {
 
@@ -27,8 +27,6 @@ public class RiflemanWebActivity extends AppCompatActivity {
             window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
         }
 
-        //link = getArguments().getString(BUNDLE_LINK);
-
         Intent intent = getIntent();
         String link = intent.getStringExtra("BUNDLE_LINK");
 
@@ -40,7 +38,6 @@ public class RiflemanWebActivity extends AppCompatActivity {
 
         WebView webView = (WebView) findViewById(R.id.webView);
         webView.setBackgroundColor(0);
-        //webView.loadUrl("https://edgenews.ru/android/wardocwarface/maps/spec_vulkan.html");
         webView.loadUrl(link);
     }
 

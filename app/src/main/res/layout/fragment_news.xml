@@ -16,7 +16,7 @@
         android:layout_alignParentRight="true"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@drawable/neftebaza_logo" />
+        ads:srcCompat="@drawable/neftebaza_logo" />
 
     <TextView
         android:id="@+id/maps_descript"

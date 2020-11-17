@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/RelativeLayout1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -20,7 +21,7 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="@color/weapons"
-        android:src="@drawable/enginer_cp2veresk" />
+        app:srcCompat="@drawable/enginer_cp2veresk" />
 
     <TextView
         android:id="@+id/maps_descript"

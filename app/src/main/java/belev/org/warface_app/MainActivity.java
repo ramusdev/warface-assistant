@@ -1,29 +1,30 @@
 package belev.org.warface_app;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.text.Html;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.material.navigation.NavigationView;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
     DrawerLayout mDrawerLayout;
@@ -33,52 +34,22 @@ public class MainActivity extends AppCompatActivity {
     InterstitialAd mInterstitialAd;
     Uri link;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
-            Window window = this.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(this.getResources().getColor(R.color.bar));
-            window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
-            //getWindow().setStatusBarColor(Color.TRANSPARENT);
-            //getWindow().setNavigationBarColor(Color.TRANSPARENT);
-            //getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-            //getWindow().setNavigationBarColor(this.getResources().getColor(R.color.greylite));
-            //getWindow().setNavigationBarColor(Color.TRANSPARENT);
-        }
 
-        String text = getResources().getString(R.string.star_dialog);
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setTitle("Обновление")
-                .setMessage(Html.fromHtml(text))
-                .setCancelable(false)
-                //.setPositiveButton("Да конечно",
-                        //new DialogInterface.OnClickListener() {
-                            //public void onClick(DialogInterface dialog, int which) {
-                                //link = Uri.parse("https://play.google.com/store/apps/details?id=belev.org.warface_app");
-                                //Intent intent = new Intent(Intent.ACTION_VIEW, link);
-                                //startActivity(intent);
-                            //}
-                        //})
-                .setNegativeButton("Прочитал",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                            }
-                        });
-        AlertDialog alert = builder.create();
+        // Init mobile ads
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
 
-        if (isFirstRun()) {
-            //alert.show();
-        }
-
-
-        // Admod Interstitial
+        // Init interstitial
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -86,44 +57,39 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        /**
-         *Setup the DrawerLayout and NavigationView
-         */
 
-             mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-             mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
 
-        /**
-         * Setup Drawer Toggle of the Toolbar
-         */
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
+            Window window = this.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(this.getResources().getColor(R.color.bar));
+            window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
+        }
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name,
                 R.string.app_name);
-        //toolbar.setTitle(getResources().getString(R.string.menu_update));
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
 
-        /**
-         * Lets inflate the very first fragment
-         * Here , we are inflating the TabFragment as the first Fragment
-         */
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
         //mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
 
-        if(isOnline()) {
+        if (isOnline()) {
             mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
-        }
-        else {
+        } else {
             mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_update));
         }
 
-        /**
-         * Setup click events on the Navigation View Items.
-         */
+
 
              mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
              @Override

@@ -2,7 +2,6 @@ package belev.org.warface_app;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +10,8 @@ import android.widget.ListAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.fragment.app.ListFragment;
 
 public class AchivmentFragment extends ListFragment {
 
@@ -67,20 +68,11 @@ public class AchivmentFragment extends ListFragment {
         
 		name = getResources().getStringArray(name_arr[achivmentid]);
 		about = getResources().getStringArray(about_arr[achivmentid]);
-		//icons = getResources().obtainTypedArray(icon_arr[achivmentid]);
 		TypedArray intarray = getResources().obtainTypedArray(icon_arr[achivmentid]);
 
         rowItems = new ArrayList<Achivment>();
 
 		for(int i = 0; i < name.length; i++ ) {
-
-			//Log.v (TAG, "Res Id " + i + " is " + Integer.toHexString(intarray[i]));
-			//intarray = icons.getInteger(0,0);
-			//int imageResource = getResources().getIdentifier(intarray[i], null, getContext().getPackageName());
-			//Drawable drawable = icons.getDrawable(i);
-			//int idres = icons.getIndex(i);
-			//int int2 = Integer.decode("R.drawable.badge_16");
-			//intarray.getResourceId(i, -1);
 			rowItems.add(new Achivment(name[i], about[i], achivmentid, intarray.getResourceId(i, -1)));
 		}
 

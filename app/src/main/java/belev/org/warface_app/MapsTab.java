@@ -1,19 +1,16 @@
 package belev.org.warface_app;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.google.android.material.tabs.TabLayout;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
-/**
- * Created by Ratan on 7/27/2015.
- */
 public class MapsTab extends Fragment {
 
     public static TabLayout tabLayout;
@@ -73,10 +70,6 @@ public class MapsTab extends Fragment {
 
           final MapsFragment fragment = new MapsFragment();
           final Bundle arguments = new Bundle();
-
-        //Fragment webFragment = new DemoWebFragment();
-        //FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        //transaction.add(R.id.containerView, webFragment).commit();
 
           switch (position){
               case 0 :

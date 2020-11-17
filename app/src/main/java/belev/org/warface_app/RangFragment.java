@@ -2,14 +2,13 @@ package belev.org.warface_app;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
-
 import java.util.ArrayList;
 import java.util.List;
+import androidx.fragment.app.ListFragment;
 
 public class RangFragment extends ListFragment {
 

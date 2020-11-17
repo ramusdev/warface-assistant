@@ -7,8 +7,6 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -16,13 +14,10 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import com.google.gson.Gson;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -32,6 +27,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class StremersActivity extends AppCompatActivity {
 
@@ -45,9 +42,7 @@ public class StremersActivity extends AppCompatActivity {
 
     private static final String BUNDLE_STREMERS = "bundle_stremers";
     private Integer stremersID;
-    //private final String URL_TO_HIT = "https://edgenews.ru/android/wardocwarface/stremers/elez.json";
     android.widget.Adapter adapter;
-    //private static final String BUNDLE_TEXT = "bundle_text";
     public List<NewsModel> newsModelList = new ArrayList<>();
 
     @Override
@@ -81,12 +76,9 @@ public class StremersActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Toast.makeText(getApplicationContext(), "Click", Toast.LENGTH_SHORT).show();
-
                 if (isOnline()) {
                     NewsModel currentNews = newsModelList.get(position-1);
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(currentNews.getLink()));
-                    //myIntent.putExtra(BUNDLE_STREMERS, position-1);
                     startActivity(intent);
 
                 } else {
@@ -96,39 +88,7 @@ public class StremersActivity extends AppCompatActivity {
             }
         });
 
-
-        /*
-        if (getArguments() != null && getArguments().containsKey(BUNDLE_STREMERS)) {
-            stremersID = getArguments().getInt(BUNDLE_STREMERS);
-        }
-        */
-
-        //View view = inflater.inflate(R.layout.framelist_maps, container, false);
-        //ListView listView = (ListView) findViewById(android.R.id.list); //findViewById(android.R.id.list);
-        //listView.addHeaderView(new View(getApplicationContext()));
-        //listView.addFooterView(new View(getApplicationContext()));
-
-        //return view;
     }
-
-
-
-
-
-
-    /*
-    @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
-
-        Intent myIntent = new Intent(getActivity(), NewsWebActivity.class);
-        //myIntent.putExtra("BUNDLE_TEXT", "Demo text to view in webview");
-        //NewsModel newsModel = result.get(position);
-        NewsModel currentNews = newsModelList.get(position-1);
-        myIntent.putExtra("BUNDLE_TEXT", currentNews.getText());
-        getActivity().startActivity(myIntent);
-    }
-    */
 
     public class JSONTask extends AsyncTask<String, String, List<NewsModel> > {
 
@@ -191,13 +151,7 @@ public class StremersActivity extends AppCompatActivity {
             if(result != null) {
                 StremersAdapter adapter = new StremersAdapter(getApplicationContext(), result);
                 ListView listView = (ListView)findViewById(R.id.listView_news);
-                //listView.addHeaderView(new View(getApplicationContext()));
-                //listView.addFooterView(new View(getApplicationContext()));
                 listView.setAdapter(adapter);
-
-                //adapter = new NewsAdapter(getApplicationContext(), result);
-                //setListAdapter((ListAdapter) adapter);
-
             } else {
                 Toast.makeText(getApplicationContext(), "Ошибка разбора json", Toast.LENGTH_SHORT).show();
             }

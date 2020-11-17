@@ -9,16 +9,13 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
-
 import java.util.List;
 
 public class StremersAdapter extends BaseAdapter {
 
     Context context;
     List<NewsModel> rowItem;
-    //public static int[] layout_arr = { R.layout.achivment_item2, R.layout.achivment_item, R.layout.achivment_item };
 
     StremersAdapter(Context context, List<NewsModel> rowItem) {
         this.context = context;
