@@ -2,39 +2,27 @@
     <string name="app_name">Warface App</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Настройки</string>
-
     <item name="adView" type="id"/>
-
-    <string name="interstitial_full_screen">ca-app-pub-4140002463111288/3644037371</string>
-
+    <!-- ca-app-pub-4140002463111288/3644037371 -->
+    <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
     <string name="about_text">
 <![CDATA[Данное приложение не является продуктом компании Crytek.<br><br>
-
 Приложение содержит информацию по игровым достижениям проекта Warface<br><br>
-
 <font color=#e65d20>Правовое уведомление</font><br><br>
-
 Политика конфиденциальности <a href="https://edgenews.ru/android/wardocwarface/privacy/privacy_policy.html">читать.</a><br><br>
-
 Авторские права содержащихся изображений и материалов принадлежат компании Crytek и являются интеллектуальной собственностью Crytek: © 2020 Crytek GmbH. Все права защищены.<br><br>
-
 Crytek, CryEngine, Warface и логотип Warface являются зарегистрированными товарными знаками или товарными знаками Crytek.<br><br>
-
 <font color=#e65d20>Дополнительная информация</font><br><br>
-
 - Текущая версия: 3.0.4<br>
 - Разработчик: RB dev<br>
 - Связаться: ram219219@gmail.com]]>
 </string>
-
     <string name="start_text">
     <![CDATA[
         <font color=#e65d20>Обновление приложения</font><br><br>
         Приложение обновлено согласно версии от 10.06.2020
     ]]>
     </string>
-
-
     <string name="star_dialog">
     <![CDATA[
     Добавлено:<br><br>
@@ -42,7 +30,6 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     - Достижения
     ]]>
     </string>
-
     <!-- Menu string -->
     <string name="menu_about">О ПРИЛОЖЕНИИ</string>
     <string name="menu_ranks">ЗВАНИЯ</string>

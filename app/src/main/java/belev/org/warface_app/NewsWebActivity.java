@@ -7,6 +7,10 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -15,11 +19,18 @@ public class NewsWebActivity extends AppCompatActivity {
 
     private static final String BUNDLE_TEXT = "bundle_text";
     private String link;
+    InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
+
+        // Init interstitial
+        // mInterstitialAd = new InterstitialAd(this);
+        // mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
+        // AdRequest adRequest = new AdRequest.Builder().build();
+        // mInterstitialAd.loadAd(adRequest);
 
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
@@ -49,6 +60,8 @@ public class NewsWebActivity extends AppCompatActivity {
         //webView.loadUrl("https://edgenews.ru/android/wardocwarface/maps/spec_vulkan.html");
         //webView.loadUrl(link);
         webView.loadDataWithBaseURL(null, text, "text/html", "utf-8", "");
+
+        // showInterstitial();
     }
 
     @Override
@@ -60,5 +73,13 @@ public class NewsWebActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showInterstitial() {
+        if(mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+            // Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
+        }
     }
 }

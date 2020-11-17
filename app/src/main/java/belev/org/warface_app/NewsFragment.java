@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.gson.Gson;
@@ -36,11 +38,20 @@ public class NewsFragment extends ListFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Admod Interstitial
+
+        // Init interstitial
         mInterstitialAd = new InterstitialAd(getContext());
         mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
         AdRequest adRequest = new AdRequest.Builder().build();
         mInterstitialAd.loadAd(adRequest);
+
+        // Load next ads
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+            }
+        });
 
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
@@ -137,10 +148,10 @@ public class NewsFragment extends ListFragment {
     }
 
     private void showInterstitial() {
-        if(mInterstitialAd != null && mInterstitialAd.isLoaded()) {
+        if(mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         } else {
-            //Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
+            // Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
         }
     }
 }

@@ -12,6 +12,8 @@ import android.os.Handler;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
@@ -41,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-
         // Init mobile ads
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -55,9 +56,13 @@ public class MainActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mInterstitialAd.loadAd(adRequest);
 
-
-
-
+        // Load next ads
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+            }
+        });
 
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
@@ -108,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_rang) {
@@ -123,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_achivment) {
@@ -139,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_update) {
@@ -155,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_news) {
@@ -177,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_stremers) {
@@ -192,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_maps) {
@@ -207,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_rifleman) {
@@ -222,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_sniper) {
@@ -237,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_medic) {
@@ -252,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_enginer) {
@@ -267,7 +272,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     ShowInterstitial();
+                     showInterstitial();
                  }
 
                  return false;
@@ -277,8 +282,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void ShowInterstitial() {
-        if(mInterstitialAd != null && mInterstitialAd.isLoaded()) {
+    private void showInterstitial() {
+        if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         } else {
             //Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
