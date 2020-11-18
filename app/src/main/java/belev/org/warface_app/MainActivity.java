@@ -51,18 +51,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Init interstitial
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mInterstitialAd.loadAd(adRequest);
+        // mInterstitialAd = new InterstitialAd(this);
+        // mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
+        // AdRequest adRequest = new AdRequest.Builder().build();
+        // mInterstitialAd.loadAd(adRequest);
 
         // Load next ads
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                mInterstitialAd.loadAd(new AdRequest.Builder().build());
-            }
-        });
+        // mInterstitialAd.setAdListener(new AdListener() {
+            // @Override
+            // public void onAdClosed() {
+                // mInterstitialAd.loadAd(new AdRequest.Builder().build());
+            // }
+        // });
 
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_rang) {
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_achivment) {
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_update) {
@@ -154,13 +154,13 @@ public class MainActivity extends AppCompatActivity {
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_update));
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new StartFragment());
+                             transaction.replace(R.id.containerView, new NativeAds());
                              transaction.commit();
 
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_news) {
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_stremers) {
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_maps) {
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_rifleman) {
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_sniper) {
@@ -242,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_medic) {
@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_enginer) {
@@ -272,7 +272,7 @@ public class MainActivity extends AppCompatActivity {
                          }
                      }, 300);
 
-                     showInterstitial();
+                     // showInterstitial();
                  }
 
                  return false;

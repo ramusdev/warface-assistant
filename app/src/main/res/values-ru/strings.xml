@@ -2,6 +2,7 @@
     <string name="app_name">Warface App</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Настройки</string>
+    <string name="ad_attribution">Ad</string>
     <item name="adView" type="id"/>
     <!-- ca-app-pub-4140002463111288/3644037371 -->
     <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>

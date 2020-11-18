@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.google.android.gms.ads.InterstitialAd;
 import java.util.ArrayList;
 import java.util.List;
 import androidx.annotation.Nullable;
@@ -19,10 +18,8 @@ import androidx.fragment.app.ListFragment;
 
 public class RiflemanFragment extends ListFragment {
     private Context mContext;
-
     private static final String BUNDLE_LINK = "bundle_link";
     private static final String BUNDLE_MAPS = "bundle_maps";
-    InterstitialAd mInterstitialAd;
     private Integer achivmentid;
     private Integer mapsid;
     LayoutInflater inf;
@@ -48,12 +45,6 @@ public class RiflemanFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        // Admod Interstitial
-        //mInterstitialAd = new InterstitialAd(getContext());
-        //mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
-        //AdRequest adRequest = new AdRequest.Builder().build();
-        //mInterstitialAd.loadAd(adRequest);
-
         if (getArguments() != null && getArguments().containsKey(BUNDLE_MAPS)) {
             mapsid = getArguments().getInt(BUNDLE_MAPS);
         }
@@ -69,17 +60,12 @@ public class RiflemanFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-
         String[] maps_array = getResources().getStringArray(link_arr[mapsid]);
 
         if (isOnline()) {
-
-            //ShowInterstitial();
-
             Intent myIntent = new Intent(getActivity(), RiflemanWebActivity.class);
             myIntent.putExtra("BUNDLE_LINK", maps_array[position-1]);
             getActivity().startActivity(myIntent);
-
         } else {
             Intent myIntent = new Intent(getActivity(), ConnectionActivity.class);
             getActivity().startActivity(myIntent);
@@ -107,14 +93,6 @@ public class RiflemanFragment extends ListFragment {
         adapter = new RiflemanAdapter(getActivity(), rowItems);
         setListAdapter((ListAdapter) adapter);
 
-    }
-
-    private void ShowInterstitial() {
-        if(mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            //Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
-        }
     }
 
     public boolean isOnline() {

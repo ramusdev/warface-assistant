@@ -2,6 +2,7 @@
     <string name="app_name">Warface App</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Options</string>
+    <string name="ad_attribution">Ad</string>
 
     <item name="adView" type="id"/>
 

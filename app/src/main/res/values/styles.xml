@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/bar</item>
         <item name="android:textColorPrimary">@color/bar</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
     </style>
 
     <style name="ToolBarTheme.ToolBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
