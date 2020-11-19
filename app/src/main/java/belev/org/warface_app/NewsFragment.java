@@ -102,13 +102,13 @@ public class NewsFragment extends ListFragment {
             @Override
             public void onAdLoaded() {
                 super.onAdLoaded();
-                listView.removeHeaderView(spaceView);
-                listView.addHeaderView(new View(getContext()));
+                // listView.removeHeaderView(spaceView);
+                // listView.addHeaderView(new View(getContext()));
                 listView.addHeaderView(headerView, null, false);
             }
         }).build();
 
-        adLoader.loadAd(new AdRequest.Builder().build());
+        adLoader.loadAds(new AdRequest.Builder().build(), 5);
 
         // adLoader.loadAd(new AdRequest.Builder().build());
 
