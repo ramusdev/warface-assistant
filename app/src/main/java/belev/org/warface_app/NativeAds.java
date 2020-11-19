@@ -74,6 +74,11 @@ public class NativeAds extends Fragment {
             public void onAdFailedToLoad(int errorCode) {
                 Toast.makeText(getContext(), "Failed to load native ad: " + errorCode, Toast.LENGTH_SHORT).show();
             }
+
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+            }
         }).build();
 
         adLoader.loadAd(new AdRequest.Builder().build());
