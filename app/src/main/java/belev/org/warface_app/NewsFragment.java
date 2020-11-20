@@ -52,6 +52,7 @@ public class NewsFragment extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
+
         View headerView = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
 
         View spaceView = new View(getContext());
@@ -59,7 +60,7 @@ public class NewsFragment extends ListFragment {
         listView.addFooterView(new View(getContext()));
         // listView.addHeaderView(headerView, null, false);
 
-        refreshAd(headerView, listView, headerView, spaceView);
+        // refreshAd(headerView, listView, headerView, spaceView);
 
         return view;
     }
@@ -108,7 +109,7 @@ public class NewsFragment extends ListFragment {
             }
         }).build();
 
-        adLoader.loadAds(new AdRequest.Builder().build(), 5);
+        adLoader.loadAd(new AdRequest.Builder().build());
 
         // adLoader.loadAd(new AdRequest.Builder().build());
 

@@ -10,23 +10,37 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ListView;
 
 import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.formats.UnifiedNativeAd;
+import com.google.android.gms.ads.formats.UnifiedNativeAdView;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
+
+import static java.security.AccessController.getContext;
 
 public class MainActivity extends AppCompatActivity {
     DrawerLayout mDrawerLayout;
@@ -35,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
     FragmentTransaction mFragmentTransaction;
     InterstitialAd mInterstitialAd;
     Uri link;
+
+    private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
+    private UnifiedNativeAd nativeAd;
+    private UnifiedNativeAdView nativeAdView;
+    private Context context;
+    private AdLoader adLoader;
+    private List<UnifiedNativeAd> mNativeAds = new ArrayList<>();
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -49,6 +70,56 @@ public class MainActivity extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
+
+        AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
+        adLoader = builder.forUnifiedNativeAd(
+                new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
+                    @Override
+                    public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
+                        mNativeAds.add(unifiedNativeAd);
+                        System.out.println("Async load ad ---------------------------------------->");
+
+                        if (adLoader.isLoading()) {
+                            System.out.println("adLoader.isLoading() ---------------------------------------->");
+                        } else {
+                            System.out.println("! adLoader.isLoading() ---------------------------------------->");
+                        }
+
+                    }
+                }).withAdListener(
+                        new AdListener() {
+                            @Override
+                            public void onAdLoaded() {
+                                super.onAdLoaded();
+                                System.out.println("Async all loaded ---------------------------------------->");
+                            }
+
+        }).build();
+
+        adLoader.loadAds(new AdRequest.Builder().build(), 5);
+
+        for (UnifiedNativeAd unifiedNativeAd : mNativeAds) {
+            System.out.println("Trying to loop ads ---------------------------------------->");
+            System.out.println(unifiedNativeAd.getResponseInfo());
+        }
+
+        System.out.println("Line of code in main class ---------------------------------------->");
+
+
+
+
+        //View view = inflater.inflate(R.layout.framelist_maps, container, false);
+        // ListView listView = (ListView) view.findViewById(android.R.id.list);
+        // View headerViewLayout = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
+
+        // View spaceView = new View(getContext());
+        // listView.addHeaderView(spaceView);
+        // listView.addFooterView(new View(getContext()));
+        // listView.addHeaderView(headerView, null, false);
+        // refreshAd(headerView, listView, headerView, spaceView);
+
+        // NativeAd nativeAd = new NativeAd(this);
+        // nativeAd.create(headerViewLayout, listView, headerViewLayout);
 
         // Init interstitial
         // mInterstitialAd = new InterstitialAd(this);
@@ -151,10 +222,23 @@ public class MainActivity extends AppCompatActivity {
                      new Handler().postDelayed(new Runnable() {
                          @Override
                          public void run() {
+
+                             // Gson gson = new Gson();
+                             Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+
+                             String myGson = gson.toJson(nativeAd);
+
+                             Bundle bundle = new Bundle();
+                             bundle.putString("myObject", myGson);
+
                              Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                              toolbar.setTitle(getResources().getString(R.string.menu_update));
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new NativeAds());
+
+                             Fragment fragment = new NativeAds();
+                             fragment.setArguments(bundle);
+
+                             transaction.replace(R.id.containerView, fragment);
                              transaction.commit();
 
                          }
