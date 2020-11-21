@@ -89,6 +89,8 @@ public class NewsFragment extends ListFragment {
                 frameLayout.removeAllViews();
                 frameLayout.addView(adView);
 
+                System.out.println("Async load ad ---------------------------------------->");
+
                 // if (adLoader.isLoading()) {
                     // Ads still loading
                 // } else {
@@ -105,11 +107,12 @@ public class NewsFragment extends ListFragment {
                 super.onAdLoaded();
                 // listView.removeHeaderView(spaceView);
                 // listView.addHeaderView(new View(getContext()));
-                listView.addHeaderView(headerView, null, false);
+                // listView.addHeaderView(headerView, null, false);
             }
         }).build();
 
-        adLoader.loadAd(new AdRequest.Builder().build());
+        // adLoader.loadAd(new AdRequest.Builder().build());
+        adLoader.loadAds(new AdRequest.Builder().build(), 5);
 
         // adLoader.loadAd(new AdRequest.Builder().build());
 
@@ -252,6 +255,7 @@ public class NewsFragment extends ListFragment {
 
         @Override
         protected List doInBackground(String... params) {
+
             HttpURLConnection connection = null;
             BufferedReader reader = null;
 
