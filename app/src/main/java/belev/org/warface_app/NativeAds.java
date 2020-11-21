@@ -1,5 +1,6 @@
 package belev.org.warface_app;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +21,11 @@ import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.gms.ads.formats.UnifiedNativeAdView;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import androidx.fragment.app.Fragment;
 
@@ -40,20 +45,44 @@ public class NativeAds extends Fragment {
         startVideoAdsMuted = view.findViewById(R.id.cb_start_muted);
         videoStatus = view.findViewById(R.id.tv_video_status);
 
-        Bundle customBundle = this.getArguments();
-        String value = customBundle.getString("myObject");
+        // Bundle customBundle = this.getArguments();
+        // String jsonString = customBundle.getString("myObject");
 
-        Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
-        NativeAd nativeAd = gson.fromJson(value, NativeAd.class);
+        // Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+        // Type nativeAdType = new TypeToken<ArrayList<UnifiedNativeAd>>(){}.getType();
+        // List<UnifiedNativeAd> nativeAds = gson.fromJson(jsonString, nativeAdType);
+        // NativeAd nativeAd = gson.fromJson(jsonString, NativeAd.class);
+        // System.out.println("------------------------------------------------------------------>");
+        // System.out.println(nativeAd.getUnifiedNativeAd().toString());
+
+        // ((MainActivity) getActivity()).callFromFragment();
+
+        MainActivity mainActivity = (MainActivity) getActivity();
+        mainActivity.valueOut = 1;
+        mainActivity.valueIn = 2;
+
+        System.out.println("--------------------------------------------------->");
+        System.out.println(mainActivity.valueOut);
+        System.out.println(mainActivity.valueIn);
+        // System.out.println(mainActivity.mNativeAds.get(1).getResponseInfo());
+
+        UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(1);
 
         FrameLayout frameLayout = view.findViewById(R.id.fl_adplaceholder);
+        UnifiedNativeAdView adView = (UnifiedNativeAdView) getLayoutInflater().inflate(R.layout.ad_unified, null);
+        populateUnifiedNativeAdView(unifiedNativeAd, adView);
         frameLayout.removeAllViews();
-        frameLayout.addView(nativeAd.getUnifiedNativeAdView());
+        frameLayout.addView(adView);
 
+
+
+
+        // FrameLayout frameLayout = view.findViewById(R.id.fl_adplaceholder);
+        // frameLayout.removeAllViews();
+        // frameLayout.addView(nativeAd.getUnifiedNativeAdView());
 
         // String str = nativeAd.getString();
         // Toast.makeText().show();
-
 
         /*
         refresh.setOnClickListener(new View.OnClickListener() {

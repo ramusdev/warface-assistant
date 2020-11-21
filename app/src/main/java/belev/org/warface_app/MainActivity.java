@@ -55,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
     private UnifiedNativeAdView nativeAdView;
     private Context context;
     private AdLoader adLoader;
-    private List<UnifiedNativeAd> mNativeAds = new ArrayList<>();
+    public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
+    private List<NativeAd> customNativeAds = new ArrayList<NativeAd>();
+    public int valueOut = 10;
+    public int valueIn;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -63,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        valueIn = 20;
 
         // Init mobile ads
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -97,6 +102,10 @@ public class MainActivity extends AppCompatActivity {
         }).build();
 
         adLoader.loadAds(new AdRequest.Builder().build(), 5);
+
+        customNativeAds.add(new NativeAd());
+        customNativeAds.add(new NativeAd());
+        // customNativeAds.add(new NativeAd());
 
         for (UnifiedNativeAd unifiedNativeAd : mNativeAds) {
             System.out.println("Trying to loop ads ---------------------------------------->");
@@ -223,9 +232,9 @@ public class MainActivity extends AppCompatActivity {
                          @Override
                          public void run() {
 
-                             // Gson gson = new Gson();
-                             Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+                             NativeAd nativeAd = new NativeAd(mNativeAds.get(1));
 
+                             Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
                              String myGson = gson.toJson(nativeAd);
 
                              Bundle bundle = new Bundle();
@@ -364,6 +373,11 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+    }
+
+    public void callFromFragment() {
+        System.out.println("------------------------------------------------------------------>");
+        System.out.println("This method called from fragment");
     }
 
     private void showInterstitial() {
