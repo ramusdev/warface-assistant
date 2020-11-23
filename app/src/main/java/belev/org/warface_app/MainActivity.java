@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
         //mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
 
         if (isOnline()) {
-            mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
+            mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
         } else {
             mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
                              toolbar.setTitle(getResources().getString(R.string.menu_update));
                              FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
-                             Fragment fragment = new NativeAds();
+                             Fragment fragment = new StartFragment();
                              // fragment.setArguments(bundle);
 
                              transaction.replace(R.id.containerView, fragment);

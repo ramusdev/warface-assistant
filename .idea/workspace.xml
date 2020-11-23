@@ -16,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="60c4353c0804" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -41,7 +41,6 @@
   </component>
   <component name="ProjectId" id="1kVYDgXwVZxB8I3kvLTA1helMaH" />
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -58,12 +57,13 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
+      <module name="Android.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -99,11 +99,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -127,22 +132,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605820611489" />
-    <state width="1877" height="542" key="GridCell.Tab.0.bottom" timestamp="1605987330182">
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605995719594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605987330182" />
-    <state width="1877" height="542" key="GridCell.Tab.0.center" timestamp="1605987330182">
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605995719594" />
+    <state width="1877" height="635" key="GridCell.Tab.0.bottom" timestamp="1605995691076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="542" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605987330182" />
-    <state width="1877" height="542" key="GridCell.Tab.0.left" timestamp="1605987330182">
+    <state width="1877" height="635" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605995691076" />
+    <state width="1877" height="635" key="GridCell.Tab.0.center" timestamp="1605995691076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="542" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605987330182" />
-    <state width="1877" height="542" key="GridCell.Tab.0.right" timestamp="1605987330182">
+    <state width="1877" height="635" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605995691076" />
+    <state width="1877" height="635" key="GridCell.Tab.0.left" timestamp="1605995691076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="542" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605987330182" />
+    <state width="1877" height="635" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605995691076" />
+    <state width="1877" height="635" key="GridCell.Tab.0.right" timestamp="1605995691076">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="635" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605995691076" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605990196544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

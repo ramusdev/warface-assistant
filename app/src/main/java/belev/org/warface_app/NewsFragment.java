@@ -53,16 +53,33 @@ public class NewsFragment extends ListFragment {
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
 
-        View headerView = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
-
+        // View headerView = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
         View spaceView = new View(getContext());
-        listView.addHeaderView(spaceView);
-        listView.addFooterView(new View(getContext()));
+        // listView.addHeaderView(spaceView);
+        // listView.addFooterView(new View(getContext()));
         // listView.addHeaderView(headerView, null, false);
-
         // refreshAd(headerView, listView, headerView, spaceView);
 
+        showAdd(view, listView, spaceView);
+
         return view;
+    }
+
+    public void showAdd(View view, ListView listView, View spaceView) {
+        MainActivity mainActivity = (MainActivity) getActivity();
+        UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(0);
+
+        View headerView = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
+        FrameLayout frameLayout = headerView.findViewById(R.id.fl_adplaceholder);
+        UnifiedNativeAdView adView = (UnifiedNativeAdView) getLayoutInflater().inflate(R.layout.ad_unified, null);
+        populateUnifiedNativeAdView(unifiedNativeAd, adView);
+        frameLayout.removeAllViews();
+        frameLayout.addView(adView);
+
+
+        // listView.removeHeaderView(spaceView);
+        // listView.addHeaderView(new View(getContext()));
+        listView.addHeaderView(headerView, null, false);
     }
 
     public void refreshAd(final View view, final ListView listView, final View headerView, final View spaceView) {
@@ -105,9 +122,9 @@ public class NewsFragment extends ListFragment {
             @Override
             public void onAdLoaded() {
                 super.onAdLoaded();
-                // listView.removeHeaderView(spaceView);
-                // listView.addHeaderView(new View(getContext()));
-                // listView.addHeaderView(headerView, null, false);
+                listView.removeHeaderView(spaceView);
+                listView.addHeaderView(new View(getContext()));
+                listView.addHeaderView(headerView, null, false);
             }
         }).build();
 
