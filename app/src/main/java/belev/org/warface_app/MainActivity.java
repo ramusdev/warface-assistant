@@ -21,7 +21,6 @@ import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
-
 import java.util.ArrayList;
 import java.util.List;
 import androidx.annotation.RequiresApi;
@@ -154,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new AboutFragment());
                              transaction.commit();
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -169,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new RangFragment());
                              transaction.commit();
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -185,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.commit();
 
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -211,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.commit();
 
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -233,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
                                  transaction.commit();
                              }
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -248,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
                                  transaction.replace(R.id.containerView, new StremersFragment());
                                  transaction.commit();
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -263,7 +262,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new MapsTab());
                              transaction.commit();
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -278,7 +277,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new RiflemanTab());
                              transaction.commit();
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -293,7 +292,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new SniperTab());
                              transaction.commit();
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -308,7 +307,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new MedicTab());
                              transaction.commit();
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }
@@ -323,7 +322,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new EnginerTab());
                              transaction.commit();
                          }
-                     }, 300);
+                     }, 280);
 
                      // showInterstitial();
                  }

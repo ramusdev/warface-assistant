@@ -53,8 +53,8 @@ public class NewsFragment extends ListFragment {
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
 
-        // View headerView = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
         View spaceView = new View(getContext());
+        // View headerView = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
         // listView.addHeaderView(spaceView);
         // listView.addFooterView(new View(getContext()));
         // listView.addHeaderView(headerView, null, false);
@@ -76,78 +76,9 @@ public class NewsFragment extends ListFragment {
         frameLayout.removeAllViews();
         frameLayout.addView(adView);
 
-
         // listView.removeHeaderView(spaceView);
         // listView.addHeaderView(new View(getContext()));
         listView.addHeaderView(headerView, null, false);
-    }
-
-    public void refreshAd(final View view, final ListView listView, final View headerView, final View spaceView) {
-        // AdLoader.Builder adLoader = new AdLoader.Builder(getContext(), ADMOB_AD_UNIT_ID);
-        // final AdLoader adLoader = new AdLoader.Builder(getContext(), ADMOB_AD_UNIT_ID)
-            // .forUnifiedNativeAd(new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
-            // @Override
-            // public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
-
-        AdLoader.Builder builder = new AdLoader.Builder(getContext(), ADMOB_AD_UNIT_ID);
-
-        builder.forUnifiedNativeAd(new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
-            @Override
-            public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
-                if (nativeAd != null) {
-                    nativeAd.destroy();
-                }
-
-                nativeAd = unifiedNativeAd;
-                FrameLayout frameLayout = view.findViewById(R.id.fl_adplaceholder);
-
-                UnifiedNativeAdView adView = (UnifiedNativeAdView) getLayoutInflater().inflate(R.layout.ad_unified, null);
-                populateUnifiedNativeAdView(unifiedNativeAd, adView);
-                frameLayout.removeAllViews();
-                frameLayout.addView(adView);
-
-                System.out.println("Async load ad ---------------------------------------->");
-
-                // if (adLoader.isLoading()) {
-                    // Ads still loading
-                // } else {
-                    // ListView listView = (ListView) view.findViewById(android.R.id.list);
-                // }
-
-            }
-
-        });
-
-        AdLoader adLoader = builder.withAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                listView.removeHeaderView(spaceView);
-                listView.addHeaderView(new View(getContext()));
-                listView.addHeaderView(headerView, null, false);
-            }
-        }).build();
-
-        // adLoader.loadAd(new AdRequest.Builder().build());
-        adLoader.loadAds(new AdRequest.Builder().build(), 5);
-
-        // adLoader.loadAd(new AdRequest.Builder().build());
-
-        // AdLoader adLoader = builder.withAdListener(new AdListener() {
-            // @Override
-            // public void onAdFailedToLoad(int errorCode) {
-                // Toast.makeText(getContext(), "Failed to load native ad: " + errorCode, Toast.LENGTH_SHORT).show();
-            // }
-        // }).build();
-
-        // builder.loadAd(new AdRequest.Builder().build());
-        // ListView listView = (ListView) view.findViewById(android.R.id.list);
-
-        // if (adLoader.isLoading()) {
-        // } else {
-            // listView.addHeaderView(headerView, null, false);
-        // }
-
     }
 
     private void populateUnifiedNativeAdView(UnifiedNativeAd nativeAd, UnifiedNativeAdView adView) {
