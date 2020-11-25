@@ -11,8 +11,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ListView;
+
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -153,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new AboutFragment());
                              transaction.commit();
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -168,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new RangFragment());
                              transaction.commit();
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -184,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.commit();
 
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -210,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.commit();
 
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -232,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
                                  transaction.commit();
                              }
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -247,12 +250,27 @@ public class MainActivity extends AppCompatActivity {
                                  transaction.replace(R.id.containerView, new StremersFragment());
                                  transaction.commit();
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
 
                  if (menuItem.getItemId() == R.id.nav_item_maps) {
+
+                     /*
+                     View view = inflater.inflate(R.layout.framelist_maps, container, false);
+                     ListView listView = (ListView) view.findViewById(android.R.id.list);
+                     View spaceView = new View(getContext());
+                     MainActivity mainActivity = (MainActivity) getActivity();
+
+                     NativeAdPopulation nativeAdPopulation = new NativeAdPopulation();
+                     nativeAdPopulation.view = view;
+                     nativeAdPopulation.spaceView = spaceView;
+                     nativeAdPopulation.listView = listView;
+                     nativeAdPopulation.mainActivity = mainActivity;
+                     nativeAdPopulation.execute();
+                     */
+
                      new Handler().postDelayed(new Runnable() {
                          @Override
                          public void run() {
@@ -262,7 +280,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new MapsTab());
                              transaction.commit();
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -277,7 +295,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new RiflemanTab());
                              transaction.commit();
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -292,7 +310,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new SniperTab());
                              transaction.commit();
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -307,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new MedicTab());
                              transaction.commit();
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
@@ -322,7 +340,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new EnginerTab());
                              transaction.commit();
                          }
-                     }, 280);
+                     }, 100);
 
                      // showInterstitial();
                  }
