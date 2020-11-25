@@ -9,18 +9,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
-
 import com.google.android.gms.ads.VideoController;
 import com.google.android.gms.ads.formats.MediaView;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.gms.ads.formats.UnifiedNativeAdView;
 
-public class NativeAdPopulation extends AsyncTask<Void, Void, View> {
-
-    // private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
-    // private AdLoader adLoader;
-    // public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
-    // public Context context;
+public class NativeAdPopulationAsync extends AsyncTask<Void, Void, View> {
 
     public View view;
     public View spaceView;
@@ -53,24 +47,6 @@ public class NativeAdPopulation extends AsyncTask<Void, Void, View> {
 
         return headerView;
     }
-
-    /*
-    public void showAdd(View view, ListView listView, View spaceView) {
-        MainActivity mainActivity = (MainActivity) getActivity();
-        UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(0);
-
-        View headerView = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
-        FrameLayout frameLayout = headerView.findViewById(R.id.fl_adplaceholder);
-        UnifiedNativeAdView adView = (UnifiedNativeAdView) getLayoutInflater().inflate(R.layout.ad_unified, null);
-        populateUnifiedNativeAdView(unifiedNativeAd, adView);
-        frameLayout.removeAllViews();
-        frameLayout.addView(adView);
-
-        // listView.removeHeaderView(spaceView);
-        // listView.addHeaderView(new View(getContext()));
-        listView.addHeaderView(headerView, null, false);
-    }
-    */
 
     private void populateUnifiedNativeAdView(UnifiedNativeAd nativeAd, UnifiedNativeAdView adView) {
         // Set the media view.
