@@ -1,21 +1,20 @@
 package belev.org.warface_app;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ListView;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -35,12 +34,16 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
 
+import static android.view.View.INVISIBLE;
+
 public class MainActivity extends AppCompatActivity {
+
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
     InterstitialAd mInterstitialAd;
+    Toolbar toolbar;
 
     private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
     private AdLoader adLoader;
@@ -53,6 +56,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        // this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        // Window window = this.getWindow();
+        // getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
+        // getWindow().setFlags( WindowManager.LayoutParams.SYSTEM_UI_FLAG_HIDE_NAVIGATION );
+
+        View decorView = getWindow().getDecorView();
+        final int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+        decorView.setSystemUiVisibility(flags);
+
+
         // Init mobile ads
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -60,40 +76,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        loadGroupAds();
+        // setFragmentOnStart();
 
-        // new NativeAdTaskList(this).execute();
-        // new NativeAdTask(this).execute();
-        // new NativeAdTaskList().execute();
-
-        /*
-        AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
-        adLoader = builder.forUnifiedNativeAd(
-                new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
-                    @Override
-                    public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
-                        mNativeAds.add(unifiedNativeAd);
-                        // System.out.println("Async load ad ---------------------------------------->");
-
-                        if (adLoader.isLoading()) {
-                        } else {
-                            // System.out.println("! adLoader.isLoading() ---------------------------------------->");
-                        }
-
-                    }
-                }).build();
-
-        adLoader.loadAds(new AdRequest.Builder().build(), 5);
-        */
-
-
-
-
-
-
-
-
-
+        // loadGroupAds();
 
         // Init interstitial
         // mInterstitialAd = new InterstitialAd(this);
@@ -109,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
             // }
         // });
 
+        /*
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -116,28 +102,27 @@ public class MainActivity extends AppCompatActivity {
             window.setStatusBarColor(this.getResources().getColor(R.color.bar));
             window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
         }
+        */
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setVisibility(View.INVISIBLE);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name,
-                R.string.app_name);
+        ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-        mDrawerToggle.syncState();
-
+         mDrawerToggle.syncState();
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        //mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
 
-        if (isOnline()) {
-            mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
-            toolbar.setTitle(getResources().getString(R.string.menu_news));
-        } else {
-            mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
-            toolbar.setTitle(getResources().getString(R.string.menu_update));
-        }
+        mFragmentTransaction.replace(R.id.containerView, new SplashFragment()).commit();
+        toolbar.setTitle(getResources().getString(R.string.menu_news));
+
+
+
+
 
 
 
@@ -156,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new AboutFragment());
                              transaction.commit();
                          }
-                     }, 100);
+                     }, 150);
 
                      // showInterstitial();
                  }
@@ -171,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new RangFragment());
                              transaction.commit();
                          }
-                     }, 100);
+                     }, 150);
 
                      // showInterstitial();
                  }
@@ -187,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.commit();
 
                          }
-                     }, 100);
+                     }, 150);
 
                      // showInterstitial();
                  }
@@ -280,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new MapsTab());
                              transaction.commit();
                          }
-                     }, 100);
+                     }, 150);
 
                      // showInterstitial();
                  }
@@ -295,7 +280,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new RiflemanTab());
                              transaction.commit();
                          }
-                     }, 100);
+                     }, 150);
 
                      // showInterstitial();
                  }
@@ -310,7 +295,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new SniperTab());
                              transaction.commit();
                          }
-                     }, 100);
+                     }, 150);
 
                      // showInterstitial();
                  }
@@ -325,7 +310,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new MedicTab());
                              transaction.commit();
                          }
-                     }, 100);
+                     }, 150);
 
                      // showInterstitial();
                  }
@@ -340,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new EnginerTab());
                              transaction.commit();
                          }
-                     }, 100);
+                     }, 150);
 
                      // showInterstitial();
                  }
@@ -351,13 +336,50 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void setFragmentOnStart() {
+        AfterLoadTask afterLoadTask = new AfterLoadTask() {
+            @Override
+            public void makeTask() {
+                mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
+                toolbar.setTitle(getResources().getString(R.string.menu_news));
+                // loadGroupAds();
+            }
+        };
+
+        if (isOnline()) {
+            loadNativeAd(afterLoadTask);
+            // mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
+            // toolbar.setTitle(getResources().getString(R.string.menu_news));
+        } else {
+            mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
+            toolbar.setTitle(getResources().getString(R.string.menu_update));
+        }
+    }
+
     public void loadGroupAds() {
-        loadNativeAd();
-        loadNativeAd();
-        loadNativeAd();
-        loadNativeAd();
-        loadNativeAd();
-        loadNativeAd();
+        loadNativeAd(5);
+    }
+
+    public void loadNativeAd(int countAdsToLoad) {
+        AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
+
+        adLoader = builder.forUnifiedNativeAd(
+                new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
+                    @Override
+                    public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
+                        mNativeAds.add(unifiedNativeAd);
+
+                        if (adLoader.isLoading()) {
+                        } else {
+                            System.out.println("Loaded ----------------------------------------->");
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new NewsFragment());
+                            transaction.commit();
+                        }
+                    }
+                }).build();
+
+        adLoader.loadAds(new AdRequest.Builder().build(), countAdsToLoad);
     }
 
     public void loadNativeAd() {
@@ -376,6 +398,25 @@ public class MainActivity extends AppCompatActivity {
                         // }
                     }
                 }).build();
+
+        adLoader.loadAd(new AdRequest.Builder().build());
+    }
+
+    public void loadNativeAd(final AfterLoadTask task) {
+        AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
+        adLoader = builder.forUnifiedNativeAd(
+                new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
+                    @Override
+                    public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
+                        mNativeAds.add(unifiedNativeAd);
+                    }
+                }).withAdListener(new AdListener() {
+                    @Override
+                    public void onAdLoaded() {
+                        task.makeTask();
+                        loadGroupAds();
+                    }
+        }).build();
 
         adLoader.loadAd(new AdRequest.Builder().build());
     }
@@ -408,4 +449,11 @@ public class MainActivity extends AppCompatActivity {
         return !runBefore;
     }
 
+    public static boolean isImmersiveAvailable() {
+        return android.os.Build.VERSION.SDK_INT >= 19;
+    }
+}
+
+interface AfterLoadTask {
+    void makeTask();
 }
