@@ -1,6 +1,5 @@
 package belev.org.warface_app;
 
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
@@ -34,8 +33,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
 
-import static android.view.View.INVISIBLE;
-
 public class MainActivity extends AppCompatActivity {
 
     DrawerLayout mDrawerLayout;
@@ -60,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         // Window window = this.getWindow();
         // getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
         // getWindow().setFlags( WindowManager.LayoutParams.SYSTEM_UI_FLAG_HIDE_NAVIGATION );
+
 
         View decorView = getWindow().getDecorView();
         final int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
@@ -88,13 +86,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Load next ads
         // mInterstitialAd.setAdListener(new AdListener() {
-            // @Override
-            // public void onAdClosed() {
-                // mInterstitialAd.loadAd(new AdRequest.Builder().build());
-            // }
+        // @Override
+        // public void onAdClosed() {
+        // mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        // }
         // });
 
-        /*
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -102,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
             window.setStatusBarColor(this.getResources().getColor(R.color.bar));
             window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
         }
-        */
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
@@ -112,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-         mDrawerToggle.syncState();
+        mDrawerToggle.syncState();
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
@@ -126,121 +122,121 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-             mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-             @Override
-             public boolean onNavigationItemSelected(MenuItem menuItem) {
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
                 mDrawerLayout.closeDrawers();
 
-                 if (menuItem.getItemId() == R.id.nav_item_about) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_about));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new AboutFragment());
-                             transaction.commit();
-                         }
-                     }, 200);
+                if (menuItem.getItemId() == R.id.nav_item_about) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_about));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new AboutFragment());
+                            transaction.commit();
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_rang) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_ranks));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new RangFragment());
-                             transaction.commit();
-                         }
-                     }, 200);
+                if (menuItem.getItemId() == R.id.nav_item_rang) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_ranks));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new RangFragment());
+                            transaction.commit();
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_achivment) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_achievements));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new TabFragment());
-                             transaction.commit();
+                if (menuItem.getItemId() == R.id.nav_item_achivment) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_achievements));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new TabFragment());
+                            transaction.commit();
 
-                         }
-                     }, 200);
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_update) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             // NativeAd nativeAd = new NativeAd(mNativeAds.get(1));
-                             // Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
-                             // String myGson = gson.toJson(nativeAd);
-                             // Bundle bundle = new Bundle();
-                             // bundle.putString("myObject", myGson);
+                if (menuItem.getItemId() == R.id.nav_item_update) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            // NativeAd nativeAd = new NativeAd(mNativeAds.get(1));
+                            // Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+                            // String myGson = gson.toJson(nativeAd);
+                            // Bundle bundle = new Bundle();
+                            // bundle.putString("myObject", myGson);
 
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_update));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_update));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
-                             Fragment fragment = new StartFragment();
-                             // fragment.setArguments(bundle);
+                            Fragment fragment = new StartFragment();
+                            // fragment.setArguments(bundle);
 
-                             transaction.replace(R.id.containerView, fragment);
-                             transaction.commit();
+                            transaction.replace(R.id.containerView, fragment);
+                            transaction.commit();
 
-                         }
-                     }, 200);
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_news) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             if (isOnline()) {
-                                 toolbar.setTitle(getResources().getString(R.string.menu_news));
-                                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                                 transaction.replace(R.id.containerView, new NewsFragment());
-                                 transaction.commit();
-                             } else {
-                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
-                                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                                 transaction.replace(R.id.containerView, new ConnectionFragment());
-                                 transaction.commit();
-                             }
-                         }
-                     }, 200);
+                if (menuItem.getItemId() == R.id.nav_item_news) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            if (isOnline()) {
+                                toolbar.setTitle(getResources().getString(R.string.menu_news));
+                                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                                transaction.replace(R.id.containerView, new NewsFragment());
+                                transaction.commit();
+                            } else {
+                                toolbar.setTitle(getResources().getString(R.string.error_connection));
+                                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                                transaction.replace(R.id.containerView, new ConnectionFragment());
+                                transaction.commit();
+                            }
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_stremers) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                                 toolbar.setTitle(getResources().getString(R.string.menu_vloger));
-                                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                                 transaction.replace(R.id.containerView, new StremersFragment());
-                                 transaction.commit();
-                         }
-                     }, 200);
+                if (menuItem.getItemId() == R.id.nav_item_stremers) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_vloger));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new StremersFragment());
+                            transaction.commit();
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_maps) {
+                if (menuItem.getItemId() == R.id.nav_item_maps) {
 
                      /*
                      View view = inflater.inflate(R.layout.framelist_maps, container, false);
@@ -256,81 +252,82 @@ public class MainActivity extends AppCompatActivity {
                      nativeAdPopulation.execute();
                      */
 
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_locations));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new MapsTab());
-                             transaction.commit();
-                         }
-                     }, 200);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_locations));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new MapsTab());
+                            transaction.commit();
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_rifleman) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_rifleman));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new RiflemanTab());
-                             transaction.commit();
-                         }
-                     }, 200);
+                if (menuItem.getItemId() == R.id.nav_item_rifleman) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_rifleman));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new RiflemanTab());
+                            transaction.commit();
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_sniper) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_sniper));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new SniperTab());
-                             transaction.commit();
-                         }
-                     }, 200);
+                if (menuItem.getItemId() == R.id.nav_item_sniper) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_sniper));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new SniperTab());
+                            transaction.commit();
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
+                    // showInterstitial();
+                }
 
-                 if (menuItem.getItemId() == R.id.nav_item_medic) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_medic));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new MedicTab());
-                             transaction.commit();
-                         }
-                     }, 200);
+                if (menuItem.getItemId() == R.id.nav_item_medic) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_medic));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new MedicTab());
+                            transaction.commit();
+                        }
+                    }, 200);
 
-                     // showInterstitial();
-                 }
 
-                 if (menuItem.getItemId() == R.id.nav_item_enginer) {
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                             toolbar.setTitle(getResources().getString(R.string.menu_enginer));
-                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                             transaction.replace(R.id.containerView, new EnginerTab());
-                             transaction.commit();
-                         }
-                     }, 200);
+                    // showInterstitial();
+                }
 
-                     // showInterstitial();
-                 }
+                if (menuItem.getItemId() == R.id.nav_item_enginer) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            toolbar.setTitle(getResources().getString(R.string.menu_enginer));
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new EnginerTab());
+                            transaction.commit();
+                        }
+                    }, 200);
 
-                 return false;
+                    // showInterstitial();
+                }
+
+                return false;
             }
 
         });
@@ -375,6 +372,14 @@ public class MainActivity extends AppCompatActivity {
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                             transaction.replace(R.id.containerView, new NewsFragment());
                             transaction.commit();
+                            toolbar.setVisibility(View.VISIBLE);
+
+                            View decorView = getWindow().getDecorView();
+                            final int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                                    View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                                    View.SYSTEM_UI_FLAG_FULLSCREEN;
+
+                            decorView.setSystemUiVisibility(flags);
                         }
                     }
                 }).build();
@@ -394,7 +399,7 @@ public class MainActivity extends AppCompatActivity {
 
                         // if (adLoader.isLoading()) {
                         // } else {
-                            // System.out.println("! adLoader.isLoading() ---------------------------------------->");
+                        // System.out.println("! adLoader.isLoading() ---------------------------------------->");
                         // }
                     }
                 }).build();
@@ -411,11 +416,11 @@ public class MainActivity extends AppCompatActivity {
                         mNativeAds.add(unifiedNativeAd);
                     }
                 }).withAdListener(new AdListener() {
-                    @Override
-                    public void onAdLoaded() {
-                        task.makeTask();
-                        loadGroupAds();
-                    }
+            @Override
+            public void onAdLoaded() {
+                task.makeTask();
+                loadGroupAds();
+            }
         }).build();
 
         adLoader.loadAd(new AdRequest.Builder().build());
