@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -139,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new AboutFragment());
                              transaction.commit();
                          }
-                     }, 150);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -154,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new RangFragment());
                              transaction.commit();
                          }
-                     }, 150);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -170,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.commit();
 
                          }
-                     }, 150);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -196,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.commit();
 
                          }
-                     }, 100);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -218,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
                                  transaction.commit();
                              }
                          }
-                     }, 100);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -233,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
                                  transaction.replace(R.id.containerView, new StremersFragment());
                                  transaction.commit();
                          }
-                     }, 100);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -263,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new MapsTab());
                              transaction.commit();
                          }
-                     }, 150);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -278,7 +280,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new RiflemanTab());
                              transaction.commit();
                          }
-                     }, 150);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -293,7 +295,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new SniperTab());
                              transaction.commit();
                          }
-                     }, 150);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -308,7 +310,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new MedicTab());
                              transaction.commit();
                          }
-                     }, 150);
+                     }, 200);
 
                      // showInterstitial();
                  }
@@ -323,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
                              transaction.replace(R.id.containerView, new EnginerTab());
                              transaction.commit();
                          }
-                     }, 150);
+                     }, 200);
 
                      // showInterstitial();
                  }
