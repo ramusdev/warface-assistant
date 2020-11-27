@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
     private AdLoader adLoader;
     public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
+    public List<NewsModel> newsList = new ArrayList<NewsModel>();
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -92,13 +93,14 @@ public class MainActivity extends AppCompatActivity {
         // }
         // });
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
-            Window window = this.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(this.getResources().getColor(R.color.bar));
-            window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
-        }
+
+        // if (android.os.Build.VERSION.SDK_INT >= 21) {
+            // Window window = this.getWindow();
+            // window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            // window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            // window.setStatusBarColor(this.getResources().getColor(R.color.bar));
+            // window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
+        // }
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
@@ -354,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadGroupAds() {
-        loadNativeAd(5);
+        loadNativeAd(1);
     }
 
     public void loadNativeAd(int countAdsToLoad) {
@@ -380,6 +382,7 @@ public class MainActivity extends AppCompatActivity {
                                     View.SYSTEM_UI_FLAG_FULLSCREEN;
 
                             decorView.setSystemUiVisibility(flags);
+
                         }
                     }
                 }).build();
@@ -443,19 +446,8 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    public boolean isFirstRun() {
-        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
-        boolean runBefore = preferences.getBoolean("RunBefore", false);
-        if(!runBefore) {
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putBoolean("RunBefore", true);
-            editor.commit();
-        }
-        return !runBefore;
-    }
+    public void loadNews() {
 
-    public static boolean isImmersiveAvailable() {
-        return android.os.Build.VERSION.SDK_INT >= 19;
     }
 }
 

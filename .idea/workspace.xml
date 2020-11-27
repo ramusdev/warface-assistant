@@ -18,6 +18,13 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -39,7 +46,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Android.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -109,5 +116,23 @@
       <updated>1606506108527</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1876" height="525" key="GridCell.Tab.0.bottom" timestamp="1606518093942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="525" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606518093942" />
+    <state width="1876" height="525" key="GridCell.Tab.0.center" timestamp="1606518093942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="525" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606518093942" />
+    <state width="1876" height="525" key="GridCell.Tab.0.left" timestamp="1606518093942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="525" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606518093942" />
+    <state width="1876" height="525" key="GridCell.Tab.0.right" timestamp="1606518093942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="525" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606518093942" />
   </component>
 </project>

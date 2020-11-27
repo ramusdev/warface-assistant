@@ -63,7 +63,17 @@ public class NewsFragment extends ListFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        new JSONTask().execute(URL_TO_HIT);
+        // new JSONTask().execute(URL_TO_HIT);
+        MainActivity mainActivity = (MainActivity) getActivity();
+        List<NewsModel> newsList = mainActivity.newsList;
+
+        if (newsList.size() != 0) {
+            adapter = new NewsAdapter(getActivity(), newsList);
+            setListAdapter((ListAdapter) adapter);
+        } else {
+            Toast.makeText(getActivity(), "Error Json Reader", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     public class JSONTask extends AsyncTask<String, String, List<NewsModel> > {

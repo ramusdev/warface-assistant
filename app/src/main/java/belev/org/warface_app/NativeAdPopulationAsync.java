@@ -1,4 +1,5 @@
 package belev.org.warface_app;
+
 import android.content.Context;
 import android.os.AsyncTask;
 import android.view.LayoutInflater;
