@@ -16,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[60c4353c0804]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -53,9 +53,12 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="belev.org.warface_app" />
     </key>
+<<<<<<< HEAD
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Android\app\src\main\res\layout" />
     </key>
+=======
+>>>>>>> master
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -149,7 +152,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606306721972" />
+<<<<<<< HEAD
     <state width="1877" height="635" key="GridCell.Tab.0.bottom" timestamp="1606343750341">
+=======
+    <state width="1877" height="635" key="GridCell.Tab.0.bottom" timestamp="1606256628134">
+>>>>>>> master
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="635" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606343750341" />
