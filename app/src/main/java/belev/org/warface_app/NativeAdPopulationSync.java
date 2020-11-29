@@ -39,7 +39,9 @@ public class NativeAdPopulationSync {
         // listView.addHeaderView(new View(getContext()));
         // listView.addHeaderView(headerView, null, false);
 
+        listView.addHeaderView(new View(mainActivity.getApplicationContext()));
         listView.addHeaderView(headerView, null, false);
+
         return null;
     }
 
