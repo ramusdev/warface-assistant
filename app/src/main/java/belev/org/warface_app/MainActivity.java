@@ -3,6 +3,7 @@ package belev.org.warface_app;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -13,6 +14,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.google.android.ads.nativetemplates.NativeTemplateStyle;
+import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
@@ -367,6 +370,11 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
                         mNativeAds.add(unifiedNativeAd);
+
+                        // NativeTemplateStyle styles = new NativeTemplateStyle.Builder().withMainBackgroundColor(Color.argb(255,255,255,255)).build();
+                        TemplateView template = findViewById(R.id.my_template);
+                        template.setNativeAd(unifiedNativeAd);
+
 
                         if (adLoader.isLoading()) {
                         } else {
