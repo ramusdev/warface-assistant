@@ -372,8 +372,8 @@ public class MainActivity extends AppCompatActivity {
                         mNativeAds.add(unifiedNativeAd);
 
                         // NativeTemplateStyle styles = new NativeTemplateStyle.Builder().withMainBackgroundColor(Color.argb(255,255,255,255)).build();
-                        TemplateView template = findViewById(R.id.my_template);
-                        template.setNativeAd(unifiedNativeAd);
+                        // TemplateView template = findViewById(R.id.my_template);
+                        // template.setNativeAd(unifiedNativeAd);
 
 
                         if (adLoader.isLoading()) {

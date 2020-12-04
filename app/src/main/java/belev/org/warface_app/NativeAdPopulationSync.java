@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.VideoController;
 import com.google.android.gms.ads.formats.MediaView;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
@@ -25,19 +27,23 @@ public class NativeAdPopulationSync {
         UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(0);
 
         // ApplicationContext apc = mainActivity.getApplicationContext()
-        LayoutInflater vi = (LayoutInflater) mainActivity.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) mainActivity.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         // Inflater inflater = LayoutInflater.from();
         // View headerView = getLayoutInflater().inflate(R.layout.fragment_news_header, listView, false);
-        View headerView = vi.inflate(R.layout.fragment_news_header, listView, false);
-        FrameLayout frameLayout = headerView.findViewById(R.id.fl_adplaceholder);
-        UnifiedNativeAdView adView = (UnifiedNativeAdView) vi.inflate(R.layout.ad_unified, null);
-        populateUnifiedNativeAdView(unifiedNativeAd, adView);
-        frameLayout.removeAllViews();
-        frameLayout.addView(adView);
+        View headerView = inflater.inflate(R.layout.fragment_news_header, listView, false);
+
+        // FrameLayout frameLayout = headerView.findViewById(R.id.fl_adplaceholder);
+        // UnifiedNativeAdView adView = (UnifiedNativeAdView) vi.inflate(R.layout.ad_unified, null);
+        // populateUnifiedNativeAdView(unifiedNativeAd, adView);
+        // frameLayout.removeAllViews();
+        // frameLayout.addView(adView);
 
         // listView.removeHeaderView(spaceView);
         // listView.addHeaderView(new View(getContext()));
         // listView.addHeaderView(headerView, null, false);
+
+        TemplateView template = headerView.findViewById(R.id.my_template);
+        template.setNativeAd(unifiedNativeAd);
 
         listView.addHeaderView(new View(mainActivity.getApplicationContext()));
         listView.addHeaderView(headerView, null, false);
