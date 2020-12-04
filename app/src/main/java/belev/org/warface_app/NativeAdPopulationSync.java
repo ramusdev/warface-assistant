@@ -24,7 +24,7 @@ public class NativeAdPopulationSync {
     public MainActivity mainActivity;
 
     public Void execute() {
-        UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(0);
+        UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(1);
 
         // ApplicationContext apc = mainActivity.getApplicationContext()
         LayoutInflater inflater = (LayoutInflater) mainActivity.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);

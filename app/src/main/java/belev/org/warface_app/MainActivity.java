@@ -1,9 +1,7 @@
 package belev.org.warface_app;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -13,9 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-
-import com.google.android.ads.nativetemplates.NativeTemplateStyle;
-import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
@@ -35,6 +30,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
+
+import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
+import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,11 +62,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         View decorView = getWindow().getDecorView();
-        final int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+        final int flags = SYSTEM_UI_FLAG_LAYOUT_STABLE |
                 View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
-                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
                 View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
         decorView.setSystemUiVisibility(flags);
+
 
 
         // Init mobile ads
@@ -97,13 +96,14 @@ public class MainActivity extends AppCompatActivity {
         // });
 
 
-        // if (android.os.Build.VERSION.SDK_INT >= 21) {
-            // Window window = this.getWindow();
-            // window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            // window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            // window.setStatusBarColor(this.getResources().getColor(R.color.bar));
-            // window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
-        // }
+
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
+            Window window = this.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(this.getResources().getColor(R.color.bar));
+            window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
+        }
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
@@ -359,11 +359,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadGroupAds() {
-        loadNativeAd(1);
+        // loadNativeAd(5);
+        loadNativeAd();
     }
 
-    public void loadNativeAd(int countAdsToLoad) {
-        AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
+    public void loadNativeAd(final int countAdsToLoad) {
+        final AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
 
         adLoader = builder.forUnifiedNativeAd(
                 new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
@@ -371,26 +372,18 @@ public class MainActivity extends AppCompatActivity {
                     public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
                         mNativeAds.add(unifiedNativeAd);
 
-                        // NativeTemplateStyle styles = new NativeTemplateStyle.Builder().withMainBackgroundColor(Color.argb(255,255,255,255)).build();
-                        // TemplateView template = findViewById(R.id.my_template);
-                        // template.setNativeAd(unifiedNativeAd);
-
-
                         if (adLoader.isLoading()) {
                         } else {
-                            System.out.println("Loaded ----------------------------------------->");
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                             transaction.replace(R.id.containerView, new NewsFragment());
                             transaction.commit();
+
                             toolbar.setVisibility(View.VISIBLE);
 
                             View decorView = getWindow().getDecorView();
-                            final int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
-                                    View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
-                                    View.SYSTEM_UI_FLAG_FULLSCREEN;
-
+                            final int flags = SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                                    | SYSTEM_UI_FLAG_LAYOUT_STABLE;
                             decorView.setSystemUiVisibility(flags);
-
                         }
                     }
                 }).build();
@@ -399,22 +392,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadNativeAd() {
-        AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
+        final AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
 
         adLoader = builder.forUnifiedNativeAd(
                 new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
                     @Override
                     public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
                         mNativeAds.add(unifiedNativeAd);
-                        System.out.println("Async load ad ------------------------------------->");
 
-                        // if (adLoader.isLoading()) {
-                        // } else {
-                        // System.out.println("! adLoader.isLoading() ---------------------------------------->");
-                        // }
+                        if (adLoader.isLoading()) {
+                        } else {
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.containerView, new NewsFragment());
+                            transaction.commit();
+
+                            toolbar.setVisibility(View.VISIBLE);
+
+                            View decorView = getWindow().getDecorView();
+                            final int flags = SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                                    | SYSTEM_UI_FLAG_LAYOUT_STABLE;
+                            decorView.setSystemUiVisibility(flags);
+                        }
                     }
                 }).build();
 
+        adLoader.loadAd(new AdRequest.Builder().build());
+        adLoader.loadAd(new AdRequest.Builder().build());
+        adLoader.loadAd(new AdRequest.Builder().build());
+        adLoader.loadAd(new AdRequest.Builder().build());
         adLoader.loadAd(new AdRequest.Builder().build());
     }
 
@@ -430,7 +435,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAdLoaded() {
                 task.makeTask();
-                loadGroupAds();
+                // loadGroupAds();
             }
         }).build();
 
