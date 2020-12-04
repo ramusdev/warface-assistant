@@ -57,7 +57,7 @@ public class MapsFragment extends ListFragment {
         View spaceView = new View(getContext());
         MainActivity mainActivity = (MainActivity) getActivity();
 
-        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync();
+        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(1);
         nativeAdPopulationSync.view = view;
         nativeAdPopulationSync.spaceView = spaceView;
         nativeAdPopulationSync.listView = listView;

@@ -360,9 +360,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadGroupAds() {
         // loadNativeAd(5);
-        loadNativeAd();
+        loadNativeAd(5);
     }
 
+    /*
     public void loadNativeAd(final int countAdsToLoad) {
         final AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
 
@@ -390,8 +391,9 @@ public class MainActivity extends AppCompatActivity {
 
         adLoader.loadAds(new AdRequest.Builder().build(), countAdsToLoad);
     }
+    */
 
-    public void loadNativeAd() {
+    public void loadNativeAd(int numberOfAdsToLoad) {
         final AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
 
         adLoader = builder.forUnifiedNativeAd(
@@ -416,11 +418,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }).build();
 
-        adLoader.loadAd(new AdRequest.Builder().build());
-        adLoader.loadAd(new AdRequest.Builder().build());
-        adLoader.loadAd(new AdRequest.Builder().build());
-        adLoader.loadAd(new AdRequest.Builder().build());
-        adLoader.loadAd(new AdRequest.Builder().build());
+        for (int i = 0; i < numberOfAdsToLoad; ++i) {
+            adLoader.loadAd(new AdRequest.Builder().build());
+        }
     }
 
     public void loadNativeAd(final AfterLoadTask task) {
@@ -457,10 +457,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
-    }
-
-    public void loadNews() {
-
     }
 }
 

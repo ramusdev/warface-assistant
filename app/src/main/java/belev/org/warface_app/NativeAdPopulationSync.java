@@ -22,9 +22,14 @@ public class NativeAdPopulationSync {
     public View spaceView;
     public ListView listView;
     public MainActivity mainActivity;
+    private int indexOfAd;
+
+    public NativeAdPopulationSync(int indexOfAd) {
+        this.indexOfAd = indexOfAd;
+    }
 
     public Void execute() {
-        UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(1);
+        UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(indexOfAd);
 
         // ApplicationContext apc = mainActivity.getApplicationContext()
         LayoutInflater inflater = (LayoutInflater) mainActivity.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);

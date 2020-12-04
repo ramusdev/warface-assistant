@@ -40,7 +40,7 @@ public class NewsFragment extends ListFragment {
         View spaceView = new View(getContext());
         MainActivity mainActivity = (MainActivity) getActivity();
 
-        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync();
+        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(0);
         nativeAdPopulationSync.view = view;
         nativeAdPopulationSync.spaceView = spaceView;
         nativeAdPopulationSync.listView = listView;
