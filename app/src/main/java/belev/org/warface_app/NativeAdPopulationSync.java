@@ -33,7 +33,14 @@ public class NativeAdPopulationSync {
         this.indexOfAd = indexOfAd;
     }
 
-    public Void execute() {
+    public boolean execute() {
+        if (!(mainActivity.mNativeAds.size() >= indexOfAd + 1)) {
+            listView.addHeaderView(new View(mainActivity.getApplicationContext()));
+            listView.addFooterView(new View(mainActivity.getApplicationContext()));
+
+            return false;
+        }
+
         UnifiedNativeAd unifiedNativeAd = mainActivity.mNativeAds.get(indexOfAd);
 
         // ApplicationContext apc = mainActivity.getApplicationContext()
@@ -69,9 +76,10 @@ public class NativeAdPopulationSync {
         listView.addHeaderView(headerView, null, false);
         listView.addFooterView(new View(mainActivity.getApplicationContext()));
 
-        return null;
+        return true;
     }
 
+    /*
     private void populateUnifiedNativeAdView(UnifiedNativeAd nativeAd, UnifiedNativeAdView adView) {
         // Set the media view.
         adView.setMediaView((MediaView) adView.findViewById(R.id.ad_media));
@@ -173,4 +181,5 @@ public class NativeAdPopulationSync {
             // videoStatus.setText("Video status: Ad does not contain a video asset.");
         }
     }
+    */
 }

@@ -80,7 +80,6 @@ public class StremersActivity extends AppCompatActivity {
                     NewsModel currentNews = newsModelList.get(position-1);
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(currentNews.getLink()));
                     startActivity(intent);
-
                 } else {
                     Intent intent = new Intent(getApplicationContext(), ConnectionActivity.class);
                     startActivity(intent);

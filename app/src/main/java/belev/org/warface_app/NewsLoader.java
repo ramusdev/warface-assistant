@@ -24,9 +24,15 @@ public class NewsLoader extends AsyncTask<Void, Void, List<NewsModel>> {
     public final String NEWS_URL = "https://edgenews.ru/android/wardocwarface/news/news.json";
     public List<NewsModel> newsModelList = new ArrayList<NewsModel>();
     private MainActivity mainActivity;
+    private NewsFragment.TaskInterface task;
 
     public NewsLoader(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
+    }
+
+    public NewsLoader(MainActivity mainActivity, NewsFragment.TaskInterface task) {
+        this.mainActivity = mainActivity;
+        this.task = task;
     }
 
     @Override
@@ -87,5 +93,9 @@ public class NewsLoader extends AsyncTask<Void, Void, List<NewsModel>> {
     protected void onPostExecute(final List<NewsModel> result) {
         super.onPostExecute(result);
         mainActivity.newsList = result;
+
+        if (task != null) {
+            task.makeTask(result);
+        }
     }
 }

@@ -40,6 +40,8 @@ public class RiflemanFragment extends ListFragment {
 
     private List<Maps> myAbout = new ArrayList<Maps>();
     public int classid;
+    MainActivity mainActivity;
+    boolean isLoadedAd;
 
     @Nullable
     @Override
@@ -48,22 +50,17 @@ public class RiflemanFragment extends ListFragment {
             mapsid = getArguments().getInt(BUNDLE_MAPS);
         }
 
-        // View view = inflater.inflate(R.layout.framelist_maps, container, false);
-        // ListView listView = (ListView) view.findViewById(android.R.id.list);
-        // listView.addHeaderView(new View(getContext()));
-        // listView.addFooterView(new View(getContext()));
-
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
         View spaceView = new View(getContext());
-        MainActivity mainActivity = (MainActivity) getActivity();
+        mainActivity = (MainActivity) getActivity();
 
         NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(3);
         nativeAdPopulationSync.view = view;
         nativeAdPopulationSync.spaceView = spaceView;
         nativeAdPopulationSync.listView = listView;
         nativeAdPopulationSync.mainActivity = mainActivity;
-        nativeAdPopulationSync.execute();
+        isLoadedAd = nativeAdPopulationSync.execute();
 
         return view;
     }
@@ -73,9 +70,10 @@ public class RiflemanFragment extends ListFragment {
         super.onListItemClick(l, v, position, id);
         String[] maps_array = getResources().getStringArray(link_arr[mapsid]);
 
-        if (isOnline()) {
+        int positionShift = isLoadedAd ? position - 2 : position - 1;
+        if (mainActivity.isOnline()) {
             Intent myIntent = new Intent(getActivity(), RiflemanWebActivity.class);
-            myIntent.putExtra("BUNDLE_LINK", maps_array[position-1]);
+            myIntent.putExtra("BUNDLE_LINK", maps_array[positionShift]);
             getActivity().startActivity(myIntent);
         } else {
             Intent myIntent = new Intent(getActivity(), ConnectionActivity.class);
@@ -104,14 +102,5 @@ public class RiflemanFragment extends ListFragment {
         adapter = new RiflemanAdapter(getActivity(), rowItems);
         setListAdapter((ListAdapter) adapter);
 
-    }
-
-    public boolean isOnline() {
-        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-            return true;
-        }
-        return false;
     }
 }

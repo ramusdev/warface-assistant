@@ -43,6 +43,8 @@ public class SniperFragment extends ListFragment {
 
     private List<Maps> myAbout = new ArrayList<Maps>();
     public int classid;
+    MainActivity mainActivity;
+    boolean isLoadedAd;
 
     @Nullable
     @Override
@@ -54,14 +56,14 @@ public class SniperFragment extends ListFragment {
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
         View spaceView = new View(getContext());
-        MainActivity mainActivity = (MainActivity) getActivity();
+        mainActivity = (MainActivity) getActivity();
 
-        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(5);
+        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(3);
         nativeAdPopulationSync.view = view;
         nativeAdPopulationSync.spaceView = spaceView;
         nativeAdPopulationSync.listView = listView;
         nativeAdPopulationSync.mainActivity = mainActivity;
-        nativeAdPopulationSync.execute();
+        isLoadedAd = nativeAdPopulationSync.execute();
 
         return view;
     }
@@ -69,26 +71,12 @@ public class SniperFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-
         String[] maps_array = getResources().getStringArray(link_arr[mapsid]);
 
-        if (isOnline()) {
-
-            /*
-            final Bundle arguments = new Bundle();
-            DemoWebFragment webFragment = new DemoWebFragment();
-            arguments.putString(BUNDLE_LINK, maps_array[position-1]);
-            webFragment.setArguments(arguments);
-            getChildFragmentManager().beginTransaction()
-                    .replace(R.id.containerView, webFragment, null)
-                    .addToBackStack(null)
-                    .commit();
-            */
-
-            //ShowInterstitial();
-
+        int positionShift = isLoadedAd ? position - 2 : position - 1;
+        if (mainActivity.isOnline()) {
             Intent myIntent = new Intent(getActivity(), SniperWebActivity.class);
-            myIntent.putExtra("BUNDLE_LINK", maps_array[position-1]);
+            myIntent.putExtra("BUNDLE_LINK", maps_array[positionShift]);
             getActivity().startActivity(myIntent);
 
         } else {
@@ -118,22 +106,5 @@ public class SniperFragment extends ListFragment {
         adapter = new RiflemanAdapter(getActivity(), rowItems);
         setListAdapter((ListAdapter) adapter);
 
-    }
-
-    private void ShowInterstitial() {
-        if(mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            //Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
-        }
-    }
-
-    public boolean isOnline() {
-        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-            return true;
-        }
-        return false;
     }
 }

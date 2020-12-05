@@ -45,6 +45,8 @@ public class MapsFragment extends ListFragment {
 
     private List<Maps> myAbout = new ArrayList<Maps>();
     public int classid;
+    MainActivity mainActivity;
+    boolean isLoadedAd;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -55,14 +57,14 @@ public class MapsFragment extends ListFragment {
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
         View spaceView = new View(getContext());
-        MainActivity mainActivity = (MainActivity) getActivity();
+        mainActivity = (MainActivity) getActivity();
 
-        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(1);
+        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(2);
         nativeAdPopulationSync.view = view;
         nativeAdPopulationSync.spaceView = spaceView;
         nativeAdPopulationSync.listView = listView;
         nativeAdPopulationSync.mainActivity = mainActivity;
-        nativeAdPopulationSync.execute();
+        isLoadedAd = nativeAdPopulationSync.execute();
 
         return view;
     }
@@ -72,9 +74,10 @@ public class MapsFragment extends ListFragment {
         super.onListItemClick(l, v, position, id);
         String[] maps_array = getResources().getStringArray(link_arr[mapsid]);
 
-        if (isOnline()) {
+        int positionShift = isLoadedAd ? position - 2 : position - 1;
+        if (mainActivity.isOnline()) {
             Intent myIntent = new Intent(getActivity(), MapsWebActivity.class);
-            myIntent.putExtra("BUNDLE_LINK", maps_array[position-1]);
+            myIntent.putExtra("BUNDLE_LINK", maps_array[positionShift]);
             getActivity().startActivity(myIntent);
 
         } else {
@@ -105,24 +108,5 @@ public class MapsFragment extends ListFragment {
         adapter = new MapsAdapter(getActivity(), rowItems);
         setListAdapter((ListAdapter) adapter);
 
-    }
-
-    /*
-    private void ShowInterstitial() {
-        if(mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            //Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
-        }
-    }
-    */
-
-    public boolean isOnline() {
-        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-            return true;
-        }
-        return false;
     }
 }
