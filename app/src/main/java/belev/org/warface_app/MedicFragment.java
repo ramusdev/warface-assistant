@@ -50,21 +50,21 @@ public class MedicFragment extends ListFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        // Admod Interstitial
-        //mInterstitialAd = new InterstitialAd(getContext());
-        //mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
-        //AdRequest adRequest = new AdRequest.Builder().build();
-        //mInterstitialAd.loadAd(adRequest);
-
         if (getArguments() != null && getArguments().containsKey(BUNDLE_MAPS)) {
             mapsid = getArguments().getInt(BUNDLE_MAPS);
         }
 
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
-        listView.addHeaderView(new View(getContext()));
-        listView.addFooterView(new View(getContext()));
+        View spaceView = new View(getContext());
+        MainActivity mainActivity = (MainActivity) getActivity();
+
+        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(6);
+        nativeAdPopulationSync.view = view;
+        nativeAdPopulationSync.spaceView = spaceView;
+        nativeAdPopulationSync.listView = listView;
+        nativeAdPopulationSync.mainActivity = mainActivity;
+        nativeAdPopulationSync.execute();
 
         return view;
     }

@@ -360,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadGroupAds() {
         // loadNativeAd(5);
-        loadNativeAd(5);
+        loadNativeAd(7);
     }
 
     /*

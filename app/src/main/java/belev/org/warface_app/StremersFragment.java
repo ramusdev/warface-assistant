@@ -50,11 +50,6 @@ public class StremersFragment extends ListFragment {
             mapsid = getArguments().getInt(BUNDLE_MAPS);
         }
 
-        // View view = inflater.inflate(R.layout.framelist_maps, container, false);
-        // ListView listView = (ListView) view.findViewById(android.R.id.list);
-        // listView.addHeaderView(new View(getContext()));
-        // listView.addFooterView(new View(getContext()));
-
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
         View spaceView = new View(getContext());
