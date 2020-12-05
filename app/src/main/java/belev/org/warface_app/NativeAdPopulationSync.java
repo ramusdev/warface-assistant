@@ -1,6 +1,8 @@
 package belev.org.warface_app;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -10,11 +12,14 @@ import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.google.android.ads.nativetemplates.NativeTemplateStyle;
 import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.VideoController;
 import com.google.android.gms.ads.formats.MediaView;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.gms.ads.formats.UnifiedNativeAdView;
+
+import androidx.core.content.ContextCompat;
 
 public class NativeAdPopulationSync {
 
@@ -47,11 +52,22 @@ public class NativeAdPopulationSync {
         // listView.addHeaderView(new View(getContext()));
         // listView.addHeaderView(headerView, null, false);
 
+        Context context = mainActivity.getApplicationContext();
+
+        // listView.removeHeaderView(spaceView);
+        // listView.addHeaderView(new View(getContext()));
+        // listView.addHeaderView(headerView, null, false);
+
+        // ColorDrawable cd = new ColorDrawable(0xFFd4d5d2);
+        // NativeTemplateStyle styles = new NativeTemplateStyle.Builder().withMainBackgroundColor(cd).build();
+
         TemplateView template = headerView.findViewById(R.id.my_template);
+        // template.setStyles(styles);
         template.setNativeAd(unifiedNativeAd);
 
         listView.addHeaderView(new View(mainActivity.getApplicationContext()));
         listView.addHeaderView(headerView, null, false);
+        listView.addFooterView(new View(mainActivity.getApplicationContext()));
 
         return null;
     }
