@@ -365,7 +365,7 @@ public class MainActivity extends AppCompatActivity {
 
                         if (adLoader.isLoading()) {
                         } else {
-                            // System.out.println("AdLoader -------------------------------->");
+                            System.out.println("AdLoader -------------------------------->");
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                             transaction.replace(R.id.containerView, new NewsFragment());
                             transaction.commit();

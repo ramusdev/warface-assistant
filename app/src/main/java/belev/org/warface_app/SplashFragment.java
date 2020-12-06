@@ -16,7 +16,8 @@ public class SplashFragment extends Fragment {
 
         NewsLoader newsLoader = new NewsLoader(mainActivity);
         newsLoader.execute();
-        mainActivity.loadGroupAds();
+
+        // loadGroupNativeAds();
 
         return view;
     }
