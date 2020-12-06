@@ -318,13 +318,18 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+
+        // NativeAdLoader nativeAdLoader = new NativeAdLoader(this, 4);
+        // nativeAdLoader.loadNativeAds();
+
     }
 
+    /*
     public void loadGroupAds() {
         loadNativeAd(4);
     }
 
-    /*
     public void loadNativeAd(final int countAdsToLoad) {
         final AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
 
@@ -352,7 +357,6 @@ public class MainActivity extends AppCompatActivity {
 
         adLoader.loadAds(new AdRequest.Builder().build(), countAdsToLoad);
     }
-    */
 
     public void loadNativeAd(int numberOfAdsToLoad) {
         final AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
@@ -390,7 +394,9 @@ public class MainActivity extends AppCompatActivity {
             adLoader.loadAd(new AdRequest.Builder().build());
         }
     }
+   */
 
+    /*
     public void loadNativeAd(final AfterLoadTask task) {
         AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);
         adLoader = builder.forUnifiedNativeAd(
@@ -409,14 +415,7 @@ public class MainActivity extends AppCompatActivity {
 
         adLoader.loadAd(new AdRequest.Builder().build());
     }
-
-    private void showInterstitial() {
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            //Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
-        }
-    }
+   */
 
     public boolean isOnline() {
         ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -426,8 +425,8 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-}
 
-interface AfterLoadTask {
-    void makeTask();
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+    }
 }
