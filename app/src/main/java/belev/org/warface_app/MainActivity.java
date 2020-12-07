@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     InterstitialAd mInterstitialAd;
     Toolbar toolbar;
 
-    private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
+    // private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
     private AdLoader adLoader;
     public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
     public List<NewsModel> newsList = new ArrayList<NewsModel>();

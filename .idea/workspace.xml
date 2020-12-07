@@ -25,6 +25,11 @@
       </list>
     </option>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="D:\Alse\Android\Androidstudio_keystore\warfaceapp.jks" />
+    <option name="KEY_ALIAS" value="key" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -33,11 +38,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="BundleExportedModule" value="Android.app" />
+    <property name="ExportApk.ApkPath" value="D:\Android\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-viewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_SELECTED" value="TemplateView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java_NativeAdvancedExample_AdMob" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Alse/Android/Androidstudio_keystore/warfaceapp.jks" />
     <property name="multi-representation-previewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_selected" value="Custom views" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
@@ -134,26 +142,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606687753180" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1607203280011">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1607356263191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607203280011" />
-    <state width="1876" height="539" key="GridCell.Tab.0.bottom" timestamp="1607291707187">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607356263191" />
+    <state width="1876" height="539" key="GridCell.Tab.0.bottom" timestamp="1607350127009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="539" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607291707187" />
-    <state width="1876" height="539" key="GridCell.Tab.0.center" timestamp="1607291707187">
+    <state width="1876" height="539" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607350127009" />
+    <state width="1876" height="539" key="GridCell.Tab.0.center" timestamp="1607350127009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="539" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607291707187" />
-    <state width="1876" height="539" key="GridCell.Tab.0.left" timestamp="1607291707187">
+    <state width="1876" height="539" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607350127009" />
+    <state width="1876" height="539" key="GridCell.Tab.0.left" timestamp="1607350127009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="539" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607291707187" />
-    <state width="1876" height="539" key="GridCell.Tab.0.right" timestamp="1607291707187">
+    <state width="1876" height="539" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607350127009" />
+    <state width="1876" height="539" key="GridCell.Tab.0.right" timestamp="1607350127009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="539" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607291707187" />
+    <state width="1876" height="539" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607350127009" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1607264433049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

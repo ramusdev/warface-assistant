@@ -4,6 +4,7 @@ import android.os.AsyncTask;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
     // private final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
 
     // Current ad
-    private final String ADMOB_AD_UNIT_ID = "ca-app-pub-4140002463111288/5408922979";
+    private final String ADMOB_AD_UNIT_ID = "ca-app-pub-4140002463111288/1979967365";
 
     private MainActivity mainActivity;
     private int numberAdsToLoad;
@@ -48,7 +49,7 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
                     isThreadAlive = true;
                 }
             }
-            System.out.println("Is loaded --------------------------------------------->");
+            System.out.println("Load iteration --------------------------------------------->");
         } while (isThreadAlive);
 
         return null;
@@ -91,7 +92,12 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
                         public void onAdLoaded() {
                             super.onAdLoaded();
                             isAlive = false;
-                         }
+                        }
+
+                        @Override
+                        public void onAdFailedToLoad(LoadAdError e) {
+                            isAlive = false;
+                        }
                     }).build();
 
             adLoader.loadAd(new AdRequest.Builder().build());
