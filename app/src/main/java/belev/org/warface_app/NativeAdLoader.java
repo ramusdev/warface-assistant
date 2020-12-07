@@ -10,7 +10,12 @@ import java.util.List;
 
 public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
 
-    private final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
+    // Test ad
+    // private final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
+
+    // Current ad
+    private final String ADMOB_AD_UNIT_ID = "ca-app-pub-4140002463111288/5408922979";
+
     private MainActivity mainActivity;
     private int numberAdsToLoad;
     private AfterLoadFunction afterLoadFunction;
@@ -43,6 +48,7 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
                     isThreadAlive = true;
                 }
             }
+            System.out.println("Is loaded --------------------------------------------->");
         } while (isThreadAlive);
 
         return null;
