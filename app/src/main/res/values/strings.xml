@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Warface App</string>
+    <string name="app_name">Warface Assistant</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Options</string>
     <string name="ad_attribution">Ad</string>
@@ -15,7 +15,7 @@ The application contains the information on the achievements of the project Warf
 
 <font color=#e65d20>Legal notice</font><br><br>
 
-Privacy Policy <a href="http://belev.org/android/wardocwarface/privacy/privacy_policy.html">read.</a><br><br>
+Privacy Policy <a href="https://edgenews.ru/android/wardocwarface/privacy/privacy_policy.html">read.</a><br><br>
 
 Copyright contain images and materials are owned by Crytek and are the intellectual property of Crytek: © 2020 Crytek GmbH. All rights reserved.<br><br>
 
