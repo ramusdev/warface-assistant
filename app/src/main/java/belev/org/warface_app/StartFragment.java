@@ -14,6 +14,8 @@ import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingFlowParams;
 import com.android.billingclient.api.BillingResult;
+import com.android.billingclient.api.ConsumeParams;
+import com.android.billingclient.api.ConsumeResponseListener;
 import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
@@ -59,7 +61,7 @@ public class StartFragment extends Fragment {
                 if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK
                         && list != null) {
                     for (Purchase purchase : list) {
-                        // handlePurchase(purchase);
+                        handlePurchase(purchase);
                     }
                 }
             }
@@ -99,21 +101,23 @@ public class StartFragment extends Fragment {
                 System.out.println("Disconnected billing client -------------->");
             }
         });
+    }
 
-        /*
-        List<String> skuList = new ArrayList<String>();
-        skuList.add("premium_level_1");
+    public void handlePurchase(Purchase purchase) {
+        ConsumeParams consumeParams = ConsumeParams.newBuilder()
+                .setPurchaseToken(purchase.getPurchaseToken())
+                .build();
 
-        SkuDetailsParams.Builder params = SkuDetailsParams.newBuilder();
-        params.setSkusList(skuList).setType(BillingClient.SkuType.INAPP);
-
-        billingClient.querySkuDetailsAsync(params.build(), new SkuDetailsResponseListener() {
+        ConsumeResponseListener consumeResponseListener = new ConsumeResponseListener() {
             @Override
-            public void onSkuDetailsResponse(@NonNull BillingResult billingResult, @Nullable List<SkuDetails> list) {
-                System.out.println(list.get(0).getPrice());
+            public void onConsumeResponse(@NonNull BillingResult billingResult, @NonNull String s) {
+                if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                    System.out.println("The consume response ------->");
+                }
             }
-        });
-        */
+        };
+
+        billingClient.consumeAsync(consumeParams, consumeResponseListener);
     }
 
     public View.OnClickListener buttonClickHandler() {
