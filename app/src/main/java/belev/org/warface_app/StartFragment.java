@@ -29,11 +29,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class StartFragment extends Fragment {
+public class StartFragment extends Fragment implements View.OnClickListener {
 
     public BillingClient billingClient;
     public MainActivity mainActivity;
-    public SkuDetails skuDetails;
+    public SkuDetails skuDetailsVipOne;
+    public SkuDetails skuDetailsVipTwo;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -45,8 +46,11 @@ public class StartFragment extends Fragment {
 
         mainActivity = (MainActivity) getActivity();
 
-        Button buttonDonate = (Button) view.findViewById(R.id.button_donate);
-        buttonDonate.setOnClickListener(buttonClickHandler());
+        Button buttonDonateVipOne = (Button) view.findViewById(R.id.button_donate_vip_one);
+        buttonDonateVipOne.setOnClickListener(this);
+
+        Button buttonDonateVipTwo = (Button) view.findViewById(R.id.button_donate_vip_two);
+        buttonDonateVipTwo.setOnClickListener(this);
 
         initBillingClient();
 
@@ -80,6 +84,7 @@ public class StartFragment extends Fragment {
 
                     List<String> skuList = new ArrayList<String>();
                     skuList.add("premium_level_1");
+                    skuList.add("premium_level_2");
 
                     SkuDetailsParams.Builder params = SkuDetailsParams.newBuilder();
                     params.setSkusList(skuList).setType(BillingClient.SkuType.INAPP);
@@ -88,7 +93,9 @@ public class StartFragment extends Fragment {
                         @Override
                         public void onSkuDetailsResponse(@NonNull BillingResult billingResult, @Nullable List<SkuDetails> list) {
                             System.out.println(list.get(0).getPrice());
-                            skuDetails = list.get(0);
+                            System.out.println(list.get(1).getPrice());
+                            skuDetailsVipOne = list.get(0);
+                            skuDetailsVipTwo = list.get(1);
                         }
                     });
                 } else {
@@ -120,7 +127,8 @@ public class StartFragment extends Fragment {
         billingClient.consumeAsync(consumeParams, consumeResponseListener);
     }
 
-    public View.OnClickListener buttonClickHandler() {
+    /*
+    public View.OnClickListener buttonClickHandler(View v) {
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -136,5 +144,26 @@ public class StartFragment extends Fragment {
 
         return onClickListener;
     }
+    */
 
+    @Override
+    public void onClick(View view) {
+        int responseCode;
+
+        BillingFlowParams billingFlowParams;
+        BillingFlowParams.Builder billingFlowParamsBuilder = BillingFlowParams.newBuilder();
+
+        switch (view.getId()) {
+            case R.id.button_donate_vip_one:
+                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsVipOne).build();
+                break;
+            case R.id.button_donate_vip_two:
+                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsVipTwo).build();
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + view.getId());
+        }
+
+        responseCode = billingClient.launchBillingFlow(mainActivity, billingFlowParams).getResponseCode();
+    }
 }

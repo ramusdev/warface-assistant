@@ -30,13 +30,25 @@
             android:layout_alignParentLeft="true" />
 
         <Button
-            android:id="@+id/button_donate"
+            android:id="@+id/button_donate_vip_one"
             android:layout_marginTop="20dp"
             android:textSize="16sp"
-            android:text="Донат"
+            android:text="Донат vip 1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@drawable/button_donate_backgorund"
+            android:background="@drawable/button_donate_background"
+            android:textColor="@color/gnt_white"
+            android:lines="1"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/button_donate_vip_two"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:text="Донат vip 2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/button_donate_background"
             android:textColor="@color/gnt_white"
             android:lines="1"
             android:gravity="center" />
