@@ -140,34 +140,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1607283211610">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1608039521078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607283211610" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608039521078" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606687753180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606687753180" />
+    <state x="795" y="292" key="AndroidCreateXmlResourceDialog" timestamp="1608032578934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="292" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608032578934" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1607368558228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607368558228" />
-    <state width="1876" height="239" key="GridCell.Tab.0.bottom" timestamp="1607359047786">
+    <state width="1876" height="539" key="GridCell.Tab.0.bottom" timestamp="1608070522325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607359047786" />
-    <state width="1876" height="239" key="GridCell.Tab.0.center" timestamp="1607359047786">
+    <state width="1876" height="539" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608070522325" />
+    <state width="1876" height="539" key="GridCell.Tab.0.center" timestamp="1608070522324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="239" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607359047786" />
-    <state width="1876" height="239" key="GridCell.Tab.0.left" timestamp="1607359047786">
+    <state width="1876" height="539" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608070522324" />
+    <state width="1876" height="539" key="GridCell.Tab.0.left" timestamp="1608070522324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="239" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607359047786" />
-    <state width="1876" height="239" key="GridCell.Tab.0.right" timestamp="1607359047786">
+    <state width="1876" height="539" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608070522324" />
+    <state width="1876" height="539" key="GridCell.Tab.0.right" timestamp="1608070522325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="239" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607359047786" />
+    <state width="1876" height="539" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608070522325" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1607264433049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

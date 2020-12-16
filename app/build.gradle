@@ -8,8 +8,9 @@ android {
         applicationId "belev.org.warface_app"
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 145
-        versionName "3.1.0"
+        versionCode 149
+        versionName "3.1.4"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -30,4 +31,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.gms:play-services-ads:19.6.0'
     implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
+
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    implementation 'com.android.billingclient:billing:3.0.2'
 }
