@@ -23,61 +23,18 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
 
 <font color=#e65d20>Additional information</font><br><br>
 
-- Current version: 3.0.0<br>
-- Developer: RB dev<br>
+- Current version: 3.2.1<br>
+- Developer: RB dev.<br>
 - Contact: ram219219@gmail.com]]>
 </string>
 
     <string name="start_text">
-<![CDATA[Fighters!<br><br>
-
-New update Warface is here! You will find a dangerous operation "Eclipse", 85th rank, weapons, and camouflage series "Anubis", two dozen achievements and more!
-
-<br><br><font color=#e65d20>New rank</font><br><br>
-
-In the game, the 85th rank — Colonel group "Messengers of death", the icon which depicts the Polish hussars. These brave war was a symbol of valor, honor and courage!
-
-<br><br><font color=#e65d20>New operation</font><br><br>
-
-Fighters Warface fall into a sand storm. Communication with headquarters is lost around in impenetrable darkness and hordes of zombies. Can the squad get out of this difficult situation? It all depends on you!
-
-<br><br><font color=#e65d20>Regional server</font><br><br>
-
-The game has a series of arms, "Anubis", which looks exactly the same as the camouflage colors of the same name, but is a full-fledged weapon, and not an element of customization. Characteristics of the weapon fully match the originals, so you will easily straightened with the enemy. In addition, for the destruction of enemies using these guns you are extraordinary achievements.<br><br>
-
-For PKP "Pecheneg" and its the gold version reduced the spread when firing while aiming and raise the "flick" of the barrel under normal shooting. These changes can already be tested in battle — the box luck with the "Pecheneg" is back in play store!<br><br>
-
-The MG3 machine gun damage increased to 68 (was 65), minimum damage to 45 (was 40) and reduced returns. <br><br>
-
-In the play store is back sniper rifle VSS "Vintorez" with altered characteristics. The weapons available to buy with Warbucks for a while or for credits forever. About changes the performance characteristics of this gun is you can learn from the news on last update.<br><br>
-
-To obtain this series from the special boxes good luck in the game store, and the first box is already available for purchase! About the appearance of other guns series "Anubis" will be announced later.<br><br>
-
-Also added weapon Camos series "Anubis" for MSBS Radon, Sidewinder Venom, Orsis T-5000, PP-2000 and the Walther P99. You can get them for the success of operation "Eclipse".
-
-<br><br><font color=#e65d20>Other changes</font><br><br>
-
-- Card black market. Now when you receive a card automatically issued the appropriate weapon for a period of 1 hour. Change boxes good luck with PP CZ Scorpion Evo 3 A1 rifle Bushmaster BA50.<br><br>
-
-- Clan battle. Reduced number of points for participating in clan battles, if the battle takes part from 5 to 8 members of the clan. The change is intended to reduce the number of match-fixing in the monthly Race clans and "profitability" of their conduct.<br><br>
-
-- PvE. The enemies under the control of artificial intelligence will now be more skillfully use the shelter and choose the emplacements on the hill. Innovation applies to enemies like "sniper" and "assault".<br><br>
-
-- PvP. Map "Residence" is added to the list of available maps for clan battles.<br><br>
-
-- PvP. Added "overtime" in the "Capture" mode. The "Quick game" functionality works by default, the standard rooms additional rounds can be enabled in the settings.<br><br>
-
-- Interface. Improved sorting of items in the game store. Now all the goods are divided into three types: "Available", "Not open provider" and "Already purchased", which makes orienteering more simple and clear.<br><br>
-
-- Resuscitation of the allies. If the energy in a defibrillator is not enough to return the fighter to life, the player will hear a corresponding sound alert when attempting resuscitation, and the action icon will change its appearance. Innovation does not apply to killing enemies with discharge current. <br><br>
-
-- The data processing system is improved, now the levels will load faster.<br><br>
-
-- Server. In some cases a server-side algorithms now work a bit faster.<br><br>
-
-- Achievements. For several legal reasons, slightly changed the appearance of achievements the "My choice — KillPretty" and "with KillPretty".
-]]>
-</string>
+   <![CDATA[
+        <font color=#e65d20>Hello! Donate the app!</font><br><br>
+        Warface Assistant is completely free and only supported by your donations.<br><br>
+        If you liked the application, donate it, it will motivate you to further improve it.
+    ]]>
+    </string>
 
     <string name="star_dialog">
     <![CDATA[
@@ -89,7 +46,7 @@ Also added weapon Camos series "Anubis" for MSBS Radon, Sidewinder Venom, Orsis 
     <string name="menu_about">ABOUT</string>
     <string name="menu_ranks">RANKS</string>
     <string name="menu_achievements">ACHIEVEMENTS</string>
-    <string name="menu_update">UPDATE</string>
+    <string name="menu_update">DONATE</string>
     <string name="menu_news">NEWS</string>
     <string name="menu_vloger">VLOGER</string>
     <string name="menu_locations">LOCATIONS</string>
