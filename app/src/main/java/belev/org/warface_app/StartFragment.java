@@ -33,8 +33,10 @@ public class StartFragment extends Fragment implements View.OnClickListener {
 
     public BillingClient billingClient;
     public MainActivity mainActivity;
-    public SkuDetails skuDetailsVipOne;
-    public SkuDetails skuDetailsVipTwo;
+    public SkuDetails skuDetailsLvlOne;
+    public SkuDetails skuDetailsLvlTwo;
+    public SkuDetails skuDetailsLvlThree;
+    public SkuDetails skuDetailsLvlFour;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -46,11 +48,17 @@ public class StartFragment extends Fragment implements View.OnClickListener {
 
         mainActivity = (MainActivity) getActivity();
 
-        Button buttonDonateVipOne = (Button) view.findViewById(R.id.button_donate_vip_one);
-        buttonDonateVipOne.setOnClickListener(this);
+        Button buttonDonateLvlOne = (Button) view.findViewById(R.id.button_donate_lvl_one);
+        buttonDonateLvlOne.setOnClickListener(this);
 
-        Button buttonDonateVipTwo = (Button) view.findViewById(R.id.button_donate_vip_two);
-        buttonDonateVipTwo.setOnClickListener(this);
+        Button buttonDonateLvlTwo = (Button) view.findViewById(R.id.button_donate_lvl_two);
+        buttonDonateLvlTwo.setOnClickListener(this);
+
+        Button buttonDonateLvlThree = (Button) view.findViewById(R.id.button_donate_lvl_three);
+        buttonDonateLvlThree.setOnClickListener(this);
+
+        Button buttonDonateLvlFour = (Button) view.findViewById(R.id.button_donate_lvl_four);
+        buttonDonateLvlFour.setOnClickListener(this);
 
         initBillingClient();
 
@@ -83,8 +91,10 @@ public class StartFragment extends Fragment implements View.OnClickListener {
                     System.out.println("Ok connect billing client -------------->");
 
                     List<String> skuList = new ArrayList<String>();
-                    skuList.add("premium_level_1");
-                    skuList.add("premium_level_2");
+                    skuList.add("donate_lvl_1");
+                    skuList.add("donate_lvl_2");
+                    skuList.add("donate_lvl_3");
+                    skuList.add("donate_lvl_4");
 
                     SkuDetailsParams.Builder params = SkuDetailsParams.newBuilder();
                     params.setSkusList(skuList).setType(BillingClient.SkuType.INAPP);
@@ -92,10 +102,10 @@ public class StartFragment extends Fragment implements View.OnClickListener {
                     billingClient.querySkuDetailsAsync(params.build(), new SkuDetailsResponseListener() {
                         @Override
                         public void onSkuDetailsResponse(@NonNull BillingResult billingResult, @Nullable List<SkuDetails> list) {
-                            System.out.println(list.get(0).getPrice());
-                            System.out.println(list.get(1).getPrice());
-                            skuDetailsVipOne = list.get(0);
-                            skuDetailsVipTwo = list.get(1);
+                            skuDetailsLvlOne = list.get(0);
+                            skuDetailsLvlTwo = list.get(1);
+                            skuDetailsLvlThree = list.get(2);
+                            skuDetailsLvlFour = list.get(3);
                         }
                     });
                 } else {
@@ -154,11 +164,17 @@ public class StartFragment extends Fragment implements View.OnClickListener {
         BillingFlowParams.Builder billingFlowParamsBuilder = BillingFlowParams.newBuilder();
 
         switch (view.getId()) {
-            case R.id.button_donate_vip_one:
-                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsVipOne).build();
+            case R.id.button_donate_lvl_one:
+                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlOne).build();
                 break;
-            case R.id.button_donate_vip_two:
-                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsVipTwo).build();
+            case R.id.button_donate_lvl_two:
+                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlTwo).build();
+                break;
+            case R.id.button_donate_lvl_three:
+                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlThree).build();
+                break;
+            case R.id.button_donate_lvl_four:
+                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlFour).build();
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + view.getId());

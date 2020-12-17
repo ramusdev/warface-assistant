@@ -29,33 +29,63 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true" />
 
-        <Button
-            android:id="@+id/button_donate_vip_one"
-            android:layout_marginTop="20dp"
-            android:textSize="16sp"
-            android:text="Донат vip 1"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@drawable/button_donate_background"
-            android:textColor="@color/gnt_white"
-            android:lines="1"
-            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/button_donate_lvl_one"
+                    android:textSize="15sp"
+                    android:text="Новобранец"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_donate_background_default"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/orange" />
+                <Button
+                    android:id="@+id/button_donate_lvl_two"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_donate_background_default"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Сержант"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/button_donate_vip_two"
-            android:layout_marginTop="20dp"
-            android:textSize="16sp"
-            android:text="Донат vip 2"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@drawable/button_donate_background"
-            android:textColor="@color/gnt_white"
-            android:lines="1"
-            android:gravity="center" />
-
-
-
-
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:layout_marginTop="15dp">
+            <Button
+                android:id="@+id/button_donate_lvl_three"
+                android:textSize="15sp"
+                android:text="Лейтенант"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_donate_background_default"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/orange" />
+            <Button
+                android:id="@+id/button_donate_lvl_four"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_donate_background_default"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Маршал"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+        </LinearLayout>
 
 
 

@@ -203,7 +203,7 @@
             android:id="@+id/cta"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/gnt_blue"
+            android:background="@drawable/button_donate_background"
             android:textColor="@color/gnt_white"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"

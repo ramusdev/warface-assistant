@@ -426,6 +426,7 @@ int color foreground_material_light 0x0
 int color gnt_ad_green 0x0
 int color gnt_black 0x0
 int color gnt_blue 0x0
+int color gnt_blue_pressed 0x0
 int color gnt_gray 0x0
 int color gnt_green 0x0
 int color gnt_outline 0x0
@@ -701,6 +702,7 @@ int drawable btn_radio_off_mtrl 0x0
 int drawable btn_radio_off_to_on_mtrl_animation 0x0
 int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
+int drawable button_donate_background 0x0
 int drawable gnt_outline_shape 0x0
 int drawable gnt_rounded_corners_shape 0x0
 int drawable notification_action_background 0x0

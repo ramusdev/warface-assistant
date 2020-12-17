@@ -427,6 +427,7 @@ color foreground_material_light
 color gnt_ad_green
 color gnt_black
 color gnt_blue
+color gnt_blue_pressed
 color gnt_gray
 color gnt_green
 color gnt_outline
@@ -702,6 +703,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_donate_background
 drawable gnt_outline_shape
 drawable gnt_rounded_corners_shape
 drawable notification_action_background
