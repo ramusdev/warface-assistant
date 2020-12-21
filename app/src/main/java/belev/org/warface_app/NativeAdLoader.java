@@ -8,6 +8,9 @@ import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
 
@@ -40,18 +43,32 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
 
     @Override
     protected Void doInBackground(Void... voids) {
-        boolean isThreadAlive;
+        // boolean isThreadAlive = true;
+        final AtomicBoolean isThreadAlive = new AtomicBoolean(true);
+
+        TimerTask timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                isThreadAlive.set(false);
+            }
+        };
+
+        Timer timer = new Timer();
+        timer.schedule(timerTask, 5000);
+
         do {
-            isThreadAlive = false;
+            // isThreadAlive = false;
+            isThreadAlive.set(false);
             for (int i = 0; i < numberAdsToLoad; ++i) {
                 boolean alive = nativeAdsList.get(i).getIsAlive();
                 if (alive) {
-                    isThreadAlive = true;
+                    // isThreadAlive = true;
+                    isThreadAlive.set(true);
                 }
             }
-            System.out.println("Load iteration --------------------------------------------->");
-        } while (isThreadAlive);
+        } while (isThreadAlive.get());
 
+        timer.cancel();
         return null;
     }
 
