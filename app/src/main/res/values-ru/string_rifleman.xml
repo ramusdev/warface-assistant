@@ -118,6 +118,8 @@
     </array>
 
     <string-array name="rifleman_kred_name">
+    	<item>H&#38;K MG5 121</item>
+    	<item>АН-94 Абакан</item>
     	<item>HArms CQR</item>
     	<item>M240B</item>
     	<item>Stoner LMG A1</item>
@@ -136,6 +138,8 @@
     	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
+    	<item>Навсегда</item>
+    	<item>Навсегда</item>
         <item>Навсегда</item>
         <item>Навсегда</item>
         <item>Навсегда</item>
@@ -146,6 +150,8 @@
         <item>Навсегда</item>
     </string-array>
     <string-array name="rifleman_kred_about">
+    	<item>Немецкий единый пулемёт от компании «Heckler and Koch», также известный под названием HandK MG5.</item>
+    	<item>Легендарный автомат, который позволяет вести огонь отсечками по два выстрела без отдачи между ними, что обеспечивает очень высокую точность стрельбы. </item>
     	<item>Лёгкая винтовка с отличной эргономикой, разработанная в Германии на основе платформы AR-15.</item>
     	<item>Стандартный средний пулемет, который ранее находился на вооружении армии США, а ныне используется американской морской пехотой.</item>
     	<item>Лёгкий штурмовой пулемёт компании Knights Armament - это система лёгких пулеметов, разработанная Юджином Стоунером и произведённая компанией Knights Armament Company.</item>
@@ -160,6 +166,8 @@
         <item>Модифицированный вариант винтовки AUG A3 с утяжеленным стволом, применяемый в качестве ручного пулемета</item>
     </string-array>
     <array name="rifleman_kred_link">
+    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_handkmg5121.html</item>
+    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_ah94abakan.html</item>
     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_harmscqr.html</item>
     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m240b.html</item>
     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_stonerlmga1.html</item>
@@ -174,6 +182,8 @@
         <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_auga3hbar.html</item>
     </array>
     <array name="rifleman_kred_icon">
+    	<item>@drawable/rifleman_handkmg5121</item>
+    	<item>@drawable/rifleman_ah94abakan</item>
     	<item>@drawable/rifleman_harmscqr</item>
     	<item>@drawable/rifleman_m240b</item>
     	<item>@drawable/rifleman_stonerlmga1</item>

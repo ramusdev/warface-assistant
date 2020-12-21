@@ -5,7 +5,7 @@
         <item>Blackwood</item>
         <item>Гидра</item>
         <item>Марс</item>
-    	<item>Восход</item>
+    	  <item>Восход</item>
         <item>Припять</item>
         <item>Затмение</item>
         <item>Ледокол</item>
@@ -22,7 +22,7 @@
         <item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
-    	<item>Спецоперация</item>
+    	  <item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
@@ -175,6 +175,7 @@
 </array>
 
 <array name="komanda_name">
+  <item>Туннель</item>
     <item>Шапито</item>
     <item>Район №4</item>
     <item>Стоянка</item>
@@ -192,6 +193,7 @@
     <item>Квартал</item>
 </array>
 <string-array name="komanda_type">
+  <item>Командный бой</item>
     <item>Командный бой</item>
     <item>Командный бой</item>
     <item>Командный бой</item>
@@ -209,8 +211,9 @@
     <item>Командный бой</item>
 </string-array>  
 <string-array name="komanda_about">
-    <item>Привычная «Нефтебаза» на время праздника превратится в разбитый лагерь цирковой труппы.</item>
-    <item>Карта «Район №4» для режима «Командный бой», действие которой разворачивается в одном из самых атмосферных заброшенных городов на планете. </item>
+    <item>Карта Туннель для режима Командный бой в новом сеттинге по мотивам спецоперации Рой</item>
+    <item>Привычная Нефтебаза на время праздника превратится в разбитый лагерь цирковой труппы</item>
+    <item>Карта Район №4 для режима Командный бой, действие которой разворачивается в одном из самых атмосферных заброшенных городов на планете </item>
     <item>Cражение в условиях типичной американской пригородной застройки</item>
     <item>Нефтеперерабатывающий комплекс, с резервуарами для нефти</item>
     <item>Cовременный терминал крупного аэропорта</item>
@@ -226,6 +229,7 @@
     <item>Представляет собой сражение на территории жилого сектора одного провинциального городка Невады</item>
 </string-array>
 <array name="komanda_link">
+    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_tunel.html</item>
     <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_shapito.html</item>
     <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_rayen.html</item>
     <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_stoyanka.html</item>
@@ -243,6 +247,7 @@
     <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_kvartal.html</item>
 </array>
 <array name="komanda_icon">
+    <item>@drawable/komanda_tunel_logo</item>
     <item>@drawable/komanda_shapito_logo</item>
     <item>@drawable/rayen_logo</item>
     <item>@drawable/stoyanka_logo</item>
@@ -420,26 +425,31 @@
 </array>
 
 <string-array name="vizivan_name">
+   <item>Город призрак</item>
    <item>Сибирь</item>
    <item>Пустыня</item>
    <item>Африка</item>
 </string-array>
 <string-array name="vizivan_type">
    <item>Выживание</item>
+   <item>Выживание</item>
    <item>Выживание</item>         
    <item>Выживание</item>
 </string-array>
 <string-array name="vizivan_about">
+   <item>В штаб Warface поступила информация, что несмотря на потерю главной башни с сейсмическим буром, силы Blackwood сохранили присутствие в зоне отчуждения.</item>
    <item>События на карте Сибирь для режима Выживание представляет собой базу противника, которая находится в Сибири</item>
    <item>Карта представляет собой территорию военной базы, построенной с заброшенным мотелем в пустыне Мохаве</item>         
    <item>События на карте Африка для режима Выживание разворачиваются, как не трудно догадаться, в африканском регионе</item>
 </string-array>
 <array name="vizivan_link">
+   <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_gorodprizrak.html</item>
    <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_sibir.html</item>
    <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_pustina.html</item>
    <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_afrika.html</item>
 </array>
 <array name="vizivan_icon">
+  <item>@drawable/vizivan_gorodprizrak_logo</item>
   <item>@drawable/sibir_logo</item>
   <item>@drawable/pustina_logo</item>  
   <item>@drawable/afrika_logo</item>

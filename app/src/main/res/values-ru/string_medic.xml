@@ -93,6 +93,7 @@
 </array>
 
 <string-array name="medic_kred_name">
+    <item>Benelli M4 Custom</item>
     <item>Tavor TS12 Custom</item>
     <item>Сайга Spike</item>
     <item>Kel-Tec KS7</item>
@@ -121,8 +122,10 @@
     <item>Навсегда</item>
     <item>Навсегда</item>
     <item>Навсегда</item>
+    <item>Навсегда</item>
 </string-array>
 <string-array name="medic_kred_about">
+    <item>Гладкоствольное полуавтоматическое ружье, созданное итальянской фирмой Benelli Armi SpA.</item>
     <item>Израильское ружье 12-го калибра c вместительным трубчатым магазином, выполненное по схеме «булл-пап».</item>
     <item>Модифицированная версия «Сайги» в компоновке булл-пап. Ружьё производит компания Center Balanced Systems. </item>
     <item>Новое помповое ружье в компоновке булл-пап, разработанное американской компанией Kel-Tec.</item>
@@ -138,6 +141,7 @@
     <item>Боевое ружье 12-го калибра револьверного типа, разработанное в ЮАР Хилтоном Уокером в начале 80-х годов.</item>
 </string-array>
 <array name="medic_kred_link">
+    <item>https://edgenews.ru/android/wardocwarface/weapons/ru/medic_benellim4custom.html</item>
     <item>https://edgenews.ru/android/wardocwarface/weapons/ru/medic_tavorts12custom.html</item>
     <item>https://edgenews.ru/android/wardocwarface/weapons/ru/medic_saygaspike.html</item>
     <item>https://edgenews.ru/android/wardocwarface/weapons/ru/medic_keltecks7.html</item>
@@ -153,6 +157,7 @@
     <item>https://edgenews.ru/android/wardocwarface/weapons/ru/medic_cobraystriker.html</item>
 </array>
 <array name="medic_kred_icon">
+    <item>@drawable/medic_benellim4custom</item>
     <item>@drawable/medic_tavorts12custom</item>
     <item>@drawable/medic_saygaspike</item>
     <item>@drawable/medic_keltecks7</item>

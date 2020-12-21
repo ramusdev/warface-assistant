@@ -98,6 +98,7 @@
     </array>
 
     <string-array name="sniper_kred_name">
+        <item>ДВЛ-10 М2</item>
         <item>Truvelo CMS 20x42 mm</item>
         <item>CDX-MC Kraken</item>
         <item>Remington MSR</item>
@@ -110,12 +111,14 @@
         <item>Навсегда</item>
         <item>Навсегда</item>
         <item>Навсегда</item>
+        <item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
     	<item>Навсегда</item>
     </string-array>
     <string-array name="sniper_kred_about">
+        <item>Тактическая снайперская винтовка компании Lobaev Arms под кодовым названием «Урбана». Является модификацией ДВЛ-10, специализированной для ведения боёв в городе.</item>
         <item>Антиматериальная снайперская винтовка, предназначенная для уничтожения живой силы, легкой техники и электронных систем противника.</item>
         <item>Мультикалиберный карабин с продольно-скользящим затвором, который производится компанией Cadex Defence</item>
         <item>Снайперская винтовка MSR была разработана холдингом Remington Arms по заказу U.S Special Operations Command</item>
@@ -125,6 +128,7 @@
     	<item>Американская снайперская винтовка с продольно-скользящим поворотным затвором, предназначенная для поражения живой силы противника</item>
     </string-array>
     <array name="sniper_kred_link">
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_dvl10m2.html</item>
         <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_truvelocms2042mm.html</item>
         <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_cdxmckraken.html</item>
         <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_remingtonmsr.html</item>
@@ -134,6 +138,7 @@
     	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_cheytacm200.html</item>
     </array>
     <array name="sniper_kred_icon">
+        <item>@drawable/sniper_dvl10m2</item>
         <item>@drawable/sniper_truvelocms2042mm</item>
         <item>@drawable/sniper_cdxmckraken</item>
         <item>@drawable/sniper_remingtonmsr</item>
