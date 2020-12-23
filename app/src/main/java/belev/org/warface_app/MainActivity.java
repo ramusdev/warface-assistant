@@ -1,9 +1,7 @@
 package belev.org.warface_app;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -29,7 +27,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
-import belev.org.warface_app.data.DataContract;
 import belev.org.warface_app.data.DataDbHelper;
 
 import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
@@ -64,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Open connection to db
         dbHelper = new DataDbHelper(this);
 
         // Init fragment
@@ -327,35 +325,55 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        fillDatabase();
-    }
 
-    private void fillDatabase() {
-        SQLiteDatabase sqLiteDatabase =  dbHelper.getWritableDatabase();
+        // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(dbHelper);
+        // updateNewsAsync.execute();
+
+        // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(dbHelper);
+        // clearNewsAsync.execute();
+
 
         /*
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(DataContract.NewsEntry.COLUMN_TITLE, "Warface новый сезон");
-        contentValues.put(DataContract.NewsEntry.COLUMN_DATE, "20.12.2020");
-        contentValues.put(DataContract.NewsEntry.COLUMN_IMAGE, "https://ru.warface.com/image");
-        contentValues.put(DataContract.NewsEntry.COLUMN_LINK, "https://ru.warface.com/link");
-        contentValues.put(DataContract.NewsEntry.COLUMN_PREVIEWTEXT, "Текст на превью");
-        contentValues.put(DataContract.NewsEntry.COLUMN_TEXT, "Текст полный");
-        contentValues.put(DataContract.NewsEntry.COLUMN_NOTIFIED, 1);
+        SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
+
+        News newsOne = new News();
+        newsOne.setText("Text");
+        newsOne.setPreviewText("Preview text");
+        newsOne.setDate("Preview text");
+        newsOne.setLink("Link");
+        newsOne.setImage("Image");
+        newsOne.setTitle("Title 1");
+
+        NewsValuesAdapter newsValuesAdapterOne = new NewsValuesAdapter(newsOne);
+        ContentValues contentValuesOne = newsValuesAdapterOne.convert();
+
+        String selection = DataContract.NewsEntry.COLUMN_TITLE + " = ?";
+        String[] selectionArgs = { "Title 10" };
+        Cursor cursor = sqLiteDatabase.query(DataContract.NewsEntry.TABLE_NAME,
+                null,
+                selection,
+                selectionArgs,
+                null,
+                null,
+                null
+        );
+
+        if (cursor.moveToNext()) {
+            Log.e("CustomLogTag", "Move to next");
+        }
+
+        while (cursor.moveToNext()) {
+            String currentTitle = cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_TITLE));
+            System.out.println("---------------------------------------->");
+            System.out.println(currentTitle);
+            Log.e("CustomLogTag", currentTitle);
+        }
+        cursor.close();
+
+        Log.e("CustomLogTag", "After close cursor");
+
+        long newRowId = sqLiteDatabase.insert(DataContract.NewsEntry.TABLE_NAME, null, contentValuesOne);
         */
-
-        News news = new News();
-        news.setTitle("Some title");
-        news.setDate("This is date");
-        news.setImage("Link image");
-        news.setLink("Link");
-        news.setPreviewText("This is preview text");
-        news.setText("Text information");
-
-        NewsValuesAdapter newValuesAdapter = new NewsValuesAdapter(news);
-        ContentValues contentValues = newValuesAdapter.convert();
-
-        long newRowId = sqLiteDatabase.insert(DataContract.NewsEntry.TABLE_NAME, null, contentValues);
     }
 
     public boolean isOnline() {

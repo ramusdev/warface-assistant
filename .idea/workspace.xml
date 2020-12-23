@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="info" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="CustomLogTag" />
+        <option name="name" value="CustomLogTag" />
+        <option name="packageNamePattern" value="" />
+      </filter>
+    </filters>
+  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="CustomLogTag" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d1a416e-4bba-4687-a767-91ce27462ad4" name="Default Changelist" comment="" />
@@ -16,7 +45,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_4_XL_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -27,7 +56,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Android" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -63,11 +97,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-viewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_SELECTED" value="TemplateView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../" />
     <property name="multi-representation-previewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_selected" value="Custom views" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="belev.org.warface_app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Android\app\src\main\res\drawable" />
       <recent name="D:\Android\nativetemplates\src\main\res\drawable" />
@@ -153,11 +190,27 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1608635718925">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1608731939220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608635718925" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608731939220" />
+    <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608753623815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608753623815" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608143801805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -170,26 +223,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="795" y="292" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608032578934" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1607368558228">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1608754824866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607368558228" />
-    <state width="1876" height="538" key="GridCell.Tab.0.bottom" timestamp="1608677168896">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608754824866" />
+    <state width="1876" height="538" key="GridCell.Tab.0.bottom" timestamp="1608754295166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608677168896" />
-    <state width="1876" height="538" key="GridCell.Tab.0.center" timestamp="1608677168896">
+    <state width="1876" height="538" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608754295166" />
+    <state width="1876" height="538" key="GridCell.Tab.0.center" timestamp="1608754295166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608677168896" />
-    <state width="1876" height="538" key="GridCell.Tab.0.left" timestamp="1608677168896">
+    <state width="1876" height="538" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608754295166" />
+    <state width="1876" height="538" key="GridCell.Tab.0.left" timestamp="1608754295166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608677168896" />
-    <state width="1876" height="538" key="GridCell.Tab.0.right" timestamp="1608677168896">
+    <state width="1876" height="538" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608754295166" />
+    <state width="1876" height="538" key="GridCell.Tab.0.right" timestamp="1608754295166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608677168896" />
+    <state width="1876" height="538" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608754295166" />
+    <state x="576" y="463" key="edit.logcat.filter.dialog.dimensions" timestamp="1608742825108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="576" y="463" key="edit.logcat.filter.dialog.dimensions/0.0.1920.1040@0.0.1920.1040" timestamp="1608742825108" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1607264433049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
