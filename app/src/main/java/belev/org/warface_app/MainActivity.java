@@ -1,7 +1,9 @@
 package belev.org.warface_app;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -11,9 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
@@ -26,10 +26,11 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
+import belev.org.warface_app.data.DataContract;
+import belev.org.warface_app.data.DataDbHelper;
 
 import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
 import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private AdLoader adLoader;
     public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
     public List<NewsModel> newsList = new ArrayList<NewsModel>();
+    private DataDbHelper dbHelper;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -61,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
+
+        dbHelper = new DataDbHelper(this);
 
         // Init fragment
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -320,6 +324,40 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        fillDatabase();
+    }
+
+    private void fillDatabase() {
+        SQLiteDatabase sqLiteDatabase =  dbHelper.getWritableDatabase();
+
+        /*
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DataContract.NewsEntry.COLUMN_TITLE, "Warface новый сезон");
+        contentValues.put(DataContract.NewsEntry.COLUMN_DATE, "20.12.2020");
+        contentValues.put(DataContract.NewsEntry.COLUMN_IMAGE, "https://ru.warface.com/image");
+        contentValues.put(DataContract.NewsEntry.COLUMN_LINK, "https://ru.warface.com/link");
+        contentValues.put(DataContract.NewsEntry.COLUMN_PREVIEWTEXT, "Текст на превью");
+        contentValues.put(DataContract.NewsEntry.COLUMN_TEXT, "Текст полный");
+        contentValues.put(DataContract.NewsEntry.COLUMN_NOTIFIED, 1);
+        */
+
+        News news = new News();
+        news.setTitle("Some title");
+        news.setDate("This is date");
+        news.setImage("Link image");
+        news.setLink("Link");
+        news.setPreviewText("This is preview text");
+        news.setText("Text information");
+
+        NewsValuesAdapter newValuesAdapter = new NewsValuesAdapter(news);
+        ContentValues contentValues = newValuesAdapter.convert();
+
+        long newRowId = sqLiteDatabase.insert(DataContract.NewsEntry.TABLE_NAME, null, contentValues);
+    }
+
     public boolean isOnline() {
         ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
@@ -327,6 +365,12 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    @Override
+    protected void onDestroy() {
+        dbHelper.close();
+        super.onDestroy();
     }
 
     @Override
