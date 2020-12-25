@@ -17,37 +17,32 @@ import java.util.List;
 public class NewsAdapter extends BaseAdapter {
 
     Context context;
-    List<NewsModel> rowItem;
-    //public static int[] layout_arr = { R.layout.achivment_item2, R.layout.achivment_item, R.layout.achivment_item };
+    List<News> rowItem;
 
-    NewsAdapter(Context context, List<NewsModel> rowItem) {
+    NewsAdapter(Context context, List<News> rowItem) {
         this.context = context;
         this.rowItem = rowItem;
-
     }
 
     @Override
     public int getCount() {
-
         return rowItem.size();
     }
 
     @Override
     public Object getItem(int position) {
-
         return rowItem.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-
         return rowItem.indexOf(getItem(position));
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        NewsModel currentNews = rowItem.get(position);
+        News currentNews = rowItem.get(position);
 
         if (convertView == null) {
             LayoutInflater mInflater = (LayoutInflater) context
@@ -65,8 +60,8 @@ public class NewsAdapter extends BaseAdapter {
         if(currentNews != null) {
             ViewHolder holder = (ViewHolder)convertView.getTag();
             holder.titleView.setText(currentNews.getTitle());
-            holder.descriptionView.setText(Html.fromHtml(currentNews.getDescription()));
-            holder.pubdateView.setText(currentNews.getPubdate());
+            holder.descriptionView.setText(Html.fromHtml(currentNews.getTitle()));
+            holder.pubdateView.setText(currentNews.getDate());
             //holder.iconView.setImageDrawable(currentMaps.getIconID());
             Glide.with(context).load(currentNews.getImage()).dontTransform().into(holder.imageView);
         }

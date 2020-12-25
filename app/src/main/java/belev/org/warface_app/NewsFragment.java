@@ -1,7 +1,10 @@
 package belev.org.warface_app;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,12 +14,16 @@ import java.util.ArrayList;
 import java.util.List;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.ListFragment;
+import belev.org.warface_app.data.DataContract;
+
+import static android.content.ContentValues.TAG;
 
 public class NewsFragment extends ListFragment {
     public static final String URL_TO_HIT = "https://edgenews.ru/android/wardocwarface/news/news.json";
     android.widget.Adapter adapter;
     public static final String BUNDLE_TEXT = "bundle_text";
-    public List<NewsModel> newsModelList = new ArrayList<>();
+    // public List<NewsModel> newsModelList = new ArrayList<>();
+    public List<News> newsArray = new ArrayList<News>();
     MainActivity mainActivity;
     boolean isLoadedAd;
 
@@ -34,7 +41,45 @@ public class NewsFragment extends ListFragment {
         nativeAdPopulationSync.mainActivity = mainActivity;
         isLoadedAd = nativeAdPopulationSync.execute();
 
+        // Load news
+        loadNews();
+
         return view;
+    }
+
+    public void loadNews() {
+        SQLiteDatabase sqLiteDatabase = mainActivity.dbHelper.getReadableDatabase();
+
+        String selection = DataContract.NewsEntry.COLUMN_TITLE + " = ?";
+        String[] selectionArgs = { "Title 10" };
+        Cursor cursor = sqLiteDatabase.query(DataContract.NewsEntry.TABLE_NAME,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        while (cursor.moveToNext()) {
+            News news = new News();
+
+            news.setTitle(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_TITLE)));
+            news.setPreviewText(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_PREVIEWTEXT)));
+            news.setText(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_TEXT)));
+            news.setLink(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_LINK)));
+            news.setImage(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_IMAGE)));
+            news.setDate(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_DATE)));
+
+            newsArray.add(news);
+        }
+
+        cursor.close();
+
+        for (News news : newsArray) {
+            Log.e("CustomLogTag", news.getTitle());
+        }
+
     }
 
     @Override
@@ -59,8 +104,8 @@ public class NewsFragment extends ListFragment {
 
         TaskInterface task = new TaskInterface() {
             @Override
-            public void makeTask(List<NewsModel> newsList) {
-                adapter = new NewsAdapter(getActivity(), newsList);
+            public void makeTask(List<News> newsArray) {
+                adapter = new NewsAdapter(getActivity(), newsArray);
                 setListAdapter((ListAdapter) adapter);
             }
         };
@@ -71,7 +116,7 @@ public class NewsFragment extends ListFragment {
         } else {
             // adapter = new NewsAdapter(getActivity(), newsList);
             // setListAdapter((ListAdapter) adapter);
-            task.makeTask(mainActivity.newsList);
+            task.makeTask(newsArray);
         }
     }
 
@@ -85,6 +130,6 @@ public class NewsFragment extends ListFragment {
     }
 
     interface TaskInterface {
-        void makeTask(List<NewsModel> newsList);
+        void makeTask(List<News> newsList);
     }
 }

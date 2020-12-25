@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private AdLoader adLoader;
     public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
     public List<NewsModel> newsList = new ArrayList<NewsModel>();
-    private DataDbHelper dbHelper;
+    public DataDbHelper dbHelper;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -331,49 +331,6 @@ public class MainActivity extends AppCompatActivity {
 
         // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(dbHelper);
         // clearNewsAsync.execute();
-
-
-        /*
-        SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
-
-        News newsOne = new News();
-        newsOne.setText("Text");
-        newsOne.setPreviewText("Preview text");
-        newsOne.setDate("Preview text");
-        newsOne.setLink("Link");
-        newsOne.setImage("Image");
-        newsOne.setTitle("Title 1");
-
-        NewsValuesAdapter newsValuesAdapterOne = new NewsValuesAdapter(newsOne);
-        ContentValues contentValuesOne = newsValuesAdapterOne.convert();
-
-        String selection = DataContract.NewsEntry.COLUMN_TITLE + " = ?";
-        String[] selectionArgs = { "Title 10" };
-        Cursor cursor = sqLiteDatabase.query(DataContract.NewsEntry.TABLE_NAME,
-                null,
-                selection,
-                selectionArgs,
-                null,
-                null,
-                null
-        );
-
-        if (cursor.moveToNext()) {
-            Log.e("CustomLogTag", "Move to next");
-        }
-
-        while (cursor.moveToNext()) {
-            String currentTitle = cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_TITLE));
-            System.out.println("---------------------------------------->");
-            System.out.println(currentTitle);
-            Log.e("CustomLogTag", currentTitle);
-        }
-        cursor.close();
-
-        Log.e("CustomLogTag", "After close cursor");
-
-        long newRowId = sqLiteDatabase.insert(DataContract.NewsEntry.TABLE_NAME, null, contentValuesOne);
-        */
     }
 
     public boolean isOnline() {

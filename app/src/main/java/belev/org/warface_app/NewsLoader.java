@@ -90,7 +90,7 @@ public class NewsLoader extends AsyncTask<Void, Void, List<NewsModel>> {
     }
 
     @Override
-    protected void onPostExecute(final List<NewsModel> result) {
+    protected void onPostExecute(final List<News> result) {
         super.onPostExecute(result);
         mainActivity.newsList = result;
 
