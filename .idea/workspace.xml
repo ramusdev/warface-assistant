@@ -105,6 +105,8 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Properties" />
+    <option name="BUILD_VARIANTS_TAB" value="Build Types" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
@@ -209,10 +211,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="477" y="266" key="#PSD" timestamp="1608915958971">
+    <state x="427" y="265" key="#PSD" timestamp="1608916851418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="477" y="266" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1608915958971" />
+    <state x="427" y="265" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1608916851418" />
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1608731939220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,26 +239,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608754824866" />
-    <state width="1876" height="538" key="GridCell.Tab.0.bottom" timestamp="1608916031620">
+    <state width="1876" height="538" key="GridCell.Tab.0.bottom" timestamp="1608919366595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608916031620" />
-    <state width="1876" height="538" key="GridCell.Tab.0.center" timestamp="1608916031620">
+    <state width="1876" height="538" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608919366595" />
+    <state width="1876" height="538" key="GridCell.Tab.0.center" timestamp="1608919366595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608916031620" />
-    <state width="1876" height="538" key="GridCell.Tab.0.left" timestamp="1608916031619">
+    <state width="1876" height="538" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608919366595" />
+    <state width="1876" height="538" key="GridCell.Tab.0.left" timestamp="1608919366595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608916031619" />
-    <state width="1876" height="538" key="GridCell.Tab.0.right" timestamp="1608916031620">
+    <state width="1876" height="538" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608919366595" />
+    <state width="1876" height="538" key="GridCell.Tab.0.right" timestamp="1608919366595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608916031620" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1608915884016">
+    <state width="1876" height="538" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608919366595" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1608916637656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608915884016" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608916637656" />
     <state x="576" y="463" key="edit.logcat.filter.dialog.dimensions" timestamp="1608761170200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
