@@ -19,8 +19,8 @@ public class SplashFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_splash, container, false);
         final MainActivity mainActivity = (MainActivity) getActivity();
 
-        NewsLoader newsLoader = new NewsLoader(mainActivity);
-        newsLoader.execute();
+        // NewsLoader newsLoader = new NewsLoader(mainActivity);
+        // newsLoader.execute();
 
         final AfterLoadFunction afterLoadFunction = new AfterLoadFunction() {
             @Override

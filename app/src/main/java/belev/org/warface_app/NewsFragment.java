@@ -102,6 +102,10 @@ public class NewsFragment extends ListFragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        adapter = new NewsAdapter(getActivity(), newsArray);
+        setListAdapter((ListAdapter) adapter);
+
+        /*
         TaskInterface task = new TaskInterface() {
             @Override
             public void makeTask(List<News> newsArray) {
@@ -118,18 +122,17 @@ public class NewsFragment extends ListFragment {
             // setListAdapter((ListAdapter) adapter);
             task.makeTask(newsArray);
         }
+        */
     }
 
     @Override
     public void onDestroy() {
-        // if (nativeAd != null) {
-            // nativeAd.destroy();
-        // }
         super.onDestroy();
-        // disposable.dispose();
     }
 
+    /*
     interface TaskInterface {
         void makeTask(List<News> newsList);
     }
+    */
 }

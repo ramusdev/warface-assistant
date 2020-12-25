@@ -60,7 +60,7 @@ public class NewsAdapter extends BaseAdapter {
         if(currentNews != null) {
             ViewHolder holder = (ViewHolder)convertView.getTag();
             holder.titleView.setText(currentNews.getTitle());
-            holder.descriptionView.setText(Html.fromHtml(currentNews.getTitle()));
+            holder.descriptionView.setText(currentNews.getPreviewText());
             holder.pubdateView.setText(currentNews.getDate());
             //holder.iconView.setImageDrawable(currentMaps.getIconID());
             Glide.with(context).load(currentNews.getImage()).dontTransform().into(holder.imageView);
