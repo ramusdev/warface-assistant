@@ -39,8 +39,7 @@ public class News {
     }
 
     public void setDate(String date) {
-        String formattedDate = setDateHelper(date);
-        this.date = formattedDate;
+        this.date = date;
     }
 
     public void setLink(String link) {
@@ -75,9 +74,9 @@ public class News {
         return image;
     }
 
-    public String setDateHelper(String stringDate) {
+    public String getDateFormated() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
-        LocalDate dateTime = LocalDate.parse(stringDate, formatter);
+        LocalDate dateTime = LocalDate.parse(date, formatter);
 
         Locale locale = new Locale("ru");
         DateTimeFormatter formatterTo = DateTimeFormatter.ofPattern("dd MMMM yyyy", locale);
