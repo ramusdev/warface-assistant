@@ -1,5 +1,9 @@
 package belev.org.warface_app;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+
 public class News {
 
     private String title;
@@ -35,7 +39,8 @@ public class News {
     }
 
     public void setDate(String date) {
-        this.date = date;
+        String formattedDate = setDateHelper(date);
+        this.date = formattedDate;
     }
 
     public void setLink(String link) {
@@ -68,6 +73,17 @@ public class News {
 
     public String getImage() {
         return image;
+    }
+
+    public String setDateHelper(String stringDate) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
+        LocalDate dateTime = LocalDate.parse(stringDate, formatter);
+
+        Locale locale = new Locale("ru");
+        DateTimeFormatter formatterTo = DateTimeFormatter.ofPattern("dd MMMM yyyy", locale);
+        String dateTo = dateTime.format(formatterTo);
+
+        return dateTo;
     }
 
     @Override

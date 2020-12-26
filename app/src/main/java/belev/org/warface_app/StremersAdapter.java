@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import java.util.List;
 
+import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
+
 public class StremersAdapter extends BaseAdapter {
 
     Context context;
@@ -65,7 +67,12 @@ public class StremersAdapter extends BaseAdapter {
             holder.descriptionView.setText(Html.fromHtml(currentNews.getDescription()));
             holder.pubdateView.setText(currentNews.getPubdate());
             //holder.iconView.setImageDrawable(currentMaps.getIconID());
-            Glide.with(context).load(currentNews.getImage()).dontTransform().into(holder.imageView);
+
+            Glide.with(context)
+                    .load(currentNews.getImage())
+                    .dontTransform()
+                    .transition(withCrossFade())
+                    .into(holder.imageView);
         }
 
         return convertView;

@@ -58,7 +58,7 @@ public class SniperFragment extends ListFragment {
         View spaceView = new View(getContext());
         mainActivity = (MainActivity) getActivity();
 
-        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(3);
+        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(0);
         nativeAdPopulationSync.view = view;
         nativeAdPopulationSync.spaceView = spaceView;
         nativeAdPopulationSync.listView = listView;

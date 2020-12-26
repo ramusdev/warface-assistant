@@ -43,7 +43,6 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
 
     @Override
     protected Void doInBackground(Void... voids) {
-        // boolean isThreadAlive = true;
         final AtomicBoolean isThreadAlive = new AtomicBoolean(true);
 
         TimerTask timerTask = new TimerTask() {
@@ -54,7 +53,7 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
         };
 
         Timer timer = new Timer();
-        timer.schedule(timerTask, 5000);
+        timer.schedule(timerTask, 4000);
 
         do {
             // isThreadAlive = false;

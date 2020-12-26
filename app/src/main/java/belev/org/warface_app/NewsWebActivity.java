@@ -40,12 +40,13 @@ public class NewsWebActivity extends AppCompatActivity {
             window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
         }
 
-        Intent intent = getIntent();
-        String text = intent.getStringExtra("BUNDLE_TEXT");
+        String textBeforeClean = getIntent().getStringExtra("BUNDLE_TEXT");
+        StringBuilder stringBuilder = new StringBuilder(textBeforeClean);
+        String style = "<link type=\"text/css\" rel=\"stylesheet\" media=\"all\" href=\"https://edgenews.ru/android/wardocwarface/news/style.css\" />";
+        stringBuilder.insert(19, style);
+        String text = stringBuilder.toString();
 
-        //Bundle bundle = getIntent().getExtras();
-        //String json = bundle.getString("BUNDLE_TEXT");
-        //NewsModel movieModel = new Gson().fromJson(json, NewsModel.class);
+
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

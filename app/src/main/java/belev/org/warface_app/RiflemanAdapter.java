@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import java.util.List;
 
+import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
+
 public class RiflemanAdapter extends BaseAdapter {
 
     Context context;
@@ -61,7 +63,12 @@ public class RiflemanAdapter extends BaseAdapter {
 	        holder.aboutView.setText(Html.fromHtml(currentMaps.getAbout()));
             holder.typeView.setText(currentMaps.getType());
 	        //holder.iconView.setImageDrawable(currentMaps.getIconID());
-            Glide.with(context).load(currentMaps.getThumbnail()).dontTransform().into(holder.iconView);
+
+            Glide.with(context)
+                    .load(currentMaps.getThumbnail())
+                    .dontTransform()
+                    .transition(withCrossFade())
+                    .into(holder.iconView);
 	    }
         return convertView;
     }

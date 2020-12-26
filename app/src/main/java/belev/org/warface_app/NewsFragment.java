@@ -76,9 +76,11 @@ public class NewsFragment extends ListFragment {
 
         cursor.close();
 
+        /*
         for (News news : newsArray) {
             Log.e("CustomLogTag", news.getTitle());
         }
+        */
 
     }
 
@@ -89,7 +91,7 @@ public class NewsFragment extends ListFragment {
         int positionShift = isLoadedAd ? position - 2 : position - 1;
         if (mainActivity.isOnline()) {
             Intent myIntent = new Intent(getActivity(), NewsWebActivity.class);
-            NewsModel currentNews = mainActivity.newsList.get(positionShift);
+            News currentNews = newsArray.get(positionShift);
             myIntent.putExtra("BUNDLE_TEXT", currentNews.getText());
             getActivity().startActivity(myIntent);
         } else {

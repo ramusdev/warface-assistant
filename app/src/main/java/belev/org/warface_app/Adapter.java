@@ -14,6 +14,8 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
+
 public class Adapter extends BaseAdapter {
 
     Context context;
@@ -70,7 +72,12 @@ public class Adapter extends BaseAdapter {
             //Glide.with(context).load("").asBitmap(currentAchivment.getIconID()).into(holder.iconView);
             //override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
             //dontTransform()
-            Glide.with(context).load(currentAchivment.getThumbnail()).dontTransform().into(holder.iconView);
+
+            Glide.with(context)
+                    .load(currentAchivment.getThumbnail())
+                    .dontTransform()
+                    .transition(withCrossFade())
+                    .into(holder.iconView);
 	    }
 
         return convertView;

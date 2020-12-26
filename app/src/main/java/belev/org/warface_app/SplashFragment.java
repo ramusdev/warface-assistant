@@ -39,7 +39,7 @@ public class SplashFragment extends Fragment {
             }
         };
 
-        NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 4, afterLoadFunction);
+        NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 1, afterLoadFunction);
         nativeAdLoader.loadAds();
         nativeAdLoader.execute();
 

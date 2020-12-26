@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
 
 import com.bumptech.glide.Glide;
 
@@ -63,7 +64,11 @@ public class NewsAdapter extends BaseAdapter {
             holder.descriptionView.setText(currentNews.getPreviewText());
             holder.pubdateView.setText(currentNews.getDate());
             //holder.iconView.setImageDrawable(currentMaps.getIconID());
-            Glide.with(context).load(currentNews.getImage()).dontTransform().into(holder.imageView);
+            Glide.with(context)
+                    .load(currentNews.getImage())
+                    .dontTransform()
+                    .transition(withCrossFade())
+                    .into(holder.imageView);
         }
 
         return convertView;
