@@ -1,6 +1,13 @@
 package belev.org.warface_app;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -27,6 +34,9 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 
 public class StartFragment extends Fragment implements View.OnClickListener {
@@ -165,7 +175,8 @@ public class StartFragment extends Fragment implements View.OnClickListener {
 
         switch (view.getId()) {
             case R.id.button_donate_lvl_one:
-                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlOne).build();
+                showNotification();
+                // billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlOne).build();
                 break;
             case R.id.button_donate_lvl_two:
                 billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlTwo).build();
@@ -180,6 +191,39 @@ public class StartFragment extends Fragment implements View.OnClickListener {
                 throw new IllegalStateException("Unexpected value: " + view.getId());
         }
 
-        responseCode = billingClient.launchBillingFlow(mainActivity, billingFlowParams).getResponseCode();
+        // responseCode = billingClient.launchBillingFlow(mainActivity, billingFlowParams).getResponseCode();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void showNotification() {
+
+        String channelId = "channel_id_101";
+        String channelDescription = "Chanell main";
+        String name = "channel_name";
+        int notifyId = 100;
+        int importance = NotificationManager.IMPORTANCE_DEFAULT;
+
+        NotificationChannel notificationChannel = new NotificationChannel(channelId, name, importance);
+        notificationChannel.setDescription(channelDescription);
+        notificationChannel.enableLights(true);
+        notificationChannel.setLightColor(Color.RED);
+
+        NotificationManager notificationManager = (NotificationManager) mainActivity.getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.createNotificationChannel(notificationChannel);
+
+        Notification notification = new Notification.Builder(mainActivity)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                .setSmallIcon(R.drawable.warfaceassistant_logo)
+                .setContentTitle("Title")
+                .setContentText("Content text")
+                .setChannelId(channelId)
+                .build();
+
+        notificationManager.notify(notifyId, notification);
+
+        // NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(mainActivity);
+        // notificationManagerCompat.notify(notifyId, builder.build());
+
+        // NotificationManager notificationManager = getSystemService(NotificationManager.class);
     }
 }

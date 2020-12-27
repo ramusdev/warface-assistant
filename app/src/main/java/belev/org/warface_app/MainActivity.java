@@ -326,8 +326,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(dbHelper);
-        updateNewsAsync.execute();
+        // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(dbHelper);
+        // updateNewsAsync.execute();
 
         // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(dbHelper);
         // clearNewsAsync.execute();
