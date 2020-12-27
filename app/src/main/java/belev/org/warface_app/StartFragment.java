@@ -212,11 +212,13 @@ public class StartFragment extends Fragment implements View.OnClickListener {
         notificationManager.createNotificationChannel(notificationChannel);
 
         Notification notification = new Notification.Builder(mainActivity)
+                .setSmallIcon(R.drawable.ic_stat_warface_icon)
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
-                .setSmallIcon(R.drawable.warfaceassistant_logo)
                 .setContentTitle("Title")
                 .setContentText("Content text")
                 .setChannelId(channelId)
+                .setPriority(Notification.PRIORITY_MAX)
+                .setAutoCancel(true)
                 .build();
 
         notificationManager.notify(notifyId, notification);
