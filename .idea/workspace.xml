@@ -17,8 +17,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="CustomLogTag" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="BranchesTreeState">
@@ -220,10 +220,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608731939220" />
-    <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608753623815">
+    <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609104809974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608753623815" />
+    <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609104809974" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608143801805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -240,22 +240,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608754824866" />
-    <state width="1876" height="538" key="GridCell.Tab.0.bottom" timestamp="1609086887679">
+    <state width="1876" height="510" key="GridCell.Tab.0.bottom" timestamp="1609100562115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609086887679" />
-    <state width="1876" height="538" key="GridCell.Tab.0.center" timestamp="1609086887679">
+    <state width="1876" height="510" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609100562115" />
+    <state width="1876" height="510" key="GridCell.Tab.0.center" timestamp="1609100562115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609086887679" />
-    <state width="1876" height="538" key="GridCell.Tab.0.left" timestamp="1609086887679">
+    <state width="1876" height="510" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609100562115" />
+    <state width="1876" height="510" key="GridCell.Tab.0.left" timestamp="1609100562115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609086887679" />
-    <state width="1876" height="538" key="GridCell.Tab.0.right" timestamp="1609086887679">
+    <state width="1876" height="510" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609100562115" />
+    <state width="1876" height="510" key="GridCell.Tab.0.right" timestamp="1609100562115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="538" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609086887679" />
+    <state width="1876" height="510" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609100562115" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1608916637656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

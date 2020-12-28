@@ -6,24 +6,19 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableString;
-import android.text.style.AbsoluteSizeSpan;
-import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingClientStateListener;
@@ -43,8 +38,6 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 
 public class StartFragment extends Fragment implements View.OnClickListener {
@@ -183,7 +176,8 @@ public class StartFragment extends Fragment implements View.OnClickListener {
 
         switch (view.getId()) {
             case R.id.button_donate_lvl_one:
-                showNotification();
+                // showNotification();
+                startSheduller();
                 // billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlOne).build();
                 break;
             case R.id.button_donate_lvl_two:
@@ -229,7 +223,7 @@ public class StartFragment extends Fragment implements View.OnClickListener {
 
         Notification notification = new Notification.Builder(mainActivity)
                 .setSmallIcon(R.drawable.ic_stat_warface_icon)
-                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                // .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
                 .setChannelId(channelId)
                 .setPriority(Notification.PRIORITY_MAX)
                 .setAutoCancel(true)
@@ -249,4 +243,12 @@ public class StartFragment extends Fragment implements View.OnClickListener {
 
         // NotificationManager notificationManager = getSystemService(NotificationManager.class);
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void startSheduller() {
+        JobSchedulerCreator jobSchedulerCreator = new JobSchedulerCreator(mainActivity);
+        jobSchedulerCreator.create();
+    }
+
+
 }
