@@ -1,5 +1,6 @@
 package belev.org.warface_app;
 
+import android.app.Application;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
@@ -7,6 +8,7 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -18,8 +20,12 @@ import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
+import com.google.common.util.concurrent.ListenableFuture;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +33,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
+import androidx.work.WorkInfo;
+import androidx.work.WorkManager;
 import belev.org.warface_app.data.DataDbHelper;
 
 import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
@@ -322,15 +330,39 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void createWorkManagerIfNotExists() {
+        WorkManager workManager = WorkManager.getInstance(this);
+        ListenableFuture<List<WorkInfo>> statuses = workManager.getWorkInfosByTag("task_worker");
+
+        try {
+            List<WorkInfo> workInfoList = statuses.get();
+
+            if (workInfoList.size() <= 0) {
+                Log.e("CustomLogTag", "Empty work manager");
+                PeriodicWorkCreator periodicWorkCreator = new PeriodicWorkCreator((Application) this.getApplicationContext());
+                periodicWorkCreator.create();
+            }
+        } catch(ExecutionException | InterruptedException e) {
+            Log.e("CustomLogTag", e.getMessage());
+        }
+    }
+
+    public void updateNewsIfNotExists() {
+        NewsLoader newsLoader = new NewsLoader(this.getApplicationContext());
+        List<News> news = newsLoader.load();
+
+        if (news.size() <= 0) {
+            UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(this.getApplicationContext());
+            updateNewsAsync.execute();
+        }
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
 
-        // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(dbHelper);
-        // updateNewsAsync.execute();
-
-        // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(dbHelper);
-        // clearNewsAsync.execute();
+        createWorkManagerIfNotExists();
+        // updateNewsIfNotExists();
     }
 
     public boolean isOnline() {
@@ -344,7 +376,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        dbHelper.close();
+        // dbHelper.close();
         super.onDestroy();
     }
 

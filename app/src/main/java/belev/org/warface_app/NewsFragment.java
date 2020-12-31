@@ -15,6 +15,7 @@ import java.util.List;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.ListFragment;
 import belev.org.warface_app.data.DataContract;
+import belev.org.warface_app.data.DataDbHelper;
 
 import static android.content.ContentValues.TAG;
 
@@ -42,13 +43,16 @@ public class NewsFragment extends ListFragment {
         isLoadedAd = nativeAdPopulationSync.execute();
 
         // Load news
-        loadNews();
+        NewsLoader newsLoader = new NewsLoader(mainActivity.getApplicationContext());
+        newsArray = newsLoader.load();
 
         return view;
     }
 
+    /*
     public void loadNews() {
-        SQLiteDatabase sqLiteDatabase = mainActivity.dbHelper.getReadableDatabase();
+        DataDbHelper dbHelper = new DataDbHelper(mainActivity.getApplicationContext());
+        SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
 
         String selection = DataContract.NewsEntry.COLUMN_TITLE + " = ?";
         String[] selectionArgs = { "Title 10" };
@@ -76,13 +80,11 @@ public class NewsFragment extends ListFragment {
 
         cursor.close();
 
-        /*
         for (News news : newsArray) {
             Log.e("CustomLogTag", news.getTitle());
         }
-        */
-
     }
+    */
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {

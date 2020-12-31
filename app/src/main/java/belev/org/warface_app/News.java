@@ -75,6 +75,7 @@ public class News {
     }
 
     public String getDateFormated() {
+        // Exception when data is empty
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
         LocalDate dateTime = LocalDate.parse(date, formatter);
 

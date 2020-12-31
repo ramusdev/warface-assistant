@@ -1,103 +1,58 @@
 package belev.org.warface_app;
 
 import android.content.Context;
-import android.os.AsyncTask;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 
-import com.google.gson.Gson;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NewsLoader extends AsyncTask<Void, Void, List<NewsModel>> {
+import belev.org.warface_app.data.DataContract;
+import belev.org.warface_app.data.DataDbHelper;
 
-    public final String NEWS_URL = "https://edgenews.ru/android/wardocwarface/news/news.json";
-    public List<NewsModel> newsModelList = new ArrayList<NewsModel>();
-    private MainActivity mainActivity;
-    // private NewsFragment.TaskInterface task;
+public class NewsLoader {
 
-    public NewsLoader(MainActivity mainActivity) {
-        this.mainActivity = mainActivity;
+    private Context context;
+    private List<News> newsArray;
+
+    public NewsLoader(Context context) {
+        this.context = context;
+        newsArray = new ArrayList<News>();
     }
 
-    // public NewsLoader(MainActivity mainActivity, NewsFragment.TaskInterface task) {
-        // this.mainActivity = mainActivity;
-        // this.task = task;
-    // }
+    public List<News> load() {
 
-    @Override
-    protected List doInBackground(Void... voids) {
+        DataDbHelper dbHelper = new DataDbHelper(context);
+        SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
 
-        HttpURLConnection connection = null;
-        BufferedReader reader = null;
+        String selection = DataContract.NewsEntry.COLUMN_TITLE + " = ?";
+        String[] selectionArgs = { "Title 10" };
+        Cursor cursor = sqLiteDatabase.query(DataContract.NewsEntry.TABLE_NAME,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
 
-        try {
-            URL url = new URL(NEWS_URL);
-            connection = (HttpURLConnection) url.openConnection();
-            connection.connect();
+        while (cursor.moveToNext()) {
+            News news = new News();
 
-            InputStream stream = connection.getInputStream();
-            reader = new BufferedReader(new InputStreamReader(stream));
-            StringBuffer buffer = new StringBuffer();
-            String line = "";
-            while ((line = reader.readLine()) != null) {
-                buffer.append(line);
-            }
+            news.setTitle(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_TITLE)));
+            news.setPreviewText(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_PREVIEWTEXT)));
+            news.setText(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_TEXT)));
+            news.setLink(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_LINK)));
+            news.setImage(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_IMAGE)));
+            news.setDate(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_DATE)));
 
-            String finalJson = buffer.toString();
-
-            JSONObject parentObject = new JSONObject(finalJson);
-            JSONArray parentArray = parentObject.getJSONArray("movies");
-
-            //List<NewsModel> newsModelList = new ArrayList<>();
-
-            Gson gson = new Gson();
-            for (int i = 0; i < parentArray.length(); i++) {
-                JSONObject finalObject = parentArray.getJSONObject(i);
-                NewsModel newsModel = gson.fromJson(finalObject.toString(), NewsModel.class);
-                newsModelList.add(newsModel);
-            }
-            return newsModelList;
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } finally {
-            if (connection != null) {
-                connection.disconnect();
-            }
-            try {
-                if (reader != null)
-                    reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            newsArray.add(news);
         }
-        return null;
-    }
 
-    /*
-    @Override
-    protected void onPostExecute(final List<News> result) {
-        super.onPostExecute(result);
-        mainActivity.newsList = result;
+        cursor.close();
 
-        if (task != null) {
-            task.makeTask(result);
-        }
+        return newsArray;
     }
-    */
 }

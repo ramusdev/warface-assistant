@@ -1,5 +1,6 @@
 package belev.org.warface_app;
 
+import android.app.Application;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -14,6 +15,7 @@ import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.StyleSpan;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,14 +33,22 @@ import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
 import com.android.billingclient.api.SkuDetailsResponseListener;
+import com.google.common.util.concurrent.ListenableFuture;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkInfo;
+import androidx.work.WorkManager;
+import belev.org.warface_app.data.DataDbHelper;
 
 public class StartFragment extends Fragment implements View.OnClickListener {
 
@@ -167,6 +177,7 @@ public class StartFragment extends Fragment implements View.OnClickListener {
     }
     */
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onClick(View view) {
         int responseCode;
@@ -177,7 +188,9 @@ public class StartFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.button_donate_lvl_one:
                 // showNotification();
-                startSheduller();
+                // startSheduller();
+                // executeWork(mainActivity.getApplication());
+                testLog();
                 // billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlOne).build();
                 break;
             case R.id.button_donate_lvl_two:
@@ -195,6 +208,7 @@ public class StartFragment extends Fragment implements View.OnClickListener {
 
         // responseCode = billingClient.launchBillingFlow(mainActivity, billingFlowParams).getResponseCode();
     }
+
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void showNotification() {
@@ -236,19 +250,24 @@ public class StartFragment extends Fragment implements View.OnClickListener {
                 .build();
 
         notificationManager.notify(notifyId, notification);
-
-        // .BigTextStyle().bigText(text))
-        // NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(mainActivity);
-        // notificationManagerCompat.notify(notifyId, builder.build());
-
-        // NotificationManager notificationManager = getSystemService(NotificationManager.class);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public void startSheduller() {
-        JobSchedulerCreator jobSchedulerCreator = new JobSchedulerCreator(mainActivity);
-        jobSchedulerCreator.create();
     }
 
 
+    public void testLog() {
+
+        WorkManager workManager = WorkManager.getInstance(mainActivity);
+        ListenableFuture<List<WorkInfo>> statuses = workManager.getWorkInfosByTag("task_worker");
+
+        try {
+            List<WorkInfo> workInfoList = statuses.get();
+
+            if (workInfoList.size() <= 0) {
+                Log.e("CustomLogTag", "Empty work manager");
+                PeriodicWorkCreator periodicWorkCreator = new PeriodicWorkCreator((Application) mainActivity.getApplicationContext());
+                periodicWorkCreator.create();
+            }
+        } catch(ExecutionException | InterruptedException e) {
+            Log.e("CustomLogTag", e.getMessage());
+        }
+    }
 }

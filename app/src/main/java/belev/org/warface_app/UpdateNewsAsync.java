@@ -1,6 +1,7 @@
 package belev.org.warface_app;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
@@ -14,11 +15,11 @@ import belev.org.warface_app.data.DataDbHelper;
 
 public class UpdateNewsAsync extends AsyncTask {
 
-    private DataDbHelper dbHelper;
+    Context context;
     List<News> newsArray;
 
-    public UpdateNewsAsync(DataDbHelper dbHelper) {
-        this.dbHelper = dbHelper;
+    public UpdateNewsAsync(Context context) {
+        this.context = context;
     }
 
     @Override
@@ -64,6 +65,7 @@ public class UpdateNewsAsync extends AsyncTask {
     }
 
     public void insertNewsToDatabase() {
+        DataDbHelper dbHelper = new DataDbHelper(context);
         SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
 
         for (News news : newsArray) {

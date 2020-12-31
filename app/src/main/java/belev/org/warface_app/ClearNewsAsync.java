@@ -1,5 +1,6 @@
 package belev.org.warface_app;
 
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import belev.org.warface_app.data.DataContract;
@@ -7,10 +8,10 @@ import belev.org.warface_app.data.DataDbHelper;
 
 public class ClearNewsAsync extends AsyncTask {
 
-    private DataDbHelper dbHelper;
+    private Context context;
 
-    public ClearNewsAsync(DataDbHelper dbHelper) {
-        this.dbHelper = dbHelper;
+    public ClearNewsAsync(Context context) {
+        this.context = context;
     }
 
     @Override
@@ -21,6 +22,7 @@ public class ClearNewsAsync extends AsyncTask {
     }
 
     public void clearNews() {
+        DataDbHelper dbHelper = new DataDbHelper(context);
         SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
 
         String deleteQuery = "DELETE" +
