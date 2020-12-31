@@ -3,6 +3,7 @@ package belev.org.warface_app;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -29,13 +30,14 @@ public class NewsLoader {
 
         String selection = DataContract.NewsEntry.COLUMN_TITLE + " = ?";
         String[] selectionArgs = { "Title 10" };
+        String order = DataContract.NewsEntry.COLUMN_DATE + " DESC";
         Cursor cursor = sqLiteDatabase.query(DataContract.NewsEntry.TABLE_NAME,
                 null,
                 null,
                 null,
                 null,
                 null,
-                null
+                order
         );
 
         while (cursor.moveToNext()) {
@@ -48,6 +50,7 @@ public class NewsLoader {
             news.setImage(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_IMAGE)));
             news.setDate(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_DATE)));
 
+            // Log.e("CustomLogTag", news.getDate());
             newsArray.add(news);
         }
 

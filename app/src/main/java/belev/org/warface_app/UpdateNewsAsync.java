@@ -71,6 +71,8 @@ public class UpdateNewsAsync extends AsyncTask {
         for (News news : newsArray) {
             if (! isNewsExists(news, sqLiteDatabase)) {
                 cleanText(news);
+                String date = News.formatFromParseToDatabase(news.getDate());
+                news.setDate(date);
 
                 NewsValuesAdapter newValuesAdapter = new NewsValuesAdapter(news);
                 ContentValues contentValues = newValuesAdapter.convert();

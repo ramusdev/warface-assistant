@@ -187,10 +187,7 @@ public class StartFragment extends Fragment implements View.OnClickListener {
 
         switch (view.getId()) {
             case R.id.button_donate_lvl_one:
-                // showNotification();
-                // startSheduller();
-                // executeWork(mainActivity.getApplication());
-                testLog();
+                testNotification();
                 // billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlOne).build();
                 break;
             case R.id.button_donate_lvl_two:
@@ -252,22 +249,13 @@ public class StartFragment extends Fragment implements View.OnClickListener {
         notificationManager.notify(notifyId, notification);
     }
 
+   @RequiresApi(api = Build.VERSION_CODES.O)
+   public void testNotification() {
+        // News news = new News();
+        // news.setTitle("This is title");
+        // news.setPreviewText("This is preview text");
 
-    public void testLog() {
-
-        WorkManager workManager = WorkManager.getInstance(mainActivity);
-        ListenableFuture<List<WorkInfo>> statuses = workManager.getWorkInfosByTag("task_worker");
-
-        try {
-            List<WorkInfo> workInfoList = statuses.get();
-
-            if (workInfoList.size() <= 0) {
-                Log.e("CustomLogTag", "Empty work manager");
-                PeriodicWorkCreator periodicWorkCreator = new PeriodicWorkCreator((Application) mainActivity.getApplicationContext());
-                periodicWorkCreator.create();
-            }
-        } catch(ExecutionException | InterruptedException e) {
-            Log.e("CustomLogTag", e.getMessage());
-        }
-    }
+        NotificationShower notificationShower = new NotificationShower(mainActivity.getApplicationContext());
+        notificationShower.show();
+   }
 }

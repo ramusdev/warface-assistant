@@ -22,12 +22,9 @@ public class SplashFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_splash, container, false);
         final MainActivity mainActivity = (MainActivity) getActivity();
 
-        // NewsLoader newsLoader = new NewsLoader(mainActivity);
-        // newsLoader.execute();
-
         final AfterLoadFunction afterLoadFunction = new AfterLoadFunction() {
             @Override
-            public void execute() {
+            public void run() {
                 FragmentManager fragmentManager = mainActivity.getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.containerView, new NewsFragment());
@@ -42,6 +39,8 @@ public class SplashFragment extends Fragment {
             }
         };
 
+        mainActivity.updateNewsIfNotExists();
+
         NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 1, afterLoadFunction);
         nativeAdLoader.loadAds();
         nativeAdLoader.execute();
@@ -52,5 +51,5 @@ public class SplashFragment extends Fragment {
 }
 
 interface AfterLoadFunction {
-    void execute();
+    void run();
 }

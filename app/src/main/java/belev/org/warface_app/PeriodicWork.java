@@ -26,14 +26,14 @@ public class PeriodicWork extends Worker {
         // updateNewsAsync.execute();
         // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);
         // clearNewsAsync.execute();
-        // NotificationShower notificationShower = new NotificationShower(context);
-        // notificationShower.show();
+        NotificationShower notificationShower = new NotificationShower(context);
+        notificationShower.show();
 
         // UpdateLogAsync updateLogAsync = new UpdateLogAsync(context);
         // updateLogAsync.notAsyncExecute();
         // updateLogAsync.execute();
-        // return Result.success();
 
-        return null;
+        return Result.success();
+        // return null;
     }
 }

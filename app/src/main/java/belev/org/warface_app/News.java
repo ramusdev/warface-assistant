@@ -1,6 +1,7 @@
 package belev.org.warface_app;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
@@ -74,13 +75,22 @@ public class News {
         return image;
     }
 
-    public String getDateFormated() {
-        // Exception when data is empty
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
-        LocalDate dateTime = LocalDate.parse(date, formatter);
+    public static String formatFromDatabaseToView(String date) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH);
+        LocalDateTime dateTime = LocalDateTime.parse(date, formatter);
 
         Locale locale = new Locale("ru");
         DateTimeFormatter formatterTo = DateTimeFormatter.ofPattern("dd MMMM yyyy", locale);
+        String dateTo = dateTime.format(formatterTo);
+
+        return dateTo;
+    }
+
+    public static String formatFromParseToDatabase(String date) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
+        LocalDateTime dateTime = LocalDateTime.parse(date, formatter);
+
+        DateTimeFormatter formatterTo = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String dateTo = dateTime.format(formatterTo);
 
         return dateTo;

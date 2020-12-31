@@ -79,7 +79,7 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void unused) {
         super.onPostExecute(unused);
-        afterLoadFunction.execute();
+        afterLoadFunction.run();
     }
 
     class NativeAd {
