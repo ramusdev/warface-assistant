@@ -22,6 +22,7 @@ public class PeriodicWork extends Worker {
     @NonNull
     @Override
     public Result doWork() {
+        Log.e("CustomLogTag", "From do work");
         // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(context);
         // updateNewsAsync.execute();
         // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);
