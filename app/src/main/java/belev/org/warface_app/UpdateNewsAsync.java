@@ -32,15 +32,14 @@ public class UpdateNewsAsync extends AsyncTask {
 
     public void parseNews() {
         NewsParser newsParser = new NewsParser();
-        newsParser.pars();
-        newsArray = newsParser.getNewsArray();
+        newsArray = newsParser.pars();
     }
 
-    public void cleanText(News news) {
-        StringBuilder stringBuilder = new StringBuilder(news.getText());
+    public String cleanText(String text, String imageLink) {
+        StringBuilder stringBuilder = new StringBuilder(text);
         String html = "<html>";
         String style = "<link type=\"text/css\" rel=\"stylesheet\" media=\"all\" href=\"https://edgenews.ru/android/wardocwarface/news/style.css\">";
-        String image = "<img src=\"" + news.getImage() + "\">";
+        String image = "<img src=\"" + imageLink + "\">";
 
         stringBuilder.insert(0, html);
         stringBuilder.insert(6, style);
@@ -61,7 +60,20 @@ public class UpdateNewsAsync extends AsyncTask {
         Matcher matcher = pattern.matcher(cleanTags);
         String cleanScript = matcher.replaceAll("");
 
-        news.setText(cleanScript);
+        return cleanScript;
+    }
+
+    public String cleanPreview(String text) {
+        String cleanText = text
+                .replace("&lt;", "<")
+                .replace("&gt;", ">")
+                .replace("&amp;", "&")
+                .replace("&nbsp;", " ")
+                .replace("&quot;", "\"")
+                .replace("&mdash;", "—")
+                .replace("<!--break-->", "");
+
+        return cleanText;
     }
 
     public void insertNewsToDatabase() {
@@ -70,7 +82,12 @@ public class UpdateNewsAsync extends AsyncTask {
 
         for (News news : newsArray) {
             if (! isNewsExists(news, sqLiteDatabase)) {
-                cleanText(news);
+                String text = cleanText(news.getText(), news.getImage());
+                news.setText(text);
+
+                String previewText = cleanPreview(news.getPreviewText());
+                news.setPreviewText(previewText);
+
                 String date = News.formatFromParseToDatabase(news.getDate());
                 news.setDate(date);
 
@@ -95,11 +112,11 @@ public class UpdateNewsAsync extends AsyncTask {
         );
 
         if (cursor.moveToNext()) {
-            Log.e("CustomLogTag", "Entry exists in database");
+            // Log.e("CustomLogTag", "Entry exists in database");
             cursor.close();
             return true;
         } else {
-            Log.e("CustomLogTag", "Entry do not exists in database");
+            // Log.e("CustomLogTag", "Entry do not exists in database");
             cursor.close();
             return false;
         }

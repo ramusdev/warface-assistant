@@ -5,6 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
@@ -34,13 +38,25 @@ public class SplashFragment extends Fragment {
 
                 View decorView = mainActivity.getWindow().getDecorView();
                 final int flags = SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                    | SYSTEM_UI_FLAG_LAYOUT_STABLE;
+                        | SYSTEM_UI_FLAG_LAYOUT_STABLE;
                 decorView.setSystemUiVisibility(flags);
             }
         };
 
-        mainActivity.updateNewsIfNotExists();
+        TimerTask timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                if (! mainActivity.isShowedMain.get()) {
+                    mainActivity.isShowedMain.set(true);
+                    afterLoadFunction.run();
+                }
+            }
+        };
 
+        Timer timer = new Timer();
+        timer.schedule(timerTask, 4000);
+
+        mainActivity.updateNewsIfNotExists();
         NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 1, afterLoadFunction);
         nativeAdLoader.loadAds();
         nativeAdLoader.execute();

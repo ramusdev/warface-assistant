@@ -23,7 +23,7 @@ public class NewsParser {
         newsArray = new ArrayList<News>(COUNT_NEWS);
     }
 
-    public void pars() {
+    public List<News> pars() {
         try {
             document = Jsoup.connect(URL_CONNECT)
                     .userAgent(USER_AGENT)
@@ -79,9 +79,7 @@ public class NewsParser {
 
             newsArray.add(news);
         }
-    }
 
-    public List<News> getNewsArray() {
         return newsArray;
     }
 }

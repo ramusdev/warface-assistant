@@ -49,43 +49,6 @@ public class NewsFragment extends ListFragment {
         return view;
     }
 
-    /*
-    public void loadNews() {
-        DataDbHelper dbHelper = new DataDbHelper(mainActivity.getApplicationContext());
-        SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
-
-        String selection = DataContract.NewsEntry.COLUMN_TITLE + " = ?";
-        String[] selectionArgs = { "Title 10" };
-        Cursor cursor = sqLiteDatabase.query(DataContract.NewsEntry.TABLE_NAME,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-        );
-
-        while (cursor.moveToNext()) {
-            News news = new News();
-
-            news.setTitle(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_TITLE)));
-            news.setPreviewText(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_PREVIEWTEXT)));
-            news.setText(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_TEXT)));
-            news.setLink(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_LINK)));
-            news.setImage(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_IMAGE)));
-            news.setDate(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.NewsEntry.COLUMN_DATE)));
-
-            newsArray.add(news);
-        }
-
-        cursor.close();
-
-        for (News news : newsArray) {
-            Log.e("CustomLogTag", news.getTitle());
-        }
-    }
-    */
-
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
@@ -108,35 +71,10 @@ public class NewsFragment extends ListFragment {
 
         adapter = new NewsAdapter(getActivity(), newsArray);
         setListAdapter((ListAdapter) adapter);
-
-        /*
-        TaskInterface task = new TaskInterface() {
-            @Override
-            public void makeTask(List<News> newsArray) {
-                adapter = new NewsAdapter(getActivity(), newsArray);
-                setListAdapter((ListAdapter) adapter);
-            }
-        };
-
-        if (mainActivity.newsList.size() == 0) {
-            NewsLoader newsLoader = new NewsLoader(mainActivity, task);
-            newsLoader.execute();
-        } else {
-            // adapter = new NewsAdapter(getActivity(), newsList);
-            // setListAdapter((ListAdapter) adapter);
-            task.makeTask(newsArray);
-        }
-        */
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
     }
-
-    /*
-    interface TaskInterface {
-        void makeTask(List<News> newsList);
-    }
-    */
 }

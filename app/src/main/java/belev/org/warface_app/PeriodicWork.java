@@ -10,7 +10,6 @@ import androidx.work.WorkerParameters;
 
 public class PeriodicWork extends Worker {
 
-    private static final String LOG_TAG = "CustomLogTag";
     private Context context;
 
     public PeriodicWork(@NonNull Context context, @NonNull WorkerParameters workerParams) {
@@ -22,19 +21,13 @@ public class PeriodicWork extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        Log.e("CustomLogTag", "From do work");
-        // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(context);
-        // updateNewsAsync.execute();
-        // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);
-        // clearNewsAsync.execute();
+        UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(context);
+        updateNewsAsync.execute();
+        ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);
+        clearNewsAsync.execute();
         NotificationShower notificationShower = new NotificationShower(context);
         notificationShower.show();
 
-        // UpdateLogAsync updateLogAsync = new UpdateLogAsync(context);
-        // updateLogAsync.notAsyncExecute();
-        // updateLogAsync.execute();
-
         return Result.success();
-        // return null;
     }
 }

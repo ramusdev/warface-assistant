@@ -1,8 +1,14 @@
 package belev.org.warface_app;
 
 import android.app.Application;
+import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -25,6 +31,8 @@ import com.google.common.util.concurrent.ListenableFuture;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.logging.Logger;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -54,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
     public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
     public List<NewsModel> newsList = new ArrayList<NewsModel>();
     public DataDbHelper dbHelper;
+    public AtomicBoolean isShowedMain = new AtomicBoolean(false);
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -362,7 +371,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         createWorkManagerIfNotExists();
-        // updateNewsIfNotExists();
+        updateNewsIfNotExists();
     }
 
     public boolean isOnline() {

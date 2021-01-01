@@ -45,17 +45,12 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
     protected Void doInBackground(Void... voids) {
         final AtomicBoolean isThreadAlive = new AtomicBoolean(true);
 
-        TimerTask timerTask = new TimerTask() {
-            @Override
-            public void run() {
-                isThreadAlive.set(false);
-            }
-        };
-
-        Timer timer = new Timer();
-        timer.schedule(timerTask, 4000);
-
         do {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             // isThreadAlive = false;
             isThreadAlive.set(false);
             for (int i = 0; i < numberAdsToLoad; ++i) {
@@ -67,7 +62,6 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
             }
         } while (isThreadAlive.get());
 
-        timer.cancel();
         return null;
     }
 
@@ -79,7 +73,10 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void unused) {
         super.onPostExecute(unused);
-        afterLoadFunction.run();
+        if (! mainActivity.isShowedMain.get()) {
+            mainActivity.isShowedMain.set(true);
+            afterLoadFunction.run();
+        }
     }
 
     class NativeAd {

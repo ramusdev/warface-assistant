@@ -40,12 +40,11 @@ public class NotificationShower {
     public void show() {
         loadNotShowedNews();
         showNotificationIfExists();
-        // changeNewsToShowed();
+        changeNewsToShowed();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void notificationShow(News news) {
-        Log.e("CustomLogTag", "From notification");
 
         String channelId = "channel_id_100";
         String channelDescription = "channel main";

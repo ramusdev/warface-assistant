@@ -21,13 +21,11 @@ public class PeriodicWorkCreator {
     }
 
     public void create() {
-        // OneTimeWorkRequest oneTimeWorkRequest = OneTimeWorkRequest.from(PeriodicWork.class);
-
         Constraints constraints = new Constraints.Builder()
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .build();
 
-        PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(PeriodicWork.class, 15, TimeUnit.MINUTES)
+        PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(PeriodicWork.class, 12, TimeUnit.HOURS)
                 .setConstraints(constraints)
                 .addTag("task_worker")
                 .build();
