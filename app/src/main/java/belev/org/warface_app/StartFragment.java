@@ -1,20 +1,8 @@
 package belev.org.warface_app;
 
-import android.app.Application;
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.style.StyleSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,22 +21,16 @@ import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
 import com.android.billingclient.api.SkuDetailsResponseListener;
-import com.google.common.util.concurrent.ListenableFuture;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.work.OneTimeWorkRequest;
-import androidx.work.PeriodicWorkRequest;
-import androidx.work.WorkInfo;
-import androidx.work.WorkManager;
-import belev.org.warface_app.data.DataDbHelper;
+import androidx.fragment.app.FragmentTransaction;
 
 public class StartFragment extends Fragment implements View.OnClickListener {
 
@@ -81,7 +63,9 @@ public class StartFragment extends Fragment implements View.OnClickListener {
         Button buttonDonateLvlFour = (Button) view.findViewById(R.id.button_donate_lvl_four);
         buttonDonateLvlFour.setOnClickListener(this);
 
-        initBillingClient();
+        if (mainActivity.isNetworkAvailable()) {
+            initBillingClient();
+        }
 
         return view;
     }
@@ -182,26 +166,55 @@ public class StartFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         int responseCode;
 
-        BillingFlowParams billingFlowParams;
+        if (! mainActivity.isNetworkAvailable()) {
+            Toolbar toolbar = (Toolbar) mainActivity.findViewById(R.id.toolbar);
+            FragmentTransaction transaction = mainActivity.getSupportFragmentManager().beginTransaction();
+
+            transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
+            toolbar.setTitle(getResources().getString(R.string.error_connection));
+            return;
+        }
+
+        BillingFlowParams billingFlowParams = null;
         BillingFlowParams.Builder billingFlowParamsBuilder = BillingFlowParams.newBuilder();
 
         switch (view.getId()) {
             case R.id.button_donate_lvl_one:
-                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlOne).build();
+                try {
+                    billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlOne).build();
+                } catch (IllegalArgumentException e) {
+                    // Log.e("CustomLogTag", "SKU not loaded");
+                }
                 break;
             case R.id.button_donate_lvl_two:
-                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlTwo).build();
+                try {
+                    billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlTwo).build();
+                } catch (IllegalArgumentException e) {
+                    // Log.e("CustomLogTag", "SKU not loaded");
+                }
                 break;
             case R.id.button_donate_lvl_three:
-                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlThree).build();
+                try {
+                    billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlThree).build();
+                } catch (IllegalArgumentException e) {
+                    // Log.e("CustomLogTag", "SKU not loaded");
+                }
                 break;
             case R.id.button_donate_lvl_four:
-                billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlFour).build();
+                try {
+                    billingFlowParams = billingFlowParamsBuilder.setSkuDetails(skuDetailsLvlFour).build();
+                } catch (IllegalArgumentException e) {
+                    // Log.e("CustomLogTag", "SKU not loaded");
+                }
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + view.getId());
         }
 
-        responseCode = billingClient.launchBillingFlow(mainActivity, billingFlowParams).getResponseCode();
+        try {
+            responseCode = billingClient.launchBillingFlow(mainActivity, billingFlowParams).getResponseCode();
+        } catch (NullPointerException e) {
+            // Log.e("CustomLogTag", "SKU null pointer");
+        }
     }
 }

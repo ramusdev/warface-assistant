@@ -10,6 +10,8 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
@@ -345,14 +347,12 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             List<WorkInfo> workInfoList = statuses.get();
-
             if (workInfoList.size() <= 0) {
-                Log.e("CustomLogTag", "Empty work manager");
                 PeriodicWorkCreator periodicWorkCreator = new PeriodicWorkCreator((Application) this.getApplicationContext());
                 periodicWorkCreator.create();
             }
         } catch(ExecutionException | InterruptedException e) {
-            Log.e("CustomLogTag", e.getMessage());
+            // Log.e("CustomLogTag", e.getMessage());
         }
     }
 
@@ -381,6 +381,23 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    public boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            Network network = connectivityManager.getActiveNetwork();
+            if (network == null) return false;
+            NetworkCapabilities networkCapabilities = connectivityManager.getNetworkCapabilities(network);
+            return networkCapabilities != null && (networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) ||
+                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) ||
+                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_BLUETOOTH)
+            );
+        } else {
+            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+            return networkInfo != null && networkInfo.isConnected();
+        }
     }
 
     @Override

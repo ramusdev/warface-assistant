@@ -1,10 +1,17 @@
 package belev.org.warface_app;
 
+import android.app.Activity;
+import android.app.Application;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.util.Log;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -13,7 +20,7 @@ import java.util.regex.Pattern;
 import belev.org.warface_app.data.DataContract;
 import belev.org.warface_app.data.DataDbHelper;
 
-public class UpdateNewsAsync extends AsyncTask {
+public class UpdateNewsAsync extends AsyncTask<Void, Void, Void> {
 
     Context context;
     List<News> newsArray;
@@ -23,12 +30,17 @@ public class UpdateNewsAsync extends AsyncTask {
     }
 
     @Override
-    protected Object doInBackground(Object[] objects) {
-        parseNews();
-        insertNewsToDatabase();
+    protected Void doInBackground(Void... voids) {
+        Log.e("CustomLogTag", "From background update news");
+
+        if (isNetworkAvailable()) {
+            parseNews();
+            insertNewsToDatabase();
+        }
 
         return null;
     }
+
 
     public void parseNews() {
         NewsParser newsParser = new NewsParser();
@@ -119,6 +131,23 @@ public class UpdateNewsAsync extends AsyncTask {
             // Log.e("CustomLogTag", "Entry do not exists in database");
             cursor.close();
             return false;
+        }
+    }
+
+    public boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            Network network = connectivityManager.getActiveNetwork();
+            if (network == null) return false;
+            NetworkCapabilities networkCapabilities = connectivityManager.getNetworkCapabilities(network);
+            return networkCapabilities != null && (networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) ||
+                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) ||
+                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_BLUETOOTH)
+            );
+        } else {
+            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+            return networkInfo != null && networkInfo.isConnected();
         }
     }
 }
