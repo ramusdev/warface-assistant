@@ -1,6 +1,7 @@
 package belev.org.warface_app;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,20 +44,10 @@ public class SplashFragment extends Fragment {
             }
         };
 
-        TimerTask timerTask = new TimerTask() {
-            @Override
-            public void run() {
-                if (! mainActivity.isShowedMain.get()) {
-                    mainActivity.isShowedMain.set(true);
-                    afterLoadFunction.run();
-                }
-            }
-        };
-
-        Timer timer = new Timer();
-        timer.schedule(timerTask, 4000);
-
+        // Update news
         mainActivity.updateNewsIfNotExists();
+
+        // Load ads
         NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 1, afterLoadFunction);
         nativeAdLoader.loadAds();
         nativeAdLoader.execute();

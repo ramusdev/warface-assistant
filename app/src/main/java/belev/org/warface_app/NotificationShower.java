@@ -126,17 +126,15 @@ public class NotificationShower {
     public void changeNewsToShowed() {
         SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
 
-        // for (int i = 0; i < newsArray.size(); ++i) {
-            ContentValues values = new ContentValues();
-            values.put(DataContract.NewsEntry.COLUMN_NOTIFIED, 1);
-            String selection = DataContract.NewsEntry.COLUMN_NOTIFIED + " = ?";
-            String[] selectionArgs = { "0" };
+        ContentValues values = new ContentValues();
+        values.put(DataContract.NewsEntry.COLUMN_NOTIFIED, 1);
+        String selection = DataContract.NewsEntry.COLUMN_NOTIFIED + " = ?";
+        String[] selectionArgs = { "0" };
 
-            sqLiteDatabase.update(DataContract.NewsEntry.TABLE_NAME,
-                    values,
-                    selection,
-                    selectionArgs
-            );
-        // }
+        sqLiteDatabase.update(DataContract.NewsEntry.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs
+        );
     }
 }

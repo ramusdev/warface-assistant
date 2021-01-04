@@ -1,6 +1,8 @@
 package belev.org.warface_app;
 
 import android.os.AsyncTask;
+import android.util.Log;
+
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
@@ -39,6 +41,16 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
             nativeAd.load();
             nativeAdsList.add(nativeAd);
         }
+
+        waiting();
+    }
+
+    public void waiting() {
+        Log.e("CustomLogTag", "start background");
+        CustomTimerTask customTimerTask = new CustomTimerTask();
+        Timer timer = new Timer();
+        timer.schedule(customTimerTask, 6000);
+        Log.e("CustomLogTag", "end background");
     }
 
     @Override
@@ -47,16 +59,15 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
 
         do {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            // isThreadAlive = false;
+
             isThreadAlive.set(false);
             for (int i = 0; i < numberAdsToLoad; ++i) {
                 boolean alive = nativeAdsList.get(i).getIsAlive();
                 if (alive) {
-                    // isThreadAlive = true;
                     isThreadAlive.set(true);
                 }
             }
@@ -73,9 +84,24 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void unused) {
         super.onPostExecute(unused);
-        if (! mainActivity.isShowedMain.get()) {
+        if (mainActivity.isShowedMain.get() == false) {
             mainActivity.isShowedMain.set(true);
             afterLoadFunction.run();
+        }
+    }
+
+    class CustomTimerTask extends TimerTask {
+        @Override
+        public void run() {
+            mainActivity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if (mainActivity.isShowedMain.get() == false) {
+                        mainActivity.isShowedMain.set(true);
+                        afterLoadFunction.run();
+                    }
+                }
+            });
         }
     }
 
