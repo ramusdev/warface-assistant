@@ -20,16 +20,12 @@ public class PeriodicWork extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        MainActivity mainActivity = (MainActivity) context.getApplicationContext();
-
-        if (mainActivity.isNetworkAvailable()) {
-            UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(context);
-            updateNewsAsync.execute();
-            ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);
-            clearNewsAsync.execute();
-            NotificationShower notificationShower = new NotificationShower(context);
-            notificationShower.show();
-        }
+        UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(context);
+        updateNewsAsync.execute();
+        ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);
+        clearNewsAsync.execute();
+        // NotificationShower notificationShower = new NotificationShower(context);
+        // notificationShower.execute();
 
         return Result.success();
     }

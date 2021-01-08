@@ -16,6 +16,7 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,6 +34,7 @@ import com.google.common.util.concurrent.ListenableFuture;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Logger;
 
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     FragmentTransaction mFragmentTransaction;
     InterstitialAd mInterstitialAd;
     Toolbar toolbar;
+    Handler handler;
 
     // private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
     private AdLoader adLoader;
@@ -82,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Open connection to db
         dbHelper = new DataDbHelper(this);
+
+        // Tasks after create
+        createTasks();
 
         // Init fragment
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -369,9 +375,35 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+    }
 
-        createWorkManagerIfNotExists();
+    public void createTasks() {
+        Log.e("CustomLogTag", "Inside on create tasks");
         updateNewsIfNotExists();
+        createWorkManagerIfNotExists();
+        createNotification();
+    }
+
+    public void createNotification() {
+
+        handler = new Handler();
+
+        Runnable runnable = new Runnable() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void run() {
+                UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(getApplicationContext());
+                updateNewsAsync.execute();
+                ClearNewsAsync clearNewsAsync = new ClearNewsAsync(getApplicationContext());
+                clearNewsAsync.execute();
+                NotificationShower notificationShower = new NotificationShower(getApplicationContext());
+                notificationShower.execute();
+
+                handler.postDelayed(this, TimeUnit.HOURS.toMillis(12));
+            }
+        };
+
+        handler.postDelayed(runnable, TimeUnit.HOURS.toMillis(12));
     }
 
     public boolean isOnline() {

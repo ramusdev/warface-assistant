@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
@@ -46,11 +47,9 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
     }
 
     public void waiting() {
-        Log.e("CustomLogTag", "start background");
         CustomTimerTask customTimerTask = new CustomTimerTask();
         Timer timer = new Timer();
-        timer.schedule(customTimerTask, 6000);
-        Log.e("CustomLogTag", "end background");
+        timer.schedule(customTimerTask, TimeUnit.SECONDS.toMillis(6));
     }
 
     @Override
@@ -59,7 +58,7 @@ public class NativeAdLoader extends AsyncTask<Void, Void, Void> {
 
         do {
             try {
-                Thread.sleep(500);
+                Thread.sleep(TimeUnit.SECONDS.toMillis(1));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

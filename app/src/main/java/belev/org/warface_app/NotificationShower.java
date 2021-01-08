@@ -11,6 +11,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -19,16 +20,34 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import androidx.annotation.RequiresApi;
 import belev.org.warface_app.data.DataContract;
 import belev.org.warface_app.data.DataDbHelper;
 
-public class NotificationShower {
+public class NotificationShower extends AsyncTask {
 
     private Context context;
     private List<News> newsArray;
     DataDbHelper dbHelper;
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    protected Object doInBackground(Object[] objects) {
+        try {
+            Thread.sleep(TimeUnit.SECONDS.toMillis(15));
+        } catch (InterruptedException e) {
+            Log.e("CustomLogTag", "Exception");
+        }
+
+        loadNotShowedNews();
+        showNotificationIfExists();
+        // changeNewsToShowed();
+        Log.e("CustomLogTag", "Inside notification");
+
+        return null;
+    }
 
     public NotificationShower(Context context) {
         this.context = context;
@@ -36,12 +55,14 @@ public class NotificationShower {
         dbHelper = new DataDbHelper(context);
     }
 
+    /*
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void show() {
         loadNotShowedNews();
         showNotificationIfExists();
         changeNewsToShowed();
     }
+    */
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void notificationShow(News news) {
@@ -51,7 +72,7 @@ public class NotificationShower {
         String name = "news_channel_name";
         String text = news.getPreviewText();
         int notifyId = 100;
-        int importance = NotificationManager.IMPORTANCE_DEFAULT;
+        int importance = NotificationManager.IMPORTANCE_LOW;
 
         Intent intent = new Intent(context, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
