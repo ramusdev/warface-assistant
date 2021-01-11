@@ -392,18 +392,19 @@ public class MainActivity extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void run() {
-                UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(getApplicationContext());
-                updateNewsAsync.execute();
-                ClearNewsAsync clearNewsAsync = new ClearNewsAsync(getApplicationContext());
-                clearNewsAsync.execute();
+                Log.e("CustomLogTag", "Inside notification handler");
+                // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(getApplicationContext());
+                // updateNewsAsync.execute();
+                // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(getApplicationContext());
+                // clearNewsAsync.execute();
                 NotificationShower notificationShower = new NotificationShower(getApplicationContext());
                 notificationShower.execute();
 
-                handler.postDelayed(this, TimeUnit.HOURS.toMillis(12));
+                handler.postDelayed(this, TimeUnit.MINUTES.toMillis(1));
             }
         };
 
-        handler.postDelayed(runnable, TimeUnit.HOURS.toMillis(12));
+        handler.postDelayed(runnable, TimeUnit.MINUTES.toMillis(1));
     }
 
     public boolean isOnline() {
