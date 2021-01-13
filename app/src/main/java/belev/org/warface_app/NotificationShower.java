@@ -43,8 +43,7 @@ public class NotificationShower extends AsyncTask {
 
         loadNotShowedNews();
         showNotificationIfExists();
-        // changeNewsToShowed();
-        Log.e("CustomLogTag", "Inside notification");
+        changeNewsToShowed();
 
         return null;
     }

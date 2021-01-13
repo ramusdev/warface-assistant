@@ -1,7 +1,10 @@
 package belev.org.warface_app;
 
+import android.app.AlarmManager;
 import android.app.Application;
+import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -32,6 +35,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.common.util.concurrent.ListenableFuture;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -347,6 +351,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /*
     public void createWorkManagerIfNotExists() {
         WorkManager workManager = WorkManager.getInstance(this);
         ListenableFuture<List<WorkInfo>> statuses = workManager.getWorkInfosByTag("task_worker");
@@ -361,6 +366,7 @@ public class MainActivity extends AppCompatActivity {
             // Log.e("CustomLogTag", e.getMessage());
         }
     }
+    */
 
     public void updateNewsIfNotExists() {
         NewsLoader newsLoader = new NewsLoader(this.getApplicationContext());
@@ -378,33 +384,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createTasks() {
-        Log.e("CustomLogTag", "Inside on create tasks");
         updateNewsIfNotExists();
-        createWorkManagerIfNotExists();
-        createNotification();
+        createPeriodicTask();
     }
 
-    public void createNotification() {
+    public void createPeriodicTask() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        calendar.add(Calendar.SECOND, 10);
+        long time = calendar.getTimeInMillis();
 
-        handler = new Handler();
+        Intent intent = new Intent(this, BroadcastReceiverCustom.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        Runnable runnable = new Runnable() {
-            @RequiresApi(api = Build.VERSION_CODES.O)
-            @Override
-            public void run() {
-                Log.e("CustomLogTag", "Inside notification handler");
-                // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(getApplicationContext());
-                // updateNewsAsync.execute();
-                // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(getApplicationContext());
-                // clearNewsAsync.execute();
-                NotificationShower notificationShower = new NotificationShower(getApplicationContext());
-                notificationShower.execute();
-
-                handler.postDelayed(this, TimeUnit.MINUTES.toMillis(1));
-            }
-        };
-
-        handler.postDelayed(runnable, TimeUnit.MINUTES.toMillis(1));
+        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        manager.setRepeating(AlarmManager.RTC_WAKEUP, time, TimeUnit.HOURS.toMillis(12), pendingIntent);
     }
 
     public boolean isOnline() {

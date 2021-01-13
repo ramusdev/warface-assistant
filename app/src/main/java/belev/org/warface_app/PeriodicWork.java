@@ -20,32 +20,11 @@ public class PeriodicWork extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(context);
-        updateNewsAsync.execute();
-        ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);
-        clearNewsAsync.execute();
-        // NotificationShower notificationShower = new NotificationShower(context);
-        // notificationShower.execute();
+        // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(context);
+        // updateNewsAsync.execute();
+        // ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);
+        // clearNewsAsync.execute();
 
         return Result.success();
     }
-
-    /*
-    public boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            Network network = connectivityManager.getActiveNetwork();
-            if (network == null) return false;
-            NetworkCapabilities networkCapabilities = connectivityManager.getNetworkCapabilities(network);
-            return networkCapabilities != null && (networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) ||
-                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
-                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) ||
-                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_BLUETOOTH)
-            );
-        } else {
-            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-            return networkInfo != null && networkInfo.isConnected();
-        }
-    }
-    */
 }

@@ -25,7 +25,7 @@ public class PeriodicWorkCreator {
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .build();
 
-        PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(PeriodicWork.class, 24, TimeUnit.HOURS)
+        PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(PeriodicWork.class, 12, TimeUnit.HOURS)
                 .setConstraints(constraints)
                 .addTag("task_worker")
                 .build();
