@@ -1,9 +1,13 @@
 package belev.org.warface_app;
 
+import android.os.Build;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
+
+import androidx.annotation.RequiresApi;
 
 public class News {
 
@@ -75,6 +79,7 @@ public class News {
         return image;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public static String formatFromDatabaseToView(String date) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH);
         LocalDateTime dateTime = LocalDateTime.parse(date, formatter);
@@ -86,6 +91,7 @@ public class News {
         return dateTo;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public static String formatFromParseToDatabase(String date) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
         LocalDateTime dateTime = LocalDateTime.parse(date, formatter);
