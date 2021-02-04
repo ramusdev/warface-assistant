@@ -3,11 +3,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Options</string>
     <string name="ad_attribution">Ad</string>
-
     <item name="adView" type="id"/>
-
     <string name="interstitial_full_screen">ca-app-pub-4140002463111288/3644037371</string>
-
+    <string name="news_link">https://pc.warface.com/en/rss.xml</string>
     <string name="about_text">
 <![CDATA[This application is not a product of Crytek.<br><br>
 
@@ -17,7 +15,7 @@ The application contains the information on the achievements of the project Warf
 
 Privacy Policy <a href="https://edgenews.ru/android/wardocwarface/privacy/privacy_policy.html">read.</a><br><br>
 
-Copyright contain images and materials are owned by Crytek and are the intellectual property of Crytek: © 2020 Crytek GmbH. All rights reserved.<br><br>
+Copyright contain images and materials are owned by Crytek and are the intellectual property of Crytek: © 2021 Crytek GmbH. All rights reserved.<br><br>
 
 Crytek, CryEngine, Warface and the Warface logo are registered trademarks or trademarks of Crytek.<br><br>
 
@@ -32,7 +30,7 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
    <![CDATA[
         <font color=#e65d20>Hello! Donate the app!</font><br><br>
         Warface Assistant is completely free and only supported by your donations.<br><br>
-        If you liked the application, donate it, it will motivate you to further improve it.
+        If you liked the application, donate it, it will motivate us.
     ]]>
     </string>
 
@@ -48,7 +46,7 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="menu_achievements">ACHIEVEMENTS</string>
     <string name="menu_update">DONATE</string>
     <string name="menu_news">NEWS</string>
-    <string name="menu_vloger">VLOGER</string>
+    <string name="menu_vloger">VLOGERS</string>
     <string name="menu_locations">LOCATIONS</string>
     <string name="menu_rifleman">RIFLEMAN</string>
     <string name="menu_sniper">SNIPER</string>

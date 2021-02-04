@@ -43,7 +43,7 @@ public class UpdateNewsAsync extends AsyncTask<Void, Void, Void> {
 
 
     public void parseNews() {
-        NewsParser newsParser = new NewsParser();
+        NewsParser newsParser = new NewsParser(context);
         newsArray = newsParser.pars();
     }
 

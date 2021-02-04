@@ -4,17 +4,17 @@
     <string name="action_settings">Настройки</string>
     <string name="ad_attribution">Ad</string>
     <item name="adView" type="id"/>
-    <!-- ca-app-pub-4140002463111288/3644037371 -->
     <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="news_link">https://ru.warface.com/rss.xml</string>
     <string name="about_text">
 <![CDATA[Данное приложение не является продуктом компании Crytek.<br><br>
 Приложение содержит информацию по игровым достижениям проекта Warface<br><br>
 <font color=#e65d20>Правовое уведомление</font><br><br>
 Политика конфиденциальности <a href="https://edgenews.ru/android/wardocwarface/privacy/privacy_policy.html">читать.</a><br><br>
-Авторские права содержащихся изображений и материалов принадлежат компании Crytek и являются интеллектуальной собственностью Crytek: © 2020 Crytek GmbH. Все права защищены.<br><br>
+Авторские права содержащихся изображений и материалов принадлежат компании Crytek и являются интеллектуальной собственностью Crytek: © 2021 Crytek GmbH. Все права защищены.<br><br>
 Crytek, CryEngine, Warface и логотип Warface являются зарегистрированными товарными знаками или товарными знаками Crytek.<br><br>
 <font color=#e65d20>Дополнительная информация</font><br><br>
-- Текущая версия: 3.2.1<br>
+- Текущая версия: 3.3.1<br>
 - Разработчик: RB dev.<br>
 - Связаться: ram219219@gmail.com]]>
 </string>
@@ -72,6 +72,5 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_connection">ConnectionActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <string name="frame_donat_textview" />
 
 </resources>

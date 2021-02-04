@@ -83,8 +83,8 @@ public class News {
     public static String formatFromDatabaseToView(String date) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH);
         LocalDateTime dateTime = LocalDateTime.parse(date, formatter);
-
-        Locale locale = new Locale("ru");
+        
+        Locale locale = new Locale(Locale.getDefault().getLanguage());
         DateTimeFormatter formatterTo = DateTimeFormatter.ofPattern("dd MMMM yyyy", locale);
         String dateTo = dateTime.format(formatterTo);
 

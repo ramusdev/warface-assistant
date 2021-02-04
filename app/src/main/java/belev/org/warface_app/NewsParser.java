@@ -1,5 +1,7 @@
 package belev.org.warface_app;
 
+import android.content.Context;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -12,21 +14,23 @@ import java.util.List;
 public class NewsParser {
 
     private final String URL_CONNECT = "https://ru.warface.com/rss.xml";
-    // private final String URL_CONNECT = "https://pc.warface.com/en/rss.xml";
     private final String USER_AGENT = "Chrome/4.0.249.0 Safari/532.5";
     private final String REFERRER = "https://www.google.com";
     private final int COUNT_NEWS = 10;
 
     private List<News> newsArray;
     private Document document;
+    private Context context;
 
-    public NewsParser() {
+    public NewsParser(Context context) {
+        this.context = context;
         newsArray = new ArrayList<News>(COUNT_NEWS);
     }
 
     public List<News> pars() {
         try {
-            document = Jsoup.connect(URL_CONNECT)
+            String url = context.getResources().getString(R.string.news_link);
+            document = Jsoup.connect(url)
                     .userAgent(USER_AGENT)
                     .referrer(REFERRER)
                     .get();
