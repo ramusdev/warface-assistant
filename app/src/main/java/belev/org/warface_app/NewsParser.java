@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NewsParser {
 
-    private final String URL_CONNECT = "https://ru.warface.com/rss.xml";
+    // private final String URL_CONNECT = "https://ru.warface.com/rss.xml";
     private final String USER_AGENT = "Chrome/4.0.249.0 Safari/532.5";
     private final String REFERRER = "https://www.google.com";
     private final int COUNT_NEWS = 10;

@@ -2,178 +2,190 @@
 <resources>
 
 	<string-array name="rang_name">
-		<item>Rank 1</item>
-		<item>Rank 2</item>
-		<item>Rank 3</item>
-		<item>Rank 4</item>
-		<item>Rank 5</item>
-		<item>Rank 6</item>
-		<item>Rank 7</item>
-		<item>Rank 8</item>
-		<item>Rank 9</item>
-		<item>Rank 10</item>
-		<item>Rank 11</item>
-		<item>Rank 12</item>
-		<item>Rank 13</item>
-		<item>Rank 14</item>
-		<item>Rank 15</item>
-		<item>Rank 16</item>
-		<item>Rank 17</item>
-		<item>Rank 18</item>
-		<item>Rank 19</item>
-		<item>Rank 20</item>
-		<item>Rank 21</item>
-		<item>Rank 22</item>
-		<item>Rank 23</item>
-		<item>Rank 24</item>
-		<item>Rank 25</item>
-		<item>Rank 26</item>
-		<item>Rank 27</item>
-		<item>Rank 28</item>
-		<item>Rank 29</item>
-		<item>Rank 30</item>
-		<item>Rank 31</item>
-		<item>Rank 32</item>
-		<item>Rank 33</item>
-		<item>Rank 34</item>
-		<item>Rank 35</item>
-		<item>Rank 36</item>
-		<item>Rank 37</item>
-		<item>Rank 38</item>
-		<item>Rank 39</item>
-		<item>Rank 40</item>
-		<item>Rank 41</item>
-		<item>Rank 42</item>
-		<item>Rank 43</item>
-		<item>Rank 44</item>
-		<item>Rank 45</item>
-		<item>Rank 46</item>
-		<item>Rank 47</item>
-		<item>Rank 48</item>
-		<item>Rank 49</item>
-		<item>Rank 50</item>
-		<item>Rank 51</item>
-		<item>Rank 52</item>
-		<item>Rank 53</item>
-		<item>Rank 54</item>
-		<item>Rank 55</item>
-		<item>Rank 56</item>
-		<item>Rank 57</item>
-		<item>Rank 58</item>
-		<item>Rank 59</item>
-		<item>Rank 60</item>
-		<item>Rank 61</item>
-		<item>Rank 62</item>
-		<item>Rank 63</item>
-		<item>Rank 64</item>
-		<item>Rank 65</item>
-		<item>Rank 66</item>
-		<item>Rank 67</item>
-		<item>Rank 68</item>
-		<item>Rank 69</item>
-		<item>Rank 70</item>
-		<item>Rank 71</item>
-		<item>Rank 72</item>
-		<item>Rank 73</item>
-		<item>Rank 74</item>
-		<item>Rank 75</item>
-		<item>Rank 76</item>
-		<item>Rank 77</item>
-		<item>Rank 78</item>
-		<item>Rank 79</item>
-		<item>Rank 80</item>
-		<item>Rank 81</item>
-		<item>Rank 82</item>
-		<item>Rank 83</item>
-		<item>Rank 84</item>
+		<item>Ранг 1</item>
+		<item>Ранг 2</item>
+		<item>Ранг 3</item>
+		<item>Ранг 4</item>
+		<item>Ранг 5</item>
+		<item>Ранг 6</item>
+		<item>Ранг 7</item>
+		<item>Ранг 8</item>
+		<item>Ранг 9</item>
+		<item>Ранг 10</item>
+		<item>Ранг 11</item>
+		<item>Ранг 12</item>
+		<item>Ранг 13</item>
+		<item>Ранг 14</item>
+		<item>Ранг 15</item>
+		<item>Ранг 16</item>
+		<item>Ранг 17</item>
+		<item>Ранг 18</item>
+		<item>Ранг 19</item>
+		<item>Ранг 20</item>
+		<item>Ранг 21</item>
+		<item>Ранг 22</item>
+		<item>Ранг 23</item>
+		<item>Ранг 24</item>
+		<item>Ранг 25</item>
+		<item>Ранг 26</item>
+		<item>Ранг 27</item>
+		<item>Ранг 28</item>
+		<item>Ранг 29</item>
+		<item>Ранг 30</item>
+		<item>Ранг 31</item>
+		<item>Ранг 32</item>
+		<item>Ранг 33</item>
+		<item>Ранг 34</item>
+		<item>Ранг 35</item>
+		<item>Ранг 36</item>
+		<item>Ранг 37</item>
+		<item>Ранг 38</item>
+		<item>Ранг 39</item>
+		<item>Ранг 40</item>
+		<item>Ранг 41</item>
+		<item>Ранг 42</item>
+		<item>Ранг 43</item>
+		<item>Ранг 44</item>
+		<item>Ранг 45</item>
+		<item>Ранг 46</item>
+		<item>Ранг 47</item>
+		<item>Ранг 48</item>
+		<item>Ранг 49</item>
+		<item>Ранг 50</item>
+		<item>Ранг 51</item>
+		<item>Ранг 52</item>
+		<item>Ранг 53</item>
+		<item>Ранг 54</item>
+		<item>Ранг 55</item>
+		<item>Ранг 56</item>
+		<item>Ранг 57</item>
+		<item>Ранг 58</item>
+		<item>Ранг 59</item>
+		<item>Ранг 60</item>
+		<item>Ранг 61</item>
+		<item>Ранг 62</item>
+		<item>Ранг 63</item>
+		<item>Ранг 64</item>
+		<item>Ранг 65</item>
+		<item>Ранг 66</item>
+		<item>Ранг 67</item>
+		<item>Ранг 68</item>
+		<item>Ранг 69</item>
+		<item>Ранг 70</item>
+		<item>Ранг 71</item>
+		<item>Ранг 72</item>
+		<item>Ранг 73</item>
+		<item>Ранг 74</item>
+		<item>Ранг 75</item>
+		<item>Ранг 76</item>
+		<item>Ранг 77</item>
+		<item>Ранг 78</item>
+		<item>Ранг 79</item>
+		<item>Ранг 80</item>
+		<item>Ранг 81</item>
+		<item>Ранг 82</item>
+		<item>Ранг 83</item>
+		<item>Ранг 84</item>
+		<item>Ранг 85</item>
+		<item>Ранг 86</item>
+		<item>Ранг 87</item>
+		<item>Ранг 88</item>
+		<item>Ранг 89</item>
+		<item>Ранг 90</item>
     </string-array>
         
-    <string-array name="rang_about"> 
-<item><![CDATA[Rookie<br>0 XP]]></item>
-<item><![CDATA[Junior recruit.<br>700 XP]]></item>
-<item><![CDATA[Recruit<br>1400 XP]]></item>
-<item><![CDATA[Senior recruit.<br>2 400 XP]]></item>
-<item><![CDATA[Recruit class 1<br>3 900 XP]]></item>
-<item><![CDATA[Soldiers<br>5800 XP]]></item>
-<item><![CDATA[Private recruit<br>8 100 XP]]></item>
-<item><![CDATA[Private class 2<br>11 000 XP]]></item>
-<item><![CDATA[Private<br>14 600 XP]]></item>
-<item><![CDATA[Private 1st class<br>18 800 XP]]></item>
- <item><![CDATA[Specialist<br>23 800 XP]]></item>
-<item><![CDATA[Senior specialist<br>29 600 XP]]></item>
-<item><![CDATA[Technician<br>36 300 XP]]></item>
-<item><![CDATA[Specialist 1st class<br>44 100 XP]]></item>
-<item><![CDATA[Scout<br>53 000 XP]]></item>
-<item><![CDATA[Lance corporal<br>63 000 XP]]></item>
-<item><![CDATA[Corporal<br>74 500 XP]]></item>
-<item><![CDATA[Commander<br>87 400 XP]]></item>
-<item><![CDATA[Sergeant 3rd class<br>102 000 XP]]></item>
-<item><![CDATA[Sergeant 2nd class<br>118 400 XP]]></item>
-<item><![CDATA[Sergeant<br>136 700 XP]]></item>
- <item><![CDATA[Staff Sergeant<br>157 200 XP]]></item>
-<item><![CDATA[Sergeant 1st class<br>180 000 XP]]></item>
-<item><![CDATA[Gunnery Sergeant<br>205 200 XP]]></item>
-<item><![CDATA[Master-Sergeant<br>233 300 XP]]></item>
-<item><![CDATA[First Sergeant<br>264 400 XP]]></item>
-<item><![CDATA[Team-Sergeant<br>298 700 XP]]></item>
-<item><![CDATA[Master gunnery Sergeant<br>336 500 XP]]></item>
-<item><![CDATA[Sergeant major<br>378 000 XP]]></item>
-<item><![CDATA[Command-Sergeant major<br>423 700 XP]]></item>
-<item><![CDATA[Junior warrant officer<br>473 700 XP]]></item>
- <item><![CDATA[Warrant officer<br>528 400 XP]]></item>
-<item><![CDATA[Chief warrant officer<br>588 100 XP]]></item>
-<item><![CDATA[Chief warrant officer 1st class<br>653 400 XP]]></item>
-<item><![CDATA[Master warrant officer<br>724 400 XP]]></item>
-<item><![CDATA[Quartermaster<br>801 600 XP]]></item>
-<item><![CDATA[Junior officer<br>885 500 XP]]></item>
-<item><![CDATA[Senior officer<br>976 400 XP]]></item>
-<item><![CDATA[Junior Lieutenant<br>1 074 800 XP]]></item>
-<item><![CDATA[Second Lieutenant<br>1 181 100 XP]]></item>
- <item><![CDATA[First Lieutenant<br>1 296 000 XP]]></item>
-<item><![CDATA[Lieutenant<br>1 419 700 XP]]></item>
-<item><![CDATA[Senior Lieutenant<br>1 552 900 XP]]></item>
-<item><![CDATA[Captain-Lieutenant<br>1 696 200 XP]]></item>
-<item><![CDATA[Captain<br>1 849 900 XP]]></item>
-<item><![CDATA[Captain of the intelligence<br>2 014 800 XP]]></item>
-<item><![CDATA[Special forces Captain<br>2 191 200 XP]]></item>
-<item><![CDATA[Major<br>2 380 000 XP]]></item>
-<item><![CDATA[Lieutenant Colonel<br>2 581 500 XP]]></item>
-<item><![CDATA[Colonel<br>2 796 400 XP]]></item>
- <item><![CDATA[Brigadier General<br>3 025 300 XP]]></item>
-<item><![CDATA[Major General<br>3 268 800 XP]]></item>
-<item><![CDATA[Lieutenant-General<br>3 527 500 XP]]></item>
-<item><![CDATA[Colonel-General<br>3 801 900 XP]]></item>
-<item><![CDATA[General<br>092 4 800 XP]]></item>
-<item><![CDATA[General of the army<br>4 400 600 XP]]></item>
-<item><![CDATA[Commander<br>4 726 000 XP]]></item>
-<item><![CDATA[Marshall<br>5 069 500 XP]]></item>
-<item><![CDATA[Supreme commander<br>5 431 800 XP]]></item>
-<item><![CDATA[Warface<br>6 000 000 XP]]></item>
- <item><![CDATA[Lieutenant of a detachment of the Immortal<br>6 568 200 XP]]></item>
-<item><![CDATA[Senior Lieutenant of a detachment of the Immortal<br>7 136 400 XP]]></item>
-<item><![CDATA[Captain of the detachment of the Immortal<br>7 704 600 XP]]></item>
-<item><![CDATA[Major detachment of the Immortal<br>8 800 272 XP]]></item>
-<item><![CDATA[Colonel of the detachment of the Immortal<br>8 841 000 XP]]></item>
-<item><![CDATA[Colonel of the detachment of the Immortal<br>9 409 200 XP]]></item>
-<item><![CDATA[Major-General of the detachment of the Immortal<br>9 977 400 XP]]></item>
-<item><![CDATA[General-the Lieutenant of a detachment of the Immortal<br>10 545 600 XP]]></item>
- <item><![CDATA[Colonel-General of the detachment of the Immortal<br>11 113 800 XP]]></item>
-<item><![CDATA[Marshal of the detachment of the Immortal<br>11 682 000 XP]]></item>
-<item><![CDATA[Lieutenant of squad Gods of War<br>12 250 200 XP]]></item>
-<item><![CDATA[Senior Lieutenant of squad Gods of War<br>12 818 400 XP]]></item>
-<item><![CDATA[The Captain of squad Gods of War<br>13 386 600 XP]]></item>
-<item><![CDATA[Major squad Gods of War<br>13 954 800 XP]]></item>
-<item><![CDATA[Colonel squad Gods of War<br>14 523 000 XP]]></item>
-<item><![CDATA[Colonel squad Gods of War<br>15 091 200 XP]]></item>
-<item><![CDATA[Major-General of the squad Gods of War<br>15 659 400 XP]]></item>
-<item><![CDATA[General-the Lieutenant of squad Gods of War<br>16 227 600 XP]]></item>
-<item><![CDATA[Colonel-General of the squad Gods of War<br>16 795 800 XP]]></item>
-<item><![CDATA[Marshall squad Gods of War<br>17 364 000 XP]]></item>
-<item><![CDATA[Lieutenant of squad the Messengers of death<br>17 932 200 XP]]></item>
-<item><![CDATA[Senior Lieutenant of squad the Messengers of death<br>18 500 400 XP]]></item>
-<item><![CDATA[The Captain of squad the Messengers of death<br>19 068 600 XP]]></item>
- <item><![CDATA[Major detachment of the Messengers of death<br>19 636 800 XP]]></item>
-</string-array>
+    <string-array name="rang_about">        
+		<item><![CDATA[Новобранец<br>0 XP]]></item>
+		<item><![CDATA[Младший рекрут<br>700 XP]]></item>
+		<item><![CDATA[Рекрут<br>1400 XP]]></item>
+		<item><![CDATA[Старший рекрут<br>2 400 XP]]></item>
+		<item><![CDATA[Рекрут 1 класса<br>3 900 XP]]></item>
+		<item><![CDATA[Солдат<br>5800 XP]]></item>
+		<item><![CDATA[Рядовой рекрут<br>8 100 XP]]></item>
+		<item><![CDATA[Рядовой 2 класса<br>11 000 XP]]></item>
+		<item><![CDATA[Рядовой<br>14 600 XP]]></item>
+		<item><![CDATA[Рядовой 1 класса<br>18 800 XP]]></item>
+		<item><![CDATA[Специалист<br>23 800 XP]]></item>
+		<item><![CDATA[Старший специалист<br>29 600 XP]]></item>
+		<item><![CDATA[Техник<br>36 300 XP]]></item>
+		<item><![CDATA[Специалист 1 класса<br>44 100 XP]]></item>
+		<item><![CDATA[Разведчик<br>53 000 XP]]></item>
+		<item><![CDATA[Младший капрал<br>63 000 XP]]></item>
+		<item><![CDATA[Капрал<br>74 500 XP]]></item>
+		<item><![CDATA[Командир звена<br>87 400 XP]]></item>
+		<item><![CDATA[Сержант 3 класса<br>102 000 XP]]></item>
+		<item><![CDATA[Сержант 2 класса<br>118 400 XP]]></item>
+		<item><![CDATA[Сержант<br>136 700 XP]]></item>
+		<item><![CDATA[Штаб-сержант<br>157 200 XP]]></item>
+		<item><![CDATA[Сержант 1 класса<br>180 000 XP]]></item>
+		<item><![CDATA[Комендор-сержант<br>205 200 XP]]></item>
+		<item><![CDATA[Мастер-сержант<br>233 300 XP]]></item>
+		<item><![CDATA[Первый сержант<br>264 400 XP]]></item>
+		<item><![CDATA[Команд-сержант<br>298 700 XP]]></item>
+		<item><![CDATA[Мастер-комендор-сержант<br>336 500 XP]]></item>
+		<item><![CDATA[Сержант-майор<br>378 000 XP]]></item>
+		<item><![CDATA[Команд-сержант-майор<br>423 700 XP]]></item>
+		<item><![CDATA[Младший уорент-офицер<br>473 700 XP]]></item>
+		<item><![CDATA[Уорент-офицер<br>528 400 XP]]></item>
+		<item><![CDATA[Старший уорент-офицер<br>588 100 XP]]></item>
+		<item><![CDATA[Старший уорент-офицер 1 класса<br>653 400 XP]]></item>
+		<item><![CDATA[Мастер уорент-офицер<br>724 400 XP]]></item>
+		<item><![CDATA[Квартирмейстер<br>801 600 XP]]></item>
+		<item><![CDATA[Младший офицер<br>885 500 XP]]></item>
+		<item><![CDATA[Старший офицер<br>976 400 XP]]></item>
+		<item><![CDATA[Младший лейтенант<br>1 074 800 XP]]></item>
+		<item><![CDATA[Второй лейтенант<br>1 181 100 XP]]></item>
+		<item><![CDATA[Первый лейтенант<br>1 296 000 XP]]></item>
+		<item><![CDATA[Лейтенант<br>1 419 700 XP]]></item>
+		<item><![CDATA[Старший лейтенант<br>1 552 900 XP]]></item>
+		<item><![CDATA[Капитан-лейтенант<br>1 696 200 XP]]></item>
+		<item><![CDATA[Капитан<br>1 849 900 XP]]></item>
+		<item><![CDATA[Капитан разведки<br>2 014 800 XP]]></item>
+		<item><![CDATA[Капитан спецназа<br>2 191 200 XP]]></item>
+		<item><![CDATA[Майор<br>2 380 000 XP]]></item>
+		<item><![CDATA[Подполковник<br>2 581 500 XP]]></item>
+		<item><![CDATA[Полковник<br>2 796 400 XP]]></item>
+		<item><![CDATA[Бригадный генерал<br>3 025 300 XP]]></item>
+		<item><![CDATA[Генерал-майор<br>3 268 800 XP]]></item>
+		<item><![CDATA[Генерал-лейтенант<br>3 527 500 XP]]></item>
+		<item><![CDATA[Генерал-полковник<br>3 801 900 XP]]></item>
+		<item><![CDATA[Генерал<br>4 092 800 XP]]></item>
+		<item><![CDATA[Генерал армии<br>4 400 600 XP]]></item>
+		<item><![CDATA[Главнокомандующий<br>4 726 000 XP]]></item>
+		<item><![CDATA[Маршал<br>5 069 500 XP]]></item>
+		<item><![CDATA[Верховный главнокомандующий<br>5 431 800 XP]]></item>
+		<item><![CDATA[Warface<br>6 000 000 XP]]></item>
+		<item><![CDATA[Лейтенант отряда Бессмертные<br>6 568 200 XP]]></item>
+		<item><![CDATA[Старший лейтенант отряда Бессмертные<br>7 136 400 XP]]></item>
+		<item><![CDATA[Капитан отряда Бессмертные<br>7 704 600 XP]]></item>
+		<item><![CDATA[Майор отряда Бессмертные<br>8 272 800 XP]]></item>
+		<item><![CDATA[Подполковник отряда Бессмертные<br>8 841 000 XP]]></item>
+		<item><![CDATA[Полковник отряда Бессмертные<br>9 409 200 XP]]></item>
+		<item><![CDATA[Генерал-майор отряда Бессмертные<br>9 977 400 XP]]></item>
+		<item><![CDATA[Генерал-лейтенант отряда Бессмертные<br>10 545 600 XP]]></item>
+		<item><![CDATA[Генерал-полковник отряда Бессмертные<br>11 113 800 XP]]></item>
+		<item><![CDATA[Маршал отряда Бессмертные<br>11 682 000 XP]]></item>
+		<item><![CDATA[Лейтенант отряда Боги Войны<br>12 250 200 XP]]></item>
+		<item><![CDATA[Старший лейтенант отряда Боги Войны<br>12 818 400 XP]]></item>
+		<item><![CDATA[Капитан отряда Боги Войны<br>13 386 600 XP]]></item>
+		<item><![CDATA[Майор отряда Боги Войны<br>13 954 800 XP]]></item>
+		<item><![CDATA[Подполковник отряда Боги Войны<br>14 523 000 XP]]></item>
+		<item><![CDATA[Полковник отряда Боги Войны<br>15 091 200 XP]]></item>
+		<item><![CDATA[Генерал-майор отряда Боги Войны<br>15 659 400 XP]]></item>
+		<item><![CDATA[Генерал-лейтенант отряда Боги Войны<br>16 227 600 XP]]></item>
+		<item><![CDATA[Генерал-полковник отряда Боги Войны<br>16 795 800 XP]]></item>
+		<item><![CDATA[Маршал отряда Боги Войны<br>17 364 000 XP]]></item>
+		<item><![CDATA[Лейтенант отряда Вестники смерти<br>17 932 200 XP]]></item>
+		<item><![CDATA[Старший лейтенант отряда Вестники смерти<br>18 500 400 XP]]></item>
+		<item><![CDATA[Капитан отряда Вестники смерти<br>19 068 600 XP]]></item>
+		<item><![CDATA[Майор отряда Вестники смерти<br>19 636 800 XP]]></item>
+		<item><![CDATA[Подполковник отряда Вестники смерти<br>20 123 250 XP]]></item>
+		<item><![CDATA[Полковник отряда Вестники смерти<br>20 773 200 XP]]></item>
+		<item><![CDATA[Генерал-майор отряда Вестники смерти<br>21 341 400 XP]]></item>
+		<item><![CDATA[Генерал-лейтенант отряда Вестники смерти<br>21 909 600 XP]]></item>
+		<item><![CDATA[Генерал-полковник отряда Вестники смерти<br>22 477 800 XP]]></item>
+		<item><![CDATA[Маршал отряда Вестники смерти<br>23 046 000 XP]]></item>
+    </string-array>
 	
     <array name="rang_icon">
         <item>@drawable/rang_01</item>
@@ -260,6 +272,12 @@
 		<item>@drawable/rang_82</item>
 		<item>@drawable/rang_83</item>
 		<item>@drawable/rang_84</item>
+		<item>@drawable/rang_85</item>
+		<item>@drawable/rang_86</item>
+		<item>@drawable/rang_87</item>
+		<item>@drawable/rang_88</item>
+		<item>@drawable/rang_89</item>
+		<item>@drawable/rang_90</item>
     </array>
      
 </resources>

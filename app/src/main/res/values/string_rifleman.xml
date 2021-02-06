@@ -1,108 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="rifleman_verb_name">
-        <item>M4A1</item>
-        <item>Daewoo K2</item>
-        <item>Daewoo K3</item>
-        <item>M16A2 LMG</item>
-        <item>AS Val</item>
-        <item>IMBEL IA2</item>
-        <item>MSBS Radon</item>
-        <item>XM8</item>
-        <item>M60E4</item>
-        <item>HK G36K</item>
-        <item>HK MG36</item>
-        <item>Calico M955A</item>
-        <item>Galil AR</item>
-        <item>Tavor TAR-21</item>
-        <item>AK‐103</item>
-        <item>RPK</item>
-        <item>XM8 LMG</item>
-        <item>SAI GRY AR-15</item>
-    </string-array>
-    <string-array name="rifleman_verb_type">
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Time</item>
-        <item>Time</item>
-        <item>Time</item>
-        <item>Time</item>
-        <item>Time</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-        <item>Forever</item>
-    </string-array>
-    <string-array name="rifleman_verb_about">
-        <item>A Modified version of M16 with a shortened barrel and a retractable butt</item>
-        <item>Assault rifle of the armed forces of South Korea, was developed by company ST Daewoo</item>
-        <item>Light machine gun caliber 5.56 mm. resembling the FN Minimi machine gun</item>
-        <item>The Standard medium machine gun that was previously on the US army and now used by the U.S. marine corps</item>
-        <item>As Val (the automatic Machine Special) — the Soviet machine with built-in silencer. Developed by TSNII Tochmash in the second half of 1980-ies</item>
-         <item>Assault rifle IMBEL IA2 was officially adopted by the Brazilian army as the replacement of obsolete FN-FAL and M16A2</item>
-        <item>Polish small complex (Modułowy Systema Broni Strzeleckiej — modular system of small arms), made in the layout of bullpup</item>
-        <item>Light assault rifle developed for the US army in the early 2000-ies</item>
-        <item>Modification of the gun М60Е3 with the possibility of changing the barrel and mounting of optical sights</item>
-         <item>Assault rifle calibre 5.56х45 mm, developed in the early 90-ies the German company Heckler Koch</item>
-        <item>German light machine gun developed by Heckler Koch</item>
-        <item>Universal automatic rifle blowback that uses cartridges of .22 LR or 9x19 mm Parabellum</item>
-        <item>Israeli machine developed on the basis of the Finnish RK 62 machine. Primarily intended for combat in the desert</item>
-         <item>Israeli assault rifle calibre 5.56х45 mm, made by the scheme bullpup. The body of weapons made of light alloys and high strength polymers</item>
-        <item>Russian assault rifle 7.62 mm</item>
-        <item>Soviet Light machine gun caliber 7.62x39 mm, created by Mikhailov Kalashnikov in the late 1950s, in parallel with an assault rifle AKM</item>
-        <item>Light machine gun based on the XM8 with a heavier barrel and a drum magazine for 100 rounds</item>
-         <item>Assault rifle for tactical operations and sporting events. The weapon comes with a unique flash Hider Jailbrake and increased store</item>
-    </string-array>
-    <array name="rifleman_verb_link">
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m4a1.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_daewook2.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_daewook3.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m16a2lmg.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_acval.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_imbelia2.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_msbsradon.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_xm8.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m60e4.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_hkg36k.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_hkmg36.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_calicom955a.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_galilar.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_tavortar21.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_ak103.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_rpk.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_xm8lmg.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_saigryar15.html</item>
-    </array>
-    <array name="rifleman_verb_icon">
-        <item>@drawable/rifleman_m4a1</item>
-        <item>@drawable/rifleman_daewook2</item>
-        <item>@drawable/rifleman_daewook3</item>
-        <item>@drawable/rifleman_m16a2lmg</item>
-        <item>@drawable/rifleman_acval</item>
-        <item>@drawable/rifleman_imbelia2</item>
-        <item>@drawable/rifleman_msbsradon</item>
-        <item>@drawable/rifleman_xm8</item>
-        <item>@drawable/rifleman_m60e4</item>
-        <item>@drawable/rifleman_hkg36k</item>
-        <item>@drawable/rifleman_hkmg36</item>
-        <item>@drawable/rifleman_calicom955a</item>
-        <item>@drawable/rifleman_galilar</item>
-        <item>@drawable/rifleman_tavortar21</item>
-        <item>@drawable/rifleman_ak103</item>
-        <item>@drawable/rifleman_rpk</item>
-        <item>@drawable/rifleman_xm8lmg</item>
-        <item>@drawable/rifleman_saigryar15</item>
-    </array>
+<string-array name="rifleman_verb_name">
+<item>Type 97B</item>
+<item>VHS-2</item>
+<item>M4A1</item>
+<item>Daewoo K2</item>
+<item>Daewoo K3</item>
+<item>M16A2 LMG</item>
+<item>AC Shaft</item>
+<item>IMBEL IA2</item>
+<item>MSBS Radon</item>
+<item>XM8</item>
+<item>M60E4</item>
+<item>HK G36K</item>
+<item>HK MG36</item>
+<item>Calico M955A</item>
+<item>Galil AR</item>
+<item>Tavor TAR-21</item>
+<item>AK-103</item>
+<item>PKK</item>
+<item>XM8 LMG</item>
+<item>SAI GRY AR-15</item>
+<item>DP-27</item>
+</string-array>
+<string-array name="rifleman_verb_type">
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+<item>Forever</item>
+</string-array>
+<string-array name="rifleman_verb_about">
+<item>Unique Type 97B assault rifle, developed on the basis of the Type 97 submachine gun</item>
+<item>Croatian automatic machine made in the bullpup layout</item>
+<item>Modified version of the M16 with a shortened barrel and a retractable butt </item>
+<item>Assault rifle of the South Korean Armed Forces, developed by ST Daewoo</item>
+<item>5.56 mm light machine gun similar in design to the FN Minimi machine gun</item>
+<item>Standard medium machine gun, which was previously in service with the US Army, and is now used by the US Marine Corps</item>
+<item>AS Val (Special Machine Gun) — a Soviet machine gun with a built-in silencer. Developed by TsNII Tochmash in the second half of the 1980s</item>
+<item>The IMBEL IA2 assault rifle was officially adopted by the Brazilian army as a replacement for the obsolete FN-FAL and M16A2</item>
+<item>Polish rifle complex (Modułowy Systema Broni Strzeleckiej-modular small arms system), made in the bull-pap layout</item>
+<item>Light assault rifle developed for the US Army in the early 2000s</item>
+<item>Modification of the M60E3 machine gun with the ability to change the barrel and mount optical sights</item>
+<item>Assault rifle caliber 5. 56x45 mm, developed in the early 90s by the German company Heckler Koch</item>
+<item>German light machine gun developed by Heckler Koch</item>
+<item>Universal automatic rifle with a free bolt, using caliber cartridges .22 LR or 9x19 mm Parabellum</item>
+<item>Israeli machine gun, developed on the basis of the Finnish machine gun RK 62. Mainly designed for desert combat</item>
+<item>Israeli assault rifle caliber 5. 56x45 mm, made according to the scheme of bull-pop. The body of the weapon is made of light alloys and high-strength polymers</item>
+<item>Russian 7.62 mm assault rifle</item>
+<item>Light Soviet machine gun caliber 7. 62x39 mm, created by Mikhail Kalashnikov in the late 1950s in parallel with the AKM assault rifle</item>
+<item>Manual machine gun based on the XM8 complex with a weighted barrel and a drum magazine for 100 rounds</item>
+<item>Assault rifle for tactical operations and sports competitions. The weapon comes with a unique Jailbrake flame extinguisher and an enlarged magazine</item>
+<item>The legendary Degtyarev machine gun, the main weapon of fire support of the Red Army infantry.</item>
+</string-array>
+<array name="rifleman_verb_link">
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_type97b.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_vhs2.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_m4a1.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_daewook2.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_daewook3.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_m16a2lmg.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_acval.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_imbelia2.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_msbsradon.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_xm8.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_m60e4.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_hkg36k.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_hkmg36.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_calicom955a.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_galilar.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_tavortar21.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_ak103.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_rpk.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_xm8lmg.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_saigryar15.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_dp27.html</item>
+</array>
+<array name="rifleman_verb_icon">
+<item>@drawable/rifleman_type97b</item>
+<item>@drawable/rifleman_vhs2</item>
+<item>@drawable/rifleman_m4a1</item>
+<item>@drawable/rifleman_daewook2</item>
+<item>@drawable/rifleman_daewook3</item>
+<item>@drawable/rifleman_m16a2lmg</item>
+<item>@drawable/rifleman_acval</item>
+<item>@drawable/rifleman_imbelia2</item>
+<item>@drawable/rifleman_msbsradon</item>
+<item>@drawable/rifleman_xm8</item>
+<item>@drawable/rifleman_m60e4</item>
+<item>@drawable/rifleman_hkg36k</item>
+<item>@drawable/rifleman_hkmg36</item>
+<item>@drawable/rifleman_calicom955a</item>
+<item>@drawable/rifleman_galilar</item>
+<item>@drawable/rifleman_tavortar21</item>
+<item>@drawable/rifleman_ak103</item>
+<item>@drawable/rifleman_rpk</item>
+<item>@drawable/rifleman_xm8lmg</item>
+<item>@drawable/rifleman_saigryar15</item>
+<item>@drawable/rifleman_dp27</item>
+</array>
 
     <string-array name="rifleman_kred_name">
+        <item>H&#38;K MG5 121</item>
+        <item>AN-94 Abakan</item>
+        <item>HArms CQR</item>
+        <item>M240B</item>
+        <item>Stoner LMG A1</item>
+        <item>Sturmgewehr 44</item>
+        <item>HCAR</item>
+        <item>RAP Custom</item>
         <item>AUG A3</item>
         <item>HK MG4</item>
         <item>Famas F1</item>
@@ -111,30 +134,62 @@
         <item>AUG A3 Hbar</item>
     </string-array>
     <string-array name="rifleman_kred_type">
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
     </string-array>
     <string-array name="rifleman_kred_about">
-        <item>Austrian assault rifle caliber 5.56 mm, made by the scheme bullpup</item>
-        <item>Light machine gun caliber 5.56 mm belt feed, which produces the German company Heckler Koch</item>
-        <item>Assault rifle in the layout of the bullpup, developed by MAS</item>
-        <item>Belgian assault rifle calibre 5.56х45 mm NATO was developed by company FN Herstal</item>
-        <item>Shortened version of the SIG 550, is equipped with a modified sighting system</item>
-        <item>Modified variant of the AUG A3 rifle with a heavier barrel that is used as a light machine gun</item>
+        <item>German single machine gun from the company "Heckler and Koch", also known as the HandK MG5.</item>
+        <item>The legendary machine gun, which allows you to fire cut-offs of two shots without recoil between them, which provides a very high accuracy of shooting. </item>
+        <item>Lightweight rifle with excellent ergonomics, developed in Germany based on the AR-15 platform.</item>
+        <item>The standard medium machine gun, which was previously in service with the US Army, and is now used by the US Marine Corps.</item>
+        <item>The Knights Armament Light Assault Machine Gun is a light machine gun system developed by Eugene Stoner and produced by the Knights Armament Company.</item>
+        <item>A German submachine gun developed during World War II.</item>
+        <item>HCAR is interesting both for snipers who want to go beyond the usual gameplay, and for stormtroopers who want to try something different from their usual machine guns.</item>
+        <item>The Degtyarev light machine gun (RPD) appeared back in 1944 and served as an infantry support weapon until the mid-sixties. </item>
+        <item>Austrian 5.56 mm assault rifle, made according to the bullpup scheme</item>
+        <item>A 5.56 mm belt-fed light machine gun manufactured by the German company Heckler Koch</item>
+        <item>Assault rifle in the bullpup layout, created by MAS</item>
+        <item>Belgian 5.56x45 mm NATO assault rifle developed by FN Herstal</item>
+        <item>A shortened version of the SIG 550, equipped with a modified sighting system</item>
+        <item>Modified version of the AUG A3 rifle with a weighted barrel, used as a light machine gun</item>
     </string-array>
     <array name="rifleman_kred_link">
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_auga3.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_hkmg4.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_famasf1.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_fnf2000.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_sig551.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_auga3hbar.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_handkmg5121.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_ah94abakan.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_harmscqr.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_m240b.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_stonerlmga1.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_sturmgewehr44.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_hcar.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_rpdcustom.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_auga3.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_hkmg4.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_famasf1.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_fnf2000.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_sig551.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_auga3hbar.html</item>
     </array>
     <array name="rifleman_kred_icon">
+        <item>@drawable/rifleman_handkmg5121</item>
+        <item>@drawable/rifleman_ah94abakan</item>
+        <item>@drawable/rifleman_harmscqr</item>
+        <item>@drawable/rifleman_m240b</item>
+        <item>@drawable/rifleman_stonerlmga1</item>
+        <item>@drawable/rifleman_sturmgewehr44</item>
+        <item>@drawable/rifleman_hcar</item>
+        <item>@drawable/rifleman_rpdcustom</item>
         <item>@drawable/rifleman_auga3</item>
         <item>@drawable/rifleman_hkmg4</item>
         <item>@drawable/rifleman_famasf1</item>
@@ -144,8 +199,17 @@
     </array>
 
     <string-array name="rifleman_box_name">
+        <item>Sten MkIIS</item>
+        <item>Howa Type 89 Custom</item>
+        <item>F90 MBR</item>
+        <item>CZ 805 BREN A2</item>
+        <item>Cobalt Kinetics EDGE Rifle</item>
+        <item>Arcus Tactics</item>
+        <item>AK-12</item>
+        <item>FN FAL DSA 58</item>
+        <item>AK Alpha</item>
         <item>Beretta ARX160</item>
-        <item>АК-47</item>
+        <item>AK-47</item>
         <item>MG3</item>
         <item>PKP Pecheneg</item>
         <item>M16A3</item>
@@ -156,52 +220,87 @@
         <item>Type 97</item>
     </string-array>
     <string-array name="rifleman_box_type">
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
-        <item>For a while or forever</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
     </string-array>
     <string-array name="rifleman_box_about">
-        <item>Assault rifle developed by Beretta in 2008. Convenient to recoil, high rate of fire and great penetration</item>
-        <item>Famous slot machine developed by Mikhail Kalashnikov and adopted in the USSR in 1949</item>
-        <item>A single German machine gun caliber 7.62x51 mm NATO</item>
-        <item>Single Russian 7.62×54 mm with high firepower and long range shooting</item>
-         <item>Version of the M16A2 rifle with Picatinny rail installed above the receiver, which allows the use of most military and civilian sighting devices</item>
-        <item>Variant of the M249 machine gun with a short barrel and a sliding butt in the first place intended for airborne troops</item>
-        <item>British assault rifle allowing you to fire in short bursts with a cutoff of three rounds</item>
-         <item>ACR — abbreviation for Adaptive Combat Rifle (adaptive assault rifle), Developed in the USA as a replacement for the M16 assault rifle</item>
-        <item>SCAR — assault rifle developed by FN Herstal for the command of the U.S. special operations (SOCOM)</item>
-        <item>Export version of the Chinese Type 97 rifle, developed under the cartridge 5 56х45 mm NATO, so that the receiver of the store complies with STANAG.</item>
+        <item>Sten production was launched at the beginning of the Second World War.</item>
+        <item>An improved version of the Howa Type 89 rifle in service with the Self-Defense Forces.</item>
+        <item>Light assault rifle developed by the Australian company Thales.</item>
+        <item>A shortened model of the Czech machine gun CZ 805 with a cartridge of 5.56x45 mm.</item>
+        <item>Light assault rifle manufactured by Cobalt Kinetics, the receiver of which is made of a single piece of aluminum.</item>
+        <item>A unique weapon that shoots dense clumps of energy.</item>
+        <item>A modern machine gun designed to replace the legendary AK-74 in the Russian army.</item>
+        <item>The Belgian FN FAL assault rifle, along with the Kalashnikov assault rifle and the M16, is one of the most widely used in the world</item>
+        <item>Unique AK Alpha assault rifle, developed on the basis of the Kalashnikov assault rifle,</item>
+        <item>Assault rifle developed by Beretta in 2008. It is characterized by convenient recoil, high rate of fire and high penetration ability</item>
+        <item>The famous automatic rifle developed by Mikhail Kalashnikov and adopted in the USSR in 1949</item>
+        <item>German single 7.62x51 mm NATO machine gun</item>
+        <item>Russian single 7.62×54 mm machine gun with high firepower and long range </item>
+        <item>A variant of the M16A2 rifle with a Picatinny rail mounted above the receiver, which allows the use of most military and civilian sighting devices</item>
+        <item>A variant of the M249 machine gun with a shortened barrel and a sliding butt, primarily intended for amphibious troops</item>
+        <item>British assault rifle that allows you to fire in short bursts with a cut - off of three rounds</item>
+        <item>ACR-short for Adaptive Combat Rifle (adaptive assault rifle), Developed in the United States as a replacement for the M16 assault rifle</item>
+        <item>The SCAR is an assault rifle developed by FN Herstal for the United States Special Operations Command (SOCOM)</item>
+        <item>Export version of the Chinese Type 97 rifle, designed for the 5. 56x45 mm NATO cartridge,so that the magazine receiver meets the STANAG standard.</item>
     </string-array>
-    <array name="rifleman_box_link">
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_berettaarx160.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_ak47.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_mg3.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_pkppecheneg.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m16a3.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_m249para.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_enfieldl85a2.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_acr.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_fnscarh.html</item>
-        <item>http://belev.org/android/wardocwarface/weapons/en/rifleman_type97.html</item>
-    </array>
-    <array name="rifleman_box_icon">
-        <item>@drawable/rifleman_berettaarx160</item>
-        <item>@drawable/rifleman_ak47</item>
-        <item>@drawable/rifleman_mg3</item>
-        <item>@drawable/rifleman_pkppecheneg</item>
-        <item>@drawable/rifleman_m16a3</item>
-        <item>@drawable/rifleman_m249para</item>
-        <item>@drawable/rifleman_enfieldl85a2</item>
-        <item>@drawable/rifleman_acr</item>
-        <item>@drawable/rifleman_fnscarh</item>
-        <item>@drawable/rifleman_type97</item>
-    </array>
-    
+   <array name="rifleman_box_link">
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_steinmk2s.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_nowatype89custom.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_f90mbr.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_cz805brena2.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_cobaltkineticsedgerifle.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_arcustactics.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_ak12.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_fnfaldsa58.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_akalfa.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_berettaarx160.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_ak47.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_mg3.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_pkppecheneg.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_m16a3.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_m249para.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_enfieldl85a2.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_acr.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_fnscarh.html</item>
+<item>https://edgenews.ru/android/wardocwarface/weapons/en/rifleman_type97.html</item>
+</array>
+<array name="rifleman_box_icon">
+<item>@drawable/rifleman_steinmk2s</item>
+<item>@drawable/rifleman_nowatype89custom</item>
+<item>@drawable/rifleman_f90mbr</item>
+<item>@drawable/rifleman_cz805brena2</item>
+<item>@drawable/rifleman_cobaltkineticsedgerifle</item>
+<item>@drawable/rifleman_arcustactics</item>
+<item>@drawable/rifleman_ak12</item>
+<item>@drawable/rifleman_fnfaldsa58</item>
+<item>@drawable/rifleman_akalfa</item>
+<item>@drawable/rifleman_berettaarx160</item>
+<item>@drawable/rifleman_ak47</item>
+<item>@drawable/rifleman_mg3</item>
+<item>@drawable/rifleman_pkppecheneg</item>
+<item>@drawable/rifleman_m16a3</item>
+<item>@drawable/rifleman_m249para</item>
+<item>@drawable/rifleman_enfieldl85a2</item>
+<item>@drawable/rifleman_acr</item>
+<item>@drawable/rifleman_fnscarh</item>
+<item>@drawable/rifleman_type97</item>
+</array>
 </resources>

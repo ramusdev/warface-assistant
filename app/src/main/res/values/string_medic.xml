@@ -1,187 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<string-array name="medic_verb_name">
-<item>Remington Model 870</item>
-<item>SPAS-12</item>
-<item>Sidewinder Venom</item>
-<item>UTAS UTS-15</item>
-<item>Derya MK-10 VR 102</item>
-<item>Remington 870 CB</item>
-<item>MS 255 12</item>
-<item>Saiga</item>
-<item>Hawk Pump</item>
-<item>Benelli Nova tactical</item>
-<item>Benelli M4 Super 90</item>
-<item>SRM 1216</item>
-<item>Boar</item>
-<item>Saiga H. G. C. Custom</item>
-</string-array>
- <string-array name="medic_verb_type">
-<item>Forever</item>
-<item>Forever</item>
-<item>Time</item>
-<item>Time</item>
-<item>Time</item>
-<item>Forever</item>
-<item>Forever</item>
-<item>Forever</item>
-<item>Forever</item>
-<item>Forever</item>
-<item>Forever</item>
-<item>Forever</item>
-<item>Forever</item>
-<item>Forever</item>
-</string-array>
-<string-array name="medic_verb_about">
- <item>American pump-action shotgun manufactured by Remington Arms Company, Inc. Widely used for sport shooting, hunting and self-defense</item>
-<item>Combat shotgun, which was produced by the Italian arms company Franchi S. p.A. in 1979-2000 gg</item>
-<item>Tactical shotgun, which is an improved version of the Mossberg 590</item>
-<item>Shotgun 12-gauge, made by the scheme bullpup</item>
-<item>Turkish rifle with a vertical store, designed according to best practice standards and using modern materials</item>
- <item>Special combat model American pump guns the Remington 870, which produces Remington Arms Company, Inc.</item>
-<item>Drum gun, developed in 1990, the Central design and research Bureau of sporting and hunting weapons (TsKIB COO) in Tula</item>
-<item>Combat shotgun 12 caliber on the basis of the Kalashnikov assault rifle, available in different versions</item>
-<item>Main advantage of Hawk Pump before competitors - balanced</item>
- <item>Nova Shotgun is one of the latest developments of the famous Italian company Benelli Arms</item>
-<item>Semi-auto shotgun 12-gauge, manufactured by the Italian company Benelli Armi SpA. Automation works on the principle of removal of powder gases</item>
-<item>Smoothbore gun, developed by the American company SRM Arms Inc. The ammunition supply is carried out with the help of detachable rotary store 16 cartridges</item>
-<item>Self-loading carbine, which is produced at machine-building plant Molot</item>
- <item>Hunting rifle 12-gauge at the base of the Kalashnikov assault rifle, available in different versions</item>
-</string-array>
-<array name="medic_verb_link">
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_remingtonmodel870.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_spas12.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_sidewindervenom.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_utasuts15.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_deryamk10vr102.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_remington870cb.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_mc25512.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_sayga.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_hawkpump.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_benellinovatactical.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_benellim4super90.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_srm1216.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_vepr.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_saygahgccustom.html</item>
-</array>
-<array name="medic_verb_icon">
-<item>@drawable/medic_remingtonmodel870</item>
-<item>@drawable/medic_spas12</item>
-<item>@drawable/medic_sidewindervenom</item>
-<item>@drawable/medic_utasuts15</item>
-<item>@drawable/medic_deryamk10vr102</item>
-<item>@drawable/medic_remington870cb</item>
-<item>@drawable/medic_mc25512</item>
-<item>@drawable/medic_sayga</item>
-<item>@drawable/medic_hawkpump</item>
-<item>@drawable/medic_benellinovatactical</item>
-<item>@drawable/medic_benellim4super90</item>
-<item>@drawable/medic_srm1216</item>
-<item>@drawable/medic_vepr</item>
-<item>@drawable/medic_saygahgccustom</item>
+    <string-array name="medic_verb_name">
+        <item>FCG-R3 K2</item>
+        <item>SAP6</item>
+        <item>Remington Model 870</item>
+        <item>SPAS-12</item>
+        <item>Sidewinder Venom</item>
+        <item>UTAS UTS-15</item>
+        <item>Derya MK-10 VR 102</item>
+        <item>Remington 870 CB</item>
+        <item>MC 255 12</item>
+        <item>Saiga</item>
+        <item>Hawk Pump</item>
+        <item>Benelli Nova tactical</item>
+        <item>Benelli M4 Super 90</item>
+        <item>SRM 1216</item>
+        <item>Boar</item>
+        <item>Saiga H. G. C. Custom</item>
+    </string-array>
+    <string-array name="medic_verb_type">
+        <item>On time</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+    </string-array>
+    <string-array name="medic_verb_about">
+        <item>A new model of an experimental armor-piercing rifle that allows you to hit a target with cluster charges.</item>
+        <item>A pump-action shotgun that uses magazines to speed up reloading.</item>
+        <item>An American pump-action shotgun manufactured by Remington Arms Company, Inc. Widely used for sports shooting, hunting and self-defense</item>
+        <item>Combat shotgun, which was produced by the Italian arms company Franchi S. p. A. in 1979-2000</item>
+        <item>Tactical pump-action shotgun, an improved version of the Mossberg 590</item>
+        <item>12-gauge smoothbore shotgun, made according to the bullpup scheme</item>
+        <item>Turkish rifle with vertical magazine, designed according to advanced standards and using modern materials</item>
+        <item>A special combat model of the American Remington 870 pump-action shotgun, which is manufactured by Remington Arms Company, Inc.</item>
+        <item>Drum rifle, developed in 1990 by the Central Design and Research Bureau of Sports and Hunting Weapons (TsKIB SOO) in Tula</item>
+        <item>12-gauge combat shotgun based on the Kalashnikov assault rifle, available in various modifications</item>
+        <item>The main advantage of Hawk Pump over its competitors is its balance</item>
+        <item>The Nova rifle is one of the latest developments of the famous Italian company Benelli Arms</item>
+        <item>A 12-gauge semi-automatic rifle manufactured by the Italian company Benelli Armi SpA. Automation works on the principle of removal of powder gases</item>
+        <item>A smoothbore rifle developed by the American company SRM Arms Inc. The ammunition supply is carried out with the help of a detachable rotary magazine for 16 rounds</item>
+        <item>Self-loading carbine, which is produced at the Molot machine-building plant</item>
+        <item>12-gauge hunting carbine based on the Kalashnikov assault rifle, available in various modifications</item>
+    </string-array>
+    <array name="medic_verb_link">
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fcgr3k2.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_sap6.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_remingtonmodel870.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_spas12.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_sidewindervenom.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_utasuts15.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_deryamk10vr102.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_remington870cb.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_mc25512.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_sayga.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_hawkpump.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_benellinovatactical.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_benellim4super90.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_srm1216.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_vepr.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_saygahgccustom.html</item>
+  </array>
+  <array name="medic_verb_icon">
+    <item>@drawable/medic_fcgr3k2</item>
+    <item>@drawable/medic_sap6</item>
+    <item>@drawable/medic_remingtonmodel870</item>
+    <item>@drawable/medic_spas12</item>
+    <item>@drawable/medic_sidewindervenom</item>
+    <item>@drawable/medic_utasuts15</item>
+    <item>@drawable/medic_deryamk10vr102</item>
+    <item>@drawable/medic_remington870cb</item>
+    <item>@drawable/medic_mc25512</item>
+    <item>@drawable/medic_sayga</item>
+    <item>@drawable/medic_hawkpump</item>
+    <item>@drawable/medic_benellinovatactical</item>
+    <item>@drawable/medic_benellim4super90</item>
+    <item>@drawable/medic_srm1216</item>
+    <item>@drawable/medic_vepr</item>
+    <item>@drawable/medic_saygahgccustom</item>
 </array>
 
 <string-array name="medic_kred_name">
- <item>Kel-Tec Shotgun</item>
-<item>SPAS-15</item>
-<item>Jackhammer</item>
-<item>Anakon</item>
-<item>Cobray Striker</item>
+    <item>Benelli M4 Custom</item>
+    <item>Tavor TS12 Custom</item>
+    <item>Saiga Spike</item>
+    <item>Kel-Tec KS7</item>
+    <item>Typhoon F12</item>
+    <item>Marlin 1894 Custom</item>
+    <item>Uzkon UNG-12</item>
+    <item>Fostech Origin-12</item>
+    <item>Winchester 1887</item>
+    <item>Kel-Tec Shotgun</item>
+    <item>SPAS-15</item>
+    <item>Jackhammer</item>
+    <item>Anakon</item>
+    <item>Cobray Striker</item>
 </string-array>
 <string-array name="medic_kred_type">
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
+    <item>Forever</item>
 </string-array>
 <string-array name="medic_kred_about">
-<item>Pump-action shotgun 12-gauge, made by the scheme bullpup</item>
- <item>Italian gun manufacturing company Franchi S. p.A. created based on SPAS-12</item>
-<item>Automatic shotgun 12-gauge, was developed by Pancor Corporation. Automation gun works by movement of the trunk forward under the pressure of gases</item>
-<item>Turkish semi-automatic shotgun 12-gauge, was developed by company Derya Arms</item>
-<item>Combat shotgun 12-gauge revolver-type developed in South Africa by Hilton Walker in the early 80-ies</item>
+    <item>Smoothbore semi-automatic rifle, created by the Italian company Benelli Armi SpA.</item>
+    <item>Israeli 12-gauge rifle with a roomy tube magazine, made according to the "bull-pop" scheme.</item>
+    <item>A modified version of the" Saiga " in the bullpup layout. The gun is manufactured by Center Balanced Systems. </item>
+    <item>A new pump-action shotgun in the bull-pop layout, developed by the American company Kel-Tec.</item>
+    <item>Turkish semi-automatic rifle of 12-caliber, developed on the basis of the AR-15 platform and almost repeating it in shape.</item>
+    <item>Marlin 1894 Custom — a new weapon of the medic, when you get acquainted with which you immediately remember two unique guns.</item>
+    <item>Uzkon UNG-12 fully automatic shotgun has a high rate of fire, creating a serious threat to a whole group of opponents at close range.</item>
+    <item>The Origin-12 self-loading smoothbore rifle is developed and manufactured by a small American weapons company, Fostech Outdoors.</item>
+    <item>The famous American weapons designer John Moses Browning originally proposed using a scheme with a longitudinal-sliding reload forearm.</item>
+    <item>Pump-action shotgun 12-gauge, made according to the bull-pop scheme.</item>
+    <item>Italian rifle manufactured by Franchi S. p.A., based on the SPAS-12.</item>
+    <item>A 12-gauge automatic rifle developed by the Pancor Corporation. Automatic rifle works by moving the barrel forward under the pressure of gases.</item>
+    <item>Turkish semi-automatic 12-gauge shotgun developed by Derya Arms.</item>
+    <item>A 12-gauge revolver-type combat rifle developed in South Africa by Hilton Walker in the early 80s.</item>
 </string-array>
 <array name="medic_kred_link">
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_keltecshotgun.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_spas15.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_jackhammer.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_anakom.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_cobraystriker.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_benellim4custom.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_tavorts12custom.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_saygaspike.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_keltecks7.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_typhoonf12.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_merlin1894custom.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_uzkonung12.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fostechorigin12.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_winchester1887.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_keltecshotgun.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_spas15.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_jackhammer.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_anakom.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_cobraystriker.html</item>
 </array>
 <array name="medic_kred_icon">
-<item>@drawable/medic_keltecshotgun</item>
-<item>@drawable/medic_spas15</item>
-<item>@drawable/medic_jackhammer</item>
-<item>@drawable/medic_anakom</item>
-<item>@drawable/medic_cobraystriker</item>
+    <item>@drawable/medic_benellim4custom</item>
+    <item>@drawable/medic_tavorts12custom</item>
+    <item>@drawable/medic_saygaspike</item>
+    <item>@drawable/medic_keltecks7</item>
+    <item>@drawable/medic_typhoonf12</item>
+    <item>@drawable/medic_merlin1894custom</item>
+    <item>@drawable/medic_uzkonung12</item>
+    <item>@drawable/medic_fostechorigin12</item>
+    <item>@drawable/medic_winchester1887</item>
+    <item>@drawable/medic_keltecshotgun</item>
+    <item>@drawable/medic_spas15</item>
+    <item>@drawable/medic_jackhammer</item>
+    <item>@drawable/medic_anakom</item>
+    <item>@drawable/medic_cobraystriker</item>
 </array>
 
-    <string-array name="medic_box_name">
-<item>AA-12</item>
-<item>Remington 870 RAS</item>
-<item>Saiga‐12C</item>
-<item>USAS-12</item>
-<item>Mossberg 500 Custom</item>
-<item>SIX12</item>
-<item>Fabarm S. A. T. 8 Pro</item>
-<item>Fabarm STF 12 Compact</item>
-<item>Fabarm XLR5 Prestige</item>
-<item>MAG-7</item>
-<item>DP-12</item>
+<string-array name="medic_box_name">
+    <item>Chiappa Triple Threat</item>
+    <item>Fabarm P.S.S.10</item>
+    <item>AA-12</item>
+    <item>Remington 870 RAS</item>
+    <item>Saiga‐12C</item>
+    <item>USAS-12</item>
+    <item>Mossberg 500 Custom</item>
+    <item>SIX12</item>
+    <item>Fabarm S.A.T. 8 Pro</item>
+    <item>Fabarm STF 12 Compact</item>
+    <item>Fabarm XLR5 Prestige</item>
+    <item>MAG-7</item>
+    <item>DP-12</item>
 </string-array>
 <string-array name="medic_box_type">
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
- <item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
-<item>For a while or forever</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
+    <item>Temporarily or permanently</item>
 </string-array>
-<string-array name="medic_box_about">
-<item>Automatic shotgun was developed by Maxwell Atchisson in 1972 based on the experience of the Vietnam war</item>
- <item>Military model pump shotgun Remington 870 with rail, Knight Armament, which allows to set the sight and an excellent butt</item>
-<item>Saiga-12C — a modified version of a normal Saiga with a longer barrel. Weapons the series is known for its reliability and efficiency</item>
-<item>Automatic shotgun, developed in South Korea by Daewoo Precision Industries in the late 1980-ies. </item>
-<item>Modified version of the Mossberg 500 shotguns with the rail system, MagPul MBUS sight, plastic forearm Forend and butt Stock SGA</item>
- <item>Modern shotgun 12-gauge, made by the scheme bullpup. Ammunition supply for the weapon used rotating cylinder with six cartridges</item>
-<item>Modern semi-auto shotgun developed by the Italian company Fabarm. Different ergonomics and perfect balance</item>
-<item>Tactical pump-action shotgun created by innovative technologies. Advantageously differs from other similar weapons compactness and reliability in battle.</item>
- <item>Shotgun Italian company Fabarm S. p.A developed services with policing, security</item>
-<item>Compact pump-action shotgun developed on the basis of machine gun pistol UZI and designed for combat in terms of short range shooting</item>
-<item>Pump-action shotgun the DP-12 designed and manufactured by the American arms company Standard Manufacturing</item>
+<string-array name= "medic_box_about" >
+<item>An Italian three-barrelled shotgun developed by Chiappa Firearms. </item>
+    <item>A self-loading rifle developed by Fabarm. It has a high rate of fire and low recoil.</item>
+    <item>Automatic rifle, developed by Maxwell Atchisson in 1972, based on the experience of the Vietnam War</item>
+    <item>Military model of the Remington 870 pump-action shotgun with a Knight Armament guide that allows you to set the sight and a convenient butt </item>
+    <item>Saiga-12C-a modified version of the conventional Saiga with an elongated trunk. Weapons of this series are famous for their reliability and efficiency</item>
+    <item>An automatic shotgun developed in South Korea by Daewoo Precision Industries in the late 1980s. </item>
+    <item>Modified version of the Mossberg 500 rifle with guide system, MagPul MBUS sight, Forend plastic handguard and SGA Stock stock </item>
+    <item>A modern 12-gauge shotgun, made according to the bull-pop scheme. Rotating cylinders for six rounds are used to feed the weapon</item>
+    <item>A modern semi-automatic rifle developed by the Italian company Fabarm. It is distinguished by thoughtful ergonomics and excellent balance</item>
+    <item>Tactical pump-action shotgun, created by innovative technologies. It compares favorably with other similar weapons in terms of compactness and reliability in combat.</item>
+    <item>Smoothbore shotguns of the Italian company Fabarm S. p. A are designed for the services of order protection, security</item>
+    <item>Compact pump-action shotgun, developed on the basis of the UZI submachine gun and designed for combat in conditions of short firing range</item>
+    <item>The DP-12 pump-action smoothbore rifle is developed and manufactured by the American Standard Manufacturing company </item>
 </string-array>
 <array name="medic_box_link">
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_aa12.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_remington870ras.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_sayga12c.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_usas12.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_mossberg500custom.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_six12.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_fabarmsat8pro.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_fabarmst12compact.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_fabarmxlr5prestige.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_mag7.html</item>
-<item>http://belev.org/android/wardocwarface/weapons/en/medic_dp12.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_chiappatriplethreat.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fabarmpss10.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_aa12.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_remington870ras.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_sayga12c.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_usas12.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_mossberg500custom.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_six12.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fabarmsat8pro.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fabarmst12compact.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fabarmxlr5prestige.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_mag7.html</item>
+    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_dp12.html</item>
 </array>
 <array name="medic_box_icon">
-<item>@drawable/medic_aa12</item>
-<item>@drawable/medic_remington870ras</item>
-<item>@drawable/medic_sayga12c</item>
-<item>@drawable/medic_usas12</item>
-<item>@drawable/medic_mossberg500custom</item>
-<item>@drawable/medic_six12</item>
-<item>@drawable/medic_fabarmsat8pro</item>
-<item>@drawable/medic_fabarmst12compact</item>
-<item>@drawable/medic_fabarmxlr5prestige</item>
-<item>@drawable/medic_mag7</item>
-<item>@drawable/medic_dp12</item>
+    <item>@drawable/medic_chiappatriplethreat</item>
+    <item>@drawable/medic_fabarmpss10</item>
+    <item>@drawable/medic_aa12</item>
+    <item>@drawable/medic_remington870ras</item>
+    <item>@drawable/medic_sayga12c</item>
+    <item>@drawable/medic_usas12</item>
+    <item>@drawable/medic_mossberg500custom</item>
+    <item>@drawable/medic_six12</item>
+    <item>@drawable/medic_fabarmsat8pro</item>
+    <item>@drawable/medic_fabarmst12compact</item>
+    <item>@drawable/medic_fabarmxlr5prestige</item>
+    <item>@drawable/medic_mag7</item>
+    <item>@drawable/medic_dp12</item>
 </array>
 
 </resources>

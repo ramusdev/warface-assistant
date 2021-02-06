@@ -1,192 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string-array name="enginer_verb_name">
-		<item>H&#38;K MP5A5 Custom</item>
-		<item>H&#38;K MP5</item>
-		<item>M4 CQB</item>
-		<item>B&#38;T MP9</item>
-		<item>Beretta MX4 Storm</item>
-		<item>PM-84 Glauberyt Custom</item>
-		<item>SR-2 Veresk</item>
-		<item>PP-2000</item>
-		<item>H&#38;K G36C</item>
-		<item>Daewoo K1</item>
-		<item>AK-9</item>
-		<item>H&#38;K MP7</item>
-		<item>AUG A3 9mm XS</item>
-		<item>Mini Uzi</item>
-		<item>PP-19 Bizon</item>
-		<item>Kriss super V</item>
-	</string-array>
-	<string-array name="enginer_verb_type">
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Time</item>
-		<item>Time</item>
-		<item>Time</item>
-		<item>Time</item>
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Forever</item>
-		<item>Forever</item>
-	</string-array>
-	<string-array name="enginer_verb_about">
-		<item>Modification of a classical model of submachine gun MP5 from the company Heckler &#38; Koch GmbH</item>
-		<item>German submachine gun of 9 mm caliber, created in the 1960-ies a group of engineers from Heckler &#38; Koch GmbH</item>
-		<item>Universal submachine gun, a modification of the M16A2 with a shortened barrel 262 mm</item>
-		<item>Compact and lightweight submachine gun in size and weight only marginally superior automatic pistols</item>
-		<item>Latest submachine gun produced by Italian company Beretta. The weapon uses automation with a free gate and comes with a Picatinny rail</item>
-		<item>Polish is a Compact submachine gun, characterized by high accuracy and allowing to cause serious damage at close range.</item>
-		<item>Compact submachine gun developed by TSNIITOCHMASH in the mid 1990-ies by the order of FSB</item>
-		<item>Russian submachine gun developed by the Tula instrument design Bureau. Due to the large rate of fire and high firepower</item>
-		<item>Universal submachine gun caliber 5.56x45 mm, developed in the early 90-ies the German company Heckler &#38; Koch</item>
-		<item>First modern firearms, created by Agency ADD and put into production by S&#38;T Daewoo</item>
-		<item>Shortened machine, based on the Kalashnikov assault rifles of the hundredth series. Uses subsonic cartridges of caliber 9 x 39 mm</item>
-		<item>German submachine gun manufactured by the company Heckler &#38; Koch (H&#38;K). Uses cartridges of caliber 4.6x30 mm</item>
-		<item>This submachine gun of caliber of 9 mm is a modified version of an assault rifle Steyr AUG and is designed for special forces unit.</item>
-		<item>Famous Israeli sub-machine guns from the family of Uzi used by police and military in more than 90 countries</item>
-		<item>Submachine Gun caliber 9x19mm, developed by a group of experts headed by Victor Kalashnikov son of the famous designer</item>
-		<item>Submachine Gun caliber .45 ACP, developed by Transformational Defense Industries</item>
-	</string-array>
-	<array name="enginer_verb_link">
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_handkmp5a5.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_handkmp5.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_m4cqb.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_bandmp9.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_berettamx4storm.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_pm84glauberytcustom.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_cp2veresk.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_pp2000.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_handkg36c.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_daewook1.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_ak9.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_handkmp7.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_auga39xs.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_miniuzi.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_pp19bizon.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_krisssuperv.html</item>
-	</array>
-	<array name="enginer_verb_icon">
-		<item>@drawable/enginer_handkmp5a5</item>
-		<item>@drawable/enginer_handkmp5</item>
-		<item>@drawable/enginer_m4cqb</item>
-		<item>@drawable/enginer_bandmp9</item>
-		<item>@drawable/enginer_berettamx4storm</item>
-		<item>@drawable/enginer_pm84glauberytcustom</item>
-		<item>@drawable/enginer_cp2veresk</item>
-		<item>@drawable/enginer_pp2000</item>
-		<item>@drawable/enginer_handkg36c</item>
-		<item>@drawable/enginer_daewook1</item>
-		<item>@drawable/enginer_ak9</item>
-		<item>@drawable/enginer_handkmp7</item>
-		<item>@drawable/enginer_auga39xs</item>
-		<item>@drawable/enginer_miniuzi</item>
-		<item>@drawable/enginer_pp19bizon</item>
-		<item>@drawable/enginer_krisssuperv</item>
-	</array>
+    <string-array name="enginer_verb_name">
+        <item>Arcus Scout</item>
+        <item>UZI Pro</item>
+        <item>H&#38;K MP5A5 Custom</item>
+        <item>H&#38;K MP5</item>
+        <item>M4 CQB</item>
+        <item>B&#38;T MP9</item>
+        <item>Beretta MX4 Storm</item>
+        <item>PM-84 Glauberyt Custom</item>
+        <item>WED-2 Heather</item>
+        <item>PP-2000</item>
+        <item>H&#38;K G36C</item>
+        <item>Daewoo K1</item>
+        <item>AK-9</item>
+        <item>H&#38;K MP7</item>
+        <item>AUG A3 9mm XS</item>
+        <item>Mini Uzi</item>
+        <item>PP-19 Bison</item>
+        <item>Kriss super V</item>
+    </string-array>
+    <string-array name="enginer_verb_type">
+        <item>On time</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+    </string-array>
+    <string-array name="enginer_verb_about">
+        <item>This model has an increased rate of fire, but is characterized by a relatively small range of fire.
+</item>
+        <item>UZI Pro is a comfortable, highly effective and perfectly balanced gun that will be appreciated by players who prefer an aggressive style of playing as an engineer.</item>
+        <item>Modification of the classic model of the MP5 submachine gun from Heckler &#38; Koch GmbH</item>
+        <item>German 9 mm submachine gun, created in the 1960s by a group of engineers from Heckler &#38; Koch GmbH</item>
+        <item>Universal submachine gun, modification M16A2 with a shortened barrel of 262 mm</item>
+        <item>Compact and lightweight submachine gun, only slightly larger in size and weight than automatic pistols</item>
+        <item>The latest submachine gun produced by the Italian company Beretta. The weapon uses a free-bolt automatic and comes with a Picatinny rail </item>
+        <item>Compact Polish submachine gun, characterized by high accuracy of shooting and allows you to cause serious damage at close range.</item>
+        <item>Compact submachine gun developed by TSNIITOCHMASH in the mid-1990s by order of the FSB</item>
+        <item>A Russian submachine gun developed by the Tula Instrument Design Bureau. Thanks to the high rate of fire and high firepower</item>
+        <item>Universal submachine gun caliber 5. 56x45 mm, developed in the early 90s by the German company Heckler &#38; Koch</item>
+        <item>The first modern firearm created by the ADD agency and put into production by S&#38; T Daewoo</item>
+        <item>A shortened automatic rifle based on the Kalashnikov assault rifles of the hundredth series. Uses 9x39 mm subsonic cartridges</item>
+        <item>A German submachine gun manufactured by Heckler&#38;Koch (H&#38;K). Uses 4.6x30mm caliber cartridges</item>
+        <item>This 9 mm submachine gun is a modified version of the Steyr AUG assault rifle and is designed for special forces units.</item>
+        <item>The famous Israeli submachine guns from the Uzi family are used by the police and military in more than 90 countries</item>
+        <item>9x19 mm submachine gun, developed by a group of specialists under the leadership of Viktor Kalashnikov, the son of the famous designer</item>
+        <item>A caliber submachine gun .45 ACP, developed by Transformational Defense Industries</item>
+    </string-array>
+    <array name="enginer_verb_link">
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_arcusscout.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_uzipro.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkmp5a5.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkmp5.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_m4cqb.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_bandmp9.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_berettamx4storm.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_pm84glauberytcustom.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_cp2veresk.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_pp2000.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkg36c.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_daewook1.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_ak9.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkmp7.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_auga39xs.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_miniuzi.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_pp19bizon.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_krisssuperv.html</item>
+    </array>
+     <array name="enginer_verb_icon">
+        <item>@drawable/enginer_arcusscout</item>
+        <item>@drawable/enginer_uzipro</item>
+        <item>@drawable/enginer_handkmp5a5</item>
+        <item>@drawable/enginer_handkmp5</item>
+        <item>@drawable/enginer_m4cqb</item>
+        <item>@drawable/enginer_bandmp9</item>
+        <item>@drawable/enginer_berettamx4storm</item>
+        <item>@drawable/enginer_pm84glauberytcustom</item>
+        <item>@drawable/enginer_cp2veresk</item>
+        <item>@drawable/enginer_pp2000</item>
+        <item>@drawable/enginer_handkg36c</item>
+        <item>@drawable/enginer_daewook1</item>
+        <item>@drawable/enginer_ak9</item>
+        <item>@drawable/enginer_handkmp7</item>
+        <item>@drawable/enginer_auga39xs</item>
+        <item>@drawable/enginer_miniuzi</item>
+        <item>@drawable/enginer_pp19bizon</item>
+        <item>@drawable/enginer_krisssuperv</item>
+    </array>
 
-	<string-array name="enginer_kred_name">
-		<item>MPA10SST-X</item>
-		<item>SIG 552</item>
-		<item>Calico M960A</item>
-		<item>FN P90</item>
-		<item>JS 9mm</item>
-	</string-array>
-	<string-array name="enginer_kred_type">
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-	</string-array>
-	<string-array name="enginer_kred_about">
-		<item>Compact weapon with lots of opportunities for modification. Due to the high rate of fire is very effective in close combat.</item>
-		<item>Compact machine, designed in 1998 based on the assault rifle SG 550. The barrel and gas tube shortened to 226 mm</item>
-		<item>Submachine Gun caliber 9x19mm Parabellum, which is manufactured by Calico Light Weapons Systems.</item>
-		<item>Belgian submachine gun developed by FN Herstal. Known for its comfortable and ergonomic design.</item>
-		<item>Export version of the gun QCW-05, developed by Chinese Corporation Jianshe Industries. Designed for special forces</item>
-	</string-array>
-	<array name="enginer_kred_link">
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_mpa10sstx.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_sig552.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_calicom96a.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_fnp90.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_js9.html</item>
-	</array>
-	<array name="enginer_kred_icon">
-		<item>@drawable/enginer_mpa10sstx</item>
-		<item>@drawable/enginer_sig552</item>
-		<item>@drawable/enginer_calicom96a</item>
-		<item>@drawable/enginer_fnp90</item>
-		<item>@drawable/enginer_js9</item>
-	</array>
+    <string-array name="enginer_kred_name">
+        <item>PP-19-01</item>
+        <item>AMB-17</item>
+        <item>SIG MPX SBR Custom</item>
+        <item>Desert Tech MDR-C</item>
+        <item>MPA10SST-X</item>
+        <item>SIG 552</item>
+        <item>Calico M960A</item>
+        <item>FN P90</item>
+        <item>JS 9mm</item>
+    </string-array>
+    <string-array name="enginer_kred_type">
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+        <item>Forever</item>
+    </string-array>
+    <string-array name="enginer_kred_about">
+        <item>Russian submachine gun, developed in 2004 for the special forces unit of the internal troops "Vityaz". It is based on the AKS-74U and is a development of the Bison submachine gun.</item>
+        <item>Small-sized silent automatic, the latest development of the Kalashnikov concern. Great for close-range combat.</item>
+        <item>A modular submachine gun from SIG Sauer, which allows you to fire in bursts with a cut-off of four rounds.</item>
+        <item>A submachine gun developed by the American company Desert Tech Inc and made in the bull-pop layout with a shortened barrel.</item>
+        <item>Compact weapon with a wide range of options for modification. Thanks to the high rate of fire, it is very effective in close combat.</item>
+        <item>A compact assault rifle developed in 1998 based on the SG 550 assault rifle. Its barrel and gas tube are shortened to 226 mm.</item>
+        <item>A 9x19 mm Parabellum submachine gun manufactured by Calico Light Weapons Systems.</item>
+        <item>A Belgian submachine gun developed by FN Herstal. It is known for its comfortable and ergonomic design.</item>
+        <item>Export version of the QCW-05 submachine gun, developed by the Chinese corporation Jianshe Industries. Designed for special forces.</item>
+    </string-array>
+    <array name="enginer_kred_link">
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_pp1901.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_amb17.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_sigmpxsbrcustom.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_deserttechmdrc.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_mpa10sstx.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_sig552.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_calicom96a.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_fnp90.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_js9.html</item>
+    </array>
+     <array name="enginer_kred_icon">
+        <item>@drawable/enginer_pp1901</item>
+        <item>@drawable/enginer_amb17</item>
+        <item>@drawable/enginer_sigmpxsbrcustom</item>
+        <item>@drawable/enginer_deserttechmdrc</item>
+        <item>@drawable/enginer_mpa10sstx</item>
+        <item>@drawable/enginer_sig552</item>
+        <item>@drawable/enginer_calicom96a</item>
+        <item>@drawable/enginer_fnp90</item>
+        <item>@drawable/enginer_js9</item>
+    </array>
 
-	<string-array name="enginer_box_name">
-		<item>CZ Scorpion Evo3 A1</item>
-		<item>Skorpion vz 83</item>
-		<item>Daewoo K7</item>
-		<item>Magpul FMG-9</item>
-		<item>Tavor CTAR-21</item>
-		<item>H&#38;K UMP</item>
-		<item>XM8 Compact</item>
-		<item>ACR CQB</item>
-		<item>SCAR-L PDW</item>
-		<item>Honey Badger</item>
-	</string-array>
-	<string-array name="enginer_box_type">
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-		<item>For a while or forever</item>
-	</string-array>
-	<string-array name="enginer_box_about">
-		<item>Submachine Gun of the Czech production with a futuristic design and high piercing ability</item>
-		<item>Sub-machine Gun caliber mm 9х17 developed in Czechoslovakia. Weapons built under the scheme with a free gate.</item>
-		<item>South Korean submachine gun with an integrated silencer, first presented at the exhibition of arms IDEX in 2003. Is manufactured by S&#38;T Daewoo.</item>
-		<item>The new generation of folding submachine guns, designed by the company Magpul Industries in 2008</item>
-		<item>Compact submachine gun designed for special forces unit. Features high accuracy and reliability even in extreme conditions</item>
-		<item>Famous submachine gun developed by Heckler &#38; Koch. A weapon constructed according to the scheme with a free gate</item>
-		<item>Shortened version of the XM8 machine designed for combat at close range.</item>
-		<item>Shortened version of the assault rifle the ACR, developed as a replacement for the M16 for the US army</item>
-		<item>Shortened version of the SCAR machine, designed for crews of combat vehicles, helicopters and technical specialists.</item>
-		<item>Slot Machine with a retractable stock and an integrated silencer, designed based on the AR-15 as a replacement for H&#38;K MP5 and similar weapons.</item>
-	</string-array>
-	<array name="enginer_box_link">
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_czscorpionevo3a1.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_scorpionvz83.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_daewook7.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_magpulfmg9.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_tavorctar21.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_handkump.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_xm8compact.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_acrcqb.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_scarlpdw.html</item>
-		<item>http://belev.org/android/wardocwarface/weapons/en/enginer_honeybadger.html</item>
-	</array>
-	<array name="enginer_box_icon">
-		<item>@drawable/enginer_czscorpionevo3a1</item>
-		<item>@drawable/enginer_scorpionvz83</item>
-		<item>@drawable/enginer_daewook7</item>
-		<item>@drawable/enginer_magpulfmg9</item>
-		<item>@drawable/enginer_tavorctar21</item>
-		<item>@drawable/enginer_handkump</item>
-		<item>@drawable/enginer_xm8compact</item>
-		<item>@drawable/enginer_acrcqb</item>
-		<item>@drawable/enginer_scarlpdw</item>
-		<item>@drawable/enginer_honeybadger</item>
-	</array>
+    <string-array name="enginer_box_name">
+        <item>Thompson M1928</item>
+        <item>M4 Custom</item>
+        <item>Gilboa Snake DBR</item>
+        <item>FN SCAR-L PDW</item>
+        <item>Cobalt Kinetics Stealth Pistol</item>
+        <item>AM-17</item>
+        <item>ACR CQB Custom</item>
+        <item>LWRC SMG-45</item>
+        <item>Micro-Roni CAA</item>
+        <item>CZ Scorpion Evo3 A1</item>
+        <item>Skorpion vz 83</item>
+        <item>Daewoo K7</item>
+        <item>Magpul FMG-9</item>
+        <item>Tavor CTAR-21</item>
+        <item>H&#38;K UMP</item>
+        <item>XM8 Compact</item>
+        <item>ACR CQB</item>
+        <item>SCAR-L PDW</item>
+        <item>Honey Badger</item>
+    </string-array>
+    <string-array name="enginer_box_type">
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+        <item>Temporarily or permanently</item>
+    </string-array>
+    <string-array name="enginer_box_about">
+        <item>These weapons were widely used not only by the military and police, but also by members of the mafia.</item>
+        <item>M4 Custom is an easily modifiable M4A1 carbine based on the M16 rifle.</item>
+        <item>Israeli automatic rifle. It is based on the AR15 platform, but includes several modifications.</item>
+        <item>A shortened version of the SCAR machine gun, designed for combat vehicle crews, helicopters and technical specialists.</item>
+        <item>The latest in the range of weapons from the company Cobalt Kinetics, combining innovation and proven solutions.</item>
+        <item>A small-sized automatic rifle developed by the Kalashnikov concern as a compact weapon for special forces and army units.</item>
+        <item>A modification of the Adaptive Combat Rifle ("Adaptive Combat Rifle" or "ACR") developed in the United States to replace the M16.</item>
+        <item>The LWRC SMG-45 is a modern caliber weapon .45 ASR, designed for American law enforcement agencies. Among the engineer\'s weapons, the SMG-45 stands out for the highest damage in the game</item>
+        <item>The Micro-Roni submachine gun from the Israeli company CAA Tactical has a beautiful futuristic design</item>
+        <item>Czech-made submachine gun with a futuristic design and increased penetration</item>
+        <item>A 9x17 mm submachine gun developed in Czechoslovakia. The weapon is built according to the scheme with a free bolt.</item>
+        <item>South Korean submachine gun with integrated silencer, first presented at the IDEX Weapons exhibition in 2003. Produced by S&#38;T Daewoo.</item>
+        <item>Representative of the new generation of folding submachine guns, developed by Magpul Industries in 2008</item>
+        <item>A compact submachine gun designed for special forces units. It is characterized by high accuracy and reliability even in extreme conditions</item>
+        <item>The famous submachine gun developed by Heckler&#38;Koch. The weapon is designed according to the scheme with a free bolt</item>
+        <item>A shortened version of the XM8 submachine gun, designed for close-range combat.</item>
+        <item>A shortened version of the ACR assault rifle developed as a replacement for the M16 for the US Army</item>
+        <item>A shortened version of the SCAR machine gun, designed for combat vehicle crews, helicopters and technical specialists.</item>
+        <item>A submachine gun with a retractable butt and integrated silencer, developed on the basis of the AR-15 as a replacement for the H&#38;K MP5 and similar weapons.</item>
+    </string-array>
+    <array name="enginer_box_link">
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_thompsonm1928.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_m4custom.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_gilboasnakedbr.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_fnscarlpdw.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_cobaltkenticsstealthpistol.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_am17.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_acrcqbcustom.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_lwrcsmg45.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_microronicaa.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_czscorpionevo3a1.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_scorpionvz83.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_daewook7.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_magpulfmg9.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_tavorctar21.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkump.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_xm8compact.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_acrcqb.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_scarlpdw.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_honeybadger.html</item>
+    </array>
+     <array name="enginer_box_icon">
+         <item>@drawable/enginer_thompsonm1928</item>
+         <item>@drawable/enginer_m4custom</item>
+         <item>@drawable/enginer_fnscarlpdw</item>
+         <item>@drawable/enginer_cobaltkeneticsstealthpistol</item>
+         <item>@drawable/enginer_am17</item>
+         <item>@drawable/enginer_acrcqbcustom</item>
+         <item>@drawable/enginer_lwrcsmg45</item>
+         <item>@drawable/enginer_microronicaa</item>
+         <item>@drawable/enginer_czscorpionevo3a1</item>
+         <item>@drawable/enginer_scorpionvz83</item>
+         <item>@drawable/enginer_daewook7</item>
+         <item>@drawable/enginer_magpulfmg9</item>
+         <item>@drawable/enginer_tavorctar21</item>
+         <item>@drawable/enginer_handkump</item>
+         <item>@drawable/enginer_xm8compact</item>
+         <item>@drawable/enginer_acrcqb</item>
+         <item>@drawable/enginer_scarlpdw</item>
+         <item>@drawable/enginer_honeybadger</item>
+    </array>
 
 </resources>
