@@ -61,7 +61,7 @@ public class MedicFragment extends ListFragment {
         View spaceView = new View(getContext());
         mainActivity = (MainActivity) getActivity();
 
-        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(0);
+        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(3);
         nativeAdPopulationSync.view = view;
         nativeAdPopulationSync.spaceView = spaceView;
         nativeAdPopulationSync.listView = listView;

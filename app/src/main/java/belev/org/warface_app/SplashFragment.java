@@ -48,7 +48,7 @@ public class SplashFragment extends Fragment {
         mainActivity.updateNewsIfNotExists();
 
         // Load ads
-        NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 1, afterLoadFunction);
+        NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 5, afterLoadFunction);
         nativeAdLoader.loadAds();
         nativeAdLoader.execute();
 

@@ -102,10 +102,10 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../android-workmanager-java" />
     <property name="multi-representation-previewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_selected" value="Custom views" />
-    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
@@ -214,10 +214,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="427" y="265" key="#PSD" timestamp="1612528177808">
+    <state x="553" y="305" key="#PSD" timestamp="1613481018813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="427" y="265" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1612528177808" />
+    <state x="553" y="305" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1613481018813" />
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1610387806143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,10 +242,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="795" y="292" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608032578934" />
-    <state x="587" y="253" key="FileChooserDialogImpl" timestamp="1609242859780">
+    <state x="587" y="253" key="FileChooserDialogImpl" timestamp="1613480992040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="253" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609242859780" />
+    <state x="587" y="253" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613480992040" />
     <state width="1876" height="602" key="GridCell.Tab.0.bottom" timestamp="1612619189639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -262,10 +262,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="602" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612619189639" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1611916824124">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1613481316763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611916824124" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613481316763" />
     <state x="576" y="463" key="edit.logcat.filter.dialog.dimensions" timestamp="1608761170200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
