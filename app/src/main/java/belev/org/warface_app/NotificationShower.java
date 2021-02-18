@@ -73,7 +73,9 @@ public class NotificationShower extends AsyncTask {
         int notifyId = 100;
         int importance = NotificationManager.IMPORTANCE_LOW;
 
-        Intent intent = new Intent(context, MainActivity.class);
+        Intent intent = new Intent(context, NewsWebActivity.class);
+        intent.putExtra("BUNDLE_TEXT", news.getText());
+
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
