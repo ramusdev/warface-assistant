@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="spec_name">
+        <item>Sworm</item>
         <item>Blackwood</item>
         <item>Hydra</item>
         <item>Mars</item>
@@ -19,23 +20,25 @@
         <item>Vulkan</item>  
     </string-array>
     <string-array name="spec_type">
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item>
-        <item>Special Operation</item> 
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item>
+        <item>Special operation</item> 
     </string-array>
     <string-array name="spec_about">
+        <item>In one of the provincial towns in the desert, a series of strange events takes place. People disappear from farms on the outskirts, and the district police impose a curfew.</item>
         <item>You are in the hands of Blackwood. Oberon White offers a new look. What if you\'ve been fighting on the wrong side all this time?</item>
         <item>The soldiers of Blaskwood captured the sabotage squad Vega-5 and agent Nodu, who managed to prevent the extermination of the colonists on Mars.</item>
         <item>The Martian colony is in danger! Stop Blackwood and save the colonists.</item>
@@ -53,6 +56,7 @@
         <item>The Warface squad will have to go to the volcano and personally find out what is happening there</item>
     </string-array>
     <array name="spec_link">
+        <item>https://edgenews.ru/android/wardocwarface/maps/en/spec_roy.html</item>
         <item>https://edgenews.ru/android/wardocwarface/maps/en/spec_blackwood.html</item>
         <item>https://edgenews.ru/android/wardocwarface/maps/en/spec_gidra.html</item>
         <item>https://edgenews.ru/android/wardocwarface/maps/en/spec_mars.html</item>
@@ -70,10 +74,11 @@
         <item>https://edgenews.ru/android/wardocwarface/maps/en/spec_vulkan.html</item>
     </array>
     <array name="spec_icon">
+        <item>@drawable/spec_roy_logo</item>
         <item>@drawable/spec_blackwood_logo</item>
         <item>@drawable/spec_gidra_logo</item>
         <item>@drawable/mars_logo</item>
-      <item>@drawable/voshod_logo</item>
+        <item>@drawable/voshod_logo</item>
         <item>@drawable/pripyat_logo</item>
         <item>@drawable/zatmenie_logo</item>
         <item>@drawable/ledokol_logo</item>

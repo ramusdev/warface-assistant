@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
     public DataDbHelper dbHelper;
     public AtomicBoolean isShowedMain = new AtomicBoolean(false);
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,11 +122,6 @@ public class MainActivity extends AppCompatActivity {
             toolbar.setTitle(getResources().getString(R.string.menu_update));
         }
 
-
-
-
-
-
         // Init interstitial
         // mInterstitialAd = new InterstitialAd(this);
         // mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
@@ -141,23 +135,11 @@ public class MainActivity extends AppCompatActivity {
         // }
         // });
 
-
-
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
-            Window window = this.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(this.getResources().getColor(R.color.bar));
-            window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
-        }
-
-
-
-
-
-
-
-
+        Window window = this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(this.getResources().getColor(R.color.bar));
+        window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
 
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -350,23 +332,6 @@ public class MainActivity extends AppCompatActivity {
 
         });
     }
-
-    /*
-    public void createWorkManagerIfNotExists() {
-        WorkManager workManager = WorkManager.getInstance(this);
-        ListenableFuture<List<WorkInfo>> statuses = workManager.getWorkInfosByTag("task_worker");
-
-        try {
-            List<WorkInfo> workInfoList = statuses.get();
-            if (workInfoList.size() <= 0) {
-                PeriodicWorkCreator periodicWorkCreator = new PeriodicWorkCreator((Application) this.getApplicationContext());
-                periodicWorkCreator.create();
-            }
-        } catch(ExecutionException | InterruptedException e) {
-            // Log.e("CustomLogTag", e.getMessage());
-        }
-    }
-    */
 
     public void updateNewsIfNotExists() {
         NewsLoader newsLoader = new NewsLoader(this.getApplicationContext());
