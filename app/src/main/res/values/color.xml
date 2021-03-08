@@ -8,9 +8,7 @@
     <color name="grey">#aeaeae</color>
     <color name="greylite">#ffe2c69f</color>
     <color name="weapons">#3f3f3f</color>
-
     <color name="bartransperent">#00000000</color>
-
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="greydark">#242d32</color>
@@ -25,11 +23,9 @@
     <color name="icons">#283136</color>
     <color name="divider">#444343</color>
     <color name="divider2">#444343</color>
-
     <color name="colorPrimary">#607D8B</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#607D8B</color>
-
     <color name="gnt_blue_pressed">#305da8</color>
 
 </resources>

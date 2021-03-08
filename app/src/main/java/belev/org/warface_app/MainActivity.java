@@ -146,6 +146,8 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 mDrawerLayout.closeDrawers();
 
+                Log.d("MyTag", "text");
+
                 if (menuItem.getItemId() == R.id.nav_item_about) {
                     new Handler().postDelayed(new Runnable() {
                         @Override
