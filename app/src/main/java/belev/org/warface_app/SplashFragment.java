@@ -45,12 +45,14 @@ public class SplashFragment extends Fragment {
         };
 
         // Update news
-        mainActivity.updateNewsIfNotExists();
+        // mainActivity.updateNewsIfNotExists();
 
         // Load ads
-        NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 5, afterLoadFunction);
-        nativeAdLoader.loadAds();
-        nativeAdLoader.execute();
+        // NativeAdLoader nativeAdLoader = new NativeAdLoader(mainActivity, 5, afterLoadFunction);
+        // nativeAdLoader.loadAds();
+        // nativeAdLoader.execute();
+
+        afterLoadFunction.run();
 
         return view;
     }

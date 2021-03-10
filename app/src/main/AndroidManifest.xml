@@ -9,6 +9,7 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
+        android:name=".MyApplication"
         android:theme="@style/AppTheme">
         <!--
         <receiver android:name=".BootBroadcast" android:exported="true">
@@ -20,7 +21,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -32,6 +32,9 @@
         <activity android:name=".MapsWebActivity" />
         <activity android:name=".NewsWebActivity" />
         <activity android:name=".StremersActivity" />
+
+        <activity android:name=".SplashActivity" />
+
         <activity
             android:name=".ConnectionActivity"
             android:label="@string/title_activity_main2"

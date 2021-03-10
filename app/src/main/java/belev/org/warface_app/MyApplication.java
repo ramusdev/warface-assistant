@@ -1,6 +1,7 @@
 package belev.org.warface_app;
 
 import android.app.Application;
+import android.util.Log;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -22,5 +23,6 @@ public class MyApplication extends Application {
         });
 
         appOpenManager = new AppOpenManager(this);
+        // Log.d("MyTag", "MyApplication: start");
     }
 }

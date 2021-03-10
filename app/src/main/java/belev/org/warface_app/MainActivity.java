@@ -80,11 +80,11 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         // Init mobile ads
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
+        // MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            // @Override
+            // public void onInitializationComplete(InitializationStatus initializationStatus) {
+            // }
+        // });
 
         // Open connection to db
         dbHelper = new DataDbHelper(this);
@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Check is online
         if (isOnline()) {
+            /*
             View decorView = getWindow().getDecorView();
             final int flags = SYSTEM_UI_FLAG_LAYOUT_STABLE |
                     View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
@@ -114,8 +115,10 @@ public class MainActivity extends AppCompatActivity {
                     View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
             decorView.setSystemUiVisibility(flags);
             toolbar.setVisibility(View.INVISIBLE);
+            */
 
-            mFragmentTransaction.replace(R.id.containerView, new SplashFragment()).commit();
+            // mFragmentTransaction.replace(R.id.containerView, new SplashFragment()).commit();
+            mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
         } else {
             mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
