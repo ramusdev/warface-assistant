@@ -93,7 +93,7 @@
     <property name="ApkExportedModule" value="Android.app" />
     <property name="BundleExportedModule" value="Android.app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_4_XL_API_30_2" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-03-09T21:21:23.646Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-03-10T21:52:24.733Z" />
     <property name="ExportApk.ApkPath" value="D:\build" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -101,7 +101,7 @@
     <property name="android-custom-viewC:/Users/Roman/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="android-custom-viewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_SELECTED" value="TemplateView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ApexLegendsAssistant" />
     <property name="multi-representation-previewC:/Users/Roman/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="SDK Location" />
@@ -122,7 +122,9 @@
       <recent name="belev.org.warface_app" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Android\app\src\main\res" />
       <recent name="D:\Android\app\src\main\res\layout" />
+      <recent name="D:\Android\app\src\main\res\drawable-mdpi-v11" />
       <recent name="D:\Android\app\src\main\res\drawable" />
       <recent name="D:\Android\nativetemplates\src\main\res\drawable" />
     </key>
@@ -243,30 +245,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1609328734150" />
+    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1615469813248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615469813248" />
     <state x="795" y="292" key="AndroidCreateXmlResourceDialog" timestamp="1608032578934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="795" y="292" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608032578934" />
-    <state x="587" y="253" key="FileChooserDialogImpl" timestamp="1615401649107">
+    <state x="587" y="253" key="FileChooserDialogImpl" timestamp="1615470777713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="253" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615401649107" />
-    <state width="1876" height="345" key="GridCell.Tab.0.bottom" timestamp="1615398665761">
+    <state x="587" y="253" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615470777713" />
+    <state width="1876" height="602" key="GridCell.Tab.0.bottom" timestamp="1615470050515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="345" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615398665761" />
-    <state width="1876" height="345" key="GridCell.Tab.0.center" timestamp="1615398665761">
+    <state width="1876" height="602" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615470050515" />
+    <state width="1876" height="602" key="GridCell.Tab.0.center" timestamp="1615470050514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="345" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615398665761" />
-    <state width="1876" height="345" key="GridCell.Tab.0.left" timestamp="1615398665761">
+    <state width="1876" height="602" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615470050514" />
+    <state width="1876" height="602" key="GridCell.Tab.0.left" timestamp="1615470050514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="345" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615398665761" />
-    <state width="1876" height="345" key="GridCell.Tab.0.right" timestamp="1615398665761">
+    <state width="1876" height="602" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615470050514" />
+    <state width="1876" height="602" key="GridCell.Tab.0.right" timestamp="1615470050514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="345" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615398665761" />
+    <state width="1876" height="602" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615470050514" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1613481316763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -275,10 +281,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="576" y="463" key="edit.logcat.filter.dialog.dimensions/0.0.1920.1040@0.0.1920.1040" timestamp="1614204571473" />
-    <state x="459" y="178" width="909" height="712" key="find.popup" timestamp="1614118372106">
+    <state x="459" y="178" width="909" height="712" key="find.popup" timestamp="1615458977579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="459" y="178" width="909" height="712" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614118372106" />
+    <state x="459" y="178" width="909" height="712" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615458977579" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1607264433049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -24,6 +24,7 @@ public class NewsWebActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
 
@@ -80,5 +81,11 @@ public class NewsWebActivity extends AppCompatActivity {
         } else {
             // Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
     }
 }

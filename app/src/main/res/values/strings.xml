@@ -76,7 +76,15 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <!-- Error string -->
     <string name="error_connection">NO CONNECTION</string>
 
+    <!-- Donate buttons -->
+    <string name="donate_button_one">Recruit</string>
+    <string name="donate_button_two">Sergeant</string>
+    <string name="donate_button_three">Lieutenant</string>
+    <string name="donate_button_four">Marshal</string>
+
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_connection">ConnectionActivity</string>
     <string name="title_activity_main2">Main2Activity</string>

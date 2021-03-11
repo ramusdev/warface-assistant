@@ -37,25 +37,25 @@
                 <Button
                     android:id="@+id/button_donate_lvl_one"
                     android:textSize="15sp"
-                    android:text="Новобранец"
+                    android:text="@string/donate_button_one"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_donate_click"
-                    android:gravity="center"
                     android:layout_weight="1"
-                    android:textColor="@drawable/button_donate_click" />
+                    android:textColor="@drawable/button_donate_click"
+                    android:gravity="center" />
                 <Button
                     android:id="@+id/button_donate_lvl_two"
+                    android:textSize="15sp"
+                    android:textColor="@drawable/button_donate_click"
+                    android:text="@string/donate_button_two"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/button_donate_click"
-                    android:gravity="center"
                     android:layout_weight="1"
-                    android:text="Сержант"
-                    android:textColor="@drawable/button_donate_click"
-                    android:textSize="15sp" />
+                    android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -66,25 +66,25 @@
             <Button
                 android:id="@+id/button_donate_lvl_three"
                 android:textSize="15sp"
-                android:text="Лейтенант"
+                android:textColor="@drawable/button_donate_click"
+                android:text="@string/donate_button_three"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/button_donate_click"
-                android:gravity="center"
                 android:layout_weight="1"
-                android:textColor="@drawable/button_donate_click" />
+                android:gravity="center" />
             <Button
                 android:id="@+id/button_donate_lvl_four"
+                android:textSize="15sp"
+                android:textColor="@drawable/button_donate_click"
+                android:text="@string/donate_button_four"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/button_donate_click"
-                android:gravity="center"
                 android:layout_weight="1"
-                android:text="Маршал"
-                android:textColor="@drawable/button_donate_click"
-                android:textSize="15sp" />
+                android:gravity="center" />
         </LinearLayout>
 
 

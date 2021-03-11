@@ -58,13 +58,10 @@ import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
 
 public class MainActivity extends AppCompatActivity {
 
-    DrawerLayout mDrawerLayout;
-    NavigationView mNavigationView;
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
     InterstitialAd mInterstitialAd;
-    Toolbar toolbar;
-    Handler handler;
+    public Toolbar toolbar;
 
     // private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
     private AdLoader adLoader;
@@ -75,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -93,15 +91,24 @@ public class MainActivity extends AppCompatActivity {
         createTasks();
 
         // Init fragment
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final DrawerLayout mDrawerLayout = findViewById(R.id.drawer_layout);
+        final NavigationView mNavigationView = findViewById(R.id.navigation_view);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle(getResources().getString(R.string.menu_news));
-        ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
-        mDrawerToggle.syncState();
 
+        //ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
+        //mDrawerLayout.setDrawerListener(mDrawerToggle);
+        //mDrawerToggle.syncState();
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        mDrawerLayout.addDrawerListener(toggle);
+
+        toggle.syncState();
+        mNavigationView.bringToFront();
+
+        // Fragment manager
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
 
@@ -144,12 +151,13 @@ public class MainActivity extends AppCompatActivity {
         window.setStatusBarColor(this.getResources().getColor(R.color.bar));
         window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
 
+
+
+
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
+            public boolean onNavigationItemSelected(final MenuItem menuItem) {
                 mDrawerLayout.closeDrawers();
-
-                Log.d("MyTag", "text");
 
                 if (menuItem.getItemId() == R.id.nav_item_about) {
                     new Handler().postDelayed(new Runnable() {
@@ -158,52 +166,59 @@ public class MainActivity extends AppCompatActivity {
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             toolbar.setTitle(getResources().getString(R.string.menu_about));
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                             transaction.replace(R.id.containerView, new AboutFragment()).commit();
+                            mNavigationView.setCheckedItem(menuItem);
                         }
-                    }, 200);
+                    }, 275);
 
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_rang) {
+                    menuItem.setChecked(true);
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             toolbar.setTitle(getResources().getString(R.string.menu_ranks));
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                             transaction.replace(R.id.containerView, new RangFragment()).commit();
+                            mNavigationView.setCheckedItem(menuItem);
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_achivment) {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            // menuItem.setChecked(true);
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             toolbar.setTitle(getResources().getString(R.string.menu_achievements));
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                             transaction.replace(R.id.containerView, new TabFragment()).commit();
+                            mNavigationView.setCheckedItem(menuItem);
 
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_update) {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            // menuItem.setChecked(true);
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             toolbar.setTitle(getResources().getString(R.string.menu_update));
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                             transaction.replace(R.id.containerView, new StartFragment()).commit();
+                            mNavigationView.setCheckedItem(menuItem);
 
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_news) {
@@ -211,17 +226,20 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
                             if (isOnline()) {
+                                // menuItem.setChecked(true);
                                 toolbar.setTitle(getResources().getString(R.string.menu_news));
                                 transaction.replace(R.id.containerView, new NewsFragment()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
                                 transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
                             }
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_stremers) {
@@ -230,16 +248,19 @@ public class MainActivity extends AppCompatActivity {
                         public void run() {
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             if (isOnline()) {
+                                // menuItem.setChecked(true);
                                 toolbar.setTitle(getResources().getString(R.string.menu_vloger));
                                 transaction.replace(R.id.containerView, new StremersFragment()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
                                 transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
                             }
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_maps) {
@@ -248,16 +269,19 @@ public class MainActivity extends AppCompatActivity {
                         public void run() {
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             if (isOnline()) {
+                                // menuItem.setChecked(true);
                                 toolbar.setTitle(getResources().getString(R.string.menu_locations));
                                 transaction.replace(R.id.containerView, new MapsTab()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
                                 transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
                             }
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_rifleman) {
@@ -266,16 +290,19 @@ public class MainActivity extends AppCompatActivity {
                         public void run() {
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             if (isOnline()) {
+                                // menuItem.setChecked(true);
                                 toolbar.setTitle(getResources().getString(R.string.menu_rifleman));
                                 transaction.replace(R.id.containerView, new RiflemanTab()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
                                 transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
                             }
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_sniper) {
@@ -284,16 +311,19 @@ public class MainActivity extends AppCompatActivity {
                         public void run() {
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             if (isOnline()) {
+                                // menuItem.setChecked(true);
                                 toolbar.setTitle(getResources().getString(R.string.menu_sniper));
                                 transaction.replace(R.id.containerView, new SniperTab()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
                                 transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
                             }
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_medic) {
@@ -302,16 +332,19 @@ public class MainActivity extends AppCompatActivity {
                         public void run() {
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             if (isOnline()) {
+                                // menuItem.setChecked(true);
                                 toolbar.setTitle(getResources().getString(R.string.menu_medic));
                                 transaction.replace(R.id.containerView, new MedicTab()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
                                 transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
                             }
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_enginer) {
@@ -320,16 +353,19 @@ public class MainActivity extends AppCompatActivity {
                         public void run() {
                             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             if (isOnline()) {
+                                // menuItem.setChecked(true);
                                 toolbar.setTitle(getResources().getString(R.string.menu_enginer));
                                 transaction.replace(R.id.containerView, new EnginerTab()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
                                 transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
                             }
                         }
-                    }, 200);
+                    }, 275);
                 }
 
                 return false;

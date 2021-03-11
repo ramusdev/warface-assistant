@@ -15,6 +15,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.util.Log;
 
@@ -88,6 +89,7 @@ public class NotificationShower extends AsyncTask {
 
         SpannableString title = new SpannableString(news.getTitle());
         title.setSpan(new StyleSpan(Typeface.BOLD), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        title.setSpan(new ForegroundColorSpan(context.getResources().getColor(R.color.orange)), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         Notification notification = new Notification.Builder(context)
                 .setSmallIcon(R.drawable.ic_stat_warface_icon)

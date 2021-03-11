@@ -68,7 +68,15 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <!-- Error string -->
     <string name="error_connection">НЕТ ИНТЕРНЕТА</string>
 
+    <!-- Donate buttons -->
+    <string name="donate_button_one">Новобранец</string>
+    <string name="donate_button_two">Сержант</string>
+    <string name="donate_button_three">Лейтенант</string>
+    <string name="donate_button_four">Маршал</string>
+
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_connection">ConnectionActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
