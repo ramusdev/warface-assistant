@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android.iml" filepath="$PROJECT_DIR$/.idea/modules/Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativetemplates/Android.nativetemplates.iml" filepath="$PROJECT_DIR$/.idea/modules/nativetemplates/Android.nativetemplates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WarfaceAssistant.iml" filepath="$PROJECT_DIR$/.idea/modules/WarfaceAssistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WarfaceAssistant.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WarfaceAssistant.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativetemplates/WarfaceAssistant.nativetemplates.iml" filepath="$PROJECT_DIR$/.idea/modules/nativetemplates/WarfaceAssistant.nativetemplates.iml" />
     </modules>
   </component>
 </project>
