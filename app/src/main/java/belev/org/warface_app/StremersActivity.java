@@ -59,7 +59,7 @@ public class StremersActivity extends AppCompatActivity {
         }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(getResources().getString(R.string.menu_vloger));
+        toolbar.setTitle(getResources().getString(R.string.menu_statistics));
         this.setSupportActionBar(toolbar);
         this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         this.getSupportActionBar().setHomeButtonEnabled(true);

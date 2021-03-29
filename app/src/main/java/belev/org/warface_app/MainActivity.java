@@ -151,9 +151,6 @@ public class MainActivity extends AppCompatActivity {
         window.setStatusBarColor(this.getResources().getColor(R.color.bar));
         window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
 
-
-
-
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(final MenuItem menuItem) {
@@ -242,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
                     }, 275);
                 }
 
-                if (menuItem.getItemId() == R.id.nav_item_stremers) {
+                if (menuItem.getItemId() == R.id.nav_item_statistics) {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -251,9 +248,8 @@ public class MainActivity extends AppCompatActivity {
                             transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             if (isOnline()) {
-                                // menuItem.setChecked(true);
-                                toolbar.setTitle(getResources().getString(R.string.menu_vloger));
-                                transaction.replace(R.id.containerView, new StremersFragment()).commit();
+                                toolbar.setTitle(getResources().getString(R.string.menu_statistics));
+                                transaction.replace(R.id.containerView, new StatisticsFragment()).commit();
                                 mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.error_connection));
@@ -397,7 +393,7 @@ public class MainActivity extends AppCompatActivity {
     public void createPeriodicTask() {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.add(Calendar.SECOND, 10);
+        // calendar.add(Calendar.SECOND, 10);
         long time = calendar.getTimeInMillis();
 
         Intent intent = new Intent(this, BroadcastReceiverCustom.class);

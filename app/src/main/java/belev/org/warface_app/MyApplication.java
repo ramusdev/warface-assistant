@@ -15,6 +15,8 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        MyApplicationContext myApplicationContext = new MyApplicationContext(this);
+
         // Init mobile ads
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override

@@ -38,21 +38,18 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="menu_achievements">ДОСТИЖЕНИЯ</string>
     <string name="menu_update">ДОНАТ</string>
     <string name="menu_news">НОВОСТИ</string>
-    <string name="menu_vloger">СТРИМЕРЫ</string>
+    <string name="menu_statistics">СТАТИСТИКА</string>
     <string name="menu_locations">ЛОКАЦИИ</string>
     <string name="menu_rifleman">ШТУРМОВИК</string>
     <string name="menu_sniper">СНАЙПЕР</string>
     <string name="menu_medic">МЕДИК</string>
     <string name="menu_enginer">ИНЖЕНЕР</string>
-
     <string name="menu_warbaks">Варбаксовое</string>
     <string name="menu_credits">Кредитное</string>
     <string name="menu_box">Коробочное</string>
-
     <string name="menu_mark">Жетоны</string>
     <string name="menu_badge">Знаки</string>
     <string name="menu_string">Нашивки</string>
-
     <string name="menu_spec">Спецоперация</string>
     <string name="menu_domin">Доминация</string>
     <string name="menu_podriv">Подрыв</string>
@@ -64,6 +61,15 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="menu_viziv">Выживание</string>
     <string name="menu_bliz">Блиц</string>
     <string name="menu_king">Королевская</string>
+
+    <!-- Statistics text -->
+    <string name="statistics_text">
+   <![CDATA[
+        <font color=#e65d20>Как добавить ник для отслеживания?</font><br><br>
+        Для добавления ник имени для отслеживания статистики нужно ввести его в поле и нажать добавить.<br><br>
+        Ник должен быть доступным для отслеживания. Переключить доступность можно в настройках аккаунта на сайте Warface.
+    ]]>
+   </string>
 
     <!-- Error string -->
     <string name="error_connection">НЕТ ИНТЕРНЕТА</string>

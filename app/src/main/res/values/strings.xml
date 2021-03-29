@@ -46,21 +46,18 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="menu_achievements">ACHIEVEMENTS</string>
     <string name="menu_update">DONATE</string>
     <string name="menu_news">NEWS</string>
-    <string name="menu_vloger">VLOGERS</string>
+    <string name="menu_statistics">STATISTICS</string>
     <string name="menu_locations">LOCATIONS</string>
     <string name="menu_rifleman">RIFLEMAN</string>
     <string name="menu_sniper">SNIPER</string>
     <string name="menu_medic">MEDIC</string>
     <string name="menu_enginer">ENGINER</string>
-
     <string name="menu_warbaks">Warbaks</string>
     <string name="menu_credits">Credits</string>
     <string name="menu_box">Box</string>
-
     <string name="menu_mark">Mark</string>
     <string name="menu_badge">Badge</string>
     <string name="menu_string">String</string>
-
     <string name="menu_spec">Operation</string>
     <string name="menu_domin">Domination</string>
     <string name="menu_podriv">Undermining</string>
@@ -72,6 +69,15 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="menu_viziv">Survival</string>
     <string name="menu_bliz">Blitz</string>
     <string name="menu_king">King</string>
+
+   <!-- Statistics text -->
+   <string name="statistics_text">
+   <![CDATA[
+        <font color=#e65d20>Hello! Donate the app!</font><br><br>
+        Warface Assistant is completely free and only supported by your donations.<br><br>
+        If you liked the application, donate it, it will motivate us.
+    ]]>
+   </string>
 
     <!-- Error string -->
     <string name="error_connection">NO CONNECTION</string>
