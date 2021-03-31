@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
             */
 
             // mFragmentTransaction.replace(R.id.containerView, new SplashFragment()).commit();
-            mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
+            mFragmentTransaction.replace(R.id.containerView, new StatisticsFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
         } else {
             mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
