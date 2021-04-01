@@ -1,5 +1,7 @@
 package belev.org.warface_app;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.text.Html;
 import android.text.Spanned;
 
@@ -9,9 +11,13 @@ import androidx.lifecycle.ViewModel;
 public class StatisticsViewModel extends ViewModel {
 
     private MutableLiveData<Spanned> textMutable;
+    public static final String APP_PREFERENCES = "my_settings";
+    public static final String APP_PREFERENCES_NAME = "name";
+    SharedPreferences sharedPreferences;
 
     public StatisticsViewModel() {
         setTextAboutStatistcs();
+        sharedPreferences = MyApplicationContext.getAppContext().getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
     }
 
     public void setTextAboutStatistcs() {
@@ -20,8 +26,22 @@ public class StatisticsViewModel extends ViewModel {
         textMutable.setValue(Html.fromHtml(text));
     }
 
+    public void setPreferencesName(String name) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(APP_PREFERENCES_NAME, name);
+        editor.apply();
+    }
+
     public MutableLiveData<Spanned> getText() {
         return textMutable;
+    }
+
+    public String getPreferencesName() {
+        if (sharedPreferences.contains(APP_PREFERENCES_NAME)) {
+            return sharedPreferences.getString(APP_PREFERENCES_NAME, "");
+        }
+
+        return "";
     }
 
 }

@@ -2,6 +2,8 @@ package belev.org.warface_app;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -25,7 +27,7 @@ import org.w3c.dom.Text;
 
 public class StatisticsFragment extends Fragment {
 
-    private StatisticsViewModel mViewModel;
+    // private StatisticsViewModel mViewModel;
     private View view;
 
     public static StatisticsFragment newInstance() {
@@ -42,41 +44,28 @@ public class StatisticsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        submitAction();
-        mViewModel = new ViewModelProvider(this).get(StatisticsViewModel.class);
-        final TextView textView = view.findViewById(R.id.text_about);
+
+        initAction();
+        initUser();
+
+        StatisticsViewModel mViewModel = new ViewModelProvider(this).get(StatisticsViewModel.class);
+        TextView textView = view.findViewById(R.id.text_about);
         textView.setText(mViewModel.getText().getValue());
     }
 
-    public void submitAction() {
+    public void initAction() {
         final EditText editText = view.findViewById(R.id.edit_text);
         final TextView textError = view.findViewById(R.id.text_error);
         final Button button = view.findViewById(R.id.button_submit);
 
-        // final Animation animationFadeIn = AnimationUtils.loadAnimation(MyApplicationContext.getAppContext(), android.R.anim.fade_in);
-        // final Animation animationFadeOut = AnimationUtils.loadAnimation(MyApplicationContext.getAppContext(), android.R.anim.fade_out);
-        // final AnimationSet animationSet = new AnimationSet(false);
-        // animationSet.addAnimation(animationFadeIn);
-        // animationSet.addAnimation(animationFadeOut);
-        // textError.setAnimation(animationSet);
-        // textError.startAnimation(AnimationUtils.loadAnimation(MyApplicationContext.getAppContext(), android.R.anim.fade_in));
-        // textError.setAnimation(AnimationUtils.loadAnimation(MyApplicationContext.getAppContext(), R.anim.fade_in));
+        StatisticsViewModel mViewModel = new ViewModelProvider(this).get(StatisticsViewModel.class);
+        String name = mViewModel.getPreferencesName();
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String text = editText.getText().toString();
-
-                if (text.isEmpty()) {
-                    textError.setText("Ошибка: поле пусто!");
-                } else {
-                    textError.setText("Пользователь успешно добавлен!");
-                    textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
-                }
-
-                // Log.d("MyTag", editText.getText().toString());
-            }
-        });
+        if (name.isEmpty()) {
+            button.setOnClickListener(listenerAddUser());
+        } else {
+            button.setOnClickListener(listenerDeleteUser());
+        }
 
         editText.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -91,6 +80,68 @@ public class StatisticsFragment extends Fragment {
         });
     }
 
+    public View.OnClickListener listenerAddUser() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText editText = view.findViewById(R.id.edit_text);
+                TextView textError = view.findViewById(R.id.text_error);
+                Button button = view.findViewById(R.id.button_submit);
+                String name = editText.getText().toString();
 
+                if (name.isEmpty()) {
+                    textError.setText("Ошибка: поле пусто!");
+                    textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
+                } else {
+                    textError.setText("Пользователь успешно добавлен!");
+                    textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
 
+                    editText.setText(name);
+                    editText.setEnabled(false);
+                    button.setText("Удалить");
+
+                    StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
+                    mViewModel.setPreferencesName(name);
+
+                    button.setOnClickListener(listenerDeleteUser());
+                }
+            }
+        };
+    }
+
+    public View.OnClickListener listenerDeleteUser() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Button button = view.findViewById(R.id.button_submit);
+                EditText editText = view.findViewById(R.id.edit_text);
+                TextView textError = view.findViewById(R.id.text_error);
+
+                textError.setText("Пользователь успешно удален!");
+                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
+
+                StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
+                mViewModel.setPreferencesName("");
+
+                editText.setText("");
+                editText.setEnabled(true);
+                button.setText("Добавить");
+
+                button.setOnClickListener(listenerAddUser());
+            }
+        };
+    }
+
+    public void initUser() {
+        StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
+        String user = mViewModel.getPreferencesName();
+        Button button = view.findViewById(R.id.button_submit);
+        EditText editText = view.findViewById(R.id.edit_text);
+
+        if (!user.isEmpty()) {
+            editText.setText(user);
+            editText.setEnabled(false);
+            button.setText("Удалить");
+        }
+    }
 }
