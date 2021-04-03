@@ -1,5 +1,7 @@
 package belev.org.warface_app;
 
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Context;
@@ -11,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.os.Handler;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -44,6 +47,8 @@ public class StatisticsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+
 
         initAction();
         initUser();
@@ -104,6 +109,16 @@ public class StatisticsFragment extends Fragment {
                     mViewModel.setPreferencesName(name);
 
                     button.setOnClickListener(listenerDeleteUser());
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+                            transaction.replace(R.id.containerView, new StatisticsDetailsFragment()).commit();
+                        }
+                    }, 3000);
+
                 }
             }
         };

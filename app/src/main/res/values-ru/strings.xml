@@ -39,6 +39,7 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="menu_update">ДОНАТ</string>
     <string name="menu_news">НОВОСТИ</string>
     <string name="menu_statistics">СТАТИСТИКА</string>
+    <string name="menu_settings">НАСТРОЙКИ</string>
     <string name="menu_locations">ЛОКАЦИИ</string>
     <string name="menu_rifleman">ШТУРМОВИК</string>
     <string name="menu_sniper">СНАЙПЕР</string>

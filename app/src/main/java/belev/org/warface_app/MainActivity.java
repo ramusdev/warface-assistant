@@ -9,6 +9,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -70,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
     public DataDbHelper dbHelper;
     public AtomicBoolean isShowedMain = new AtomicBoolean(false);
 
+    public static final String APP_PREFERENCES = "my_settings";
+    public static final String APP_PREFERENCES_NAME = "name";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
@@ -125,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
             */
 
             // mFragmentTransaction.replace(R.id.containerView, new SplashFragment()).commit();
-            mFragmentTransaction.replace(R.id.containerView, new StatisticsFragment()).commit();
+            mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
         } else {
             mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
@@ -247,14 +251,33 @@ public class MainActivity extends AppCompatActivity {
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                             transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
-                            if (isOnline()) {
+                            SharedPreferences sharedPreferences = MyApplicationContext.getAppContext().getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
+
+                            if (sharedPreferences.contains(APP_PREFERENCES_NAME) && !sharedPreferences.getString(APP_PREFERENCES_NAME, "").isEmpty()) {
+                                toolbar.setTitle(getResources().getString(R.string.menu_statistics));
+                                transaction.replace(R.id.containerView, new StatisticsDetailsFragment()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
+                            } else {
                                 toolbar.setTitle(getResources().getString(R.string.menu_statistics));
                                 transaction.replace(R.id.containerView, new StatisticsFragment()).commit();
                                 mNavigationView.setCheckedItem(menuItem);
-                            } else {
-                                toolbar.setTitle(getResources().getString(R.string.error_connection));
-                                transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
                             }
+
+                        }
+                    }, 275);
+                }
+
+                if (menuItem.getItemId() == R.id.nav_item_settings) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+                            toolbar.setTitle(getResources().getString(R.string.menu_statistics));
+                            transaction.replace(R.id.containerView, new StatisticsFragment()).commit();
+                            mNavigationView.setCheckedItem(menuItem);
                         }
                     }, 275);
                 }
@@ -375,8 +398,11 @@ public class MainActivity extends AppCompatActivity {
         List<News> news = newsLoader.load();
 
         if (news.size() <= 0) {
-            UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(this.getApplicationContext());
-            updateNewsAsync.execute();
+            // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(this.getApplicationContext());
+            // updateNewsAsync.execute();
+            BroadcastReceiverCustom broadcastReceiverCustom = new BroadcastReceiverCustom();
+            broadcastReceiverCustom.onReceive(MyApplicationContext.getAppContext(), new Intent());
+            Log.d("MyTag", "From new size");
         }
     }
 
@@ -401,6 +427,7 @@ public class MainActivity extends AppCompatActivity {
 
         AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         manager.setRepeating(AlarmManager.RTC_WAKEUP, time, TimeUnit.HOURS.toMillis(12), pendingIntent);
+        Log.d("MyTag", "From periodic work");
     }
 
     public boolean isOnline() {

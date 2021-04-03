@@ -47,6 +47,7 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="menu_update">DONATE</string>
     <string name="menu_news">NEWS</string>
     <string name="menu_statistics">STATISTICS</string>
+    <string name="menu_settings">SETTINGS</string>
     <string name="menu_locations">LOCATIONS</string>
     <string name="menu_rifleman">RIFLEMAN</string>
     <string name="menu_sniper">SNIPER</string>

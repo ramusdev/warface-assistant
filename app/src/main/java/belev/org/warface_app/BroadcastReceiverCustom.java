@@ -9,7 +9,7 @@ public class BroadcastReceiverCustom extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.e("CustomLogTag", "Inside receiver");
+        Log.d("MyTag", "Inside receiver");
         UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(context);
         updateNewsAsync.execute();
         ClearNewsAsync clearNewsAsync = new ClearNewsAsync(context);

@@ -44,7 +44,7 @@ public class NotificationShower extends AsyncTask {
 
         loadNotShowedNews();
         showNotificationIfExists();
-        changeNewsToShowed();
+        // changeNewsToShowed();
 
         return null;
     }
