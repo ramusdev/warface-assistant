@@ -413,7 +413,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void createTasks() {
         updateNewsIfNotExists();
-        createPeriodicTask();
+        // updateStatisticsUser();
+        // createPeriodicTask();
+    }
+
+    public void updateStatisticsUser() {
+        TaskRunner taskRunner = new TaskRunner();
+        taskRunner.executeAsync(new StatisticsParser());
     }
 
     public void createPeriodicTask() {

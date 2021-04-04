@@ -8,8 +8,11 @@
     <color name="error_red">#F44336</color>
     <color name="orange_pressed">#933d17</color>
     <color name="grey">#aeaeae</color>
-    <color name="greylite">#ffe2c69f</color>
     <color name="weapons">#3f3f3f</color>
+    <color name="greylite">#ffe2c69f</color>
+    <color name="greytitletext">#7E6F5A</color>
+    <color name="greytext">#4a4a49</color>
+    <color name="greysubtext">#686868</color>
     <color name="bartransperent">#00000000</color>
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
@@ -29,5 +32,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#607D8B</color>
     <color name="gnt_blue_pressed">#305da8</color>
+
+    <color name="divider3">#474747</color>
 
 </resources>
