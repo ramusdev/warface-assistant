@@ -37,6 +37,10 @@ public class StatisticsDetailsViewModel extends ViewModel {
         statisticsUser.setNickname(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.StatisticsEntry.COLUMN_NICKNAME)));
         statisticsUser.setExperience(cursor.getInt(cursor.getColumnIndexOrThrow(DataContract.StatisticsEntry.COLUMN_EXPERIENCE)));
         statisticsUser.setClanname(cursor.getString(cursor.getColumnIndexOrThrow(DataContract.StatisticsEntry.COLUMN_CLANNAME)));
+        statisticsUser.setClanid(cursor.getInt(cursor.getColumnIndexOrThrow(DataContract.StatisticsEntry.COLUMN_CLANID)));
+        statisticsUser.setRankid(cursor.getInt(cursor.getColumnIndexOrThrow(DataContract.StatisticsEntry.COLUMN_RANKID)));
+        statisticsUser.setKill(cursor.getInt(cursor.getColumnIndexOrThrow(DataContract.StatisticsEntry.COLUMN_KILL)));
+        statisticsUser.setPvp(cursor.getInt(cursor.getColumnIndexOrThrow(DataContract.StatisticsEntry.COLUMN_PVP)));
 
         cursor.close();
 

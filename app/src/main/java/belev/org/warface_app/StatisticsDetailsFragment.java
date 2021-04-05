@@ -35,16 +35,22 @@ public class StatisticsDetailsFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(StatisticsDetailsViewModel.class);
 
-        final TextView userid = view.findViewById(R.id.data_userid);
+        // final TextView userid = view.findViewById(R.id.data_userid);
         final TextView experience = view.findViewById(R.id.data_experience);
         final TextView nickname = view.findViewById(R.id.data_nickname);
         final TextView clanname = view.findViewById(R.id.data_clanname);
+        final TextView rank = view.findViewById(R.id.data_rank);
+        final TextView kill = view.findViewById(R.id.data_kill);
+        final TextView pvp = view.findViewById(R.id.data_pvp);
 
         StatisticsUser user = mViewModel.loadUser();
-        userid.setText(user.getUserid());
+        // userid.setText(user.getUserid());
         experience.setText(Integer.toString(user.getExperience()));
         nickname.setText(user.getNickname());
         clanname.setText(user.getClanname());
+        rank.setText(Integer.toString(user.getRankid()));
+        kill.setText(Integer.toString(user.getKill()));
+        pvp.setText(Double.toString(user.getPvp()));
 
 
         // TaskRunner taskRunner = new TaskRunner();
