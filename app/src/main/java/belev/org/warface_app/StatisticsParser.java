@@ -30,19 +30,32 @@ import belev.org.warface_app.data.DataDbHelper;
 public class StatisticsParser implements Runnable {
 
     public String stringJson;
+    public String name;
+
+    public StatisticsParser(String name) {
+        this.name = name;
+    }
 
     @Override
     public void run() {
 
         try {
-            stringJson = getUserByApi("Элез");
+            stringJson = getUserByApi(name);
             // Log.d("MyTag", stringJson);
         }
         catch (URISyntaxException | IOException | ParseException e){
             Log.d("MyTag", "Error: from statistics parser");
         }
 
+        clearDatabase();
         insertUserToDatabase(stringJson);
+    }
+
+    public void clearDatabase() {
+        DataDbHelper dbHelper = new DataDbHelper(MyApplicationContext.getAppContext());
+        SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
+
+        sqLiteDatabase.delete(DataContract.StatisticsEntry.TABLE_NAME, null, null);
     }
 
     public void insertUserToDatabase(String stringJson) {
@@ -62,8 +75,25 @@ public class StatisticsParser implements Runnable {
         contentValues.put(DataContract.StatisticsEntry.COLUMN_KILL, statisticsUser.getKill());
         contentValues.put(DataContract.StatisticsEntry.COLUMN_FRIENDLYKILLS, statisticsUser.getFriendlykills());
         contentValues.put(DataContract.StatisticsEntry.COLUMN_KILLS, statisticsUser.getKills());
-        contentValues.put(DataContract.StatisticsEntry.COLUMN_DEATH, statisticsUser.getDeath());
         contentValues.put(DataContract.StatisticsEntry.COLUMN_PVP, statisticsUser.getPvp());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_DEATH, statisticsUser.getDeath());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVEKILL, statisticsUser.getPvekill());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVEFRIENDLYKILLS, statisticsUser.getPvefriendlykills());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVEKILLS, statisticsUser.getPvekills());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVEDEATH, statisticsUser.getPvedeath());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVE, statisticsUser.getPve());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PLAYTIME, statisticsUser.getPlaytime());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PLAYTIMEH, statisticsUser.getPlaytimeh());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PLAYTIMEM, statisticsUser.getPlaytimem());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_FAVORITPVP, statisticsUser.getFavoritPVP());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_FAVORITPVE, statisticsUser.getFavoritPVE());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVEWINS, statisticsUser.getPvewins());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVPWINS, statisticsUser.getPvpwins());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVPLOST, statisticsUser.getPvplost());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVELOST, statisticsUser.getPvelost());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVEALL, statisticsUser.getPveall());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVPALL, statisticsUser.getPvpall());
+        contentValues.put(DataContract.StatisticsEntry.COLUMN_PVPWL, statisticsUser.getPvpwl());
 
         long newRowId = sqLiteDatabase.insert(DataContract.StatisticsEntry.TABLE_NAME, null, contentValues);
     }

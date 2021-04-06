@@ -8,7 +8,7 @@ import android.util.Log;
 public class DataDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "warface.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 5;
 
     public DataDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -39,7 +39,24 @@ public class DataDbHelper extends SQLiteOpenHelper {
                 + DataContract.StatisticsEntry.COLUMN_FRIENDLYKILLS + " INTEGER NOT NULL, "
                 + DataContract.StatisticsEntry.COLUMN_KILLS + " INTEGER NOT NULL, "
                 + DataContract.StatisticsEntry.COLUMN_DEATH + " INTEGER NOT NULL, "
-                + DataContract.StatisticsEntry.COLUMN_PVP + " TEXT NOT NULL);";
+                + DataContract.StatisticsEntry.COLUMN_PVP + " TEXT NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVEKILL + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVEFRIENDLYKILLS + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVEKILLS + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVEDEATH + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVE + " TEXT NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PLAYTIME + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PLAYTIMEH + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PLAYTIMEM + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_FAVORITPVP + " TEXT NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_FAVORITPVE + " TEXT NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVEWINS + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVPWINS + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVPLOST + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVELOST + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVEALL + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVPALL + " INTEGER NOT NULL, "
+                + DataContract.StatisticsEntry.COLUMN_PVPWL + " TEXT NOT NULL);";
 
         sqLiteDatabase.execSQL(SQL_CREATE_NEWS_TABLE);
         sqLiteDatabase.execSQL(SQL_CREATE_STATISTICS_TABLE);
@@ -47,9 +64,10 @@ public class DataDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        Log.w("SQLite", "Update datebase ");
+        Log.d("MyTag", "Update datebase");
 
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + DataContract.NewsEntry.TABLE_NAME);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + DataContract.StatisticsEntry.TABLE_NAME);
         onCreate(sqLiteDatabase);
     }
 }

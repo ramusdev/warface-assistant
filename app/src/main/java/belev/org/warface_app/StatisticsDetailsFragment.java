@@ -35,24 +35,28 @@ public class StatisticsDetailsFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(StatisticsDetailsViewModel.class);
 
-        // final TextView userid = view.findViewById(R.id.data_userid);
         final TextView experience = view.findViewById(R.id.data_experience);
         final TextView nickname = view.findViewById(R.id.data_nickname);
         final TextView clanname = view.findViewById(R.id.data_clanname);
         final TextView rank = view.findViewById(R.id.data_rank);
         final TextView kill = view.findViewById(R.id.data_kill);
         final TextView pvp = view.findViewById(R.id.data_pvp);
+        final TextView friendlykills = view.findViewById(R.id.data_friendlykills);
+        final TextView death = view.findViewById(R.id.data_death);
 
         StatisticsUser user = mViewModel.loadUser();
-        // userid.setText(user.getUserid());
-        experience.setText(Integer.toString(user.getExperience()));
+        experience.setText(String.valueOf(user.getExperience()));
         nickname.setText(user.getNickname());
         clanname.setText(user.getClanname());
-        rank.setText(Integer.toString(user.getRankid()));
-        kill.setText(Integer.toString(user.getKill()));
-        pvp.setText(Double.toString(user.getPvp()));
+        rank.setText(String.valueOf(user.getRankid()));
+        kill.setText(String.valueOf(user.getKill()));
+        pvp.setText(String.valueOf(user.getPvp()));
+        friendlykills.setText(String.valueOf(user.getFriendlykills()));
+        death.setText(String.valueOf(user.getDeath()));
 
 
+
+        // Log.d("MyTag", user.getPvp());
         // TaskRunner taskRunner = new TaskRunner();
         // taskRunner.executeAsync(new StatisticsParser());
     }

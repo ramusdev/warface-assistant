@@ -110,6 +110,9 @@ public class StatisticsFragment extends Fragment {
 
                     button.setOnClickListener(listenerDeleteUser());
 
+                    TaskRunner taskRunner = new TaskRunner();
+                    taskRunner.executeAsync(new StatisticsParser(name));
+
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {

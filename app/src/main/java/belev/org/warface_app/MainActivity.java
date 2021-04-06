@@ -128,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
             toolbar.setVisibility(View.INVISIBLE);
             */
 
-            // mFragmentTransaction.replace(R.id.containerView, new SplashFragment()).commit();
-            mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
+            mFragmentTransaction.replace(R.id.containerView, new StatisticsFragment()).commit();
+            // mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
         } else {
             mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
@@ -417,10 +417,10 @@ public class MainActivity extends AppCompatActivity {
         // createPeriodicTask();
     }
 
-    public void updateStatisticsUser() {
-        TaskRunner taskRunner = new TaskRunner();
-        taskRunner.executeAsync(new StatisticsParser());
-    }
+    // public void updateStatisticsUser() {
+        // TaskRunner taskRunner = new TaskRunner();
+        // taskRunner.executeAsync(new StatisticsParser());
+    // }
 
     public void createPeriodicTask() {
         Calendar calendar = Calendar.getInstance();
