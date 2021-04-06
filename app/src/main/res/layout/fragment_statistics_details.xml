@@ -22,7 +22,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
             <TextView
                 android:id="@+id/text_rank"
@@ -151,8 +151,72 @@
                 android:textColor="@color/greylite"
                 android:textSize="15sp" />
         </RelativeLayout>
-
-
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_playtimeh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Часов в игре"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_playtimeh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="14564"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_playtimem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Минут в игре"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_playtimem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="14564"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Смерти"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="14564"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
 
 
         <View
@@ -171,18 +235,128 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
             <TextView
                 android:id="@+id/text_pvp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Убийства / Смерти"
+                android:text="Убийств / Смертей"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
             <TextView
                 android:id="@+id/data_pvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvpwins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Победы"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvpwins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvplost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поражения"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvplost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvpwl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Победы/Поражения"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvpwl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvpall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Матчей сыграно"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvpall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvpfavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Любимый класс"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvpfavorite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -203,8 +377,184 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="35dp"
             android:textColor="@color/greylite"
             android:text="Статистика PVE" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Убийств/Смертей"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvewins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Победы"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvewins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvelost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поражения"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvelost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pveall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Матчей сыграно"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pveall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvekill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Убийства"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvekill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvefriendlykills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дружественные убийства"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvefriendlykills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvedeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Смерти"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvedeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_pvefavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Любимый класс"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/data_pvefavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2.5"
+                android:textColor="@color/greylite"
+                android:textSize="15sp" />
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>
