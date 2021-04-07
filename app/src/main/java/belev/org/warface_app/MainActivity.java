@@ -425,15 +425,13 @@ public class MainActivity extends AppCompatActivity {
     public void createPeriodicTask() {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        // calendar.add(Calendar.SECOND, 10);
         long time = calendar.getTimeInMillis();
 
         Intent intent = new Intent(this, BroadcastReceiverCustom.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        manager.setRepeating(AlarmManager.RTC_WAKEUP, time, TimeUnit.HOURS.toMillis(12), pendingIntent);
-        Log.d("MyTag", "From periodic work");
+        manager.setRepeating(AlarmManager.RTC_WAKEUP, time, TimeUnit.HOURS.toMillis(15), pendingIntent);
     }
 
     public boolean isOnline() {

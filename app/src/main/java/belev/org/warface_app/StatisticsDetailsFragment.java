@@ -44,14 +44,12 @@ public class StatisticsDetailsFragment extends Fragment {
         final TextView death = view.findViewById(R.id.data_death);
         final TextView playtimeh = view.findViewById(R.id.data_playtimeh);
         final TextView playtimem = view.findViewById(R.id.data_playtimem);
-
         final TextView pvp = view.findViewById(R.id.data_pvp);
         final TextView pvpall = view.findViewById(R.id.data_pvpall);
         final TextView pvpwins = view.findViewById(R.id.data_pvpwins);
         final TextView pvplost = view.findViewById(R.id.data_pvplost);
         final TextView pvpwl = view.findViewById(R.id.data_pvpwl);
         final TextView pvpfavorite = view.findViewById(R.id.data_pvpfavorite);
-
         final TextView pve = view.findViewById(R.id.data_pve);
         final TextView pveall = view.findViewById(R.id.data_pveall);
         final TextView pvewins = view.findViewById(R.id.data_pvewins);
@@ -72,13 +70,11 @@ public class StatisticsDetailsFragment extends Fragment {
         death.setText(String.valueOf(user.getDeath()));
         playtimeh.setText(String.valueOf(user.getPlaytimeh()));
         playtimem.setText(String.valueOf(user.getPlaytimem()));
-
         pvpall.setText(String.valueOf(user.getPvpall()));
         pvpwins.setText(String.valueOf(user.getPvpwins()));
         pvplost.setText(String.valueOf(user.getPvplost()));
         pvpwl.setText(String.valueOf(user.getPvpwl()));
         pvpfavorite.setText(user.getFavoritPVP());
-
         pve.setText(String.valueOf(user.getPve()));
         pveall.setText(String.valueOf(user.getPveall()));
         pvewins.setText(String.valueOf(user.getPvewins()));

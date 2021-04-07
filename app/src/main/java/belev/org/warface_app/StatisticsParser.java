@@ -29,26 +29,41 @@ import belev.org.warface_app.data.DataDbHelper;
 
 public class StatisticsParser implements Runnable {
 
+    public StatisticsFragment.ActionAfterDone task;
     public String stringJson;
     public String name;
+    public MainActivity mainActivity;
 
-    public StatisticsParser(String name) {
+    public StatisticsParser(String name, StatisticsFragment.ActionAfterDone task, MainActivity mainActivity) {
         this.name = name;
+        this.task = task;
+        this.mainActivity = mainActivity;
     }
 
     @Override
     public void run() {
 
+        CloseableHttpResponse closeableHttpResponse = null;
+
         try {
-            stringJson = getUserByApi(name);
-            // Log.d("MyTag", stringJson);
+            closeableHttpResponse = getUserByApi(name);
         }
         catch (URISyntaxException | IOException | ParseException e){
             Log.d("MyTag", "Error: from statistics parser");
         }
 
-        clearDatabase();
-        insertUserToDatabase(stringJson);
+        if (closeableHttpResponse.getCode() == 200) {
+            clearDatabase();
+            try {
+                insertUserToDatabase(EntityUtils.toString(closeableHttpResponse.getEntity()));
+            } catch (IOException | ParseException e) {
+                e.printStackTrace();
+            }
+            onAsyncTaskExecuted(task);
+        } else {
+            // task.actionFail();
+        }
+
     }
 
     public void clearDatabase() {
@@ -98,7 +113,7 @@ public class StatisticsParser implements Runnable {
         long newRowId = sqLiteDatabase.insert(DataContract.StatisticsEntry.TABLE_NAME, null, contentValues);
     }
 
-    public String getUserByApi(String name) throws URISyntaxException, IOException, ParseException {
+    public CloseableHttpResponse getUserByApi(String name) throws URISyntaxException, IOException, ParseException {
 
         CloseableHttpClient closeableHttpClient = HttpClients.custom()
                 .setDefaultRequestConfig(RequestConfig.custom().build())
@@ -120,6 +135,25 @@ public class StatisticsParser implements Runnable {
 
         CloseableHttpResponse closeableHttpResponse = closeableHttpClient.execute(httpGet);
         HttpEntity httpEntity = closeableHttpResponse.getEntity();
-        return EntityUtils.toString(httpEntity);
+
+        //
+        // if (httpResponse.getStatusLine().getStatusCode() == 400) {
+            // System.out.println("Error 404 bad request");
+        // } else {
+
+        // }
+        //EntityUtils.toString(httpEntity.get);
+
+        return closeableHttpResponse;
+    }
+
+    public void onAsyncTaskExecuted(final StatisticsFragment.ActionAfterDone task) {
+
+        mainActivity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                task.actionSuccess();
+            }
+        });
     }
 }

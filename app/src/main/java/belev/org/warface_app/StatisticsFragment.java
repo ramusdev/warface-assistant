@@ -89,30 +89,62 @@ public class StatisticsFragment extends Fragment {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText editText = view.findViewById(R.id.edit_text);
-                TextView textError = view.findViewById(R.id.text_error);
-                Button button = view.findViewById(R.id.button_submit);
-                String name = editText.getText().toString();
+                final EditText editText = view.findViewById(R.id.edit_text);
+                final TextView textError = view.findViewById(R.id.text_error);
+                // final Button button = view.findViewById(R.id.button_submit);
+                final String name = editText.getText().toString();
 
                 if (name.isEmpty()) {
                     textError.setText("Ошибка: поле пусто!");
                     textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
                 } else {
-                    textError.setText("Пользователь успешно добавлен!");
-                    textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
+                    final ActionAfterDone actionAfterDone = new ActionAfterDone() {
+                        @Override
+                        public void actionSuccess() {
+                            // Log.d("MyTag", "Success action");
+                            TextView textError = view.findViewById(R.id.text_error);
+                            textError.setText("Пользователь успешно добавлен!");
+                            textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
 
+                            EditText editText2 = view.findViewById(R.id.edit_text);
+                            editText2.setText("My custom text");
+                            editText2.setEnabled(false);
+
+                            // Button button = view.findViewById(R.id.button_submit);
+                            //button.setText("Удалить");
+                            StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
+                            mViewModel.setPreferencesName(name);
+                            // button.setOnClickListener(listenerDeleteUser());
+
+                            // FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                            // transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+                            // transaction.replace(R.id.containerView, new NewsFragment()).commit();
+                        }
+
+                        @Override
+                        public void actionFail() {
+                            // Log.d("MyTag", "Error action");
+                            textError.setText("Ошибка: пользователь не найден!");
+                            textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
+                        }
+                    };
+
+                    final MainActivity mainActivity = (MainActivity) getActivity();
+
+                    TaskRunner taskRunner = new TaskRunner();
+                    taskRunner.executeAsync(new StatisticsParser(name, actionAfterDone, mainActivity));
+
+
+                    /*
                     editText.setText(name);
                     editText.setEnabled(false);
                     button.setText("Удалить");
-
                     StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
                     mViewModel.setPreferencesName(name);
-
                     button.setOnClickListener(listenerDeleteUser());
+                    */
 
-                    TaskRunner taskRunner = new TaskRunner();
-                    taskRunner.executeAsync(new StatisticsParser(name));
-
+                    /*
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -120,7 +152,8 @@ public class StatisticsFragment extends Fragment {
                             transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                             transaction.replace(R.id.containerView, new StatisticsDetailsFragment()).commit();
                         }
-                    }, 3000);
+                    }, 2000);
+                    */
 
                 }
             }
@@ -161,5 +194,10 @@ public class StatisticsFragment extends Fragment {
             editText.setEnabled(false);
             button.setText("Удалить");
         }
+    }
+
+    public interface ActionAfterDone {
+        void actionSuccess();
+        void actionFail();
     }
 }
