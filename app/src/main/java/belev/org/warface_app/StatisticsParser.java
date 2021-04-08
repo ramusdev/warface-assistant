@@ -3,6 +3,7 @@ package belev.org.warface_app;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
+import android.provider.ContactsContract;
 import android.util.Log;
 
 import com.google.gson.Gson;
@@ -23,24 +24,20 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.concurrent.Callable;
 
 import belev.org.warface_app.data.DataContract;
 import belev.org.warface_app.data.DataDbHelper;
 
-public class StatisticsParser implements Runnable {
-
-    public StatisticsFragment.ActionAfterDone task;
+public class StatisticsParser implements Callable {
     public String stringJson;
     public String name;
     public MainActivity mainActivity;
 
-    public StatisticsParser(String name, StatisticsFragment.ActionAfterDone task, MainActivity mainActivity) {
+    public StatisticsParser(String name) {
         this.name = name;
-        this.task = task;
-        this.mainActivity = mainActivity;
     }
 
-    @Override
     public void run() {
 
         CloseableHttpResponse closeableHttpResponse = null;
@@ -59,7 +56,7 @@ public class StatisticsParser implements Runnable {
             } catch (IOException | ParseException e) {
                 e.printStackTrace();
             }
-            onAsyncTaskExecuted(task);
+            // onAsyncTaskExecuted(task);
         } else {
             // task.actionFail();
         }
@@ -149,11 +146,24 @@ public class StatisticsParser implements Runnable {
 
     public void onAsyncTaskExecuted(final StatisticsFragment.ActionAfterDone task) {
 
+        /*
         mainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 task.actionSuccess();
             }
         });
+        */
+
+    }
+
+    @Override
+    public Object call() throws Exception {
+        // for (int i = 0; i < 1000000000; i++) {
+            Thread.sleep(5000);
+        // }
+        Log.d("MyTag", "Code inside callable");
+        Log.d("MyTag", Thread.currentThread().getName());
+        return null;
     }
 }

@@ -98,7 +98,7 @@ public class StatisticsFragment extends Fragment {
                     textError.setText("Ошибка: поле пусто!");
                     textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
                 } else {
-                    final ActionAfterDone actionAfterDone = new ActionAfterDone() {
+                    final ActionAfterDone task = new ActionAfterDone() {
                         @Override
                         public void actionSuccess() {
                             // Log.d("MyTag", "Success action");
@@ -132,7 +132,7 @@ public class StatisticsFragment extends Fragment {
                     final MainActivity mainActivity = (MainActivity) getActivity();
 
                     TaskRunner taskRunner = new TaskRunner();
-                    taskRunner.executeAsync(new StatisticsParser(name, actionAfterDone, mainActivity));
+                    taskRunner.executeAsync(new StatisticsParser(name), task);
 
 
                     /*
