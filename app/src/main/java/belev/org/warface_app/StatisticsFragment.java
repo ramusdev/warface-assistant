@@ -1,32 +1,23 @@
 package belev.org.warface_app;
 
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.os.Handler;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import java.util.concurrent.Callable;
 
 public class StatisticsFragment extends Fragment {
 
@@ -47,8 +38,6 @@ public class StatisticsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-
 
         initAction();
         initUser();
@@ -91,70 +80,39 @@ public class StatisticsFragment extends Fragment {
             public void onClick(View v) {
                 final EditText editText = view.findViewById(R.id.edit_text);
                 final TextView textError = view.findViewById(R.id.text_error);
-                // final Button button = view.findViewById(R.id.button_submit);
+                final Button button = view.findViewById(R.id.button_submit);
                 final String name = editText.getText().toString();
 
                 if (name.isEmpty()) {
                     textError.setText("Ошибка: поле пусто!");
                     textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
                 } else {
-                    final ActionAfterDone task = new ActionAfterDone() {
+                    final TaskRunner.TaskRunnerCallback<Integer> task = new TaskRunner.TaskRunnerCallback<Integer>() {
                         @Override
-                        public void actionSuccess() {
-                            // Log.d("MyTag", "Success action");
-                            TextView textError = view.findViewById(R.id.text_error);
-                            textError.setText("Пользователь успешно добавлен!");
-                            textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
+                        public void execute(Integer serverResponseStatus) {
+                            if (serverResponseStatus == 200) {
+                                textError.setText("Пользователь успешно добавлен!");
+                                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
+                                editText.setText(name);
+                                editText.setEnabled(false);
+                                button.setText("Удалить");
+                                StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
+                                mViewModel.setPreferencesName(name);
+                                button.setOnClickListener(listenerDeleteUser());
 
-                            EditText editText2 = view.findViewById(R.id.edit_text);
-                            editText2.setText("My custom text");
-                            editText2.setEnabled(false);
-
-                            // Button button = view.findViewById(R.id.button_submit);
-                            //button.setText("Удалить");
-                            StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
-                            mViewModel.setPreferencesName(name);
-                            // button.setOnClickListener(listenerDeleteUser());
-
-                            // FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                            // transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-                            // transaction.replace(R.id.containerView, new NewsFragment()).commit();
-                        }
-
-                        @Override
-                        public void actionFail() {
-                            // Log.d("MyTag", "Error action");
-                            textError.setText("Ошибка: пользователь не найден!");
-                            textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
+                                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                                transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+                                transaction.replace(R.id.containerView, new StatisticsDetailsFragment()).commit();
+                            } else if (serverResponseStatus == 400){
+                                textError.setText("Ошибка: пользователь не найден!");
+                                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
+                            }
                         }
                     };
 
-                    final MainActivity mainActivity = (MainActivity) getActivity();
-
-                    TaskRunner taskRunner = new TaskRunner();
-                    taskRunner.executeAsync(new StatisticsParser(name), task);
-
-
-                    /*
-                    editText.setText(name);
-                    editText.setEnabled(false);
-                    button.setText("Удалить");
-                    StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
-                    mViewModel.setPreferencesName(name);
-                    button.setOnClickListener(listenerDeleteUser());
-                    */
-
-                    /*
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-                            transaction.replace(R.id.containerView, new StatisticsDetailsFragment()).commit();
-                        }
-                    }, 2000);
-                    */
-
+                    TaskRunner<Integer> taskRunner = new TaskRunner<Integer>();
+                    Callable statisticsParser = new StatisticsParser(name);
+                    taskRunner.executeAsync(statisticsParser, task);
                 }
             }
         };
@@ -196,8 +154,9 @@ public class StatisticsFragment extends Fragment {
         }
     }
 
-    public interface ActionAfterDone {
-        void actionSuccess();
-        void actionFail();
+    /*
+    public interface ActionAfterDone<Integer> {
+        void execute(Integer serverResponseStatus);
     }
+    */
 }

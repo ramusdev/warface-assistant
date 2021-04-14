@@ -2,6 +2,8 @@ package belev.org.warface_app;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.BaseColumns;
 import android.provider.ContactsContract;
 import android.util.Log;
@@ -29,7 +31,7 @@ import java.util.concurrent.Callable;
 import belev.org.warface_app.data.DataContract;
 import belev.org.warface_app.data.DataDbHelper;
 
-public class StatisticsParser implements Callable {
+public class StatisticsParser implements Callable<Integer> {
     public String stringJson;
     public String name;
     public MainActivity mainActivity;
@@ -38,7 +40,7 @@ public class StatisticsParser implements Callable {
         this.name = name;
     }
 
-    public void run() {
+    public Integer call() {
 
         CloseableHttpResponse closeableHttpResponse = null;
 
@@ -56,12 +58,22 @@ public class StatisticsParser implements Callable {
             } catch (IOException | ParseException e) {
                 e.printStackTrace();
             }
-            // onAsyncTaskExecuted(task);
+            return closeableHttpResponse.getCode();
         } else {
-            // task.actionFail();
+            return closeableHttpResponse.getCode();
         }
-
     }
+
+    /*
+    @Override
+    public Integer call() {
+        Log.d("MyTag", "Code inside callable");
+        Log.d("MyTag", Thread.currentThread().getName());
+
+        // afterDone();
+        return 400;
+    }
+    */
 
     public void clearDatabase() {
         DataDbHelper dbHelper = new DataDbHelper(MyApplicationContext.getAppContext());
@@ -144,26 +156,27 @@ public class StatisticsParser implements Callable {
         return closeableHttpResponse;
     }
 
+    /*
     public void onAsyncTaskExecuted(final StatisticsFragment.ActionAfterDone task) {
-
-        /*
         mainActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 task.actionSuccess();
             }
         });
-        */
-
     }
+    */
 
-    @Override
-    public Object call() throws Exception {
-        // for (int i = 0; i < 1000000000; i++) {
-            Thread.sleep(5000);
-        // }
-        Log.d("MyTag", "Code inside callable");
-        Log.d("MyTag", Thread.currentThread().getName());
-        return null;
+
+    /*
+    public void afterDone() {
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                task.execute(400);
+            }
+        });
     }
+    */
 }
