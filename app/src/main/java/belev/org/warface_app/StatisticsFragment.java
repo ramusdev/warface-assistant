@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +20,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
 
 public class StatisticsFragment extends Fragment {
 
@@ -61,6 +64,7 @@ public class StatisticsFragment extends Fragment {
             button.setOnClickListener(listenerDeleteUser());
         }
 
+        /*
         editText.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
@@ -72,6 +76,19 @@ public class StatisticsFragment extends Fragment {
                 return false;
             }
         });
+        */
+    }
+
+    public void hideSuccessMessage() {
+        final TextView textError = view.findViewById(R.id.text_error);
+
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                textError.setText("");
+            }
+        }, TimeUnit.SECONDS.toMillis(5));
     }
 
     public View.OnClickListener listenerAddUser() {
@@ -86,6 +103,7 @@ public class StatisticsFragment extends Fragment {
                 if (name.isEmpty()) {
                     textError.setText("Ошибка: поле пусто!");
                     textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
+                    hideSuccessMessage();
                 } else {
                     final TaskRunner.TaskRunnerCallback<Integer> task = new TaskRunner.TaskRunnerCallback<Integer>() {
                         @Override
@@ -106,6 +124,7 @@ public class StatisticsFragment extends Fragment {
                             } else if (serverResponseStatus == 400){
                                 textError.setText("Ошибка: пользователь не найден!");
                                 textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
+                                hideSuccessMessage();
                             }
                         }
                     };
@@ -128,6 +147,7 @@ public class StatisticsFragment extends Fragment {
 
                 textError.setText("Пользователь успешно удален!");
                 textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
+                hideSuccessMessage();
 
                 StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
                 mViewModel.setPreferencesName("");
