@@ -35,9 +35,11 @@ public class StatisticsParser implements Callable<Integer> {
     public String stringJson;
     public String name;
     public MainActivity mainActivity;
+    public String server;
 
-    public StatisticsParser(String name) {
+    public StatisticsParser(String name, String server) {
         this.name = name;
+        this.server = server;
     }
 
     public Integer call() {
@@ -136,6 +138,7 @@ public class StatisticsParser implements Callable<Integer> {
         byte[] nameBytes = name.getBytes();
         String nameUtf = new String(nameBytes, StandardCharsets.UTF_8);
         queryParameter.add(new BasicNameValuePair("name", nameUtf));
+        queryParameter.add(new BasicNameValuePair("server", server));
 
         uriBuilder.addParameters(queryParameter);
 

@@ -3,6 +3,7 @@ package belev.org.warface_app;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,12 +12,15 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.concurrent.Callable;
@@ -26,6 +30,7 @@ public class StatisticsFragment extends Fragment {
 
     // private StatisticsViewModel mViewModel;
     private View view;
+    // public int server = 1;
 
     public static StatisticsFragment newInstance() {
         return new StatisticsFragment();
@@ -54,6 +59,11 @@ public class StatisticsFragment extends Fragment {
         final EditText editText = view.findViewById(R.id.edit_text);
         final TextView textError = view.findViewById(R.id.text_error);
         final Button button = view.findViewById(R.id.button_submit);
+
+        final RadioButton buttonAlpha = view.findViewById(R.id.button_server_alfa);
+        final RadioButton buttonBravo = view.findViewById(R.id.button_server_bravo);
+        final RadioButton buttonCharli = view.findViewById(R.id.button_server_charli);
+
 
         StatisticsViewModel mViewModel = new ViewModelProvider(this).get(StatisticsViewModel.class);
         String name = mViewModel.getPreferencesName();
@@ -99,6 +109,13 @@ public class StatisticsFragment extends Fragment {
                 final TextView textError = view.findViewById(R.id.text_error);
                 final Button button = view.findViewById(R.id.button_submit);
                 final String name = editText.getText().toString();
+                final RadioGroup radioGroup = view.findViewById(R.id.radio_group_server);
+
+                int radioButtonId = radioGroup.getCheckedRadioButtonId();
+                RadioButton radioButton = view.findViewById(radioButtonId);
+                String server = (String) radioButton.getTag();
+                // int server = Integer.parseInt(tag);
+                // Log.d("MyTag", tag);
 
                 if (name.isEmpty()) {
                     textError.setText("Ошибка: поле пусто!");
@@ -130,7 +147,7 @@ public class StatisticsFragment extends Fragment {
                     };
 
                     TaskRunner<Integer> taskRunner = new TaskRunner<Integer>();
-                    Callable statisticsParser = new StatisticsParser(name);
+                    Callable statisticsParser = new StatisticsParser(name, server);
                     taskRunner.executeAsync(statisticsParser, task);
                 }
             }
