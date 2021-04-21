@@ -1,18 +1,11 @@
 package belev.org.warface_app;
 
 import android.app.AlarmManager;
-import android.app.Application;
 import android.app.PendingIntent;
-import android.content.ActivityNotFoundException;
-import android.content.BroadcastReceiver;
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
@@ -20,42 +13,28 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
-import com.google.common.util.concurrent.ListenableFuture;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.logging.Logger;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.widget.Toolbar;
-import androidx.work.WorkInfo;
-import androidx.work.WorkManager;
 import belev.org.warface_app.data.DataDbHelper;
-
-import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
-import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -128,8 +107,8 @@ public class MainActivity extends AppCompatActivity {
             toolbar.setVisibility(View.INVISIBLE);
             */
 
-            mFragmentTransaction.replace(R.id.containerView, new StatisticsFragment()).commit();
-            // mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
+            // mFragmentTransaction.replace(R.id.containerView, new StatisticsFragment()).commit();
+            mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
         } else {
             mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
@@ -255,12 +234,12 @@ public class MainActivity extends AppCompatActivity {
 
                             if (sharedPreferences.contains(APP_PREFERENCES_NAME) && !sharedPreferences.getString(APP_PREFERENCES_NAME, "").isEmpty()) {
                                 toolbar.setTitle(getResources().getString(R.string.menu_statistics));
-                                transaction.replace(R.id.containerView, new StatisticsDetailsFragment()).commit();
-                                mNavigationView.setCheckedItem(menuItem);
-                            } else {
-                                toolbar.setTitle(getResources().getString(R.string.menu_statistics));
                                 transaction.replace(R.id.containerView, new StatisticsFragment()).commit();
                                 mNavigationView.setCheckedItem(menuItem);
+                            } else {
+                                toolbar.setTitle(getResources().getString(R.string.menu_settings));
+                                transaction.replace(R.id.containerView, new SettingsFragment()).commit();
+                                mNavigationView.setCheckedItem(R.id.nav_item_settings);
                             }
 
                         }
@@ -275,8 +254,8 @@ public class MainActivity extends AppCompatActivity {
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                             transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
-                            toolbar.setTitle(getResources().getString(R.string.menu_statistics));
-                            transaction.replace(R.id.containerView, new StatisticsFragment()).commit();
+                            toolbar.setTitle(getResources().getString(R.string.menu_settings));
+                            transaction.replace(R.id.containerView, new SettingsFragment()).commit();
                             mNavigationView.setCheckedItem(menuItem);
                         }
                     }, 275);

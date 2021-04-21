@@ -26,6 +26,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.concurrent.Callable;
 
 import belev.org.warface_app.data.DataContract;
@@ -36,6 +37,9 @@ public class StatisticsParser implements Callable<Integer> {
     public String name;
     public MainActivity mainActivity;
     public String server;
+
+    public static final String REGION_RU = "http://api.warface.ru/user/stat";
+    public static final String REGION_EN = "http://api.wf.my.com/user/stat";
 
     public StatisticsParser(String name, String server) {
         this.name = name;
@@ -66,16 +70,15 @@ public class StatisticsParser implements Callable<Integer> {
         }
     }
 
-    /*
-    @Override
-    public Integer call() {
-        Log.d("MyTag", "Code inside callable");
-        Log.d("MyTag", Thread.currentThread().getName());
-
-        // afterDone();
-        return 400;
+    public String getServerRegionUri() {
+        Locale locale = MyApplicationContext.getAppContext().getResources().getConfiguration().getLocales().get(0);
+        switch (locale.toString()) {
+            case "ru_RU":
+                return REGION_RU;
+            default:
+                return REGION_EN;
+        }
     }
-    */
 
     public void clearDatabase() {
         DataDbHelper dbHelper = new DataDbHelper(MyApplicationContext.getAppContext());
@@ -130,7 +133,7 @@ public class StatisticsParser implements Callable<Integer> {
                 .setDefaultRequestConfig(RequestConfig.custom().build())
                 .build();
 
-        URIBuilder uriBuilder = new URIBuilder("http://api.warface.ru/user/stat");
+        URIBuilder uriBuilder = new URIBuilder(getServerRegionUri());
 
         ArrayList<NameValuePair> queryParameter;
         queryParameter = new ArrayList<NameValuePair>();
@@ -148,38 +151,6 @@ public class StatisticsParser implements Callable<Integer> {
         CloseableHttpResponse closeableHttpResponse = closeableHttpClient.execute(httpGet);
         HttpEntity httpEntity = closeableHttpResponse.getEntity();
 
-        //
-        // if (httpResponse.getStatusLine().getStatusCode() == 400) {
-            // System.out.println("Error 404 bad request");
-        // } else {
-
-        // }
-        //EntityUtils.toString(httpEntity.get);
-
         return closeableHttpResponse;
     }
-
-    /*
-    public void onAsyncTaskExecuted(final StatisticsFragment.ActionAfterDone task) {
-        mainActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                task.actionSuccess();
-            }
-        });
-    }
-    */
-
-
-    /*
-    public void afterDone() {
-        Handler handler = new Handler(Looper.getMainLooper());
-        handler.post(new Runnable() {
-            @Override
-            public void run() {
-                task.execute(400);
-            }
-        });
-    }
-    */
 }

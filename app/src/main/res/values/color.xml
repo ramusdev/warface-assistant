@@ -10,9 +10,9 @@
     <color name="grey">#aeaeae</color>
     <color name="weapons">#3f3f3f</color>
     <color name="greylite">#ffe2c69f</color>
-    <color name="greytitletext">#7E6F5A</color>
+    <color name="greytitletext">#000000</color>
     <color name="greytext">#4a4a49</color>
-    <color name="greysubtext">#686868</color>
+    <color name="greysubtext">#4a4a49</color>
     <color name="bartransperent">#00000000</color>
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>

@@ -1,36 +1,22 @@
 package belev.org.warface_app;
 
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.os.Handler;
-import android.os.Looper;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
-
-import java.util.concurrent.Callable;
-import java.util.concurrent.TimeUnit;
 
 public class StatisticsFragment extends Fragment {
 
-    // private StatisticsViewModel mViewModel;
+    private StatisticsViewModel mViewModel;
     private View view;
-    // public int server = 1;
 
     public static StatisticsFragment newInstance() {
         return new StatisticsFragment();
@@ -39,161 +25,71 @@ public class StatisticsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.statistics_fragment, container, false);
+        view = inflater.inflate(R.layout.fragment_statistics_details, container, false);
         return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        mViewModel = new ViewModelProvider(this).get(StatisticsViewModel.class);
 
-        initAction();
-        initUser();
+        final TextView experience = view.findViewById(R.id.data_experience);
+        final TextView nickname = view.findViewById(R.id.data_nickname);
+        final TextView clanname = view.findViewById(R.id.data_clanname);
+        final TextView rank = view.findViewById(R.id.data_rank);
+        final TextView kill = view.findViewById(R.id.data_kill);
+        final TextView friendlykills = view.findViewById(R.id.data_friendlykills);
+        final TextView death = view.findViewById(R.id.data_death);
+        final TextView playtimeh = view.findViewById(R.id.data_playtimeh);
+        final TextView playtimem = view.findViewById(R.id.data_playtimem);
+        final TextView pvp = view.findViewById(R.id.data_pvp);
+        final TextView pvpall = view.findViewById(R.id.data_pvpall);
+        final TextView pvpwins = view.findViewById(R.id.data_pvpwins);
+        final TextView pvplost = view.findViewById(R.id.data_pvplost);
+        final TextView pvpwl = view.findViewById(R.id.data_pvpwl);
+        final TextView pvpfavorite = view.findViewById(R.id.data_pvpfavorite);
+        final TextView pve = view.findViewById(R.id.data_pve);
+        final TextView pveall = view.findViewById(R.id.data_pveall);
+        final TextView pvewins = view.findViewById(R.id.data_pvewins);
+        final TextView pvelost = view.findViewById(R.id.data_pvelost);
+        final TextView pvekill = view.findViewById(R.id.data_pvekill);
+        final TextView pvefriendlykills = view.findViewById(R.id.data_pvefriendlykills);
+        final TextView pvedeath = view.findViewById(R.id.data_pvedeath);
+        final TextView pvefavorite = view.findViewById(R.id.data_pvefavorite);
 
-        StatisticsViewModel mViewModel = new ViewModelProvider(this).get(StatisticsViewModel.class);
-        TextView textView = view.findViewById(R.id.text_about);
-        textView.setText(mViewModel.getText().getValue());
+        StatisticsUser user = mViewModel.loadUser();
+        experience.setText(String.valueOf(user.getExperience()));
+        nickname.setText(user.getNickname());
+        clanname.setText(user.getClanname());
+        rank.setText(String.valueOf(user.getRankid()));
+        kill.setText(String.valueOf(user.getKill()));
+        pvp.setText(String.valueOf(user.getPvp()));
+        friendlykills.setText(String.valueOf(user.getFriendlykills()));
+        death.setText(String.valueOf(user.getDeath()));
+        playtimeh.setText(String.valueOf(user.getPlaytimeh()));
+        playtimem.setText(String.valueOf(user.getPlaytimem()));
+        pvpall.setText(String.valueOf(user.getPvpall()));
+        pvpwins.setText(String.valueOf(user.getPvpwins()));
+        pvplost.setText(String.valueOf(user.getPvplost()));
+        pvpwl.setText(String.valueOf(user.getPvpwl()));
+        pvpfavorite.setText(user.getFavoritPVP());
+        pve.setText(String.valueOf(user.getPve()));
+        pveall.setText(String.valueOf(user.getPveall()));
+        pvewins.setText(String.valueOf(user.getPvewins()));
+        pvelost.setText(String.valueOf(user.getPvelost()));
+        pvekill.setText(String.valueOf(user.getPvekill()));
+        pvefriendlykills.setText(String.valueOf(user.getPvefriendlykills()));
+        pvedeath.setText(String.valueOf(user.getPvedeath()));
+        pvefavorite.setText(user.getFavoritPVE());
+
+
+
+
+
+        // Log.d("MyTag", user.getPvp());
+        // TaskRunner taskRunner = new TaskRunner();
+        // taskRunner.executeAsync(new StatisticsParser());
     }
 
-    public void initAction() {
-        final EditText editText = view.findViewById(R.id.edit_text);
-        final TextView textError = view.findViewById(R.id.text_error);
-        final Button button = view.findViewById(R.id.button_submit);
-
-        final RadioButton buttonAlpha = view.findViewById(R.id.button_server_alfa);
-        final RadioButton buttonBravo = view.findViewById(R.id.button_server_bravo);
-        final RadioButton buttonCharli = view.findViewById(R.id.button_server_charli);
-
-
-        StatisticsViewModel mViewModel = new ViewModelProvider(this).get(StatisticsViewModel.class);
-        String name = mViewModel.getPreferencesName();
-
-        if (name.isEmpty()) {
-            button.setOnClickListener(listenerAddUser());
-        } else {
-            button.setOnClickListener(listenerDeleteUser());
-        }
-
-        /*
-        editText.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                String text = textError.getText().toString();
-
-                if (event.getAction() == KeyEvent.ACTION_DOWN && !text.isEmpty()) {
-                    textError.setText("");
-                }
-                return false;
-            }
-        });
-        */
-    }
-
-    public void hideSuccessMessage() {
-        final TextView textError = view.findViewById(R.id.text_error);
-
-        Handler handler = new Handler(Looper.getMainLooper());
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                textError.setText("");
-            }
-        }, TimeUnit.SECONDS.toMillis(5));
-    }
-
-    public View.OnClickListener listenerAddUser() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final EditText editText = view.findViewById(R.id.edit_text);
-                final TextView textError = view.findViewById(R.id.text_error);
-                final Button button = view.findViewById(R.id.button_submit);
-                final String name = editText.getText().toString();
-                final RadioGroup radioGroup = view.findViewById(R.id.radio_group_server);
-
-                int radioButtonId = radioGroup.getCheckedRadioButtonId();
-                RadioButton radioButton = view.findViewById(radioButtonId);
-                String server = (String) radioButton.getTag();
-                // int server = Integer.parseInt(tag);
-                // Log.d("MyTag", tag);
-
-                if (name.isEmpty()) {
-                    textError.setText("Ошибка: поле пусто!");
-                    textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
-                    hideSuccessMessage();
-                } else {
-                    final TaskRunner.TaskRunnerCallback<Integer> task = new TaskRunner.TaskRunnerCallback<Integer>() {
-                        @Override
-                        public void execute(Integer serverResponseStatus) {
-                            if (serverResponseStatus == 200) {
-                                textError.setText("Пользователь успешно добавлен!");
-                                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
-                                editText.setText(name);
-                                editText.setEnabled(false);
-                                button.setText("Удалить");
-                                StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
-                                mViewModel.setPreferencesName(name);
-                                button.setOnClickListener(listenerDeleteUser());
-
-                                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                                transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-                                transaction.replace(R.id.containerView, new StatisticsDetailsFragment()).commit();
-                            } else if (serverResponseStatus == 400){
-                                textError.setText("Ошибка: пользователь не найден!");
-                                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
-                                hideSuccessMessage();
-                            }
-                        }
-                    };
-
-                    TaskRunner<Integer> taskRunner = new TaskRunner<Integer>();
-                    Callable statisticsParser = new StatisticsParser(name, server);
-                    taskRunner.executeAsync(statisticsParser, task);
-                }
-            }
-        };
-    }
-
-    public View.OnClickListener listenerDeleteUser() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Button button = view.findViewById(R.id.button_submit);
-                EditText editText = view.findViewById(R.id.edit_text);
-                TextView textError = view.findViewById(R.id.text_error);
-
-                textError.setText("Пользователь успешно удален!");
-                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
-                hideSuccessMessage();
-
-                StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
-                mViewModel.setPreferencesName("");
-
-                editText.setText("");
-                editText.setEnabled(true);
-                button.setText("Добавить");
-
-                button.setOnClickListener(listenerAddUser());
-            }
-        };
-    }
-
-    public void initUser() {
-        StatisticsViewModel mViewModel = new ViewModelProvider(StatisticsFragment.this).get(StatisticsViewModel.class);
-        String user = mViewModel.getPreferencesName();
-        Button button = view.findViewById(R.id.button_submit);
-        EditText editText = view.findViewById(R.id.edit_text);
-
-        if (!user.isEmpty()) {
-            editText.setText(user);
-            editText.setEnabled(false);
-            button.setText("Удалить");
-        }
-    }
-
-    /*
-    public interface ActionAfterDone<Integer> {
-        void execute(Integer serverResponseStatus);
-    }
-    */
 }
