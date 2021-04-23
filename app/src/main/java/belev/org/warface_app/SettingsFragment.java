@@ -68,10 +68,10 @@ public class SettingsFragment extends Fragment {
         // Hide one button on en region
         Locale locale = MyApplicationContext.getAppContext().getResources().getConfiguration().getLocales().get(0);
         if (!locale.toString().equals("ru_RU")) {
-            RadioButton radioButtonBravo = view.findViewById(R.id.button_server_bravo);
-            radioButtonBravo.setVisibility(View.GONE);
-            RadioButton radioButtonCharli = view.findViewById(R.id.button_server_charli);
-            radioButtonCharli.setTag(2);
+            // RadioButton radioButtonBravo = view.findViewById(R.id.button_server_bravo);
+            // radioButtonBravo.setVisibility(View.INVISIBLE);
+            // RadioButton radioButtonCharli = view.findViewById(R.id.button_server_charli);
+            // radioButtonCharli.setTag(2);
         }
     }
 
@@ -91,6 +91,7 @@ public class SettingsFragment extends Fragment {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 final EditText editText = view.findViewById(R.id.edit_text);
                 final TextView textError = view.findViewById(R.id.text_error);
                 final Button button = view.findViewById(R.id.button_submit);
@@ -100,6 +101,8 @@ public class SettingsFragment extends Fragment {
                 int radioButtonId = radioGroup.getCheckedRadioButtonId();
                 RadioButton radioButton = view.findViewById(radioButtonId);
                 String server = (String) radioButton.getTag();
+
+                Log.d("MyTag", server);
 
                 if (name.isEmpty()) {
                     textError.setText("Ошибка: поле пусто!");
@@ -130,6 +133,7 @@ public class SettingsFragment extends Fragment {
                             }
                         }
                     };
+
 
                     TaskRunner<Integer> taskRunner = new TaskRunner<Integer>();
                     Callable statisticsParser = new StatisticsParser(name, server);
