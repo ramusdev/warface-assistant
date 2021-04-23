@@ -66,9 +66,10 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <!-- Statistics text -->
     <string name="statistics_text">
    <![CDATA[
-        <b>Как добавить ник для отслеживания?</b><br><br>
-        Для добавления ник имени для отслеживания статистики нужно ввести его в поле и нажать добавить.<br><br>
-        Ник должен быть доступным для отслеживания. Переключить доступность можно в настройках аккаунта на сайте Warface.
+        <b>Как добавить ник игрока для отслеживания?</b><br><br>
+        Для отслеживания статистике требуется имя персонажа.<br><br>
+        Информация о статистике является общедоступной информацией и не требует ввода пароля.<br><br>
+        Статистика может быть не доступна если была скрыта в настройках аккаунта на сайте Warface.
     ]]>
    </string>
 
@@ -80,6 +81,18 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="donate_button_two">Сержант</string>
     <string name="donate_button_three">Лейтенант</string>
     <string name="donate_button_four">Маршал</string>
+
+    <!-- Statistics fragment -->
+    <string name="statistics_button_alfa">Альфа</string>
+    <string name="statistics_button_bravo">Браво</string>
+    <string name="statistics_button_charli">Чарли</string>
+    <string name="statistics_button_add">Добавить</string>
+    <string name="statistics_button_delete">Удалить</string>
+    <string name="statistics_text_field">Имя персонажа</string>
+    <string name="statistics_message_emptyfield">Ошибка: заполните поле</string>
+    <string name="statistics_message_usernotfound">Ошибка: пользователь не найден</string>
+    <string name="statistics_message_useradd">Пользователь успешно добавлен</string>
+    <string name="statistics_message_userdeleted">Пользователь удален</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="navigation_drawer_open">Open navigation drawer</string>

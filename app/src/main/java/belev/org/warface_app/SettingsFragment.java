@@ -23,6 +23,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.google.android.material.navigation.NavigationView;
+
 import java.util.Locale;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
@@ -66,13 +68,13 @@ public class SettingsFragment extends Fragment {
         }
 
         // Hide one button on en region
-        Locale locale = MyApplicationContext.getAppContext().getResources().getConfiguration().getLocales().get(0);
-        if (!locale.toString().equals("ru_RU")) {
+        // Locale locale = MyApplicationContext.getAppContext().getResources().getConfiguration().getLocales().get(0);
+        // if (!locale.toString().equals("ru_RU")) {
             // RadioButton radioButtonBravo = view.findViewById(R.id.button_server_bravo);
             // radioButtonBravo.setVisibility(View.INVISIBLE);
             // RadioButton radioButtonCharli = view.findViewById(R.id.button_server_charli);
             // radioButtonCharli.setTag(2);
-        }
+        // }
     }
 
     public void hideSuccessMessage() {
@@ -105,7 +107,7 @@ public class SettingsFragment extends Fragment {
                 Log.d("MyTag", server);
 
                 if (name.isEmpty()) {
-                    textError.setText("Ошибка: поле пусто!");
+                    textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_emptyfield));
                     textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
                     hideSuccessMessage();
                 } else {
@@ -113,27 +115,30 @@ public class SettingsFragment extends Fragment {
                         @Override
                         public void execute(Integer serverResponseStatus) {
                             if (serverResponseStatus == 200) {
-                                textError.setText("Пользователь успешно добавлен!");
+                                textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_useradd));
                                 textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
                                 editText.setText(name);
                                 editText.setEnabled(false);
-                                button.setText("Удалить");
+                                button.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_button_delete));
                                 SettingsViewModel mViewModel = new ViewModelProvider(SettingsFragment.this).get(SettingsViewModel.class);
                                 mViewModel.setPreferencesName(name);
                                 button.setOnClickListener(listenerDeleteUser());
 
-                                // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                                Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+                                toolbar.setTitle(getResources().getString(R.string.menu_statistics));
+                                NavigationView navigationView = getActivity().findViewById(R.id.navigation_view);
+                                navigationView.setCheckedItem(R.id.nav_item_statistics);
+
                                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                                 transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                 transaction.replace(R.id.containerView, new StatisticsFragment()).commit();
                             } else if (serverResponseStatus == 400){
-                                textError.setText("Ошибка: пользователь не найден!");
+                                textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_usernotfound));
                                 textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
                                 hideSuccessMessage();
                             }
                         }
                     };
-
 
                     TaskRunner<Integer> taskRunner = new TaskRunner<Integer>();
                     Callable statisticsParser = new StatisticsParser(name, server);
@@ -151,7 +156,7 @@ public class SettingsFragment extends Fragment {
                 EditText editText = view.findViewById(R.id.edit_text);
                 TextView textError = view.findViewById(R.id.text_error);
 
-                textError.setText("Пользователь успешно удален!");
+                textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_userdeleted));
                 textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
                 hideSuccessMessage();
 
@@ -160,7 +165,7 @@ public class SettingsFragment extends Fragment {
 
                 editText.setText("");
                 editText.setEnabled(true);
-                button.setText("Добавить");
+                button.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_button_add));
 
                 button.setOnClickListener(listenerAddUser());
             }
@@ -176,7 +181,7 @@ public class SettingsFragment extends Fragment {
         if (!user.isEmpty()) {
             editText.setText(user);
             editText.setEnabled(false);
-            button.setText("Удалить");
+            button.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_button_delete));
         }
     }
 }

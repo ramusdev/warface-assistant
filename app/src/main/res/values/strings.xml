@@ -74,9 +74,10 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
    <!-- Statistics text -->
    <string name="statistics_text">
    <![CDATA[
-        <font color=#e65d20>Hello! Donate the app!</font><br><br>
-        Warface Assistant is completely free and only supported by your donations.<br><br>
-        If you liked the application, donate it, it will motivate us.
+        <b> How do I add a nickname? </b> <br> <br>
+         To track statistics, you need to add name. <br> <br>
+         Information about statistics is public information and does not require entering a password. <br> <br>
+         Statistics may not be available if it was hidden in the account settings on the Warface website.
     ]]>
    </string>
 
@@ -89,19 +90,23 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="donate_button_three">Lieutenant</string>
     <string name="donate_button_four">Marshal</string>
 
+    <!-- Statistics fragment -->
+    <string name="statistics_button_alfa">Server EU</string>
+    <string name="statistics_button_bravo">Server EN</string>
+    <string name="statistics_button_charli">-</string>
+    <string name="statistics_button_add">Add</string>
+    <string name="statistics_button_delete">Remove</string>
+    <string name="statistics_text_field">Game nickname</string>
+    <string name="statistics_message_emptyfield">Error: empty field</string>
+    <string name="statistics_message_usernotfound">Error: user not found</string>
+    <string name="statistics_message_useradd">User added</string>
+    <string name="statistics_message_userdeleted">User deleted</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_connection">ConnectionActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

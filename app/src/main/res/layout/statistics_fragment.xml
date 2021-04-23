@@ -18,7 +18,7 @@
             android:layout_marginTop="5dp">
             <EditText
                 android:id="@+id/edit_text"
-                android:hint="Введите имя персонажа"
+                android:hint="@string/statistics_text_field"
                 android:textColorHint="@color/grey"
                 android:textCursorDrawable="@drawable/color_cursor"
                 android:textColor="@color/grey"
@@ -39,7 +39,7 @@
                 app:backgroundTint="@null"
                 android:background="@drawable/button_donate_click"
                 android:textColor="@drawable/button_donate_click"
-                android:text="Добавить"
+                android:text="@string/statistics_button_add"
                 android:textSize="15sp" />
         </LinearLayout>
         <TextView
@@ -69,7 +69,7 @@
                 app:backgroundTint="@null"
                 android:background="@drawable/button_server_click"
                 android:textColor="@drawable/button_server_click"
-                android:text="Альфа"
+                android:text="@string/statistics_button_alfa"
                 android:textSize="15sp" />
             <RadioButton
                 android:id="@+id/button_server_bravo"
@@ -84,7 +84,7 @@
                 app:backgroundTint="@null"
                 android:background="@drawable/button_server_click"
                 android:textColor="@drawable/button_server_click"
-                android:text="Браво"
+                android:text="@string/statistics_button_bravo"
                 android:textSize="15sp" />
             <RadioButton
                 android:id="@+id/button_server_charli"
@@ -98,7 +98,7 @@
                 app:backgroundTint="@null"
                 android:background="@drawable/button_server_click"
                 android:textColor="@drawable/button_server_click"
-                android:text="Чарли"
+                android:text="@string/statistics_button_charli"
                 android:textSize="15sp" />
         </RadioGroup>
 
