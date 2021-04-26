@@ -13,6 +13,7 @@ public class SettingsViewModel extends ViewModel {
     private MutableLiveData<Spanned> textMutable;
     public static final String APP_PREFERENCES = "my_settings";
     public static final String APP_PREFERENCES_NAME = "name";
+    public static final String APP_PREFERENCES_SERVER = "server";
     SharedPreferences sharedPreferences;
 
     public SettingsViewModel() {
@@ -32,6 +33,12 @@ public class SettingsViewModel extends ViewModel {
         editor.apply();
     }
 
+    public void setPreferencesServer(String server) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(APP_PREFERENCES_SERVER, server);
+        editor.apply();
+    }
+
     public MutableLiveData<Spanned> getText() {
         return textMutable;
     }
@@ -42,6 +49,14 @@ public class SettingsViewModel extends ViewModel {
         }
 
         return "";
+    }
+
+    public String getPreferencesServer() {
+        if (sharedPreferences.contains(APP_PREFERENCES_SERVER)) {
+            return sharedPreferences.getString(APP_PREFERENCES_SERVER, "1");
+        }
+
+        return "1";
     }
 
 }

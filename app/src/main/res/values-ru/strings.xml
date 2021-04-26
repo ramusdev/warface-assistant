@@ -93,6 +93,32 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="statistics_message_usernotfound">Ошибка: пользователь не найден</string>
     <string name="statistics_message_useradd">Пользователь успешно добавлен</string>
     <string name="statistics_message_userdeleted">Пользователь удален</string>
+    <string name="statistics_rank">Ранг</string>
+    <string name="statistics_experience">Опыт</string>
+    <string name="statistics_clanname">Название клана</string>
+    <string name="statistics_kills">Убийства</string>
+    <string name="statistics_friendlykills">Убийства сокомандников</string>
+    <string name="statistics_death">Смерти</string>
+    <string name="statistics_playtimeh">Часов в игре</string>
+    <string name="statistics_playtimem">Минут в игре</string>
+
+    <string name="statistics_pvptitle">Статистика PVP</string>
+    <string name="statistics_killsdeath">Убийств/Смертей</string>
+    <string name="statistics_pvpwins">Победы</string>
+    <string name="statistics_pvplost">Поражения</string>
+    <string name="statistics_pvpwl">Побед/Поражений</string>
+    <string name="statistics_pvpall">Матчей сыграно</string>
+    <string name="statistics_pvpfavorite">Любимый класс</string>
+
+    <string name="statistics_pvetitle">Статистика PVE</string>
+    <string name="statistics_pve">Убийств/Смертей</string>
+    <string name="statistics_pvewins">Побед</string>
+    <string name="statistics_pvelost">Поражений</string>
+    <string name="statistics_pveall">Матчей сыграно</string>
+    <string name="statistics_pvekill">Убийств</string>
+    <string name="statistics_pvefriendlykills">Убийств сокомандников</string>
+    <string name="statistics_pvedeath">Смертей</string>
+    <string name="statistics_pvefavorite">Любимый класс</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="navigation_drawer_open">Open navigation drawer</string>

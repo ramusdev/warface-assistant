@@ -102,7 +102,7 @@ public class SettingsFragment extends Fragment {
 
                 int radioButtonId = radioGroup.getCheckedRadioButtonId();
                 RadioButton radioButton = view.findViewById(radioButtonId);
-                String server = (String) radioButton.getTag();
+                final String server = (String) radioButton.getTag();
 
                 Log.d("MyTag", server);
 
@@ -122,6 +122,7 @@ public class SettingsFragment extends Fragment {
                                 button.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_button_delete));
                                 SettingsViewModel mViewModel = new ViewModelProvider(SettingsFragment.this).get(SettingsViewModel.class);
                                 mViewModel.setPreferencesName(name);
+                                mViewModel.setPreferencesServer(server);
                                 button.setOnClickListener(listenerDeleteUser());
 
                                 Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
@@ -162,6 +163,7 @@ public class SettingsFragment extends Fragment {
 
                 SettingsViewModel mViewModel = new ViewModelProvider(SettingsFragment.this).get(SettingsViewModel.class);
                 mViewModel.setPreferencesName("");
+                mViewModel.setPreferencesServer("");
 
                 editText.setText("");
                 editText.setEnabled(true);

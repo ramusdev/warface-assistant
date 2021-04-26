@@ -101,6 +101,32 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="statistics_message_usernotfound">Error: user not found</string>
     <string name="statistics_message_useradd">User added</string>
     <string name="statistics_message_userdeleted">User deleted</string>
+    <string name="statistics_rank">Rank</string>
+    <string name="statistics_experience">Experience</string>
+    <string name="statistics_clanname">Clan name</string>
+    <string name="statistics_kills">Kills</string>
+    <string name="statistics_friendlykills">Friendly kills</string>
+    <string name="statistics_death">Death</string>
+    <string name="statistics_playtimeh">Play time hours</string>
+    <string name="statistics_playtimem">Playtime minutes</string>
+
+    <string name="statistics_pvptitle">Statistics PVP</string>
+    <string name="statistics_killsdeath">Kills/Death</string>
+    <string name="statistics_pvpwins">Win</string>
+    <string name="statistics_pvplost">Lost</string>
+    <string name="statistics_pvpwl">Win/Lost</string>
+    <string name="statistics_pvpall">Matches</string>
+    <string name="statistics_pvpfavorite">Favorite class</string>
+
+    <string name="statistics_pvetitle">Statistics PVE</string>
+    <string name="statistics_pve">Kiils/Death</string>
+    <string name="statistics_pvewins">Wins</string>
+    <string name="statistics_pvelost">Lost</string>
+    <string name="statistics_pveall">Matches</string>
+    <string name="statistics_pvekill">Kill</string>
+    <string name="statistics_pvefriendlykills">Friendly kills</string>
+    <string name="statistics_pvedeath">Death</string>
+    <string name="statistics_pvefavorite">Favorite class</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="navigation_drawer_open">Open navigation drawer</string>

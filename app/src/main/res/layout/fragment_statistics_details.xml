@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="@color/greylite"
-            android:text="Имя" />
+            android:text="Name" />
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                 android:id="@+id/text_rank"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ранг"
+                android:text="@string/statistics_rank"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -50,7 +50,7 @@
                 android:id="@+id/text_experience"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Опыт"
+                android:text="@string/statistics_experience"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -72,7 +72,7 @@
                 android:id="@+id/text_clanname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Название клана"
+                android:text="@string/statistics_clanname"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -94,7 +94,7 @@
                 android:id="@+id/text_kill"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Убийства"
+                android:text="@string/statistics_kills"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -116,7 +116,7 @@
                 android:id="@+id/text_friendlykills"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Дружесвенные убийства"
+                android:text="@string/statistics_friendlykills"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -138,7 +138,7 @@
                 android:id="@+id/text_death"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Смерти"
+                android:text="@string/statistics_death"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -160,7 +160,7 @@
                 android:id="@+id/text_playtimeh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Часов в игре"
+                android:text="@string/statistics_playtimeh"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -182,7 +182,7 @@
                 android:id="@+id/text_playtimem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Минут в игре"
+                android:text="@string/statistics_playtimem"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -195,29 +195,6 @@
                 android:textColor="@color/greylite"
                 android:textSize="15sp" />
         </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/text_death"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Смерти"
-                android:layout_alignParentStart="true"
-                android:textColor="@color/grey"
-                android:textSize="15sp" />
-            <TextView
-                android:id="@+id/data_death"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="14564"
-                android:textColor="@color/greylite"
-                android:textSize="15sp" />
-        </RelativeLayout>
-
 
         <View
             android:layout_width="match_parent"
@@ -231,7 +208,7 @@
             android:textSize="20sp"
             android:layout_marginTop="40dp"
             android:textColor="@color/greylite"
-            android:text="Статистика PVP" />
+            android:text="@string/statistics_pvptitle" />
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -241,7 +218,7 @@
                 android:id="@+id/text_pvp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Убийств / Смертей"
+                android:text="@string/statistics_killsdeath"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -263,7 +240,7 @@
                 android:id="@+id/text_pvpwins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Победы"
+                android:text="@string/statistics_pvpwins"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -285,7 +262,7 @@
                 android:id="@+id/text_pvplost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Поражения"
+                android:text="@string/statistics_pvplost"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -307,7 +284,7 @@
                 android:id="@+id/text_pvpwl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Победы/Поражения"
+                android:text="@string/statistics_pvpwl"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -329,7 +306,7 @@
                 android:id="@+id/text_pvpall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Матчей сыграно"
+                android:text="@string/statistics_pvpall"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -351,7 +328,7 @@
                 android:id="@+id/text_pvpfavorite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Любимый класс"
+                android:text="@string/statistics_pvpfavorite"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -379,7 +356,7 @@
             android:textSize="20sp"
             android:layout_marginTop="35dp"
             android:textColor="@color/greylite"
-            android:text="Статистика PVE" />
+            android:text="@string/statistics_pvetitle" />
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -389,7 +366,7 @@
                 android:id="@+id/text_pve"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Убийств/Смертей"
+                android:text="@string/statistics_pve"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -411,7 +388,7 @@
                 android:id="@+id/text_pvewins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Победы"
+                android:text="@string/statistics_pvewins"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -433,7 +410,7 @@
                 android:id="@+id/text_pvelost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Поражения"
+                android:text="@string/statistics_pvelost"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -455,7 +432,7 @@
                 android:id="@+id/text_pveall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Матчей сыграно"
+                android:text="@string/statistics_pveall"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -477,7 +454,7 @@
                 android:id="@+id/text_pvekill"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Убийства"
+                android:text="@string/statistics_pvekill"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -499,7 +476,7 @@
                 android:id="@+id/text_pvefriendlykills"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Дружественные убийства"
+                android:text="@string/statistics_pvefriendlykills"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -521,7 +498,7 @@
                 android:id="@+id/text_pvedeath"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Смерти"
+                android:text="@string/statistics_pvedeath"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />
@@ -543,7 +520,7 @@
                 android:id="@+id/text_pvefavorite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Любимый класс"
+                android:text="@string/statistics_pvefavorite"
                 android:layout_alignParentStart="true"
                 android:textColor="@color/grey"
                 android:textSize="15sp" />

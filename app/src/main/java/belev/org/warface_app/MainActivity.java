@@ -60,13 +60,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        // Init mobile ads
-        // MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            // @Override
-            // public void onInitializationComplete(InitializationStatus initializationStatus) {
-            // }
-        // });
-
         // Open connection to db
         dbHelper = new DataDbHelper(this);
 
@@ -377,11 +370,9 @@ public class MainActivity extends AppCompatActivity {
         List<News> news = newsLoader.load();
 
         if (news.size() <= 0) {
-            // UpdateNewsAsync updateNewsAsync = new UpdateNewsAsync(this.getApplicationContext());
-            // updateNewsAsync.execute();
+            Log.d("MyTag", "update news if not exists --->");
             BroadcastReceiverCustom broadcastReceiverCustom = new BroadcastReceiverCustom();
             broadcastReceiverCustom.onReceive(MyApplicationContext.getAppContext(), new Intent());
-            Log.d("MyTag", "From new size");
         }
     }
 
@@ -392,16 +383,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void createTasks() {
         updateNewsIfNotExists();
-        // updateStatisticsUser();
-        // createPeriodicTask();
+        createPeriodicTask();
     }
 
-    // public void updateStatisticsUser() {
-        // TaskRunner taskRunner = new TaskRunner();
-        // taskRunner.executeAsync(new StatisticsParser());
-    // }
-
     public void createPeriodicTask() {
+        Log.d("MyTag", "create periodic task --->");
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
         long time = calendar.getTimeInMillis();

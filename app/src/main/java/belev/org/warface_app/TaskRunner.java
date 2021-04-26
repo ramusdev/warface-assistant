@@ -17,7 +17,6 @@ public class TaskRunner<T> {
     }
 
     public void executeAsync(final Callable<T> callable, final TaskRunnerCallback<T> callback) {
-
         executorMain.execute(new Runnable() {
             @Override
             public void run() {
@@ -35,6 +34,19 @@ public class TaskRunner<T> {
                         callback.execute(finalResult);
                     }
                 });
+            }
+        });
+    }
+
+    public void executeAsync(final Callable<T> callable) {
+        executorMain.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    callable.call();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
