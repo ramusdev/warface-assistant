@@ -24,6 +24,6 @@ public class MyApplication extends Application {
             }
         });
 
-        // appOpenManager = new AppOpenManager(this);
+        appOpenManager = new AppOpenManager(this);
     }
 }

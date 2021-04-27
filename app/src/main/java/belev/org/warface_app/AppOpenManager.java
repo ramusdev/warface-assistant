@@ -83,7 +83,9 @@ public class AppOpenManager implements LifecycleObserver, Application.ActivityLi
                 }
             };
 
-            appOpenAd.show(currentActivity, fullScreenContentCallback);
+            // appOpenAd.show(currentActivity, fullScreenContentCallback);
+            appOpenAd.show(currentActivity);
+            appOpenAd.setFullScreenContentCallback(fullScreenContentCallback);
 
         } else {
             Log.d(LOG_TAG, "AppOpenManager: Can not show ad");

@@ -3,15 +3,12 @@ package belev.org.warface_app;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.google.android.gms.ads.InterstitialAd;
 import java.util.ArrayList;
 import java.util.List;
 import androidx.annotation.Nullable;
@@ -33,7 +30,6 @@ public class StremersFragment extends ListFragment {
 
     android.widget.Adapter adapter;
     private List<Maps> rowItems;
-    InterstitialAd mInterstitialAd;
 
     public static int[] name_arr = { R.array.stremers_name, R.array.stremers_name };
     public static int[] about_arr = { R.array.stremers_about, R.array.stremers_about };

@@ -1,6 +1,5 @@
 package belev.org.warface_app;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Window;
@@ -8,11 +7,6 @@ import android.view.WindowManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.Toast;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -20,7 +14,6 @@ public class NewsWebActivity extends AppCompatActivity {
 
     private static final String BUNDLE_TEXT = "bundle_text";
     private String link;
-    InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,14 +66,6 @@ public class NewsWebActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void showInterstitial() {
-        if(mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            // Toast.makeText(this, "Add did not loaded", Toast.LENGTH_LONG).show();
-        }
     }
 
     @Override

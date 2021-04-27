@@ -3,15 +3,12 @@ package belev.org.warface_app;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.google.android.gms.ads.InterstitialAd;
 import java.util.ArrayList;
 import java.util.List;
 import androidx.annotation.Nullable;
@@ -22,7 +19,6 @@ public class SniperFragment extends ListFragment {
 
     private static final String BUNDLE_LINK = "bundle_link";
     private static final String BUNDLE_MAPS = "bundle_maps";
-    InterstitialAd mInterstitialAd;
     private Integer achivmentid;
     private Integer mapsid;
     LayoutInflater inf;

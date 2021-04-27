@@ -18,16 +18,13 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import com.google.android.gms.ads.AdLoader;
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.material.navigation.NavigationView;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
-
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -40,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
-    InterstitialAd mInterstitialAd;
     public Toolbar toolbar;
 
     // private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
@@ -383,7 +379,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void createTasks() {
         updateNewsIfNotExists();
-        createPeriodicTask();
+        // createPeriodicTask();
     }
 
     public void createPeriodicTask() {
