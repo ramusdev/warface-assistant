@@ -46,7 +46,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -102,7 +102,7 @@
     <property name="android-custom-viewC:/Users/Roman/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="android-custom-viewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_SELECTED" value="TemplateView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ApexLegendsAssistant" />
     <property name="multi-representation-previewC:/Users/Roman/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Project" />
@@ -262,10 +262,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="772" y="310" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616783478587" />
-    <state x="587" y="253" key="FileChooserDialogImpl" timestamp="1618603931795">
+    <state x="587" y="253" key="FileChooserDialogImpl" timestamp="1619523061105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="253" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1618603931795" />
+    <state x="587" y="253" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619523061105" />
     <state width="1876" height="378" key="GridCell.Tab.0.bottom" timestamp="1619468884928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
