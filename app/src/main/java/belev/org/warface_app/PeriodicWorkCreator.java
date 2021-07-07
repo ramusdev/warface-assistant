@@ -25,12 +25,12 @@ public class PeriodicWorkCreator {
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .build();
 
-        PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(PeriodicWork.class, 15, TimeUnit.HOURS)
+        PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(PeriodicWork.class, 12, TimeUnit.HOURS)
                 .setConstraints(constraints)
-                .addTag("task_worker2")
+                .addTag("task_worker5")
                 .build();
 
         workManager = WorkManager.getInstance(application);
-        workManager.enqueueUniquePeriodicWork("Pars news work name 2", ExistingPeriodicWorkPolicy.REPLACE, periodicWorkRequest);
+        workManager.enqueueUniquePeriodicWork("work_manager_name5", ExistingPeriodicWorkPolicy.REPLACE, periodicWorkRequest);
     }
 }

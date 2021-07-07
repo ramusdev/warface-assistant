@@ -11,11 +11,11 @@
     <ImageView
         android:id="@+id/maps_logo"
         android:layout_width="wrap_content"
-        android:layout_height="225dp"
+        android:layout_height="220dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/neftebaza_logo" />
 
     <TextView

@@ -12,6 +12,8 @@ import android.widget.TextView;
 import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.MultiTransformation;
+import com.bumptech.glide.load.resource.bitmap.GranularRoundedCorners;
 
 import java.util.List;
 
@@ -68,6 +70,7 @@ public class NewsAdapter extends BaseAdapter {
                     .load(currentNews.getImage())
                     .dontTransform()
                     .transition(withCrossFade())
+                    .transform(new MultiTransformation(new GranularRoundedCorners(20, 20, 0, 0)))
                     .into(holder.imageView);
         }
 

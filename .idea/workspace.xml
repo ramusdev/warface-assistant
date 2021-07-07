@@ -46,7 +46,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -94,7 +94,7 @@
     <property name="ApkExportedModule" value="Android.app" />
     <property name="BundleExportedModule" value="WarfaceAssistant.app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_4_XL_API_30_2" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-06T20:26:01.562Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-02T08:59:04.648Z" />
     <property name="ExportApk.ApkPath" value="D:\build" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -102,13 +102,13 @@
     <property name="android-custom-viewC:/Users/Roman/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="android-custom-viewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_SELECTED" value="TemplateView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ApexLegendsAssistant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="multi-representation-previewC:/Users/Roman/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="multi-representation-previewD:/Android/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_selected" value="Custom views" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
@@ -222,18 +222,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="553" y="305" key="#PSD" timestamp="1617809165769">
+    <state x="553" y="305" key="#PSD" timestamp="1622624226859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="305" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1617809165769" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1618602891219">
+    <state x="553" y="305" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1622624226859" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1619803135609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618602891219" />
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1612201953016">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612201953016" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1619803135609" />
     <state x="665" y="392" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1618256306162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,50 +238,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="710" y="389" width="500" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1618862488137" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614017642397">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625505484171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614017642397" />
-    <state x="92" y="92" width="1736" height="856" key="AVDManager" timestamp="1619002645444">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625505484171" />
+    <state x="92" y="92" width="1736" height="856" key="AVDManager" timestamp="1622625573875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1619002645444" />
-    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1615469813248">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615469813248" />
+    <state x="92" y="92" width="1736" height="856" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1622625573875" />
     <state x="581" y="303" key="AndroidCreateResourceFileDialog" timestamp="1617041487633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="581" y="303" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617041487633" />
-    <state x="772" y="310" key="AndroidCreateXmlResourceDialog" timestamp="1616783478587">
+    <state x="587" y="253" key="FileChooserDialogImpl" timestamp="1625587519741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="772" y="310" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616783478587" />
-    <state x="587" y="253" key="FileChooserDialogImpl" timestamp="1619523061105">
+    <state x="587" y="253" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1625587519741" />
+    <state width="1876" height="552" key="GridCell.Tab.0.bottom" timestamp="1625506989870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="253" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619523061105" />
-    <state width="1876" height="378" key="GridCell.Tab.0.bottom" timestamp="1619468884928">
+    <state width="1876" height="552" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625506989870" />
+    <state width="1876" height="552" key="GridCell.Tab.0.center" timestamp="1625506989870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619468884928" />
-    <state width="1876" height="378" key="GridCell.Tab.0.center" timestamp="1619468884928">
+    <state width="1876" height="552" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625506989870" />
+    <state width="1876" height="552" key="GridCell.Tab.0.left" timestamp="1625506989870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="378" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619468884928" />
-    <state width="1876" height="378" key="GridCell.Tab.0.left" timestamp="1619468884928">
+    <state width="1876" height="552" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625506989870" />
+    <state width="1876" height="552" key="GridCell.Tab.0.right" timestamp="1625506989870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="378" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619468884928" />
-    <state width="1876" height="378" key="GridCell.Tab.0.right" timestamp="1619468884928">
+    <state width="1876" height="552" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625506989870" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1622624217107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="378" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619468884928" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1615483658372">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615483658372" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1622624217107" />
     <state x="566" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1617458274268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -294,14 +282,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618778368314" />
-    <state x="576" y="463" key="edit.logcat.filter.dialog.dimensions" timestamp="1614204571473">
+    <state x="459" y="178" width="946" height="712" key="find.popup" timestamp="1619988203733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="576" y="463" key="edit.logcat.filter.dialog.dimensions/0.0.1920.1040@0.0.1920.1040" timestamp="1614204571473" />
-    <state x="459" y="178" width="909" height="712" key="find.popup" timestamp="1617789046653">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="459" y="178" width="909" height="712" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617789046653" />
+    <state x="459" y="178" width="946" height="712" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619988203733" />
     <state x="736" y="278" key="refactoring.ChangeSignatureDialog" timestamp="1618149598043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

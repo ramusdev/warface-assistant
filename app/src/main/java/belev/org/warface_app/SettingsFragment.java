@@ -18,14 +18,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
-import java.util.Locale;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
@@ -142,7 +140,7 @@ public class SettingsFragment extends Fragment {
                     };
 
                     TaskRunner<Integer> taskRunner = new TaskRunner<Integer>();
-                    Callable statisticsParser = new StatisticsParser(name, server);
+                    Callable statisticsParser = new StatisticsParserCallable(name, server);
                     taskRunner.executeAsync(statisticsParser, task);
                 }
             }

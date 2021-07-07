@@ -13,5 +13,4 @@ public class MyApplicationContext {
     public static Context getAppContext() {
         return MyApplicationContext.context;
     }
-
 }

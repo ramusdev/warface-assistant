@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.MultiTransformation;
+import com.bumptech.glide.load.resource.bitmap.GranularRoundedCorners;
 
 import java.util.List;
 
@@ -76,6 +78,7 @@ public class MapsAdapter extends BaseAdapter {
                     .load(currentMaps.getThumbnail())
                     .dontTransform()
                     .transition(withCrossFade())
+                    .transform(new MultiTransformation(new GranularRoundedCorners(20, 20, 0, 0)))
                     .into(holder.iconView);
 	    }
 

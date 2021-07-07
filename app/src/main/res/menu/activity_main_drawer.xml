@@ -38,11 +38,6 @@
             android:id="@+id/nav_item_statistics"
             android:icon="@drawable/statistics_icon"/>
 
-        <item android:title="@string/menu_settings"
-            android:checked="false"
-            android:id="@+id/nav_item_settings"
-            android:icon="@drawable/settings_icon"/>
-
         <item android:title="@string/menu_achievements"
             android:checked="false"
             android:id="@+id/nav_item_achivment"
@@ -62,6 +57,11 @@
             android:checked="false"
             android:id="@+id/nav_item_update"
             android:icon="@drawable/upd_icn"/>
+
+        <item android:title="@string/menu_settings"
+            android:checked="false"
+            android:id="@+id/nav_item_settings"
+            android:icon="@drawable/settings_icon"/>
 
         <item android:title="@string/menu_about"
             android:checked="false"

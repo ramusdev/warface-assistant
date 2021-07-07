@@ -23,6 +23,7 @@ import com.google.android.material.navigation.NavigationView;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -361,38 +362,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void updateNewsIfNotExists() {
-        NewsLoader newsLoader = new NewsLoader(this.getApplicationContext());
-        List<News> news = newsLoader.load();
-
-        if (news.size() <= 0) {
-            Log.d("MyTag", "update news if not exists --->");
-            BroadcastReceiverCustom broadcastReceiverCustom = new BroadcastReceiverCustom();
-            broadcastReceiverCustom.onReceive(MyApplicationContext.getAppContext(), new Intent());
-        }
-    }
-
     @Override
     protected void onStart() {
         super.onStart();
     }
 
     public void createTasks() {
-        updateNewsIfNotExists();
+        // updateNewsIfNotExists();
         // createPeriodicTask();
-    }
-
-    public void createPeriodicTask() {
-        Log.d("MyTag", "create periodic task --->");
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(System.currentTimeMillis());
-        long time = calendar.getTimeInMillis();
-
-        Intent intent = new Intent(this, BroadcastReceiverCustom.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        manager.setRepeating(AlarmManager.RTC_WAKEUP, time, TimeUnit.HOURS.toMillis(15), pendingIntent);
     }
 
     public boolean isOnline() {
