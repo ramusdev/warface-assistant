@@ -45,6 +45,7 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="menu_sniper">СНАЙПЕР</string>
     <string name="menu_medic">МЕДИК</string>
     <string name="menu_enginer">ИНЖЕНЕР</string>
+    <string name="menu_additional">ПИСТОЛЕТЫ</string>
     <string name="menu_warbaks">Варбаксовое</string>
     <string name="menu_credits">Кредитное</string>
     <string name="menu_box">Коробочное</string>

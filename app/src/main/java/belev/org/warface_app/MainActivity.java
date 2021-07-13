@@ -356,6 +356,27 @@ public class MainActivity extends AppCompatActivity {
                     }, 275);
                 }
 
+                if (menuItem.getItemId() == R.id.nav_item_additional) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+                            if (isOnline()) {
+                                // menuItem.setChecked(true);
+                                toolbar.setTitle(getResources().getString(R.string.menu_additional));
+                                transaction.replace(R.id.containerView, new AdditionalFragment()).commit();
+                                mNavigationView.setCheckedItem(menuItem);
+                            } else {
+                                toolbar.setTitle(getResources().getString(R.string.error_connection));
+                                transaction.replace(R.id.containerView, new ConnectionFragment()).commit();
+                            }
+                        }
+                    }, 275);
+                }
+
                 return false;
             }
 

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="additional_name">
+        <item>Type 97B</item>
+        <item>VHS-2</item>
+        <item>M4A1</item>
+        <item>Daewoo K2</item>
+        <item>Daewoo K3</item>
+        <item>M16A2 LMG</item>
+        <item>АС Вал</item>
+        <item>IMBEL IA2</item>
+        <item>MSBS Radon</item>
+        <item>XM8</item>
+        <item>M60E4</item>
+        <item>HK G36K</item>
+        <item>HK MG36</item>
+        <item>Calico M955A</item>
+        <item>Galil AR</item>
+        <item>Tavor TAR-21</item>
+        <item>АК‐103</item>
+        <item>РПК</item>
+        <item>XM8 LMG</item>
+        <item>SAI GRY AR-15</item>
+        <item>ДП-27</item>
+    </string-array>
+    <string-array name="additional_type">
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+        <item>Полуавтоматический</item>
+    </string-array>
+    <string-array name="additional_about">
+        <item>Уникальная штурмовая винтовка Type 97B, разработанная на базе автомата Type 97</item>
+        <item>Хорватский автомат, выполненный в компоновке булл-пап</item>
+        <item>Модифицированная версия M16 с укороченным стволом и выдвижным прикладом</item>
+        <item>Штурмовая винтовка вооруженных сил Южной Кореи, разработанная компанией ST Daewoo</item>
+        <item>Легкий пулемет калибра 5.56 мм. напоминающий по конструкции пулемет FN Minimi</item>
+        <item>Стандартный средний пулемет, который ранее находился на вооружении армии США, а ныне используется американской морской пехотой</item>
+        <item>АС Вал (Автомат Специальный) — советский автомат со встроенным глушителем. Разработан ЦНИИ Точмаш во второй половине 1980-х годов</item>
+        <item>Штурмовая винтовка IMBEL IA2 была официально принята на вооружение бразильской армии как замена устаревшим FN-FAL и M16A2</item>
+        <item>Польский стрелковый комплекс (Modułowy Systema Broni Strzeleckiej — модульная система стрелкового оружия), выполненный в компоновке булл-пап</item>
+        <item>Легкая штурмовая винтовка, разработанная для армии США в начале 2000-х годов</item>
+        <item>Модификация пулемета М60Е3 с возможностью смены ствола и крепления оптических прицелов</item>
+        <item>Штурмовая винтовка калибра 5.56х45 мм, разработанная в начале 90-х годов немецкой компанией Heckler Koch</item>
+        <item>Немецкий легкий пулемет, разработанный компанией Heckler Koch</item>
+        <item>Универсальная автоматическая винтовка со свободным затвором, использующая патроны калибра .22 LR или 9х19 мм Парабеллум</item>
+        <item>Израильский автомат, разработанный на основе финского автомата RK 62. Главным образом предназначен для ведения боя в пустыне</item>
+        <item>Израильская штурмовая винтовка калибра 5.56х45 мм, выполненная по схеме булл-пап. Корпус оружия изготовлен из легких сплавов и высокопрочных полимеров</item>
+        <item>Российская штурмовая винтовка калибра 7,62 мм</item>
+        <item>Легкий советский пулемет калибра 7.62х39 мм, созданный Михайлом Калашниковым в конце 1950-х параллельно со штурмовой винтовкой АКМ</item>
+        <item>Ручной пулемет на основе комплекса XM8 с утяжеленным стволом и барабанным магазином на 100 патронов</item>
+        <item>Штурмовая винтовка для тактических операций и спортивных соревнований. Оружие поставляется с уникальным пламегасителем Jailbrake и увеличенным магазином</item>
+        <item>Легендарный пулемет Дегтярева, главное оружие огневой поддержки пехоты Красной Армии.</item>
+    </string-array>
+    <array name="additional_link">
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_type97b.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_vhs2.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m4a1.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_daewook2.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_daewook3.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m16a2lmg.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_acval.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_imbelia2.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_msbsradon.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_xm8.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m60e4.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_hkg36k.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_hkmg36.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_calicom955a.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_galilar.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_tavortar21.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_ak103.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_rpk.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_xm8lmg.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_saigryar15.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_dp27.html</item>
+    </array>
+    <array name="additional_icon">
+        <item>@drawable/rifleman_type97b</item>
+        <item>@drawable/rifleman_vhs2</item>
+        <item>@drawable/rifleman_m4a1</item>
+        <item>@drawable/rifleman_daewook2</item>
+        <item>@drawable/rifleman_daewook3</item>
+        <item>@drawable/rifleman_m16a2lmg</item>
+        <item>@drawable/rifleman_acval</item>
+        <item>@drawable/rifleman_imbelia2</item>
+        <item>@drawable/rifleman_msbsradon</item>
+        <item>@drawable/rifleman_xm8</item>
+        <item>@drawable/rifleman_m60e4</item>
+        <item>@drawable/rifleman_hkg36k</item>
+        <item>@drawable/rifleman_hkmg36</item>
+        <item>@drawable/rifleman_calicom955a</item>
+        <item>@drawable/rifleman_galilar</item>
+        <item>@drawable/rifleman_tavortar21</item>
+        <item>@drawable/rifleman_ak103</item>
+        <item>@drawable/rifleman_rpk</item>
+        <item>@drawable/rifleman_xm8lmg</item>
+        <item>@drawable/rifleman_saigryar15</item>
+        <item>@drawable/rifleman_dp27</item>
+    </array>
+</resources>

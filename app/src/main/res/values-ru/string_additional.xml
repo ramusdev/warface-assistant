@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="additional_name">
+        <item>АПС</item>
+        <item>Beretta M9</item>
+        <item>Beretta M93R</item>
+        <item>Browning High Power</item>
+        <item>Colt M1911A1</item>
+        <item>Colt Python Elite</item>
+        <item>CZ 75‐Auto</item>
+        <item>CZ 75 Czechmate Parrot</item>
+        <item>Daewoo K5</item>
+        <item>Desert Eagle</item>
+        <item>FN Five-seveN</item>
+        <item>Glock 18C</item>
+        <item>HK USP</item>
+        <item>Kel-Tec SUB2000</item>
+        <item>Luger</item>
+        <item>Mateba Autorevolver</item>
+        <item>Maxim 9</item>
+        <item>Micro Desert Eagle</item>
+        <item>MPA 930DMG</item>
+        <item>Наган М1895</item>
+        <item>QSZ-92</item>
+        <item>Rhino 60DS</item>
+        <item>Ruger Mk IV Lite</item>
+        <item>SW MP R8</item>
+        <item>SIG Sauer P226 C</item>
+        <item>Steyr M9‐A1</item>
+        <item>Taurus Judge</item>
+        <item>TEC-9</item>
+        <item>Walther P99</item>
+    </string-array>
+    <string-array name="additional_type">
+        <item>Автоматический</item>
+        <item>Одиночными</item>
+        <item>Отсечками по 3</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Автоматический</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Автоматический</item>
+        <item>Одиночными</item>
+    </string-array>
+    <string-array name="additional_about">
+        <item>Автоматический пистолет Стечкина (АПС) — советское оружие, названное в честь его создателя, конструктора Игоря Стечкина.</item>
+        <item>Один из самых распространенных и узнаваемых пистолетов в мире. Использует патрон 9х19 мм Парабеллум.</item>
+        <item>Итальянский автоматический пистолет, позволяющий вести стрельбу очередями.</item>
+        <item>Полуавтоматический пистолет калибра 9мм с ударно-спусковым механизмом одинарного действия.</item>
+        <item>Самозарядный пистолет калибра .45 ACP с ударно-спусковым механизмом одинарного действия.</item>
+        <item>Шестизарядный револьвер калибра .357 Magnum, который выпускала Colt’s Manufacturing Company.</item>
+        <item>Чешский пистолет, впервые представленный на выставке в Мадриде в 1975 году. Позволяет вести огонь очередями.</item>
+        <item>C помощью CZ 75 Czechmate Parrot вы сможете поставить шах и мат любому противнику в пистолетной дуэли.</item>
+        <item>Полуавтоматический пистолет калибра 9мм, производимый в Южной Корее компанией ST Daewoo.</item>
+        <item>Знаменитый полуавтоматический пистолет большого калибра, разработанный Magnum Research в США.</item>
+        <item>Полуавтоматичесий пистолет калибра 5.7 мм, разработанный компанией FN Herstal.</item>
+        <item>Этот австрийский пистолет, разработанный на базе Glock 17, позволяет вести огонь как одиночными выстрелами, так и очередями.</item>
+        <item>HK USP достаточно компактный и удобный для стрелка пистолет с большой емкостью магазина и скорострельностью</item>
+        <item>SUB2000 – это лёгкий 9-мм карабин от компании Kel-Tec, основной отличительной чертой которого является мобильность.</item>
+        <item>Luger — прекрасный пистолет, для любителей исторических реконструкций.</item>
+        <item>Mateba Autorevolver – не просто мощный револьвер с высокой пробивной способностью, а уникальное оружие, которым приятно владеть.</item>
+        <item>Бесшумный пистолет с интегрированным глушителем, позволяющий использовать любые магазины Glock для боепитания.</item>
+        <item>Компактный пистолет калибра .308 АСР, предназначенный для самообороны.</item>
+        <item>MPA 930DMG – это скорострельное автоматическое оружие, позволяющее вести огонь очередями.</item>
+        <item>Семизарядный револьвер, созданный бельгийским оружейником Леоном Наганом по заказу Российской империи.</item>
+        <item>Полуавтоматический пистолет, разработанный корпорацией Norinco. Используется Народно-освободительной армией Китая с конца 90-х годов</item>
+        <item>Револьвер итальянской компании Armi Chiappa с революционным дизайном и необычной схемой расположения ствола напротив нижней каморы барабана.</item>
+        <item>Самозарядный пистолет, производящийся американской оружейной компанией Sturm, Ruger CO.</item>
+        <item>SW MP R8 - это современный восьмизарядный револьвер калибра .357 в комплекте с коллиматорным прицелом DeltaPoint.</item>
+        <item>Модифицированная версия популярного пистолета калибра 9×19 мм.</item>
+        <item>Представитель серии полуавтоматических пистолетов, разработанных австрийской компанией Steyr Mannlicher GmbH Co KG для полиции и гражданского населения.</item>
+        <item>Крупнокалиберный револьвер-дробовик Taurus Judge, разработанный бразильской компанией Taurus International.</item>
+        <item>Шведский пистолет, получивший широкую популярность в США в 80-х годах.</item>
+        <item>Этот полуавтоматический пистолет широко используется полицией различных стран мира благодаря отличной эргономике и высокой точности стрельбы.</item>
+    </string-array>
+    <array name="additional_link">
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_apc.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_berettam9.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_berettam93r.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_browninghighpower.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_coltm1911a1.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_coltpythonelite.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_cz75auto.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_cz75czechmateparrot.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_daewook5.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_deserteagle.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_fnfiveseven.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_glock18c.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_handkusp.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_keltecsub200.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_luger.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_matebaautorevolver.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_maxim9.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_microdeserteagle.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_mpa930dmg.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_nagan.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_qsz92.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_rhino60ds</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_rugermk4lite</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_sandwmandpr8</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_sigsauerp226c</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_steyrm9a1</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_taurusjudge</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_tec9</item>
+        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_waltherp99</item>
+    </array>
+    <array name="additional_icon">
+        <item>@drawable/additional_apc</item>
+        <item>@drawable/additional_berettam9</item>
+        <item>@drawable/additional_berettam93r</item>
+        <item>@drawable/additional_browninghighpower</item>
+        <item>@drawable/additional_coltm1911a1</item>
+        <item>@drawable/additional_coltpythonelite</item>
+        <item>@drawable/additional_cz75auto</item>
+        <item>@drawable/additional_cz75czechmateparrot</item>
+        <item>@drawable/additional_daewook5</item>
+        <item>@drawable/additional_deserteagle</item>
+        <item>@drawable/additional_fnfiveseven</item>
+        <item>@drawable/additional_glock18c</item>
+        <item>@drawable/additional_handkusp</item>
+        <item>@drawable/additional_keltecsub200</item>
+        <item>@drawable/additional_luger</item>
+        <item>@drawable/additional_matebaautorevolver</item>
+        <item>@drawable/additional_maxim9</item>
+        <item>@drawable/additional_microdeserteagle</item>
+        <item>@drawable/additional_mpa930dmg</item>
+        <item>@drawable/additional_nagan</item>
+        <item>@drawable/additional_qsz92</item>
+        <item>@drawable/additional_rhino60ds</item>
+        <item>@drawable/additional_rugermk4lite</item>
+        <item>@drawable/additional_sandwmandpr8</item>
+        <item>@drawable/additional_sigsauerp226c</item>
+        <item>@drawable/additional_steyrm9a1</item>
+        <item>@drawable/additional_taurusjudge</item>
+        <item>@drawable/additional_tec9</item>
+        <item>@drawable/additional_waltherp99</item>
+    </array>
+</resources>

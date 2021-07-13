@@ -31,7 +31,7 @@ public class MyApplication extends Application {
             }
         });
 
-        appOpenManager = new AppOpenManager(this);
+        // appOpenManager = new AppOpenManager(this);
 
         // Work manager
         Log.d("MyTag", "my application start class --->");
