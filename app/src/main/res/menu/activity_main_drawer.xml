@@ -31,7 +31,7 @@
         <item android:title="@string/menu_additional"
             android:checked="false"
             android:id="@+id/nav_item_additional"
-            android:icon="@drawable/eng_icn"/>
+            android:icon="@drawable/ad_icon"/>
 
         <item android:title="@string/menu_news"
             android:checked="true"
