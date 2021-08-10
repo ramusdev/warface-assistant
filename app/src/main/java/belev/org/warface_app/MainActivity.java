@@ -17,15 +17,32 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.google.android.ads.mediationtestsuite.MediationTestSuite;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdInspectorError;
 import com.google.android.gms.ads.AdLoader;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.OnAdInspectorClosedListener;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.material.navigation.NavigationView;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -40,15 +57,20 @@ public class MainActivity extends AppCompatActivity {
     FragmentTransaction mFragmentTransaction;
     public Toolbar toolbar;
 
-    // private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/2247696110";
+    private static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-4140002463111288/1212428870";
+    // private static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712";
+    private InterstitialAd mInterstitialAd;
+
     private AdLoader adLoader;
     public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
     public List<NewsModel> newsList = new ArrayList<NewsModel>();
     public DataDbHelper dbHelper;
     public AtomicBoolean isShowedMain = new AtomicBoolean(false);
-
+    // MoPubInterstitial moPubInterstitial;
     public static final String APP_PREFERENCES = "my_settings";
     public static final String APP_PREFERENCES_NAME = "name";
+    // public static String AD_INTERSTITIAL_ID = "24534e1901884e398f1253216226017e";
+    // public static String AD_INTERSTITIAL_ID = "2cd8bc6489cd43179f1242efe7cd8666";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +78,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        AdmobInterstitialAd admobInterstitialAd = new AdmobInterstitialAd.Builder()
+                .show(true)
+                .activity(this)
+                .testMode(false)
+                .adId(ADMOB_INTERSTITIAL_ID)
+                .build();
+
+        admobInterstitialAd.show();
 
         // Open connection to db
         dbHelper = new DataDbHelper(this);
@@ -404,18 +435,21 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            Network network = connectivityManager.getActiveNetwork();
-            if (network == null) return false;
-            NetworkCapabilities networkCapabilities = connectivityManager.getNetworkCapabilities(network);
-            return networkCapabilities != null && (networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) ||
-                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
-                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) ||
-                    networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_BLUETOOTH)
-            );
+        Network network = connectivityManager.getActiveNetwork();
+        if (network == null) return false;
+        NetworkCapabilities networkCapabilities = connectivityManager.getNetworkCapabilities(network);
+        return networkCapabilities != null && (networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) ||
+                networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+                networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) ||
+                networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_BLUETOOTH)
+        );
+    }
+
+    public void showAdmobInterstitial() {
+        if (mInterstitialAd != null) {
+            mInterstitialAd.show(MainActivity.this);
         } else {
-            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-            return networkInfo != null && networkInfo.isConnected();
+            Log.d("MyTag", "show admob interstitial null");
         }
     }
 
@@ -425,7 +459,22 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    /*
+    public void showMopubInterstitial() {
+        if (moPubInterstitial.isReady()) {
+            moPubInterstitial.show();
+        }
+    }
+
+    public void loadAdInterstitial() {
+        moPubInterstitial = new MoPubInterstitial(this, AD_INTERSTITIAL_ID);
+        moPubInterstitial.setInterstitialAdListener(this);
+        moPubInterstitial.load();
+    }
+    */
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
     }
+
 }

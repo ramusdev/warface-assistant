@@ -22,16 +22,17 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        // On app start ad
         MyApplicationContext myApplicationContext = new MyApplicationContext(this);
 
+        /*
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
+        */
 
-        appOpenManager = new AppOpenManager(this);
+        // appOpenManager = new AppOpenManager(this);
 
         // Work manager
         Log.d("MyTag", "my application start class --->");

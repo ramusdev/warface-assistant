@@ -53,7 +53,7 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="menu_sniper">SNIPER</string>
     <string name="menu_medic">MEDIC</string>
     <string name="menu_enginer">ENGINER</string>
- <string name="menu_additional">PISTOLS</string>
+    <string name="menu_additional">PISTOLS</string>
     <string name="menu_warbaks">Warbaks</string>
     <string name="menu_credits">Credits</string>
     <string name="menu_box">Box</string>

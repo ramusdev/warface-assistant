@@ -11,7 +11,6 @@ import androidx.appcompat.widget.Toolbar;
 
 public class RiflemanWebActivity extends AppCompatActivity {
 
-    private static final String BUNDLE_LINK = "bundle_link";
     private String link;
 
     @Override
@@ -30,9 +29,10 @@ public class RiflemanWebActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String link = intent.getStringExtra("BUNDLE_LINK");
+        String title = intent.getStringExtra("BUNDLE_TITLE");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(getResources().getString(R.string.menu_rifleman));
+        toolbar.setTitle(title);
         this.setSupportActionBar(toolbar);
         this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         this.getSupportActionBar().setHomeButtonEnabled(true);

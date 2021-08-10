@@ -74,6 +74,7 @@ public class RiflemanFragment extends ListFragment {
         if (mainActivity.isOnline()) {
             Intent myIntent = new Intent(getActivity(), RiflemanWebActivity.class);
             myIntent.putExtra("BUNDLE_LINK", maps_array[positionShift]);
+            myIntent.putExtra("BUNDLE_TITLE", getResources().getString(R.string.menu_rifleman));
             getActivity().startActivity(myIntent);
         } else {
             Intent myIntent = new Intent(getActivity(), ConnectionActivity.class);
