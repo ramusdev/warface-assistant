@@ -21,19 +21,11 @@ public class NewsWebActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
 
-        // Init interstitial
-        // mInterstitialAd = new InterstitialAd(this);
-        // mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
-        // AdRequest adRequest = new AdRequest.Builder().build();
-        // mInterstitialAd.loadAd(adRequest);
-
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
-            Window window = this.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(this.getResources().getColor(R.color.bar));
-            window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
-        }
+        Window window = this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(this.getResources().getColor(R.color.bar));
+        window.setNavigationBarColor(this.getResources().getColor(R.color.bar));
 
         String text = getIntent().getStringExtra("BUNDLE_TEXT");
 
@@ -53,8 +45,6 @@ public class NewsWebActivity extends AppCompatActivity {
         //webView.loadUrl("https://edgenews.ru/android/wardocwarface/maps/spec_vulkan.html");
         //webView.loadUrl(link);
         webView.loadDataWithBaseURL(null, text, "text/html", "utf-8", "");
-
-        // showInterstitial();
     }
 
     @Override

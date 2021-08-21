@@ -32,15 +32,9 @@ public class NewsFragment extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.framelist_maps, container, false);
         ListView listView = (ListView) view.findViewById(android.R.id.list);
-        View spaceView = new View(getContext());
         mainActivity = (MainActivity) getActivity();
-
-        NativeAdPopulationSync nativeAdPopulationSync = new NativeAdPopulationSync(0);
-        nativeAdPopulationSync.view = view;
-        nativeAdPopulationSync.spaceView = spaceView;
-        nativeAdPopulationSync.listView = listView;
-        nativeAdPopulationSync.mainActivity = mainActivity;
-        isLoadedAd = nativeAdPopulationSync.execute();
+        listView.addHeaderView(new View(mainActivity.getApplicationContext()));
+        listView.addFooterView(new View(mainActivity.getApplicationContext()));
 
         // Load news
         NewsLoader newsLoader = new NewsLoader(mainActivity.getApplicationContext());

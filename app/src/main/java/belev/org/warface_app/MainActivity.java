@@ -1,48 +1,28 @@
 package belev.org.warface_app;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
-
-import com.google.android.ads.mediationtestsuite.MediationTestSuite;
-import com.google.android.gms.ads.AdError;
-import com.google.android.gms.ads.AdInspectorError;
-import com.google.android.gms.ads.AdLoader;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.FullScreenContentCallback;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.OnAdInspectorClosedListener;
-import com.google.android.gms.ads.formats.UnifiedNativeAd;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.material.navigation.NavigationView;
-
+import com.yandex.mobile.ads.common.AdRequest;
+import com.yandex.mobile.ads.common.AdRequestError;
+import com.yandex.mobile.ads.common.InitializationListener;
+import com.yandex.mobile.ads.common.MobileAds;
+import com.yandex.mobile.ads.interstitial.InterstitialAd;
+import com.yandex.mobile.ads.interstitial.InterstitialAdEventListener;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
-
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -61,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     // private static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712";
     private InterstitialAd mInterstitialAd;
 
-    private AdLoader adLoader;
-    public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
+    // private AdLoader adLoader;
+    // public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
     public List<NewsModel> newsList = new ArrayList<NewsModel>();
     public DataDbHelper dbHelper;
     public AtomicBoolean isShowedMain = new AtomicBoolean(false);
@@ -71,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
     public static final String APP_PREFERENCES_NAME = "name";
     // public static String AD_INTERSTITIAL_ID = "24534e1901884e398f1253216226017e";
     // public static String AD_INTERSTITIAL_ID = "2cd8bc6489cd43179f1242efe7cd8666";
+    public static final String YANDEX_MOBILE_ADS_TAG = "YandexMobileAds";
+    public static final String BLOCK_ID = "adf-327594/1201445";
+    // public static final String BLOCK_ID = "R-M-DEMO-240x400-context";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +62,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        /*
+        MobileAds.initialize(this, new InitializationListener() {
+            @Override
+            public void onInitializationCompleted() {
+                loadAndShowAd();
+            }
+        });
+
+        MobileAds.enableDebugErrorIndicator(false);
+        */
+
+        /*
         AdmobInterstitialAd admobInterstitialAd = new AdmobInterstitialAd.Builder()
                 .show(true)
                 .activity(this)
@@ -87,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         admobInterstitialAd.show();
+        */
 
         // Open connection to db
         dbHelper = new DataDbHelper(this);
@@ -101,10 +97,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setTitle(getResources().getString(R.string.menu_news));
 
-        //ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
-        //mDrawerLayout.setDrawerListener(mDrawerToggle);
-        //mDrawerToggle.syncState();
-
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         mDrawerLayout.addDrawerListener(toggle);
@@ -118,16 +110,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Check is online
         if (isOnline()) {
-            /*
-            View decorView = getWindow().getDecorView();
-            final int flags = SYSTEM_UI_FLAG_LAYOUT_STABLE |
-                    View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
-                    SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
-                    View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
-            decorView.setSystemUiVisibility(flags);
-            toolbar.setVisibility(View.INVISIBLE);
-            */
-
             // mFragmentTransaction.replace(R.id.containerView, new StatisticsFragment()).commit();
             mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
@@ -135,19 +117,6 @@ public class MainActivity extends AppCompatActivity {
             mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_update));
         }
-
-        // Init interstitial
-        // mInterstitialAd = new InterstitialAd(this);
-        // mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
-        // AdRequest adRequest = new AdRequest.Builder().build();
-        // mInterstitialAd.loadAd(adRequest);
-        // Load next ads
-        // mInterstitialAd.setAdListener(new AdListener() {
-        // @Override
-        // public void onAdClosed() {
-        // mInterstitialAd.loadAd(new AdRequest.Builder().build());
-        // }
-        // });
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -445,36 +414,13 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
-    public void showAdmobInterstitial() {
-        if (mInterstitialAd != null) {
-            mInterstitialAd.show(MainActivity.this);
-        } else {
-            Log.d("MyTag", "show admob interstitial null");
-        }
-    }
-
     @Override
     protected void onDestroy() {
         // dbHelper.close();
         super.onDestroy();
     }
 
-    /*
-    public void showMopubInterstitial() {
-        if (moPubInterstitial.isReady()) {
-            moPubInterstitial.show();
-        }
-    }
-
-    public void loadAdInterstitial() {
-        moPubInterstitial = new MoPubInterstitial(this, AD_INTERSTITIAL_ID);
-        moPubInterstitial.setInterstitialAdListener(this);
-        moPubInterstitial.load();
-    }
-    */
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
     }
-
 }

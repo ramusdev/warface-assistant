@@ -2,7 +2,6 @@ package belev.org.warface_app;
 
 import android.util.Log;
 
-import com.google.android.ads.mediationtestsuite.MediationTestSuite;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -41,7 +40,7 @@ public class AdmobInterstitialAd {
 
         public Builder testMode(boolean isTestMode) {
             if (isTestMode) {
-                MediationTestSuite.launch(newAdmobInterstitialAd.mainActivity);
+                // MediationTestSuite.launch(newAdmobInterstitialAd.mainActivity);
             }
             return this;
         }
