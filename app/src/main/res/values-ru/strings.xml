@@ -82,6 +82,9 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="donate_button_two">Сержант</string>
     <string name="donate_button_three">Лейтенант</string>
     <string name="donate_button_four">Маршал</string>
+    <string name="donate_message_thank">Спасибо за донат! Нам важна ваша поддержка.</string>
+    <string name="donate_message_cancel">Производится отмена доната.</string>
+    <string name="donate_message_retry">Произошла ошибка! Попробуйте повторить позже.</string>
 
     <!-- Statistics fragment -->
     <string name="statistics_button_alfa">Альфа</string>
@@ -120,6 +123,17 @@ Crytek, CryEngine, Warface и логотип Warface являются зарег
     <string name="statistics_pvefriendlykills">Убийств сокомандников</string>
     <string name="statistics_pvedeath">Смертей</string>
     <string name="statistics_pvefavorite">Любимый класс</string>
+
+    <!-- Settings -->
+    <string name="rewarded_text">
+          <![CDATA[
+              <font color=#e65d20> Премиум функция.</font><br><br>
+              Отключи рекламу на 24 часа. Посмотри видео!
+          ]]>
+      </string>
+    <string name="rewarded_button">Откючить рекламу на 24 часа</string>
+    <string name="rewarded_message">Реклама отключена на 24 часa</string>
+    <string name="rewarded_tab">Реклама</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="navigation_drawer_open">Open navigation drawer</string>

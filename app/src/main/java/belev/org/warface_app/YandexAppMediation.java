@@ -2,13 +2,19 @@ package belev.org.warface_app;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.ads.appopen.AppOpenAd;
 import com.yandex.mobile.ads.common.AdRequest;
 import com.yandex.mobile.ads.common.AdRequestError;
+import com.yandex.mobile.ads.common.InitializationListener;
+import com.yandex.mobile.ads.common.MobileAds;
 import com.yandex.mobile.ads.interstitial.InterstitialAd;
 import com.yandex.mobile.ads.interstitial.InterstitialAdEventListener;
+
+import java.util.Date;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,6 +36,9 @@ public class YandexAppMediation implements LifecycleObserver, Application.Activi
     private long loadTime = 0;
     InterstitialAd mInterstitialAd;
     public static final String BLOCK_ID = "adf-327594/1201445";
+    public static final String APP_PREFERENCES = "settings";
+    public static final String APP_PREFERENCES_DATE = "date";
+
 
     public YandexAppMediation(MyApplication myApplication) {
         this.myApplication = myApplication;
@@ -78,11 +87,29 @@ public class YandexAppMediation implements LifecycleObserver, Application.Activi
         mInterstitialAd.loadAd(adRequest);
     }
 
+    public boolean isInterstitialAllowed() {
+        SharedPreferences sharedPreferences = MyApplicationContext.getAppContext().getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
+        long dateTime = sharedPreferences.getLong(APP_PREFERENCES_DATE, 0);
+        long currentDateTime = (new Date()).getTime();
+        long dateDifference = currentDateTime - dateTime;
+        long numMilliSecondsPerHour = 3600000;
+        long hoursInDay = 24;
+        long numMilliSecondsInDay = numMilliSecondsPerHour * hoursInDay;
+
+        return dateDifference > numMilliSecondsInDay;
+    }
+
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     public void onStart() {
         Log.d(LOG_TAG, "Yandex app mediation: On start");
-
-        fetchAd();
+        MobileAds.initialize(MyApplicationContext.getAppContext(), new InitializationListener() {
+            @Override
+            public void onInitializationCompleted() {
+                if (isInterstitialAllowed()) {
+                    fetchAd();
+                }
+            }
+        });
     }
 
     @Override

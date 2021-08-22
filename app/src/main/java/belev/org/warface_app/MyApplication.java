@@ -26,6 +26,7 @@ public class MyApplication extends Application {
 
         MyApplicationContext myApplicationContext = new MyApplicationContext(this);
 
+        /*
         MobileAds.initialize(this, new InitializationListener() {
             @Override
             public void onInitializationCompleted() {
@@ -34,6 +35,8 @@ public class MyApplication extends Application {
         });
 
         MobileAds.enableDebugErrorIndicator(false);
+        */
+
 
         // appOpenManager = new AppOpenManager(this);
         appOpenManager = new YandexAppMediation(this);

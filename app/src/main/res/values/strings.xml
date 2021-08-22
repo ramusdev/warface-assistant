@@ -90,6 +90,9 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="donate_button_two">Sergeant</string>
     <string name="donate_button_three">Lieutenant</string>
     <string name="donate_button_four">Marshal</string>
+    <string name="donate_message_thank">Thanks for the donation! Your support is important to us.</string>
+    <string name="donate_message_cancel">Donate is being canceled.</string>
+    <string name="donate_message_retry">An error occurred! Please try again later.</string>
 
     <!-- Statistics fragment -->
     <string name="statistics_button_alfa">Server EU</string>
@@ -128,6 +131,17 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
     <string name="statistics_pvefriendlykills">Friendly kills</string>
     <string name="statistics_pvedeath">Death</string>
     <string name="statistics_pvefavorite">Favorite class</string>
+
+   <!-- Settings -->
+   <string name="rewarded_text">
+          <![CDATA[
+             <font color=#712123> Premium feature.</font><br><br>
+              Want to turn off ads for 24 hours in the app? Please watch the video!
+          ]]>
+      </string>
+   <string name="rewarded_button">Disable ads for 24 hours</string>
+   <string name="rewarded_message">Ads disabled for 24 hours</string>
+   <string name="rewarded_tab">Ads</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="navigation_drawer_open">Open navigation drawer</string>

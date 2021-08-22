@@ -2,6 +2,8 @@ package belev.org.warface_app;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.ads.AdError;
@@ -28,6 +30,9 @@ public class AppOpenManager implements LifecycleObserver, Application.ActivityLi
     private Activity currentActivity;
     private static boolean isShowingAd = false;
     private long loadTime = 0;
+    public static final String APP_PREFERENCES = "settings";
+    public static final String APP_PREFERENCES_DATE = "date";
+    public static final String APP_PREFERENCES_ISHOW = "isshow";
 
     public AppOpenManager(MyApplication myApplication) {
         this.myApplication = myApplication;
@@ -61,7 +66,7 @@ public class AppOpenManager implements LifecycleObserver, Application.ActivityLi
 
     // Show ad
     public void showAdIfAvailable() {
-        if (!isShowingAd && isAdAvailable()) {
+        if (!isShowingAd && isAdAvailable() && isInterstitialAllowed()) {
             Log.d(LOG_TAG, "AppOpenManager: Show ad");
 
             FullScreenContentCallback fullScreenContentCallback = new FullScreenContentCallback() {
@@ -91,6 +96,18 @@ public class AppOpenManager implements LifecycleObserver, Application.ActivityLi
             Log.d(LOG_TAG, "AppOpenManager: Can not show ad");
             // fetchAd();
         }
+    }
+
+    public boolean isInterstitialAllowed() {
+        SharedPreferences sharedPreferences = MyApplicationContext.getAppContext().getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
+        long dateTime = sharedPreferences.getLong(APP_PREFERENCES_DATE, 0);
+        long currentDateTime = (new Date()).getTime();
+        long dateDifference = currentDateTime - dateTime;
+        long numMilliSecondsPerHour = 3600000;
+        long hoursInDay = 24;
+        long numMilliSecondsInDay = numMilliSecondsPerHour * hoursInDay;
+
+        return dateDifference > numMilliSecondsInDay;
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)

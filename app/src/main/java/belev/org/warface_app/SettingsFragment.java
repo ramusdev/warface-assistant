@@ -23,6 +23,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
@@ -105,16 +106,28 @@ public class SettingsFragment extends Fragment {
                 Log.d("MyTag", server);
 
                 if (name.isEmpty()) {
-                    textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_emptyfield));
-                    textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
-                    hideSuccessMessage();
+                    // textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_emptyfield));
+                    // textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
+                    // hideSuccessMessage();
+
+                    String text = MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_emptyfield);
+                    Snackbar snackbar = Snackbar.make(view, text, Snackbar.LENGTH_LONG);
+                    snackbar.setBackgroundTint(getResources().getColor(R.color.bar));
+                    snackbar.setTextColor(getResources().getColor(R.color.orange));
+                    snackbar.show();
                 } else {
                     final TaskRunner.TaskRunnerCallback<Integer> task = new TaskRunner.TaskRunnerCallback<Integer>() {
                         @Override
                         public void execute(Integer serverResponseStatus) {
                             if (serverResponseStatus == 200) {
-                                textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_useradd));
-                                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
+                                String text = MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_useradd);
+                                Snackbar snackbar = Snackbar.make(view, text, Snackbar.LENGTH_LONG);
+                                snackbar.setBackgroundTint(getResources().getColor(R.color.bar));
+                                snackbar.setTextColor(getResources().getColor(R.color.orange));
+                                snackbar.show();
+
+                                // textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_useradd));
+                                // textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
                                 editText.setText(name);
                                 editText.setEnabled(false);
                                 button.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_button_delete));
@@ -132,9 +145,15 @@ public class SettingsFragment extends Fragment {
                                 transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                 transaction.replace(R.id.containerView, new StatisticsFragment()).commit();
                             } else if (serverResponseStatus == 400){
-                                textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_usernotfound));
-                                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
-                                hideSuccessMessage();
+                                String text = MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_usernotfound);
+                                Snackbar snackbar = Snackbar.make(view, text, Snackbar.LENGTH_LONG);
+                                snackbar.setBackgroundTint(getResources().getColor(R.color.bar));
+                                snackbar.setTextColor(getResources().getColor(R.color.orange));
+                                snackbar.show();
+
+                                // textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_usernotfound));
+                                // textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_red));
+                                // hideSuccessMessage();
                             }
                         }
                     };
@@ -155,9 +174,15 @@ public class SettingsFragment extends Fragment {
                 EditText editText = view.findViewById(R.id.edit_text);
                 TextView textError = view.findViewById(R.id.text_error);
 
-                textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_userdeleted));
-                textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
-                hideSuccessMessage();
+                String text = MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_userdeleted);
+                Snackbar snackbar = Snackbar.make(view, text, Snackbar.LENGTH_LONG);
+                snackbar.setBackgroundTint(getResources().getColor(R.color.bar));
+                snackbar.setTextColor(getResources().getColor(R.color.orange));
+                snackbar.show();
+
+                // textError.setText(MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_userdeleted));
+                // textError.setTextColor(MyApplicationContext.getAppContext().getResources().getColor(R.color.error_green));
+                // hideSuccessMessage();
 
                 SettingsViewModel mViewModel = new ViewModelProvider(SettingsFragment.this).get(SettingsViewModel.class);
                 mViewModel.setPreferencesName("");

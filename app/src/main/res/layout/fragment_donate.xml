@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:id="@+id/start_imageView"
+            android:background="@drawable/logo_about3"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/start_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="none"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:text="Привет! Поддержи приложение донатом!"
+            android:textColor="@color/grey"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/button_donate_lvl_one"
+                    android:textSize="15sp"
+                    android:text="@string/donate_button_one"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_donate_click"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/button_donate_click"
+                    android:gravity="center" />
+                <Button
+                    android:id="@+id/button_donate_lvl_two"
+                    android:textSize="15sp"
+                    android:textColor="@drawable/button_donate_click"
+                    android:text="@string/donate_button_two"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_donate_click"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:layout_marginTop="15dp">
+            <Button
+                android:id="@+id/button_donate_lvl_three"
+                android:textSize="15sp"
+                android:textColor="@drawable/button_donate_click"
+                android:text="@string/donate_button_three"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_donate_click"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <Button
+                android:id="@+id/button_donate_lvl_four"
+                android:textSize="15sp"
+                android:textColor="@drawable/button_donate_click"
+                android:text="@string/donate_button_four"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_donate_click"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

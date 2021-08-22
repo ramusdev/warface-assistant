@@ -13,16 +13,12 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import com.google.android.material.navigation.NavigationView;
-import com.yandex.mobile.ads.common.AdRequest;
-import com.yandex.mobile.ads.common.AdRequestError;
-import com.yandex.mobile.ads.common.InitializationListener;
-import com.yandex.mobile.ads.common.MobileAds;
 import com.yandex.mobile.ads.interstitial.InterstitialAd;
-import com.yandex.mobile.ads.interstitial.InterstitialAdEventListener;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -114,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             mFragmentTransaction.replace(R.id.containerView, new NewsFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_news));
         } else {
-            mFragmentTransaction.replace(R.id.containerView, new StartFragment()).commit();
+            mFragmentTransaction.replace(R.id.containerView, new DonateFragment()).commit();
             toolbar.setTitle(getResources().getString(R.string.menu_update));
         }
 
@@ -184,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
                             toolbar.setTitle(getResources().getString(R.string.menu_update));
                             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                             transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-                            transaction.replace(R.id.containerView, new StartFragment()).commit();
+                            transaction.replace(R.id.containerView, new DonateFragment()).commit();
                             mNavigationView.setCheckedItem(menuItem);
 
                         }
@@ -228,7 +224,7 @@ public class MainActivity extends AppCompatActivity {
                                 mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.menu_settings));
-                                transaction.replace(R.id.containerView, new SettingsFragment()).commit();
+                                transaction.replace(R.id.containerView, new SettingsTabFragment()).commit();
                                 mNavigationView.setCheckedItem(R.id.nav_item_settings);
                             }
 
@@ -245,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
                             transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             toolbar.setTitle(getResources().getString(R.string.menu_settings));
-                            transaction.replace(R.id.containerView, new SettingsFragment()).commit();
+                            transaction.replace(R.id.containerView, new SettingsTabFragment()).commit();
                             mNavigationView.setCheckedItem(menuItem);
                         }
                     }, 275);
