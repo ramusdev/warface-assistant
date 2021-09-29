@@ -30,7 +30,6 @@
         <activity android:name=".EnginerWebActivity" />
         <activity android:name=".MapsWebActivity" />
         <activity android:name=".NewsWebActivity" />
-        <activity android:name=".StremersActivity" />
         <activity android:name=".SplashActivity" />
         <activity
             android:name=".ConnectionActivity"

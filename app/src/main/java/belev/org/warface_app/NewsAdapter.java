@@ -70,7 +70,7 @@ public class NewsAdapter extends BaseAdapter {
                     .load(currentNews.getImage())
                     .dontTransform()
                     .transition(withCrossFade())
-                    .transform(new MultiTransformation(new GranularRoundedCorners(19, 19, 0, 0)))
+                    .transform(new MultiTransformation(new GranularRoundedCorners(18, 18, 0, 0)))
                     .into(holder.imageView);
         }
 

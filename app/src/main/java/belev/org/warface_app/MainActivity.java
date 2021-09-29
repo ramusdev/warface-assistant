@@ -13,7 +13,6 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import com.google.android.material.navigation.NavigationView;
-import com.yandex.mobile.ads.interstitial.InterstitialAd;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-4140002463111288/1212428870";
     // private static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712";
-    private InterstitialAd mInterstitialAd;
 
     // private AdLoader adLoader;
     // public List<UnifiedNativeAd> mNativeAds = new ArrayList<UnifiedNativeAd>();
@@ -224,7 +222,7 @@ public class MainActivity extends AppCompatActivity {
                                 mNavigationView.setCheckedItem(menuItem);
                             } else {
                                 toolbar.setTitle(getResources().getString(R.string.menu_settings));
-                                transaction.replace(R.id.containerView, new SettingsTabFragment()).commit();
+                                transaction.replace(R.id.containerView, new SettingsFragment()).commit();
                                 mNavigationView.setCheckedItem(R.id.nav_item_settings);
                             }
 
@@ -241,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
                             transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
                             toolbar.setTitle(getResources().getString(R.string.menu_settings));
-                            transaction.replace(R.id.containerView, new SettingsTabFragment()).commit();
+                            transaction.replace(R.id.containerView, new SettingsFragment()).commit();
                             mNavigationView.setCheckedItem(menuItem);
                         }
                     }, 275);

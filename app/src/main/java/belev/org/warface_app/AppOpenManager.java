@@ -66,7 +66,7 @@ public class AppOpenManager implements LifecycleObserver, Application.ActivityLi
 
     // Show ad
     public void showAdIfAvailable() {
-        if (!isShowingAd && isAdAvailable() && isInterstitialAllowed()) {
+        if (!isShowingAd && isAdAvailable()) {
             Log.d(LOG_TAG, "AppOpenManager: Show ad");
 
             FullScreenContentCallback fullScreenContentCallback = new FullScreenContentCallback() {
@@ -150,7 +150,7 @@ public class AppOpenManager implements LifecycleObserver, Application.ActivityLi
 
     // Utility that checks if ad exists and can be shown
     public boolean isAdAvailable() {
-        return appOpenAd != null && wasLoadTimeLessThanHoursAgo(4);
+        return appOpenAd != null && wasLoadTimeLessThanHoursAgo(1);
     }
 
     @Override

@@ -78,7 +78,7 @@ public class MapsAdapter extends BaseAdapter {
                     .load(currentMaps.getThumbnail())
                     .dontTransform()
                     .transition(withCrossFade())
-                    .transform(new MultiTransformation(new GranularRoundedCorners(20, 20, 0, 0)))
+                    .transform(new MultiTransformation(new GranularRoundedCorners(18, 18, 0, 0)))
                     .into(holder.iconView);
 	    }
 

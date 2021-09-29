@@ -2,11 +2,13 @@
 <resources>
 
     <string-array name="spec_name">
+        <item>Ограбление</item>
+        <item>Пролог</item>
         <item>Рой</item>
         <item>Blackwood</item>
         <item>Гидра</item>
         <item>Марс</item>
-    	  <item>Восход</item>
+    	<item>Восход</item>
         <item>Припять</item>
         <item>Затмение</item>
         <item>Ледокол</item>
@@ -24,7 +26,9 @@
         <item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
-    	  <item>Спецоперация</item>
+        <item>Спецоперация</item>
+        <item>Спецоперация</item>
+    	<item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
         <item>Спецоперация</item>
@@ -38,6 +42,8 @@
         <item>Спецоперация</item> 
     </string-array>
     <string-array name="spec_about">
+        <item>Нельзя просто так взять и ограбить банк. Сюжет вашей миссии гораздо глубже и интереснее, а развязка станет полной неожиданностью.</item>
+        <item>Боец! Будущее есть и оно за нами наблюдает. Всматривается в нас. Молит о помощи. Ты здесь, потому что можешь помочь.</item>
         <item>В одном из захолустных городков в пустыне происходит череда странных событий. С ферм на окраине пропадают люди, полиция округа вводит комендантский час.</item>
         <item>Вы оказались в руках Blackwood. Оберон Уайт предлагает новый взгляд. Что, если всё это время вы сражались не на той стороне?</item>
         <item>Солдаты Blaсkwood захватили в плен диверсионный отряд Вега-5 и агента Ноду, которым удалось предотвратить истребление колонистов на Марсе.</item>
@@ -56,6 +62,8 @@
         <item>Отряду Warface предстоит отправиться к вулкану и лично разузнать, что же там происходит</item>
     </string-array>
     <array name="spec_link">
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_ograblenie.html</item>
+        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_prolog.html</item>
         <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_roy.html</item>
         <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_blackwood.html</item>
         <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_gidra.html</item>
@@ -74,6 +82,8 @@
         <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_vulkan.html</item>
     </array>
     <array name="spec_icon">
+        <item>@drawable/spec_ograblenie_logo</item>
+        <item>@drawable/spec_prolog_logo</item>
         <item>@drawable/spec_roy_logo</item>
         <item>@drawable/spec_blackwood_logo</item>
         <item>@drawable/spec_gidra_logo</item>

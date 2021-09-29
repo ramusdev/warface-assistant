@@ -3,13 +3,15 @@ package belev.org.warface_app;
 import android.app.Application;
 import android.util.Log;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.common.util.concurrent.ListenableFuture;
-import com.yandex.mobile.ads.common.InitializationListener;
-import com.yandex.mobile.ads.common.MobileAds;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+import androidx.annotation.NonNull;
 import androidx.work.Configuration;
 import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
@@ -17,8 +19,7 @@ import androidx.work.WorkManager;
 
 public class MyApplication extends Application {
 
-    // private static AppOpenManager appOpenManager;
-    private static YandexAppMediation appOpenManager;
+    private static AppOpenManager appOpenManager;
 
     @Override
     public void onCreate() {
@@ -26,20 +27,16 @@ public class MyApplication extends Application {
 
         MyApplicationContext myApplicationContext = new MyApplicationContext(this);
 
-        /*
-        MobileAds.initialize(this, new InitializationListener() {
+        MobileAds.initialize(MyApplicationContext.getAppContext(), new OnInitializationCompleteListener() {
             @Override
-            public void onInitializationCompleted() {
-
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                appOpenManager = new AppOpenManager(MyApplication.this);
             }
         });
 
-        MobileAds.enableDebugErrorIndicator(false);
-        */
-
-
+        // MobileAds.enableDebugErrorIndicator(false);
         // appOpenManager = new AppOpenManager(this);
-        appOpenManager = new YandexAppMediation(this);
+        // appOpenManager = new YandexAppMediation(this);
 
         // Work manager
         Log.d("MyTag", "my application start class --->");
@@ -47,7 +44,7 @@ public class MyApplication extends Application {
         WorkManager.initialize(MyApplicationContext.getAppContext(), configuration);
 
         WorkManager workManager = WorkManager.getInstance(this);
-        ListenableFuture<List<WorkInfo>> statuses = workManager.getWorkInfosByTag("task_worker5");
+        ListenableFuture<List<WorkInfo>> statuses = workManager.getWorkInfosByTag("task_worker6");
 
         try {
             List<WorkInfo> workInfoList = statuses.get();

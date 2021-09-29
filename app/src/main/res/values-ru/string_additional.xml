@@ -33,66 +33,66 @@
         <item>Walther P99</item>
     </string-array>
     <string-array name="additional_type">
-        <item>Automatic</item>
-        <item>Singles</item>
-        <item>Cuts of 3</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Automatic</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Singles</item>
-        <item>Automatic</item>
-        <item>Singles</item>
+        <item>Автоматический</item>
+        <item>Одиночными</item>
+        <item>По 3</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Автоматический</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Одиночными</item>
+        <item>Автоматический</item>
+        <item>Одиночными</item>
     </string-array>
     <string-array name="additional_about">
-        <item>The Stechkin Automatic Pistol (APS) is a Soviet weapon named after its creator, designer Igor Stechkin.</item>
-        <item>One of the most common and recognizable pistols in the world. Uses a 9x19 mm Parabellum cartridge.</item>
-        <item>An Italian automatic pistol that allows you to fire in bursts.</item>
-        <item>Semi-automatic pistol in 9mm caliber with single action trigger</item>
-        <item>.45 ACP self-loading pistol with single action trigger</item>
-        <item>A six-shot .357 Magnum revolver from Colts Manufacturing Company.</item>
-        <item>Czech pistol, first exhibited in Madrid in 1975. Allows you to fire in bursts.</item>
-        <item>With the CZ 75 Czechmate Parrot, you can check and checkmate any opponent in a pistol duel.</item>
-        <item>A 9mm semi-automatic pistol manufactured in South Korea by ST Daewoo.</item>
-        <item>The famous large-caliber semi-automatic pistol developed by Magnum Research in the USA.</item>
-        <item>Semi-automatic pistol in 5.7 mm caliber, developed by FN Herstal.</item>
-        <item>This Austrian pistol, based on the Glock 17, allows for single shots and bursts of fire.</item>
-        <item>HK USP is a fairly compact and convenient pistol for the shooter with a large magazine capacity and rate of fire</item>
-        <item>The SUB2000 is a lightweight 9mm carbine from Kel-Tec with a focus on mobility.</item>
-        <item>The Luger is a great pistol for fans of historical reenactment.</item>
-        <item>The Mateba Autorevolver is not just a powerful revolver with high penetration, but a unique weapon that is a pleasure to wield.</item>
-        <item>Silent pistol with integrated silencer, allowing use of any Glock magazines for ammunition.</item>
-        <item>A compact .308 ACP pistol designed for self-defense.</item>
-        <item>The MPA 930DMG is a rapid-fire automatic weapon that allows you to fire in bursts.</item>
-        <item>A seven-shot revolver created by the Belgian gunsmith Leon Nagant for the Russian Empire.</item>
-        <item>Semi-automatic pistol developed by Norinco Corporation. Used by the Peoples Liberation Army of China since the late 90s</item>
-        <item>Revolver of the Italian company Armi Chiappa with a revolutionary design and an unusual arrangement of the barrel opposite the lower chamber of the drum.</item>
-        <item>Self-loading pistol manufactured by the American arms company Sturm, Ruger CO.</item>
-        <item>The SW MP R8 is a modern, eight-shot .357 revolver complete with a DeltaPoint reflex sight.</item>
-        <item>A modified version of the popular 9x19mm pistol.</item>
-        <item>Representative of a series of semi-automatic pistols developed by the Austrian company Steyr Mannlicher GmbH Co KG for the police and the civilian population.</item>
-        <item>The Taurus Judge large-caliber shotgun revolver developed by the Brazilian company Taurus International.</item>
-        <item>A Swedish pistol that gained widespread popularity in the United States in the 1980s.</item>
-        <item>This semi-automatic pistol is widely used by the police around the world due to its excellent ergonomics and high shooting accuracy.</item>
+        <item>Автоматический пистолет Стечкина (АПС) - советское оружие, названное в честь его создателя, конструктора Игоря Стечкина.</item>
+        <item>Один из самых распространенных и узнаваемых пистолетов в мире. Использует патрон Parabellum 9x19 мм.</item>
+        <item>Итальянский автоматический пистолет, позволяющий вести огонь очередями.</item>
+        <item>Полуавтоматический пистолет калибра 9 мм со спусковым крючком простого действия</item>
+        <item>.45 ACP самозарядный пистолет со спусковым крючком одинарного действия</item>
+        <item>Шестизарядный револьвер .357 Magnum от Colts Manufacturing Company.</item>
+        <item>Чешский пистолет, впервые выставленный в Мадриде в 1975 году. Позволяет стрелять очередями.</item>
+        <item>С CZ 75 Czechmate Parrot вы можете сделать чек и мат любому противнику в пистолетной дуэли.</item>
+        <item>9-мм полуавтоматический пистолет, произведенный в Южной Корее компанией ST Daewoo.</item>
+        <item>Знаменитый крупнокалиберный полуавтоматический пистолет, разработанный компанией Magnum Research в США.</item>
+        <item>Полуавтоматический пистолет калибра 5,7 мм, разработанный FN Herstal.</item>
+        <item>Этот австрийский пистолет, созданный на основе Glock 17, позволяет вести одиночные выстрелы и стрельбу очередями.</item>
+        <item>HK USP - достаточно компактный и удобный пистолет для стрелка с большим магазином и скорострельностью</item>
+        <item>SUB2000 - это легкий 9-миллиметровый карабин от Kel-Tec, ориентированный на мобильность.</item>
+        <item>Люгер - отличный пистолет для любителей исторических реконструкций.</item>
+        <item>Автовольвер Матеба - это не просто мощный револьвер с высокой проникающей способностью, но и уникальное оружие, которым приятно владеть.</item>
+        <item>Бесшумный пистолет со встроенным глушителем, позволяющий использовать любые магазины Glock для боеприпасов.</item>
+        <item>Компактный пистолет .308 ACP, разработанный для самообороны.</item>
+        <item>MPA 930DMG - скорострельное автоматическое оружие, которое позволяет вести огонь очередями.</item>
+        <item>Семизарядный револьвер, созданный бельгийским оружейником Леоном Наганом для Российской империи.</item>
+        <item>Полуавтоматический пистолет, разработанный Norinco Corporation. Используется Народно-освободительной армией Китая с конца 90-х годов.</item>
+        <item>Револьвер итальянской компании Armi Chiappa с революционным дизайном и необычным расположением ствола напротив нижней каморы барабана.</item>
+        <item>Самозарядный пистолет производства американской оружейной компании Sturm, Ruger CO.</item>
+        <item>SW MP R8 - это современный восьмизарядный револьвер калибра .357 с рефлекторным прицелом DeltaPoint.</item>
+        <item>Модифицированная версия популярного пистолета 9x19 мм.</item>
+        <item>Представитель серии полуавтоматических пистолетов, разработанных австрийской компанией Steyr Mannlicher GmbH Co KG для полиции и гражданского населения.</item>
+        <item>Револьвер для крупнокалиберного дробовика Taurus Judge, разработанный бразильской компанией Taurus International.</item>
+        <item>Шведский пистолет, получивший широкую популярность в США в 1980-х годах.</item>
+        <item>Этот полуавтоматический пистолет широко используется полицией всего мира благодаря отличной эргономике и высокой точности стрельбы.</item>
     </string-array>
     <array name="additional_link">
         <item>https://edgenews.ru/android/wardocwarface/weapons/ru/additional/additional_apc.html</item>
