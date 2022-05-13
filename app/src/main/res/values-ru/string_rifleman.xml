@@ -71,27 +71,27 @@
         <item>Легендарный пулемет Дегтярева, главное оружие огневой поддержки пехоты Красной Армии.</item>
     </string-array>
     <array name="rifleman_verb_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_type97b.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_vhs2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m4a1.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_daewook2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_daewook3.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m16a2lmg.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_acval.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_imbelia2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_msbsradon.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_xm8.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m60e4.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_hkg36k.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_hkmg36.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_calicom955a.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_galilar.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_tavortar21.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_ak103.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_rpk.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_xm8lmg.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_saigryar15.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_dp27.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_type97b.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_vhs2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_m4a1.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_daewook2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_daewook3.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_m16a2lmg.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_acval.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_imbelia2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_msbsradon.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_xm8.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_m60e4.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_hkg36k.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_hkmg36.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_calicom955a.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_galilar.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_tavortar21.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_ak103.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_rpk.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_xm8lmg.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_saigryar15.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_dp27.html</item>
     </array>
     <array name="rifleman_verb_icon">
         <item>@drawable/rifleman_type97b</item>
@@ -166,20 +166,20 @@
         <item>Модифицированный вариант винтовки AUG A3 с утяжеленным стволом, применяемый в качестве ручного пулемета</item>
     </string-array>
     <array name="rifleman_kred_link">
-    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_handkmg5121.html</item>
-    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_ah94abakan.html</item>
-    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_harmscqr.html</item>
-    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m240b.html</item>
-    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_stonerlmga1.html</item>
-    	<item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_sturmgewehr44.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_hcar.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_rpdcustom.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_auga3.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_hkmg4.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_famasf1.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_fnf2000.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_sig551.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_auga3hbar.html</item>
+    	<item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_handkmg5121.html</item>
+    	<item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_ah94abakan.html</item>
+    	<item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_harmscqr.html</item>
+    	<item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_m240b.html</item>
+    	<item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_stonerlmga1.html</item>
+    	<item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_sturmgewehr44.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_hcar.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_rpdcustom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_auga3.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_hkmg4.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_famasf1.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_fnf2000.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_sig551.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_auga3hbar.html</item>
     </array>
     <array name="rifleman_kred_icon">
     	<item>@drawable/rifleman_handkmg5121</item>
@@ -262,25 +262,25 @@
         <item>Экспортный вариант китайской винтовки Type 97, разработанный под патрон 5,56х45 мм НАТО, так чтобы приёмник магазина соответствовал стандарту STANAG.</item>
     </string-array>
     <array name="rifleman_box_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_steinmk2s.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_nowatype89custom.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_f90mbr.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_cz805brena2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_cobaltkineticsedgerifle.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_arcustactics.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_ak12.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_fnfaldsa58.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_akalfa.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_berettaarx160.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_ak47.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_mg3.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_pkppecheneg.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m16a3.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_m249para.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_enfieldl85a2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_acr.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_fnscarh.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/rifleman_type97.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_steinmk2s.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_nowatype89custom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_f90mbr.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_cz805brena2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_cobaltkineticsedgerifle.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_arcustactics.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_ak12.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_fnfaldsa58.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_akalfa.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_berettaarx160.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_ak47.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_mg3.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_pkppecheneg.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_m16a3.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_m249para.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_enfieldl85a2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_acr.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_fnscarh.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/rifleman_type97.html</item>
     </array>
     <array name="rifleman_box_icon">
         <item>@drawable/rifleman_steinmk2s</item>

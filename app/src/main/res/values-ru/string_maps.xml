@@ -62,24 +62,24 @@
         <item>Отряду Warface предстоит отправиться к вулкану и лично разузнать, что же там происходит</item>
     </string-array>
     <array name="spec_link">
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_ograblenie.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_prolog.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_roy.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_blackwood.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_gidra.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_mars.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_voshod.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_pripyat.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_zatmenie.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_ledokol.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_akula2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_anubis.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_akula.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_bastion1.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_bastion2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_bastion3.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_exp.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/maps/ru/spec_vulkan.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_ograblenie.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_prolog.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_roy.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_blackwood.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_gidra.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_mars.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_voshod.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_pripyat.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_zatmenie.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_ledokol.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_akula2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_anubis.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_akula.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_bastion1.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_bastion2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_bastion3.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_exp.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/maps/ru/spec_vulkan.html</item>
     </array>
     <array name="spec_icon">
         <item>@drawable/spec_ograblenie_logo</item>
@@ -118,9 +118,9 @@
     <item>Крепость Blackwood в районе сибири</item>
 </string-array>
 <array name="domin_link">
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/domin_zapusk.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/domin_shaxta.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/domin_forpost.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/domin_zapusk.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/domin_shaxta.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/domin_forpost.html</item>
 </array>
 <array name="domin_icon">
     <item>@drawable/zapusk_logo</item>
@@ -165,16 +165,16 @@
    <item>Представляет собой место, сражение на котором разворачивается неподалеку от аэропорта</item>
 </string-array>
 <array name="podriv_link">
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_mosti.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_piramida.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_dvorec.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_punkt.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_d17.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_pereulki.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_fabrika.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_okraina.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_estakada.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/podriv_park.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_mosti.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_piramida.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_dvorec.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_punkt.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_d17.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_pereulki.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_fabrika.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_okraina.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_estakada.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/podriv_park.html</item>
 </array>
 <array name="podriv_icon">
   <item>@drawable/mosti_logo</item>
@@ -244,22 +244,22 @@
     <item>Представляет собой сражение на территории жилого сектора одного провинциального городка Невады</item>
 </string-array>
 <array name="komanda_link">
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_tunel.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_shapito.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_rayen.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_stoyanka.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_d18.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_terminal.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_poselok.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_ferma.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_dok.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_angar.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_pereprava.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_ploshad.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_neftebaza.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_rinok.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_aviabaza.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/komanda_kvartal.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_tunel.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_shapito.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_rayen.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_stoyanka.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_d18.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_terminal.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_poselok.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_ferma.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_dok.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_angar.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_pereprava.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_ploshad.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_neftebaza.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_rinok.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_aviabaza.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/komanda_kvartal.html</item>
 </array>
 <array name="komanda_icon">
     <item>@drawable/komanda_tunel_logo</item>
@@ -308,13 +308,13 @@
     <item>События происходят на территории ракетного комплекса, расположенного в Африке</item>
 </string-array>
 <array name="mysorubka_link">
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_mars.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_pagoda.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_motel.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_depo.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_prigorod.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_les.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/mysorubka_bunker.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/mysorubka_mars.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/mysorubka_pagoda.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/mysorubka_motel.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/mysorubka_depo.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/mysorubka_prigorod.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/mysorubka_les.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/mysorubka_bunker.html</item>
 </array>
 <array name="mysorubka_icon">
     <item>@drawable/mysorubka_mars_logo</item>
@@ -342,9 +342,9 @@
    <item>Маяк на побережье среди построек и лодочного причала </item>
 </string-array>
 <array name="unicht_link">
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/unicht_studia.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/unicht_bashni.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/unicht_mayak.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/unicht_studia.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/unicht_bashni.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/unicht_mayak.html</item>
 </array>
 <array name="unicht_icon">
     <item>@drawable/studia_logo</item>
@@ -380,13 +380,13 @@
    <item>Вам придется сражаться на территории комплекса, расположенного в сибирских горах</item>
 </string-array>
 <array name="zahvat_link">
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_karer.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_stroyka.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_depozit.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_konvoy.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_krepost.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_ubezishe.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/zahvat_komplecs.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/zahvat_karer.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/zahvat_stroyka.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/zahvat_depozit.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/zahvat_konvoy.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/zahvat_krepost.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/zahvat_ubezishe.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/zahvat_komplecs.html</item>
 </array>
 <array name="zahvat_icon">
   <item>@drawable/karer_logo</item>
@@ -423,12 +423,12 @@
     <item>Карта Чёрная мамба представляет собой ракетный комплекс, расположенный в Африке</item>
 </string-array>
 <array name="shturm_link">
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_blackwood.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_vtorzenie.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_zoloto.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_verf.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_holmi.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/shturm_mamba.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/shturm_blackwood.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/shturm_vtorzenie.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/shturm_zoloto.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/shturm_verf.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/shturm_holmi.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/shturm_mamba.html</item>
 </array>
 <array name="shturm_icon">
     <item>@drawable/blackwood_logo</item>
@@ -458,10 +458,10 @@
    <item>События на карте Африка для режима Выживание разворачиваются, как не трудно догадаться, в африканском регионе</item>
 </string-array>
 <array name="vizivan_link">
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_gorodprizrak.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_sibir.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_pustina.html</item>
-   <item>https://edgenews.ru/android/wardocwarface/maps/ru/vizivan_afrika.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/vizivan_gorodprizrak.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/vizivan_sibir.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/vizivan_pustina.html</item>
+   <item>https://berdyansk.pro/android/wardocwarface/maps/ru/vizivan_afrika.html</item>
 </array>
 <array name="vizivan_icon">
   <item>@drawable/vizivan_gorodprizrak_logo</item>
@@ -486,9 +486,9 @@
     <item>Карта Резиденция для режима Блиц представляет собой резиденцию Оберона Уайта, расположенную в лесу.</item>
 </string-array>
 <array name="blic_link">
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/blic_platform.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/blic_villa.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/blic_rezidencia.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/blic_platform.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/blic_villa.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/blic_rezidencia.html</item>
 </array>
 <array name="blic_icon">
     <item>@drawable/blic_platform</item>
@@ -509,8 +509,8 @@
     <item>Остатки сил Warface и Blackwood оказались под смертельной угрозой радиации.</item>
 </string-array>
 <array name="king_link">
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/king_mohave.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/maps/ru/king_zonaotchushdeniya.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/king_mohave.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/maps/ru/king_zonaotchushdeniya.html</item>
 </array>
 <array name="king_icon">
     <item>@drawable/mohave_logo</item>

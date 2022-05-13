@@ -20,7 +20,7 @@ import belev.org.warface_app.data.DataDbHelper;
 import static android.content.ContentValues.TAG;
 
 public class NewsFragment extends ListFragment {
-    public static final String URL_TO_HIT = "https://edgenews.ru/android/wardocwarface/news/news.json";
+    public static final String URL_TO_HIT = "https://berdyansk.pro/android/wardocwarface/news/news.json";
     android.widget.Adapter adapter;
     public static final String BUNDLE_TEXT = "bundle_text";
     // public List<NewsModel> newsModelList = new ArrayList<>();

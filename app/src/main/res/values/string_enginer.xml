@@ -63,24 +63,24 @@
         <item>A caliber submachine gun .45 ACP, developed by Transformational Defense Industries</item>
     </string-array>
     <array name="enginer_verb_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_arcusscout.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_uzipro.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkmp5a5.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkmp5.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_m4cqb.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_bandmp9.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_berettamx4storm.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_pm84glauberytcustom.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_cp2veresk.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_pp2000.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkg36c.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_daewook1.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_ak9.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkmp7.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_auga39xs.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_miniuzi.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_pp19bizon.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_krisssuperv.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_arcusscout.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_uzipro.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_handkmp5a5.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_handkmp5.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_m4cqb.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_bandmp9.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_berettamx4storm.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_pm84glauberytcustom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_cp2veresk.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_pp2000.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_handkg36c.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_daewook1.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_ak9.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_handkmp7.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_auga39xs.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_miniuzi.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_pp19bizon.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_krisssuperv.html</item>
     </array>
      <array name="enginer_verb_icon">
         <item>@drawable/enginer_arcusscout</item>
@@ -137,15 +137,15 @@
         <item>Export version of the QCW-05 submachine gun, developed by the Chinese corporation Jianshe Industries. Designed for special forces.</item>
     </string-array>
     <array name="enginer_kred_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_pp1901.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_amb17.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_sigmpxsbrcustom.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_deserttechmdrc.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_mpa10sstx.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_sig552.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_calicom96a.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_fnp90.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_js9.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_pp1901.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_amb17.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_sigmpxsbrcustom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_deserttechmdrc.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_mpa10sstx.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_sig552.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_calicom96a.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_fnp90.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_js9.html</item>
     </array>
      <array name="enginer_kred_icon">
         <item>@drawable/enginer_pp1901</item>
@@ -223,25 +223,25 @@
         <item>A submachine gun with a retractable butt and integrated silencer, developed on the basis of the AR-15 as a replacement for the H&#38;K MP5 and similar weapons.</item>
     </string-array>
     <array name="enginer_box_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_thompsonm1928.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_m4custom.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_gilboasnakedbr.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_fnscarlpdw.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_cobaltkenticsstealthpistol.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_am17.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_acrcqbcustom.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_lwrcsmg45.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_microronicaa.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_czscorpionevo3a1.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_scorpionvz83.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_daewook7.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_magpulfmg9.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_tavorctar21.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_handkump.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_xm8compact.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_acrcqb.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_scarlpdw.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/enginer_honeybadger.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_thompsonm1928.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_m4custom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_gilboasnakedbr.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_fnscarlpdw.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_cobaltkenticsstealthpistol.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_am17.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_acrcqbcustom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_lwrcsmg45.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_microronicaa.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_czscorpionevo3a1.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_scorpionvz83.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_daewook7.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_magpulfmg9.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_tavorctar21.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_handkump.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_xm8compact.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_acrcqb.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_scarlpdw.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/enginer_honeybadger.html</item>
     </array>
      <array name="enginer_box_icon">
          <item>@drawable/enginer_thompsonm1928</item>

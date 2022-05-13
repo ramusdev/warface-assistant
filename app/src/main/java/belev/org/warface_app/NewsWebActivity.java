@@ -42,7 +42,7 @@ public class NewsWebActivity extends AppCompatActivity {
         webView.getSettings().setAllowFileAccess(true);
         webView.setWebChromeClient(new WebChromeClient());
 
-        //webView.loadUrl("https://edgenews.ru/android/wardocwarface/maps/spec_vulkan.html");
+        //webView.loadUrl("https://berdyansk.pro/android/wardocwarface/maps/spec_vulkan.html");
         //webView.loadUrl(link);
         webView.loadDataWithBaseURL(null, text, "text/html", "utf-8", "");
     }

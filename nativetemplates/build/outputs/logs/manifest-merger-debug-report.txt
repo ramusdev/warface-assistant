@@ -3,21 +3,9 @@ manifest
 ADDED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
 INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
 INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
-INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
-INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
-INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
-INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
 	package
 		ADDED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:2:3-51
 		INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml
-		INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml
-	android:versionName
-		INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml
-		ADDED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
-		INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml
-	android:versionCode
-		INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml
-		ADDED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:1-8:12
 		INJECTED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\WarfaceAssistant\nativetemplates\src\main\AndroidManifest.xml:1:11-69

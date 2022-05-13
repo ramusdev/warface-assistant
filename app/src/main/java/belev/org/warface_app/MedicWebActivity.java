@@ -42,7 +42,7 @@ public class MedicWebActivity extends AppCompatActivity {
 
         WebView webView = (WebView) findViewById(R.id.webView);
         webView.setBackgroundColor(0);
-        //webView.loadUrl("https://edgenews.ru/android/wardocwarface/maps/spec_vulkan.html");
+        //webView.loadUrl("https://berdyansk.pro/android/wardocwarface/maps/spec_vulkan.html");
         webView.loadUrl(link);
     }
 

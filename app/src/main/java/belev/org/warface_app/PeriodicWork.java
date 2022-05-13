@@ -35,6 +35,7 @@ public class PeriodicWork extends Worker {
         // NotificationShower notificationShower = new NotificationShower(context);
         // notificationShower.execute();
 
+
         TaskRunner<Integer> taskRunner = new TaskRunner<Integer>();
 
         Callable newsParser = new UpdateNewsCallable();
@@ -56,6 +57,8 @@ public class PeriodicWork extends Worker {
                 taskRunner.executeAsync(statisticsParser);
             }
         }
+
+
 
         return Result.success();
     }

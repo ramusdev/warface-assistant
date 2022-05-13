@@ -40,8 +40,8 @@ public class MyApplication extends Application {
 
         // Work manager
         Log.d("MyTag", "my application start class --->");
-        Configuration configuration = new Configuration.Builder().build();
-        WorkManager.initialize(MyApplicationContext.getAppContext(), configuration);
+        // Configuration configuration = new Configuration.Builder().build();
+        // WorkManager.initialize(MyApplicationContext.getAppContext(), configuration);
 
         WorkManager workManager = WorkManager.getInstance(this);
         ListenableFuture<List<WorkInfo>> statuses = workManager.getWorkInfosByTag("task_worker6");
@@ -56,6 +56,10 @@ public class MyApplication extends Application {
         } catch(ExecutionException | InterruptedException e) {
             Log.d("MyTag", e.getMessage());
         }
+
+
+
+
 
     }
 }

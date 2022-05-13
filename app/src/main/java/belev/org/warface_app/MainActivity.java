@@ -16,6 +16,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -383,6 +384,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createTasks() {
+        // TaskRunner<Integer> taskRunner = new TaskRunner<Integer>();
+        // Callable newsParser = new UpdateNewsCallable();
+        // taskRunner.executeAsync(newsParser);
+
         // updateNewsIfNotExists();
         // createPeriodicTask();
     }

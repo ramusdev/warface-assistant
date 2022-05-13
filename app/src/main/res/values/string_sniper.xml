@@ -59,23 +59,23 @@
         <item>British sniper rifle, continuing the tradition of the AW308 and bringing them to a qualitatively new level</item>
     </string-array>
     <array name="sniper_verb_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_arcusmegadez.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_fcgr3k1.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_gepardgm6lynx.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_svd.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_m16sprcustom.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_qbu88.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_m40a5.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_orsist5000.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_handksl8.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_xm8sharpshooter.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_acrspr.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_waltherwa2000.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_sig550.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_alpine.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_ampdsr1.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_tavorstar21nb.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_at308.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_arcusmegadez.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_fcgr3k1.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_gepardgm6lynx.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_svd.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_m16sprcustom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_qbu88.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_m40a5.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_orsist5000.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_handksl8.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_xm8sharpshooter.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_acrspr.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_waltherwa2000.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_sig550.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_alpine.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_ampdsr1.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_tavorstar21nb.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_at308.html</item>
     </array>
     <array name="sniper_verb_icon">
         <item>@drawable/sniper_arcusmegadez</item>
@@ -128,14 +128,14 @@
         <item>American sniper rifle with a longitudinally sliding rotary bolt, designed to destroy enemy manpower</item>
     </string-array>
     <array name="sniper_kred_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_dvl10m2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_truvelocms2042mm.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_cdxmckraken.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_remingtonmsr.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_vssvintorez.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_barrettm107.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_barrettm98b.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/ru/sniper_cheytacm200.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/sniper_dvl10m2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/sniper_truvelocms2042mm.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/sniper_cdxmckraken.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/sniper_remingtonmsr.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/sniper_vssvintorez.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/sniper_barrettm107.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/sniper_barrettm98b.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/ru/sniper_cheytacm200.html</item>
     </array>
     <array name="sniper_kred_icon">
         <item>@drawable/sniper_dvl10m2</item>
@@ -200,21 +200,21 @@
         <item>A light sniper rifle with a longitudinally sliding bolt, developed in 1997 in Austria in collaboration with firearms expert Jeff Cooper</item>
     </string-array>
     <array name="sniper_box_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_kobaltkineticstwentyseven.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_cv98.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_handkg28.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_bushmasterba50.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_awm.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_m14crazyhorse.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_svuas.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_calicom951s.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_as50.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_mk14ebr.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_dsasa58spr.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_mcmillancs5.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_ax308.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_remingtonr11rsass.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/sniper_steyrscout.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_kobaltkineticstwentyseven.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_cv98.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_handkg28.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_bushmasterba50.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_awm.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_m14crazyhorse.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_svuas.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_calicom951s.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_as50.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_mk14ebr.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_dsasa58spr.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_mcmillancs5.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_ax308.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_remingtonr11rsass.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/sniper_steyrscout.html</item>
     </array>
     <array name="sniper_box_icon">
         <item>@drawable/sniper_kobaltkineticstwentyseven</item>

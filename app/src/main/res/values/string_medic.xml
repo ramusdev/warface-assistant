@@ -56,22 +56,22 @@
         <item>12-gauge hunting carbine based on the Kalashnikov assault rifle, available in various modifications</item>
     </string-array>
     <array name="medic_verb_link">
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fcgr3k2.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_sap6.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_remingtonmodel870.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_spas12.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_sidewindervenom.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_utasuts15.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_deryamk10vr102.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_remington870cb.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_mc25512.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_sayga.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_hawkpump.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_benellinovatactical.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_benellim4super90.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_srm1216.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_vepr.html</item>
-        <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_saygahgccustom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_fcgr3k2.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_sap6.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_remingtonmodel870.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_spas12.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_sidewindervenom.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_utasuts15.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_deryamk10vr102.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_remington870cb.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_mc25512.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_sayga.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_hawkpump.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_benellinovatactical.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_benellim4super90.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_srm1216.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_vepr.html</item>
+        <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_saygahgccustom.html</item>
   </array>
   <array name="medic_verb_icon">
     <item>@drawable/medic_fcgr3k2</item>
@@ -141,20 +141,20 @@
     <item>A 12-gauge revolver-type combat rifle developed in South Africa by Hilton Walker in the early 80s.</item>
 </string-array>
 <array name="medic_kred_link">
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_benellim4custom.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_tavorts12custom.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_saygaspike.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_keltecks7.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_typhoonf12.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_merlin1894custom.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_uzkonung12.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fostechorigin12.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_winchester1887.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_keltecshotgun.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_spas15.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_jackhammer.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_anakom.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_cobraystriker.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_benellim4custom.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_tavorts12custom.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_saygaspike.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_keltecks7.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_typhoonf12.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_merlin1894custom.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_uzkonung12.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_fostechorigin12.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_winchester1887.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_keltecshotgun.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_spas15.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_jackhammer.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_anakom.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_cobraystriker.html</item>
 </array>
 <array name="medic_kred_icon">
     <item>@drawable/medic_benellim4custom</item>
@@ -219,19 +219,19 @@
     <item>The DP-12 pump-action smoothbore rifle is developed and manufactured by the American Standard Manufacturing company </item>
 </string-array>
 <array name="medic_box_link">
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_chiappatriplethreat.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fabarmpss10.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_aa12.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_remington870ras.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_sayga12c.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_usas12.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_mossberg500custom.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_six12.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fabarmsat8pro.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fabarmst12compact.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_fabarmxlr5prestige.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_mag7.html</item>
-    <item>https://edgenews.ru/android/wardocwarface/weapons/en/medic_dp12.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_chiappatriplethreat.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_fabarmpss10.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_aa12.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_remington870ras.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_sayga12c.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_usas12.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_mossberg500custom.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_six12.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_fabarmsat8pro.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_fabarmst12compact.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_fabarmxlr5prestige.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_mag7.html</item>
+    <item>https://berdyansk.pro/android/wardocwarface/weapons/en/medic_dp12.html</item>
 </array>
 <array name="medic_box_icon">
     <item>@drawable/medic_chiappatriplethreat</item>

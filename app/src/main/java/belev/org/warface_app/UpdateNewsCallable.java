@@ -48,12 +48,12 @@ public class UpdateNewsCallable implements Callable<Integer> {
     public String cleanText(String text, String imageLink) {
         StringBuilder stringBuilder = new StringBuilder(text);
         String html = "<html>";
-        String style = "<link type=\"text/css\" rel=\"stylesheet\" media=\"all\" href=\"https://edgenews.ru/android/wardocwarface/news/style.css\">";
+        String style = "<link type=\"text/css\" rel=\"stylesheet\" media=\"all\" href=\"https://berdyansk.pro/android/wardocwarface/news/style.css\">";
         String image = "<img src=\"" + imageLink + "\">";
 
         stringBuilder.insert(0, html);
         stringBuilder.insert(6, style);
-        stringBuilder.insert(121, image);
+        stringBuilder.insert(123, image);
         stringBuilder.append("</html>");
 
         String cleanTags = stringBuilder
@@ -101,11 +101,17 @@ public class UpdateNewsCallable implements Callable<Integer> {
                 String date = News.formatFromParseToDatabase(news.getDate());
                 news.setDate(date);
 
+                System.out.println("------------------------------------------------------------------------------");
+                System.out.println(news.getText());
+                System.out.println("------------------------------------------------------------------------------");
+
                 NewsValuesAdapter newValuesAdapter = new NewsValuesAdapter(news);
                 ContentValues contentValues = newValuesAdapter.convert();
                 long newRowId = sqLiteDatabase.insert(DataContract.NewsEntry.TABLE_NAME, null, contentValues);
             }
         }
+
+
     }
 
     public boolean isNewsExists(News news, SQLiteDatabase sqLiteDatabase) {
