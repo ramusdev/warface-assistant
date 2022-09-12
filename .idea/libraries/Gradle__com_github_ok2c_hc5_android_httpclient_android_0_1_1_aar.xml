@@ -5,12 +5,17 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8726750d72573c05b2ec973c8388ea5e/transformed/jetified-httpclient-android-0.1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8726750d72573c05b2ec973c8388ea5e/transformed/jetified-httpclient-android-0.1.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8726750d72573c05b2ec973c8388ea5e/transformed/jetified-httpclient-android-0.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9bd73df1d41c2033a4b0ef6e791e5cb1/transformed/jetified-httpclient-android-0.1.1/res" />
+      <root url="file://$PROJECT_DIR$/../caches/transforms-3/9bd73df1d41c2033a4b0ef6e791e5cb1/transformed/jetified-httpclient-android-0.1.1/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/9bd73df1d41c2033a4b0ef6e791e5cb1/transformed/jetified-httpclient-android-0.1.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-3/9bd73df1d41c2033a4b0ef6e791e5cb1/transformed/jetified-httpclient-android-0.1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/9bd73df1d41c2033a4b0ef6e791e5cb1/transformed/jetified-httpclient-android-0.1.1/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ok2c.hc5.android/httpclient-android/0.1.1/39abed79e3ac1e4a36e4ed385bd411562f562b66/httpclient-android-0.1.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.github.ok2c.hc5.android/httpclient-android/0.1.1/39abed79e3ac1e4a36e4ed385bd411562f562b66/httpclient-android-0.1.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ok2c.hc5.android/httpclient-android/0.1.1/c48bcb6068aff3f6616b4efb0a18b7a1c1bd0537/httpclient-android-0.1.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.github.ok2c.hc5.android/httpclient-android/0.1.1/c48bcb6068aff3f6616b4efb0a18b7a1c1bd0537/httpclient-android-0.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

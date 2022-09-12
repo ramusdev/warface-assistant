@@ -4,7 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Options</string>
     <string name="ad_attribution">Ad</string>
-    <string name="interstitial_full_screen">ca-app-pub-4140002463111288/3644037371</string>
+    <string name="interstitial_full_screen">ca-app-pub-4140002463111288/4924222998</string>
     <string name="news_link">https://pc.warface.com/en/rss.xml</string>
     <string name="about_text">
 <![CDATA[This application is not a product of Crytek.<br><br>
@@ -21,9 +21,9 @@ Crytek, CryEngine, Warface and the Warface logo are registered trademarks or tra
 
 <font color=#e65d20>Additional information</font><br><br>
 
-- Current version: 3.2.1<br>
-- Developer: RB dev.<br>
-- Contact: ram219219@gmail.com]]>
+- Current version: 4.0.1<br>
+- Developer: Ronin Group
+]]>
 </string>
 
     <string name="start_text">

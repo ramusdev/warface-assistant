@@ -1,6 +1,7 @@
 package belev.org.warface_app;
 
 import android.content.Context;
+import android.util.Log;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -37,6 +38,9 @@ public class NewsParser {
         } catch (IOException e) {
             System.out.printf("Error: ", e.getMessage());
         }
+
+        // Log.d("MyTag", "From pars news ----------------------------------------->");
+        // Log.d("MyTag", document.toString());
 
         Elements elements = document.select("item");
 

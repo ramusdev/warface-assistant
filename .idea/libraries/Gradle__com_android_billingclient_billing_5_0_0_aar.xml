@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.billingclient:billing:5.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c30f3955f3d08bb576550563205a58a0/transformed/jetified-billing-5.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../caches/transforms-3/c30f3955f3d08bb576550563205a58a0/transformed/jetified-billing-5.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/c30f3955f3d08bb576550563205a58a0/transformed/jetified-billing-5.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-3/c30f3955f3d08bb576550563205a58a0/transformed/jetified-billing-5.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/c30f3955f3d08bb576550563205a58a0/transformed/jetified-billing-5.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.android.billingclient/billing/5.0.0/5851ee5cd91679685c6eae2340d618f2314fa0fa/billing-5.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
